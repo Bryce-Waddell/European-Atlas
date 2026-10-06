@@ -1,0 +1,21 @@
+# OS / editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+.vscode/
+.idea/
+
+# never commit secrets
+.env
+*.pem
+*.key
+
+# research data and local test state: never commit
+*.csv
+responses*.json
+.wrangler/
+.dev.vars
+
+# local version snapshots: keep out of the public site
+index_v*.html
