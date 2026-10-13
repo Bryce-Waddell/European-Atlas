@@ -72,6 +72,21 @@ h2{font-weight:600;font-size:22px;margin:50px 0 6px;padding-top:14px;border-top:
 .sub{font-family:'Barlow Semi Condensed','Arial Narrow',Arial,sans-serif;font-size:14.5px;color:var(--soft);margin:0 0 16px}
 h3{font-weight:600;font-size:17px;margin:22px 0 5px}
 .cycle{margin:18px auto 22px;max-width:560px}.cycle svg{display:block;width:100%;height:auto}.cycle .cyh{font-family:'Spectral',Georgia,serif;font-size:19px;font-weight:600;fill:var(--ink)}.cycle .cyl{font-family:'Barlow Semi Condensed','Arial Narrow',Arial,sans-serif;font-size:17px;font-weight:600}.cycle .cys{font-family:'Barlow Semi Condensed','Arial Narrow',Arial,sans-serif;font-size:16px;fill:var(--soft)}.cycle figcaption{font-family:'Barlow Semi Condensed','Arial Narrow',Arial,sans-serif;font-size:14px;color:var(--soft);text-align:center;margin-top:6px}
+.fdv{margin:16px 0 18px;font-family:'Barlow Semi Condensed','Arial Narrow',Arial,sans-serif;position:relative}
+.fdv .fdg>div{display:grid;grid-template-columns:minmax(64px,7.5em) repeat(3,minmax(0,1fr));column-gap:10px;align-items:center}
+.fdv .fdr{padding:1.5px 0;border-radius:2px;outline:none}.fdv .fdr:focus-visible{box-shadow:0 0 0 2px var(--soft)}
+.fdv .fdh{font-size:14px;font-weight:600;color:var(--ink);align-self:end}
+.fdv .fdk{display:flex;flex-wrap:wrap;gap:2px 8px;font-size:12.5px;color:var(--soft);margin:2px 0 6px;align-self:start}
+.fdv .fdk i{display:inline-block;width:9px;height:9px;border-radius:2px;margin-right:3px;vertical-align:-1px}
+.fdv .fdn{font-size:13px;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:flex;align-items:center;gap:5px}
+.fdv .fdn i{flex:none;width:8px;height:8px;border-radius:50%}
+.fdv .fdb{display:flex;gap:2px;height:12px}
+.fdv .fdb span{display:block;height:100%}
+.fdv .fdb span:first-child{border-radius:3px 0 0 3px}.fdv .fdb span:last-child{border-radius:0 3px 3px 0}
+.fdv .fdr:hover .fdn,.fdv .fdr:focus .fdn,.fdv .fdr.on .fdn{font-weight:600}
+.fdv .fdtip{position:absolute;pointer-events:none;background:var(--paper-deep);border:1px solid var(--edge);border-radius:2px;padding:6px 9px;font-size:13px;line-height:1.35;color:var(--ink);box-shadow:0 2px 8px rgba(0,0,0,.15);display:none;z-index:5;max-width:260px}
+.fdv .fdtip b{font-weight:600}.fdv .fdtip .s{color:var(--soft)}
+.fdv figcaption{font-size:14px;color:var(--soft);margin-top:8px}
 details.more{margin:14px 0 8px;border-top:1px solid var(--edge);border-bottom:1px solid var(--edge)}details.more>summary{cursor:pointer;list-style:none;font-family:'Barlow Semi Condensed','Arial Narrow',Arial,sans-serif;font-size:14.5px;letter-spacing:.02em;color:var(--soft);padding:9px 0}details.more>summary::-webkit-details-marker{display:none}details.more>summary::before{content:'+';display:inline-block;width:1.1em;font-weight:600}details.more[open]>summary::before{content:'\2212'}details.more>summary:hover{color:var(--ink)}details.more[open]{padding-bottom:10px}
 h4{font-family:'Barlow Semi Condensed','Arial Narrow',Arial,sans-serif;font-size:14px;letter-spacing:.03em;color:var(--soft);font-weight:600;margin:22px 0 8px;padding-bottom:4px;border-bottom:1px solid var(--edge)}
 
@@ -978,6 +993,7 @@ table.matrix th{white-space:normal;vertical-align:bottom;line-height:1.15}
 <p class="kicker">What a region actually eats and drinks, measured rather than coded</p>
 <p>Every other transmitted facet is coded by judgement from the historical sources. This one is measured from official statistics, and it has three parts. <strong>Drink</strong>: the share of all alcohol drunk as beer, as wine and as spirits, from the World Health Organization's 2024 report, averaged over 2017 to 2019 — the measure behind the old "drinking belts" of Europe. <strong>Fat</strong>: the share of fat calories from animal fat — butter, lard, tallow — against vegetable oil, from the FAO's food balance sheets. <strong>Starch</strong>: how starch calories divide between wheat, maize, rice, other cereals such as rye, oats and barley, and potatoes and other roots, from the same tables. Each part is a composition, compared by the Hellinger distance, and the facet is their average.</p>
 <p>The map colours each region along the main axis of the three together. One end is the Baltic table — rye, potatoes, animal fat and spirits, in Latvia, Poland and Lithuania. The other is vegetable oil with either wine, as in Italy and Iberia, or maize, as in Moldova, Bosnia and Ibero-America. Each region's card gives its own figures.</p>
+<figure class="fdv" id="foodviz" aria-label="Diet and drink by country: alcohol by beverage, fat by source and starch by staple, as shares"></figure>
 <h4>Dialectics</h4>
 <div class="contrast"><span class="cn">The olive and the border of Rome.</span> The vine and the olive spread with the Roman provinces. Today the three countries where wine is most of all the alcohol drunk — Italy, Portugal and France — are all Romance-speaking, while spirits lead across the Slavic and Baltic east. The line has blurred, and Swedes now drink more wine than Spaniards, but its outline is still the Roman frontier.</div>
 <h4>Why it is included</h4>
@@ -1751,6 +1767,31 @@ var FOODAX=(function(){var u=R.map(function(_,k){return k}).filter(function(k){r
  /* orient the axis so that regions eating more animal fat sit at the low end */
  var cw=0;u.forEach(function(k,ii){cw+=v[ii]*(FOOD[R[k][0]].fat[0]-30)});if(cw>0)v=v.map(function(x){return -x});
  var lo=Math.min.apply(null,v),hi=Math.max.apply(null,v),out={};u.forEach(function(k,ii){out[R[k][0]]=(v[ii]-lo)/(hi-lo)});return out})();
+/* Foodways chart: one row per country, three 100% bars (drink, fat, starch), ordered along the map's axis. Each colour set is checked for colour-blind separation on both surfaces */
+(function(){var el=document.getElementById("foodviz");if(!el)return;
+ var COLS=[["drink","Drink",[["Beer","#c98500"],["Wine","#b8325a"],["Spirits","#2a78d6"]]],
+  ["fat","Fat",[["Animal","#d1702c"],["Vegetable oil","#199e70"]]],
+  ["staple","Starch",[["Wheat","#c98500"],["Maize","#e34948"],["Rice","#199e70"],["Other cereals","#2a78d6"],["Roots","#d55181"]]]];
+ var seen={},rows=[];R.forEach(function(d){var F=FOOD[d[0]];if(!F||seen[F.src])return;seen[F.src]=1;
+  rows.push({n:F.src.indexOf("Ibero-America")===0?"Ibero-America":F.src,F:F,ax:FOODAX[d[0]]})});
+ rows.sort(function(a,b){return a.ax-b.ax});
+ function r0(v){return Math.round(v)}
+ var h='<div class="fdg"><div><div></div>'+COLS.map(function(c){return '<div class="fdh">'+c[1]+'</div>'}).join("")+
+  '</div><div><div></div>'+COLS.map(function(c){return '<div class="fdk">'+c[2].map(function(k){return '<span><i style="background:'+k[1]+'"></i>'+k[0]+'</span>'}).join("")+'</div>'}).join("")+'</div>';
+ rows.forEach(function(r,ri){h+='<div class="fdr" tabindex="0" data-r="'+ri+'"><div class="fdn"><i style="background:'+fcol(r.ax)+'"></i>'+r.n+'</div>'+
+  COLS.map(function(c){return '<div class="fdb">'+r.F[c[0]].map(function(v,k){return v>0.05?'<span style="flex:'+v.toFixed(2)+' 1 0;background:'+c[2][k][1]+'"></span>':''}).join("")+'</div>'}).join("")+'</div>'});
+ h+='</div>';
+ h+='<div class="fdtip" role="tooltip"></div><figcaption>Each country\'s alcohol by beverage, fat calories by source and starch calories by staple (WHO 2017–19; FAO 2013). Rows run along the map\'s axis, from the animal-fat end at the top to the vegetable-oil end at the bottom; the dot is the map colour. Sub-national regions share their country\'s row.</figcaption>';
+ el.innerHTML=h;
+ var tip=el.querySelector(".fdtip"),on=null;
+ function show(row){var r=rows[+row.dataset.r];if(on)on.classList.remove("on");on=row;row.classList.add("on");
+  tip.innerHTML='<b>'+r.n+'</b>'+COLS.map(function(c){return '<br><span class="s">'+c[1]+':</span> '+c[2].map(function(k,i){return k[0]+' '+r0(r.F[c[0]][i])+'%'}).join(", ")}).join("");
+  var b=row.getBoundingClientRect(),e=el.getBoundingClientRect();tip.style.display="block";
+  var x=Math.min(b.left-e.left,e.width-tip.offsetWidth);tip.style.left=Math.max(0,x)+"px";tip.style.top=(b.bottom-e.top+6)+"px"}
+ function hide(){tip.style.display="none";if(on)on.classList.remove("on");on=null}
+ el.querySelectorAll(".fdr").forEach(function(row){row.addEventListener("mouseenter",function(){show(row)});row.addEventListener("focus",function(){show(row)});
+  row.addEventListener("click",function(){on===row?hide():show(row)});row.addEventListener("blur",hide)});
+ el.querySelector(".fdg").addEventListener("mouseleave",hide)})();
 /* ---------- The commonwealths and sub-groups, read off the tree this page computes ---------- */
 var CWN=["Latin Roman West","Byzantine East","Hebraic Jews"];
 var CWB={"Latin Roman West":"#2F6B5E","Byzantine East":"#9C6A1E","Hebraic Jews":"#5A4A8A"};
