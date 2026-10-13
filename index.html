@@ -72,6 +72,22 @@ h2{font-weight:600;font-size:22px;margin:50px 0 6px;padding-top:14px;border-top:
 .sub{font-family:'Barlow Semi Condensed','Arial Narrow',Arial,sans-serif;font-size:14.5px;color:var(--soft);margin:0 0 16px}
 h3{font-weight:600;font-size:17px;margin:22px 0 5px}
 .cycle{margin:18px auto 22px;max-width:560px}.cycle svg{display:block;width:100%;height:auto}.cycle .cyh{font-family:'Spectral',Georgia,serif;font-size:19px;font-weight:600;fill:var(--ink)}.cycle .cyl{font-family:'Barlow Semi Condensed','Arial Narrow',Arial,sans-serif;font-size:17px;font-weight:600}.cycle .cys{font-family:'Barlow Semi Condensed','Arial Narrow',Arial,sans-serif;font-size:16px;fill:var(--soft)}.cycle figcaption{font-family:'Barlow Semi Condensed','Arial Narrow',Arial,sans-serif;font-size:14px;color:var(--soft);text-align:center;margin-top:6px}
+.fdv{margin:16px 0 18px;font-family:'Barlow Semi Condensed','Arial Narrow',Arial,sans-serif;position:relative}
+.fdv .fdg>div{display:grid;grid-template-columns:minmax(64px,7.5em) repeat(3,minmax(0,1fr));column-gap:10px;align-items:center}
+.fdv .fdr{padding:1.5px 0;border-radius:2px;outline:none}.fdv .fdr:focus-visible{box-shadow:0 0 0 2px var(--soft)}
+.fdv .fdh{font-size:13px;font-weight:600;color:var(--soft);padding-bottom:3px}
+.fdv .fdk{font-size:13px;color:var(--soft);margin:0 0 8px;display:flex;flex-direction:column;gap:3px}
+.fdv .fdk>div{display:flex;flex-wrap:wrap;gap:2px 10px}.fdv .fdk b{color:var(--ink);font-weight:600;min-width:3.6em}
+.fdv .fdk i{display:inline-block;width:9px;height:9px;border-radius:2px;margin-right:3px;vertical-align:-1px}
+.fdv .fdn{font-size:13px;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:flex;align-items:center;gap:5px}
+.fdv .fdn i{flex:none;width:8px;height:8px;border-radius:50%}
+.fdv .fdb{display:flex;gap:2px;height:12px}
+.fdv .fdb span{display:block;height:100%}
+.fdv .fdb span:first-child{border-radius:3px 0 0 3px}.fdv .fdb span:last-child{border-radius:0 3px 3px 0}
+.fdv .fdr:hover .fdn,.fdv .fdr:focus .fdn,.fdv .fdr.on .fdn{font-weight:600}
+.fdv .fdtip{position:absolute;pointer-events:none;background:var(--paper-deep);border:1px solid var(--edge);border-radius:2px;padding:6px 9px;font-size:13px;line-height:1.35;color:var(--ink);box-shadow:0 2px 8px rgba(0,0,0,.15);display:none;z-index:5;max-width:260px}
+.fdv .fdtip b{font-weight:600}.fdv .fdtip .s{color:var(--soft)}
+.fdv figcaption{font-size:14px;color:var(--soft);margin-top:8px}
 details.more{margin:14px 0 8px;border-top:1px solid var(--edge);border-bottom:1px solid var(--edge)}details.more>summary{cursor:pointer;list-style:none;font-family:'Barlow Semi Condensed','Arial Narrow',Arial,sans-serif;font-size:14.5px;letter-spacing:.02em;color:var(--soft);padding:9px 0}details.more>summary::-webkit-details-marker{display:none}details.more>summary::before{content:'+';display:inline-block;width:1.1em;font-weight:600}details.more[open]>summary::before{content:'\2212'}details.more>summary:hover{color:var(--ink)}details.more[open]{padding-bottom:10px}
 h4{font-family:'Barlow Semi Condensed','Arial Narrow',Arial,sans-serif;font-size:14px;letter-spacing:.03em;color:var(--soft);font-weight:600;margin:22px 0 8px;padding-bottom:4px;border-bottom:1px solid var(--edge)}
 
@@ -136,11 +152,6 @@ td.chip span{display:block;font-family:'Barlow Semi Condensed','Arial Narrow',Ar
 @media(min-width:700px){.crit{display:grid;grid-template-columns:180px 1fr;gap:0 26px}.crit h5{margin:0}}
 .contrast{border-left:2px solid var(--madder);padding:2px 0 2px 15px;margin:0 0 15px}
 .contrast .cn{font-weight:600}
-.pair{border-top:1px solid var(--edge);padding:16px 0 2px}
-.pair:first-of-type{border-top:none}
-.pair h3{margin:0 0 3px}
-.marks{display:flex;flex-wrap:wrap;gap:5px;margin:8px 0 10px;padding:0;list-style:none}
-.marks li{font-family:'Barlow Semi Condensed','Arial Narrow',Arial,sans-serif;font-size:13px;font-weight:500;padding:3px 9px;border-radius:2px;border:1px solid}
 .same{color:var(--same-fg);border-color:var(--same-bd);background:var(--same-bg)}
 .diff{color:var(--diff-fg);border-color:var(--diff-bd);background:var(--diff-bg)}
 .note{background:var(--paper-deep);border:1px solid var(--edge);padding:15px 17px;margin:20px 0;font-size:15.5px}
@@ -323,7 +334,6 @@ td.contrib{min-width:150px}
 tr.tot th,tr.tot td{border-top:1.5px solid var(--rule)}
 .small{font-size:13px}
 .near{color:var(--soft);border-color:var(--edge);background:transparent}
-.tocmp{font-family:'Barlow Semi Condensed','Arial Narrow',Arial,sans-serif;font-size:14px;color:var(--madder);text-decoration:none;border-bottom:1px solid var(--madder)}
 .tn-sub.atl{min-width:260px}
 
 @media(max-width:700px){table.cmptbl{min-width:0;font-size:13.5px}.vlong{display:none}.cbar{display:none}table.cmptbl .dcol,table.cmptbl .tocx{display:none}table.cmptbl tbody th{white-space:normal;width:26%}table.cmptbl td.mk span{padding:2px 5px}table.cmptbl th,table.cmptbl td{padding-right:6px}td.contrib{min-width:0}table.cmptbl tbody th .soft{display:none}.vchip{font-size:12px;padding:2px 5px}}
@@ -363,8 +373,6 @@ table.corrob td.mk span,#redflags td.mk span{display:inline-block;font-size:12.5
 .stepnav{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 6px}
 .stepnav button{font:inherit;font-family:'Barlow Semi Condensed','Arial Narrow',Arial,sans-serif;font-size:14px;border:1px solid var(--edge);background:transparent;color:var(--ink);padding:4px 10px;cursor:pointer;border-radius:2px}
 .stepnav button[disabled]{opacity:.4;cursor:default}
-.marks li.near{border-style:dashed}
-.marks li.na{color:var(--soft);border-color:var(--edge);background:transparent;opacity:.7}
 #fbfctl h4{margin:14px 0 6px}
 table.matrix{min-width:1180px}
 .legend .lgcap{color:var(--ink);font-weight:600;font-size:13px;letter-spacing:.03em;text-transform:uppercase}
@@ -389,7 +397,6 @@ table.matrix th{white-space:normal;vertical-align:bottom;line-height:1.15}
    <a href="#top" class="tn-link">Atlas</a>
    <div class="tn-sub atl"><div class="inner"><a href="#abstract">Abstract</a><a href="#map1">Plate I — the facets, mapped</a><a href="#map2">Plate II — the facet matrix</a><a href="#byfacet">Plate III — facet by facet</a><a href="#layerA">Plate IV — the three commonwealths</a><a href="#compare">Plate V — compare two regions</a></div></div>
   </div>
-  <a href="#insights" class="tn-link">Selected insights</a>
   <a href="#conclusion" class="tn-link">Conclusion</a>
   <a href="#method" class="tn-link">Methodology</a>
   <div class="tn-drop">
@@ -420,7 +427,7 @@ table.matrix th{white-space:normal;vertical-align:bottom;line-height:1.15}
    <div class="inset"><svg id="mapOC" role="img" aria-label="Anglosphere inset: Australia and New Zealand"></svg><div class="cap">Anglosphere — Australia and New Zealand</div></div>
    <div class="inset il"><svg id="mapIL" role="img" aria-label="Inset: Israel"></svg><div class="cap">Israel</div></div>
   </div>
-  <p class="hint">Israel is shown as a state, not as a stand-in for all Jews: about a fifth of its citizens are Arab, and most Israeli Jews are not Ashkenazi, so the Israel and Ashkenazim rows differ — see Selected insights. Grey around it, including the West Bank and Gaza, is not modelled.</p>
+  <p class="hint">Israel is shown as a state, not as a stand-in for all Jews: about a fifth of its citizens are Arab, and most Israeli Jews are not Ashkenazi, so the Israel and Ashkenazim rows differ — compare them in <a href="#compare">Plate V</a>. Grey around it, including the West Bank and Gaza, is not modelled.</p>
   <p class="hint">For the settler societies, the Biological facet describes the founder populations from the British Isles and France, not today's far more mixed populations.</p>
  </div>
  <aside class="side">
@@ -497,27 +504,23 @@ table.matrix th{white-space:normal;vertical-align:bottom;line-height:1.15}
 </div>
 
 <h3 style="font-size:20px;margin-top:30px">What the tree shows</h3>
-<p><strong>1. The Latin Roman West — 36 regions.</strong> All of Scandinavia, the British Isles, the Low Countries, the German lands, Bohemia, Slovakia, Poland, the Baltic states, Hungary, France, Switzerland, Austria, Iberia, all of Italy, the United States, English Canada, Québec, Australia and New Zealand.</p>
-<p><strong>2. The Byzantine East — 16 regions.</strong> Russia, Belarus, Ukraine, Galicia, Romania, Moldova, Serbia, Bosnia, Montenegro, Macedonia, Bulgaria, Albania and Greece — and, on the headline voices, Croatia, Slovenia and Ibero-America (see <a href="#seams">the seams</a>).</p>
-<p><strong>3. The Hebraic Jews — 2 regions.</strong> Israel, a state a fifth of whose citizens are Arab, and the Ashkenazi diaspora: two units, not all Jews.</p>
-<p><strong>How the tree divides, in order.</strong> Read strictly by height, the first split peels off the Hebraic pair, because those two differ from everyone on confession, script, the calendar, art and ancestry at once; that two-group cut has the highest silhouette of any. The second divides Israel from the Ashkenazim. The third divides West from East. Below that, Ibero-America leaves the East as a group of one, then Greece and Albania leave it, and then the Nordic countries leave the West. The silhouette scores of every cut are listed under <a href="#method">Methodology</a>: after the Hebraic split, every level from four to ten groups scores between 0.19 and 0.30, which means the data support several readings of Europe about equally well. The commonwealths are one of them; the ten sub-groups below are another.</p>
-<p id="seams"><strong>Which facets draw the line, and the seams.</strong> On church, alphabet, art and calendar Croatia, Slovenia and Ibero-America are as Latin as Poland; on kinship, trust, individualism and learning they sit nearer Serbia and Romania, and on the headline voices those prevail. Plate III shows each facet's own map. The calendar and Art each draw much of the West–East line on their own, and Script draws its Slavic half — Cyrillic from Russia to Bulgaria — while putting Orthodox Romania and Moldova in the West, in Latin letters; Confession by itself sets the Hebraic pair apart more sharply than it separates West from East; Family &amp; kinship and Individualism draw much of it too, but not along the church line: kinship puts Catholic Croatia, Hungary, Slovakia, Poland and Lithuania east of the Hajnal line, and individualism puts Croatia, Slovenia and Portugal on the collectivist side; Biological, Geographic descent, Legal family and Foodways draw almost none of it. Leave out the calendar and the line falls apart; leave out Confession or Script alone and it holds, because each carries most of the other; leave out Legal family, Family &amp; kinship, Learning, Individualism or Foodways and Croatia and Slovenia return to the West; leave out Art and Ibero-America does. The seams rest on which kind of facet gets more say.</p>
+<p><strong>Latin Roman West, 36 regions:</strong> Scandinavia, the British Isles, the Low Countries, the German lands, Bohemia, Slovakia, Poland, the Baltic states, Hungary, France, Switzerland, Austria, Iberia, Italy and the settler societies. <strong>Byzantine East, 16:</strong> Russia, Belarus, Ukraine, Galicia, Romania, Moldova, Serbia, Bosnia, Montenegro, Macedonia, Bulgaria, Albania and Greece, with Croatia, Slovenia and Ibero-America at the seam. <strong>Hebraic Jews, 2:</strong> Israel and the Ashkenazi diaspora — two units, not all Jews.</p>
+<p>The Hebraic pair splits off first, different from everyone on confession, script, calendar, art and ancestry at once; West and East divide next. Below that, every cut from four to ten groups scores about equally, so the data support several readings of Europe. The commonwealths are one.</p>
+<p id="seams"><strong>The seams.</strong> On church, alphabet, art and calendar, Croatia, Slovenia and Ibero-America are as Latin as Poland; on kinship, trust, individualism and learning they sit nearer Serbia and Romania. They fall with whichever kind of facet gets more say.</p>
 
 <h4>How much each facet counts</h4>
-<p>Every facet is scaled to the same spread, and its voice is discounted for whatever it repeats. What each one ends up contributing — its share of all the variation in the distances the clustering uses — is its influence. The last column shows the same measure under equal voices.</p>
+<p class="plate-cap" style="margin-top:4px">Each facet's influence: its share of the variation in the combined distance, defined under <a href="#method">Methodology</a>. The last column assumes equal voices.</p>
 <div class="mwrap" style="border:none"><table class="wt" id="wtlive"></table></div>
-<p style="margin-top:14px"><strong>Three patterns stand out.</strong> The first is that the facets which follow the churches — Confession, Script, Art and the calendar — share their voice, and supply about two-fifths of the influence between them. The second is that Legal family, which agrees with almost nothing, has the most influence of any facet: common law puts Dublin with Sydney and the civil law puts Paris with Moscow, crossing every other line. The third is that the four new facets have large voices and little influence. They agree with the church facets only in part, and their variation is spread across every pair rather than concentrated on one boundary — so they move the seams without redrawing the map.</p>
+<p style="margin-top:14px">The church facets — Confession, Script, Art and the calendar — supply about two-fifths of the influence. Legal family, which agrees with almost nothing, has the most of any single facet. The four measured facets move the seams without redrawing the map.</p>
 
 <h4>Finer structure</h4>
-<p>Cut deeper, at the best-scoring level below the commonwealths, and Europe falls into ten groups. The West splits into a <strong>Nordic</strong> group; a <strong>Central Europe and the Low Countries</strong> group running from Estonia through the German lands to Hungary; a <strong>Romance Europe</strong> of France, Iberia and Italy; and the <strong>British Isles and the settler societies</strong>, with Québec. The East splits into the <strong>Rus' lands</strong>; a <strong>Danubian and South Slav</strong> group from Romania and Moldova through Croatia and Slovenia to Bulgaria; and <strong>Greece and Albania</strong>. Ibero-America stands alone, and so do Israel and the Ashkenazim.</p>
-<p>Romance Europe and the British Isles with the settler societies are the firmest sub-groups; Greece with Albania and the Rus' lands the softest. The stability score beside each sub-group in the cards above says how often it survives. Treat the sub-groups as readings, and the commonwealths' cores, not their borders, as the finding.</p>
+<p>One level down, Europe falls into ten groups: Nordic; Central Europe and the Low Countries; Romance Europe; the British Isles and settler societies; the Rus' lands; Danubian and South Slav; Greece and Albania; and Ibero-America, Israel and the Ashkenazim each alone. Their stability scores, in the cards above, run from firm to dissolving. Treat them as readings.</p>
 
 <h4 id="stability">How stable this is</h4>
-<p>Every test is specified under <a href="#method">Methodology</a> and recomputed live. The structure is far beyond chance, as the shuffle test shows, and it is not made by the clustering rule: average, single and Ward's linkage draw the same West–East line, Ward's moving only Ibero-America; complete linkage, which fits the distances worst but one, also moves Israel and the Ashkenazim. The groups predict eleven of the thirteen facets they were built without, net of nearness. The two that fail are Geographic descent, a climate map, and Legal family, which crosses every other line. Where the tests break, they break at the seams. Across 300 moderate re-weightings each commonwealth keeps most of its members in nearly every draw, but the exact three-way split reproduces in fewer than a third, and the regions that move are the seam regions above, along with Romania, the Baltic states and Poland. The cores hold; the borders move. Tap any region on the map for its own figure.</p>
-<p>Rerun without the hand-drawn sub-national regions, every region stays where it was except at the Romance flank: without Italy's three, Ibero-America moves west, and without all fourteen, Spain and Portugal move east.</p>
-<p>Weight the birthright facets alone and you get a completely different map. It puts temperate Europe and the Anglosphere together, Ibero-America on its own, and a Mediterranean group running from Lisbon through Cagliari, Naples, Tirana and Athens to Jerusalem — Latin, Byzantine and Hebraic regions in a single cluster. That grouping matches no church, alphabet, legal system or language boundary. Blood and soil draw climatic bands; the transmitted facets draw the West–East line.</p>
+<p>The structure is far beyond chance, survives every standard linkage rule, and predicts eleven of the thirteen facets it was built without. The cores hold; the borders move. Weighted on birthright alone, the map dissolves into climate bands. Tap any region for its own figure; the tests are read in full under <a href="#method">Methodology</a>.</p>
+
 <h4>Why "commonwealth"</h4>
-<p>The word comes from Dimitri Obolensky's <em>The Byzantine Commonwealth</em> (1971), which used it for peoples bound together by a shared religious, legal and literary inheritance rather than by a state or by blood. The groups are named for those inheritances — the Latin Roman West, the Byzantine East, the Hebraic Jews — because that is what their cores share, not because every member shares all of it. Under the Ottomans the Orthodox church went on administering the Balkan peoples, which the historian Nicolae Iorga called <em>Byzance après Byzance</em>; that is why Muslim Albania and Romance-speaking Romania sit in the Byzantine core.</p>
+<p>After Dimitri Obolensky's <em>The Byzantine Commonwealth</em> (1971): peoples bound by a shared religious, legal and literary inheritance, not by a state or by blood. Under the Ottomans the Orthodox church went on administering the Balkans — Iorga's <em>Byzance après Byzance</em> — which is why Muslim Albania and Romance-speaking Romania sit in the Byzantine core.</p>
 
 <h2 id="compare">Plate V — compare two regions</h2>
 <p class="sub">Choose any two regions to set them side by side on every facet. The weighted distance is the D(<i>i</i>, <i>j</i>) the clustering uses, and each row shows what its facet contributes to it: the facet's own distance times its coefficient ω.</p>
@@ -526,18 +529,11 @@ table.matrix th{white-space:normal;vertical-align:bottom;line-height:1.15}
 <div id="cmpout"></div>
 </div>
 
-<h2 id="insights">Selected insights</h2>
-<p>Each pair below is united by at least one facet and split by at least one other. Tap the names on the map to check them, or open any pair side by side in Plate V.</p>
-<div id="pairs"></div>
-<p style="margin-top:22px">The decisive row is <strong>Sardinia beside the Ashkenazi diaspora</strong>. On biology they are neighbours. On geographic descent and every transmitted facet that can be compared — language, confession, script, legal family, art, the calendar — they are far apart, and on five of them as far apart as the atlas allows. Biology is a real signal that predicts almost nothing anyone has ever organised a life around.</p>
-<div class="note"><strong>On the numbers.</strong> Ancestry proportions are rounded approximations drawn from published three-way models (Lazaridis 2014; Haak 2015; Olalde 2018; Patterson 2022) and move several points with reference panel and method. Finland and Russia carry a further Uralic and Siberian component not shown; the Ashkenazi farmer share includes Levantine ancestry; the settler societies and Ibero-America are given their founder populations' European signature only; Israel's figures are especially rough, because Mizrahi and Ashkenazi ancestry do not decompose cleanly into the three European components. Balkan figures in particular are coarse. Geographic descent carries its own warning above. Foodways figures are national and current, from the WHO (2024) and the FAO food balance sheets (2013). Trust and individualism are survey scores of the present day; schooling and books are reconstructions; the Ethnographic Atlas codes one society per region where it codes any. Regions inside a country share its national figures, and the Ashkenazim, a people without a state, have none of the measured ones. Boundaries are Natural Earth. Read the ordering, not the digits.</div>
-
 <h2 id="conclusion">Conclusion</h2>
-<p>The atlas set out to test descent, and descent turned out to organise nothing. Biology and geographic descent are real and measurable, and they agree with each other, with what a region eats, and with almost nothing else. Biology draws a gradient from the steppe-rich north-east to the farmer-rich south-west; geography puts Lisbon, Athens and Jerusalem in a single biome. No legal code, household form or building tradition follows either line, and the churches and alphabets only by coincidence of place. Switch both off entirely and the same three groups come out unchanged.</p>
-<p>What remains is not a birthright. The <strong>Latin Roman West</strong>, the <strong>Byzantine East</strong> and the <strong>Hebraic Jews</strong> are emergent and quantifiable, and their cores are persistent: they survive every repeated facet being discounted and the birthright facets being switched off, and the groups sort eleven of the thirteen facets even when built without them. Their borders are not. Their borders are not: the measured family, school, trust and self draw the line where Hajnal drew it, not quite where the churches did, and the seam regions go with whichever kind of facet is given more say (<a href="#seams">Plate IV</a>). Every one of those facets was handed down and taken up — a creed, a household form, a school, a habit of trusting strangers — and every one can be received by someone not born to it, and lost by someone who was.</p>
-<p>So you need not carry Bronze-Age steppe ancestry to stand inside the Latin Roman West: Sardinia carries almost none and is fully inside. You need not be born in Europe at all — Québec, Sydney and Philadelphia are in it for the same reason Kraków is. And receiving a church is not the whole of it: Lima and Mexico City took the Latin church, its law and its Baroque in the sixteenth century, and on the trust and individualism measured today they sit nearer Bucharest than Madrid.</p>
-<p>That is the finding, and it cuts both ways. A heritage that can be taken up can also be let go, and the atlas records several that were: Fraktur abolished by memo in 1941, Moldova's alphabet switched twice in fifty years, Ireland's vernacular lost within three generations, the Dutch Republic's and northern Italy's primacy lost within two. Nothing here is owed to anyone by birth, and nothing is closed to anyone by it. Protect what you love, and take it up yourself.</p>
-<p><strong>What, then, of Fichte?</strong> His criterion survives: a people is what its members take up and hand on, and the lines that organise Europe are lines of transmission, not of blood. His ranking does not. The deepest line runs between the Latin and Byzantine inheritances, not between German and foreign, and the German lands sit inside the Latin West beside the Romance peoples he called orphans of the spirit. Nor does the mother tongue draw that line. The church, the alphabet, the building tradition and the calendar draw it: an inheritance that arrived in Latin, the language Fichte thought dead. Across the ocean the pattern holds: the United States sits in the West's firmest sub-group, with England, Ireland, Canada, Australia and New Zealand, by common law, calendar and the most individualist populations in the atlas. None of it is a matter of ancestry.</p>
+<p>The atlas set out to test descent, and descent organises nothing. Biology and geographic descent are real; they agree with each other, with what a region eats, and with little else. Switch both off and the same three groups come out.</p>
+<p>The <strong>Latin Roman West</strong>, the <strong>Byzantine East</strong> and the <strong>Hebraic Jews</strong> are emergent and quantifiable. Their cores persist under every test; their borders do not, and the seam regions go with whichever kind of facet gets more say (<a href="#seams">Plate IV</a>). Every facet that draws them — a creed, a household form, a school, a habit of trusting strangers — can be received by someone not born to it, and lost by someone who was.</p>
+<p>Sardinia, with almost no steppe ancestry, is fully inside the Latin West; so are Québec, Sydney and Philadelphia, for the same reason Kraków is. Lima and Mexico City took the Latin church, law and Baroque, yet on trust and individualism sit nearer Bucharest than Madrid. And what can be taken up can be let go: Fraktur abolished by memo in 1941, Moldova's alphabet switched twice in fifty years, Ireland's vernacular lost in three generations. Nothing here is owed by birth or closed by it. Protect what you love, and take it up yourself.</p>
+<p><strong>What, then, of Fichte?</strong> His criterion survives: a people is what its members take up and hand on. His ranking does not. The deepest line runs between the Latin and Byzantine inheritances, not between German and foreign, and it is drawn by church, alphabet, building and calendar — an inheritance that arrived in Latin, the language Fichte thought dead. None of it is a matter of ancestry.</p>
 
 <h2 id="method">Methodology</h2>
 <p class="sub">How the plates were produced and tested. Every number on this page is recomputed in your browser from the data in Plate II; formulas and full specifications are behind each toggle.</p>
@@ -650,7 +646,7 @@ table.matrix th{white-space:normal;vertical-align:bottom;line-height:1.15}
 <p class="sub" style="margin-top:8px">The Mantel p-value is the share of 999 random relabellings of the regions that produce agreement at least as strong as the real one. It is computed after the page loads, so the column fills in a moment after the rest.</p>
 </details>
 <h4>Testing stability</h4>
-<p>Each choice is varied in turn. A run reproduces the commonwealths only if all 1,431 pairs of regions are together or apart exactly as in the three-way split: one region changing sides fails it. What the results mean is read under <a href="#stability">Plate IV</a>.</p>
+<p>Each choice is varied in turn. A run reproduces the commonwealths only if all 1,431 pairs of regions are together or apart exactly as in the three-way split: one region changing sides fails it. The results are read below the table.</p>
 <div class="mwrap" style="border:none"><table class="wt meth">
 <thead><tr><th>Test</th><th>What is varied</th></tr></thead>
 <tbody>
@@ -666,6 +662,15 @@ table.matrix th{white-space:normal;vertical-align:bottom;line-height:1.15}
 <div class="bleed matbleed"><div class="mwrap" style="border:none"><table class="rob" id="robtbl"></table></div></div>
 <p class="live" id="stablive">Recomputing in your browser…</p>
 <p class="live" id="alonelive"></p>
+<details class="more"><summary>What the results show</summary>
+<p><strong>Chance and method.</strong> No shuffle comes near the real structure. Average, single and Ward's linkage draw the same West–East line, Ward's moving only Ibero-America; complete linkage, which fits the distances worst but one, also moves Israel and the Ashkenazim.</p>
+<p><strong>Prediction.</strong> The groups predict eleven of the thirteen facets held out of them, net of nearness. The two that fail are Geographic descent, a climate map, and Legal family, which crosses every other line.</p>
+<p><strong>Re-weighting.</strong> Across 300 moderate draws each commonwealth keeps most of its members in nearly every draw, but the exact three-way split reproduces in fewer than a third; the regions that move are Croatia, Slovenia, Ibero-America, Romania, the Baltic states and Poland.</p>
+<p><strong>Leaving facets out.</strong> Without the calendar the West–East line falls apart. Without Confession or Script alone it holds, because each carries most of the other. Without Legal family, Family &amp; kinship, Learning, Individualism or Foodways, Croatia and Slovenia return to the West; without Art, Ibero-America does.</p>
+<p><strong>Hand-drawn regions.</strong> Rerun without them, every region stays put except at the Romance flank: without Italy's three, Ibero-America moves west; without all fourteen, Spain and Portugal move east.</p>
+<p><strong>Birthright alone.</strong> It groups temperate Europe with the Anglosphere, sets Ibero-America apart, and runs a Mediterranean cluster from Lisbon through Cagliari, Naples, Tirana and Athens to Jerusalem — Latin, Byzantine and Hebraic regions together, matching no church, alphabet, legal or language boundary.</p>
+<p><strong>Influence.</strong> Legal family leads because common law puts Dublin with Sydney and civil law puts Paris with Moscow, crossing every other line. Family, learning, trust and individualism have large voices but little influence: their variation is spread across every pair rather than concentrated on one boundary.</p>
+</details>
 <details class="more"><summary>Full specification of each test</summary>
 <div class="math"><ol>
 <li><b>Other voices.</b> Equal voices; the version 1.3 agreement-based weights, on raw and on scaled distances; the transmitted facets alone; the version 1.5 facets alone, measured, with the four new facets given no voice; the facets without the two present-day surveys; and each facet left out in turn.</li>
@@ -678,6 +683,7 @@ table.matrix th{white-space:normal;vertical-align:bottom;line-height:1.15}
 <li><b>Prediction.</b> The test that could most plainly have failed. For each facet in turn, that facet and every facet agreeing with it at r ≥ 0.5 are left out, the regions are clustered on the rest and read into three groups as usual, and the facet left out is checked against those groups. Its gap — the mean distance between regions in different groups minus the mean within one — is compared with the gap for 999 random groupings of the same sizes, from seed 21. Because neighbours resemble one another for reasons that need not be inheritance, the test is run a second time net of nearness: the facet's distances are regressed on the logarithm of the great-circle distance between the regions' population centres and on whether they fall in different groups, and the second coefficient is tested by permuting the residuals across regions (the Freedman–Lane procedure). A facet counts as predicted only if both p-values are under 0.05.</li>
 </ol></div>
 </details>
+<div class="note"><strong>On the numbers.</strong> Ancestry proportions are rounded approximations drawn from published three-way models (Lazaridis 2014; Haak 2015; Olalde 2018; Patterson 2022) and move several points with reference panel and method. Finland and Russia carry a further Uralic and Siberian component not shown; the Ashkenazi farmer share includes Levantine ancestry; the settler societies and Ibero-America are given their founder populations' European signature only; Israel's figures are especially rough, because Mizrahi and Ashkenazi ancestry do not decompose cleanly into the three European components. Balkan figures in particular are coarse. Geographic descent carries its own warning above. Foodways figures are national and current, from the WHO (2024) and the FAO food balance sheets (2013). Trust and individualism are survey scores of the present day; schooling and books are reconstructions; the Ethnographic Atlas codes one society per region where it codes any. Regions inside a country share its national figures, and the Ashkenazim, a people without a state, have none of the measured ones. Boundaries are Natural Earth. Read the ordering, not the digits.</div>
 <h4>Methodological risks</h4>
 <ol class="risks">
 <li><b>Two facets are surveys of the present.</b> Trust and individualism rise with wealth and the rule of law; without them Croatia, Slovenia, Romania and Ibero-America move West.</li>
@@ -988,6 +994,7 @@ table.matrix th{white-space:normal;vertical-align:bottom;line-height:1.15}
 <p class="kicker">What a region actually eats and drinks, measured rather than coded</p>
 <p>Every other transmitted facet is coded by judgement from the historical sources. This one is measured from official statistics, and it has three parts. <strong>Drink</strong>: the share of all alcohol drunk as beer, as wine and as spirits, from the World Health Organization's 2024 report, averaged over 2017 to 2019 — the measure behind the old "drinking belts" of Europe. <strong>Fat</strong>: the share of fat calories from animal fat — butter, lard, tallow — against vegetable oil, from the FAO's food balance sheets. <strong>Starch</strong>: how starch calories divide between wheat, maize, rice, other cereals such as rye, oats and barley, and potatoes and other roots, from the same tables. Each part is a composition, compared by the Hellinger distance, and the facet is their average.</p>
 <p>The map colours each region along the main axis of the three together. One end is the Baltic table — rye, potatoes, animal fat and spirits, in Latvia, Poland and Lithuania. The other is vegetable oil with either wine, as in Italy and Iberia, or maize, as in Moldova, Bosnia and Ibero-America. Each region's card gives its own figures.</p>
+<figure class="fdv" id="foodviz" aria-label="Diet and drink by country: alcohol by beverage, fat by source and starch by staple, as shares"></figure>
 <h4>Dialectics</h4>
 <div class="contrast"><span class="cn">The olive and the border of Rome.</span> The vine and the olive spread with the Roman provinces. Today the three countries where wine is most of all the alcohol drunk — Italy, Portugal and France — are all Romance-speaking, while spirits lead across the Slavic and Baltic east. The line has blurred, and Swedes now drink more wine than Spaniards, but its outline is still the Roman frontier.</div>
 <h4>Why it is included</h4>
@@ -1761,6 +1768,32 @@ var FOODAX=(function(){var u=R.map(function(_,k){return k}).filter(function(k){r
  /* orient the axis so that regions eating more animal fat sit at the low end */
  var cw=0;u.forEach(function(k,ii){cw+=v[ii]*(FOOD[R[k][0]].fat[0]-30)});if(cw>0)v=v.map(function(x){return -x});
  var lo=Math.min.apply(null,v),hi=Math.max.apply(null,v),out={};u.forEach(function(k,ii){out[R[k][0]]=(v[ii]-lo)/(hi-lo)});return out})();
+/* Foodways chart: one row per country, three 100% bars (drink, fat, starch), ordered along the map's axis. Each colour set is checked for colour-blind separation on both surfaces */
+(function(){var el=document.getElementById("foodviz");if(!el)return;
+ /* ten colours, none repeated; within each bar every neighbouring pair is checked for colour-blind separation. [label, colour, index in the data] */
+ var COLS=[["drink","Drink",[["Beer","#c98500",0],["Wine","#b8325a",1],["Spirits","#2a78d6",2]]],
+  ["fat","Fat",[["Animal","#e26852",0],["Vegetable oil","#3f7020",1]]],
+  ["staple","Starch",[["Roots","#7c7ce0",4],["Wheat","#6aa83f",0],["Maize","#c369b4",1],["Other cereals","#873ca5",3],["Rice","#18a3bf",2]]]];
+ var seen={},rows=[];R.forEach(function(d){var F=FOOD[d[0]];if(!F||seen[F.src])return;seen[F.src]=1;
+  rows.push({n:F.src.indexOf("Ibero-America")===0?"Ibero-America":F.src,F:F,ax:FOODAX[d[0]]})});
+ rows.sort(function(a,b){return a.ax-b.ax});
+ function r0(v){return Math.round(v)}
+ var h='<div class="fdk">'+COLS.map(function(c){return '<div><b>'+c[1]+'</b>'+c[2].map(function(k){return '<span><i style="background:'+k[1]+'"></i>'+k[0]+'</span>'}).join("")+'</div>'}).join("")+'</div>'+
+  '<div class="fdg"><div><div></div>'+COLS.map(function(c){return '<div class="fdh">'+c[1]+'</div>'}).join("")+'</div>';
+ rows.forEach(function(r,ri){h+='<div class="fdr" tabindex="0" data-r="'+ri+'"><div class="fdn"><i style="background:'+fcol(r.ax)+'"></i>'+r.n+'</div>'+
+  COLS.map(function(c){return '<div class="fdb">'+c[2].map(function(k){var v=r.F[c[0]][k[2]];return v>0.05?'<span style="flex:'+v.toFixed(2)+' 1 0;background:'+k[1]+'"></span>':''}).join("")+'</div>'}).join("")+'</div>'});
+ h+='</div>';
+ h+='<div class="fdtip" role="tooltip"></div><figcaption>Each country\'s alcohol by beverage, fat calories by source and starch calories by staple (WHO 2017–19; FAO 2013). Rows run along the map\'s axis, from the animal-fat end at the top to the vegetable-oil end at the bottom; the dot is the map colour. Sub-national regions share their country\'s row.</figcaption>';
+ el.innerHTML=h;
+ var tip=el.querySelector(".fdtip"),on=null;
+ function show(row){var r=rows[+row.dataset.r];if(on)on.classList.remove("on");on=row;row.classList.add("on");
+  tip.innerHTML='<b>'+r.n+'</b>'+COLS.map(function(c){return '<br><span class="s">'+c[1]+':</span> '+c[2].map(function(k){return k[0]+' '+r0(r.F[c[0]][k[2]])+'%'}).join(", ")}).join("");
+  var b=row.getBoundingClientRect(),e=el.getBoundingClientRect();tip.style.display="block";
+  var x=Math.min(b.left-e.left,e.width-tip.offsetWidth);tip.style.left=Math.max(0,x)+"px";tip.style.top=(b.bottom-e.top+6)+"px"}
+ function hide(){tip.style.display="none";if(on)on.classList.remove("on");on=null}
+ el.querySelectorAll(".fdr").forEach(function(row){row.addEventListener("mouseenter",function(){show(row)});row.addEventListener("focus",function(){show(row)});
+  row.addEventListener("click",function(){on===row?hide():show(row)});row.addEventListener("blur",hide)});
+ el.querySelector(".fdg").addEventListener("mouseleave",hide)})();
 /* ---------- The commonwealths and sub-groups, read off the tree this page computes ---------- */
 var CWN=["Latin Roman West","Byzantine East","Hebraic Jews"];
 var CWB={"Latin Roman West":"#2F6B5E","Byzantine East":"#9C6A1E","Hebraic Jews":"#5A4A8A"};
@@ -1954,33 +1987,6 @@ function drawMatrix(){var rows=sorted();
  el.innerHTML="Sorted by <b>"+F.head+"</b>, which collapses to its floor of <b>"+floorOf(sortBy)+"</b> blocks. "+FACETS.filter(function(f){return f.id!==sortBy}).map(function(f){return f.head+" breaks into <b>"+runs(rows,f.id)+"</b> (floor "+floorOf(f.id)+")"}).join(", ")+"."}
 document.getElementById("mhead").addEventListener("click",function(e){var th=e.target.closest("th");if(!th)return;sortBy=th.dataset.s;drawMatrix()});
 
-/* ten pairs worth a closer look. Whether two regions are the same, close or split on each facet is read from the data as the page computes it;
-   the notes say why, where the sources can */
-var PAIRS=[
- {a:"ISR",b:"ASH",n:{con:"Both Judaism; a fifth of Israel's population is Muslim",scr:"Both in Hebrew letters, Modern Hebrew and Yiddish alike",cal:"Neither keeps a Christmas, and both keep the Jewish holy days",lang:"Modern Hebrew, a Semitic language, and Arabic and Russian, against Yiddish, a West Germanic one",leg:"A mixed state system against halakha with no state behind it",gd:"Mediterranean Levant against the mixed forests of the Pale of Settlement"},
-  t:"A people without a state has no food balance sheet, no values survey, no consanguinity study and no row in the Ethnographic Atlas, so the Ashkenazim can be compared on eight facets only. The state did not simply inherit the diaspora's culture; it replaced part of it by decision. In the 1913 language war Hebrew beat German as the medium of the new Technion, and the young state then pushed Yiddish aside in favour of revived Hebrew. The two are further apart than many pairs in different commonwealths, yet they still join each other before they join anyone else."},
- {a:"AUT",b:"FRA",n:{bio:"Ancestry 33-50-17 against 32-52-16, the same population to within measurement error",lang:"West Germanic against Romance",civ:"Half of Austrians say most people can be trusted, a quarter of the French",ind:"France scores well above Austria on individualism, 71 against 55",cal:"The Christ Child against Père Noël, and Austria's Catholic feast days by law against France's shorter list"},
-  t:"Language splits them, and the calendar, trust and individualism part them less sharply; ancestry, landscape, confession, law, family and art do not. Austria is further from Ireland on ancestry than from France. The Germanic–Romance divide is a language and kitchen boundary, not a deep unit."},
- {a:"UKR",b:"RUS",n:{lang:"Ukrainian and Russian, both East Slavic; nearly a third of Ukraine's people gave Russian as their first language",cal:"Ukraine moved Christmas to 25 December by law in 2023 and keeps Orthodox Easter and Pentecost; Russia keeps only the Julian Christmas among its holidays",con:"Both Orthodox",scr:"Both Cyrillic"},
-  t:"On almost every facet the two are close. The calendar is the exception, and it is recent: a law of 2023. Facets measure what is, not what a state intends, so this one will move as the decision takes hold or is reversed."},
- {a:"CRO",b:"SRB",n:{lang:"Croatian and Serbian, one South Slavic language by the linguists' test",con:"Catholic against Orthodox, as far apart as two Christian traditions get",scr:"Latin letters against both alphabets: one language, written two ways",art:"Gothic and Baroque against Baroque alone",cal:"No shared statutory holiday of the church year, Father Christmas on Christmas Eve against Grandfather Frost and the Julian Christmas",fam:"Both east of the Hajnal line; the Serbs' extended households and patrilineal descent are the more intensive",civ:"Low on both, 14 and 16 per cent"},
-  t:"The sharpest change in version 1.6. On art and the calendar the two are far apart — on the calendar as far apart as any two regions can be. On the alphabet they are only partly apart, since Serbia writes in both; on language, law, family, trust and individualism they are close, and on the headline voices those outweigh the church. Version 1.5 put them in different commonwealths; since version 1.6 they sit together. Which half a reader thinks matters more decides where Croatia belongs."},
- {a:"ROM",b:"MOL",n:{lang:"The same language, Romanian, under two names; Moldova has Russian, Ukrainian and Gagauz minorities",con:"Both Orthodox",scr:"Both in Latin letters — Moldova only since 1989",learn:"Romania has had a university since 1581, Moldova since 1946",art:"Baroque crossed the Carpathians into Transylvania and the Banat; Moldova built neither"},
-  t:"Two states, one people by language and church. What splits them is the calendar, and what Moldova did not inherit: the Habsburg lands' Baroque and, less sharply, an older university."},
- {a:"POL",b:"BLR",n:{con:"Latin Catholic against Orthodox",scr:"Latin letters against Cyrillic",lang:"West Slavic against East Slavic",fam:"Poland sits astride the Hajnal line, Belarus east of it",civ:"Belarusians say they trust others more than Poles do, 40 per cent against 24",cal:"The Gregorian Christmas Eve against the Julian Christmas"},
-  t:"Neighbours with the same ancestry and landscape, divided by the church line. Trust runs the other way from what the church line would predict."},
- {a:"EST",b:"LAT",n:{lang:"Estonian, a Uralic language, against Latvian, a Baltic one",con:"Lutheran and Orthodox shares close to even in both, with a Catholic third in Latvia's east",ind:"Latvia the more individualist, 70 against 60"},
-  t:"Neighbours with the same ancestry, landscape, family and art, in different language families. Only language separates them, and the clustering puts them together."},
- {a:"QUE",b:"CAN",n:{lang:"Mostly French against mostly English",leg:"The Civil Code of Québec in private law against the common law",art:"New France built Baroque; English Canada's Gothic is nineteenth-century revival",cal:"Québec keeps Saint-Jean-Baptiste on midsummer's day"},
-  t:"The two share every national figure — trust, food, schooling — because the surveys are Canadian. Where the atlas has Québec's own figures, they split on law and art and part on language and the calendar, and they still cluster together."},
- {a:"GRE",b:"RUS",n:{bio:"Farmer-rich against steppe-rich, about as far apart as Europe gets",gd:"Mediterranean scrub against mixed forest",con:"Both Orthodox",scr:"Greek letters against Cyrillic, which Greek missionaries built from them",cal:"Greece keeps Christmas on 25 December by the revised calendar and a Greek Orthodox year of holidays; Russia keeps the Julian Christmas and no other church holiday by law"},
-  t:"Both Orthodox, both east of the Hajnal line, both low on trust: they share the commonwealth, but on ancestry, landscape, alphabet and calendar they are far apart. Russia took its faith and its letters from Byzantium; it did not take Greece's climate or ancestry."},
- {a:"SAR",b:"ASH",n:{bio:"Close: two of the three most farmer-rich populations in the atlas, with Israel",con:"Catholic against Jewish",lang:"Sardinian and Italian against Yiddish"},
-  t:"Nearest neighbours on ancestry, as far apart as the atlas allows on almost every transmitted facet that can be compared. Ancestry does not carry culture."}
-];
-function pairStatus(f,i,j){var v=LA.d[f][i][j];return v!==v?"na":(v===0?"same":(v<0.5?"near":"diff"))}
-var PSTAT={same:"same",near:"close",diff:"split",na:"no data"};
-document.getElementById("pairs").innerHTML=PAIRS.map(function(p){var i=LA.IDX[p.a],j=LA.IDX[p.b];return '<div class="pair"><h3>'+R[i][1]+' and '+R[j][1]+'</h3><ul class="marks">'+FACETS.map(function(F){var st=pairStatus(F.id,i,j);return '<li class="'+st+'">'+F.head+': '+PSTAT[st]+'</li>'}).join("")+'</ul><p>'+FACETS.filter(function(F){return p.n[F.id]}).map(function(F){return '<strong>'+F.head+'.</strong> '+p.n[F.id]+'.'}).join(" ")+' '+p.t+'</p><p style="margin:-2px 0 6px"><a href="#compare" class="tocmp" data-a="'+p.a+'" data-b="'+p.b+'">Compare side by side in Plate V</a></p></div>'}).join("");
 
 
 function cwOf(u){return CW[CWU[u]][0]}
@@ -2382,9 +2388,7 @@ function cmpInit(){var opts=CWN.map(function(g){return '<optgroup label="'+g+'">
  var a=document.getElementById("cmpA"),b=document.getElementById("cmpB");a.innerHTML=opts;b.innerHTML=opts;a.value=cmpA;b.value=cmpB;
  a.addEventListener("change",function(){cmpA=a.value;cmpDraw()});b.addEventListener("change",function(){cmpB=b.value;cmpDraw()});
  document.getElementById("cmpSwap").addEventListener("click",function(){var t=cmpA;cmpA=cmpB;cmpB=t;a.value=cmpA;b.value=cmpB;cmpDraw()});
- document.getElementById("pairs").addEventListener("click",function(e){var q=e.target.closest(".tocmp");if(!q)return;e.preventDefault();cmpSet(q.dataset.a,q.dataset.b);document.getElementById("compare").scrollIntoView({behavior:"smooth"})});
  cmpDraw()}
-function cmpSet(x,y){cmpA=x;cmpB=y;document.getElementById("cmpA").value=x;document.getElementById("cmpB").value=y;cmpDraw()}
 var ALLD=null;
 function cmpDraw(){var A=BYC[cmpA],B=BYC[cmpB],i=LA.IDX[cmpA],j=LA.IDX[cmpB];
  if(!ALLD)ALLD=LA.P.map(function(p){return LA.D(p[0],p[1])}).sort(function(a,b){return a-b});
