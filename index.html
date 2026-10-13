@@ -71,6 +71,7 @@ h1{font-weight:600;font-size:clamp(29px,7.2vw,42px);line-height:1.08;margin:0 0 
 h2{font-weight:600;font-size:22px;margin:50px 0 6px;padding-top:14px;border-top:2px solid var(--rule)}
 .sub{font-family:'Barlow Semi Condensed','Arial Narrow',Arial,sans-serif;font-size:14.5px;color:var(--soft);margin:0 0 16px}
 h3{font-weight:600;font-size:17px;margin:22px 0 5px}
+.cycle{margin:18px auto 22px;max-width:560px}.cycle svg{display:block;width:100%;height:auto}.cycle .cyh{font-family:'Spectral',Georgia,serif;font-size:19px;font-weight:600;fill:var(--ink)}.cycle .cyl{font-family:'Barlow Semi Condensed','Arial Narrow',Arial,sans-serif;font-size:17px;font-weight:600}.cycle .cys{font-family:'Barlow Semi Condensed','Arial Narrow',Arial,sans-serif;font-size:16px;fill:var(--soft)}.cycle figcaption{font-family:'Barlow Semi Condensed','Arial Narrow',Arial,sans-serif;font-size:14px;color:var(--soft);text-align:center;margin-top:6px}
 h4{font-family:'Barlow Semi Condensed','Arial Narrow',Arial,sans-serif;font-size:14px;letter-spacing:.03em;color:var(--soft);font-weight:600;margin:22px 0 8px;padding-bottom:4px;border-bottom:1px solid var(--edge)}
 
 .tabs{display:flex;flex-wrap:wrap;gap:5px;margin:0 0 12px}
@@ -415,6 +416,31 @@ table.matrix th{white-space:normal;vertical-align:bottom;line-height:1.15}
 <p><strong>How the sub-national regions were drawn, and why that matters.</strong> The splits inside Germany, Italy, the United Kingdom, Ukraine and Canada were drawn by hand before any clustering, following historic confessional, legal and linguistic boundaries that were already known to differ. That risks circularity: an atlas that claims to derive cultural regions should not assume them. Two consequences follow. First, the result was tested without them: leaving out each country's split regions, or all fourteen at once, leaves the remaining regions where they were, except that without Italy's three Spain and Portugal move (see Testing stability). These are also the regions that take their country's survey and food figures, so the same test covers that. Second, the regions themselves should be derived rather than drawn; that is the next revision.</p>
 <h4>Facets</h4>
 <p>Each unit is scored on thirteen facets, in two kinds. <strong>Birthright facets</strong> are fixed by factors outside anyone's will and cannot be taken up or lost. <strong>Transmitted facets</strong> are handed down through institutions and households and taken up, or refused, by each generation — the test of peoplehood Heidegger sets out in <em>Being and Time</em> §74. The distinction can be tested, so it is: the clustering is run with the birthright facets included, and again with them weighted at zero. The facets are listed in no order of importance; the method below decides how much each one counts. Every facet now rests on a published measurement or a documented classification, named under its category.</p>
+<p><strong>The two kinds are not sealed off from each other.</strong> Nature and nurture turn in a cycle, and neither can be said to come first. Descent carries culture: the steppe herders who arrived from about 3000&nbsp;BCE brought Indo-European speech with them, and the Ashkenazim carried Yiddish and halakha for centuries by marrying within the community. Culture in turn shapes descent. Peoples who herded cattle and drank milk selected for the variant that lets adults digest it, which is why lactase persistence is commonest in north-western Europe. Rules of marriage, from the Church's cousin bans to every community's endogamy, decided who had children with whom, and confessional lines have left a measurable trace in ancestry: in the Netherlands, Catholic and Protestant populations are still genetically distinguishable. Over the long run, one generation's birthright is partly what earlier generations transmitted.</p>
+<figure class="cycle">
+<svg viewBox="0 0 560 256" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diagram: birthright and transmission in a cycle. Descent carries culture through migration and endogamy; culture selects and channels descent through diet and marriage rules. A person is born at one turn of the cycle.">
+<defs>
+<marker id="cyA" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" style="fill:var(--verdigris)"/></marker>
+<marker id="cyB" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" style="fill:var(--madder)"/></marker>
+</defs>
+<path d="M120,84 C190,40 370,40 440,84" style="fill:none;stroke:var(--verdigris);stroke-width:2.2" marker-end="url(#cyA)"/>
+<path d="M440,170 C370,214 190,214 120,170" style="fill:none;stroke:var(--madder);stroke-width:2.2" marker-end="url(#cyB)"/>
+<text x="280" y="20" text-anchor="middle" class="cyl" style="fill:var(--verdigris)">descent carries culture</text>
+<text x="280" y="40" text-anchor="middle" class="cys">migration, endogamy</text>
+<text x="280" y="234" text-anchor="middle" class="cyl" style="fill:var(--madder)">culture selects and channels descent</text>
+<text x="280" y="252" text-anchor="middle" class="cys">diet, marriage rules</text>
+<rect x="8" y="90" width="164" height="74" rx="4" style="fill:var(--paper-deep);stroke:var(--edge)"/>
+<text x="90" y="121" text-anchor="middle" class="cyh">Birthright</text>
+<text x="90" y="144" text-anchor="middle" class="cys">ancestry, landscape</text>
+<rect x="388" y="90" width="164" height="74" rx="4" style="fill:var(--paper-deep);stroke:var(--edge)"/>
+<text x="470" y="121" text-anchor="middle" class="cyh">Transmission</text>
+<text x="470" y="144" text-anchor="middle" class="cys">language, faith, law</text>
+<circle cx="280" cy="120" r="5" style="fill:var(--ink)"/>
+<text x="280" y="146" text-anchor="middle" class="cys">a person, born at one turn</text>
+</svg>
+<figcaption>Over millennia, birthright and transmission make each other. Within one life they do not: ancestry is settled at conception, and only the transmitted facets can still be taken up or refused.</figcaption>
+</figure>
+<p>What the atlas separates, then, is the scale, not the origin. For a person, ancestry is settled at conception and the landscape at birth, while the transmitted facets are what that person can still take up or refuse. Heidegger's test is a test of that position, and the switch-off test asks only which kind draws the present lines, not which came first. The data show the cycle where it should appear: the one transmitted facet that tracks ancestry is Foodways. (Laland, Odling-Smee and Myles, "How culture shaped the human genome", <em>Nature Reviews Genetics</em>, 2010; Gerbault et al., "Evolution of lactase persistence", <em>Philosophical Transactions of the Royal Society B</em>, 2011; Byrne et al., "Dutch population structure across space, time and GWAS design", <em>Nature Communications</em>, 2020.)</p>
 <div class="mwrap" style="border:none"><table class="wt meth">
 <thead><tr><th>Facet</th><th>Kind</th><th>What is measured, and from where</th><th>Values</th></tr></thead>
 <tbody>
