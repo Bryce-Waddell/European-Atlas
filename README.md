@@ -1,2 +1,2 @@
 # European-Atlas
-To aggregate, cluster, and define all traits of the European Peoplehood
+Identify and define indicators of European Culture and Peoplehood
