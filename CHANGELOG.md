@@ -4,6 +4,59 @@ All notable changes to the Atlas of European Collectives.
 Format: [Keep a Changelog](https://keepachangelog.com/). Versioning: [SemVer](https://semver.org/).
 MAJOR = the findings change; MINOR = a facet, region or section is added; PATCH = corrections, wording, styling.
 
+## [1.7.5] - 2026-10-20
+### Changed
+- The version history moves out of the page footer into this file; the footer keeps a one-line version stamp linking here.
+
+## [1.7.4] - 2026-10-20
+### Changed
+- Latin Christian Commonwealth identity: shield-and-orbit crest, cross-potent favicon and app icons, new link-preview image.
+- Palette of parchment, cardinal, gold leaf and royal blue; blackletter title, EB Garamond headings, Libre Baskerville body; fonts self-hosted.
+- Celestial ornaments: night-sky menu bar, starred section rules, an arcade of stars under the title, a starfield in dark mode.
+- Clearer hover, selection and focus states on tabs and controls; the menu marks the section being read.
+
+## [1.7.3] - 2026-10-15
+### Changed
+- Biological facet: the hunter-gatherer component dated to its post-glacial spread, about 14,000 years ago, rather than the first arrival of modern humans.
+### Added
+- A new contrast, Share is not contribution, from Reich's 2026 range-expansion hypothesis and the Bronze Age Iberian Y chromosomes.
+
+## [1.7.2] - 2026-10-12
+### Changed
+- The abstract opens with Fichte.
+- The page leads with the plates, with Methodology and the category cards after the conclusion.
+- Details collapsed behind toggles; each finding told once.
+
+## [1.7.1] - 2026-10-12
+### Changed
+- The commonwealths named for their inheritances: Latin Roman West, Byzantine East, Hebraic Jews.
+
+## [1.7.0] - 2026-10-12
+### Changed
+- Script a facet of its own again, compared on the alphabets' family tree.
+- Shorter legends.
+### Added
+- The other standard linkage rules, and a prediction test net of nearness, added to the stability tests.
+
+## [1.6.0] - 2026-10-09
+### Changed
+- Every facet measured or documented.
+- The Latin Roman facet split into Family & kinship, Learning and Civic trust, with Roman-law contract folded into Legal family.
+- Language and confession as measured shares on family trees.
+- Commonwealths renamed Western, Eastern and Hebraic.
+### Added
+- Individualism.
+- Statutory holidays in the calendar.
+- Plate III: each facet alone, and the result assembled facet by facet.
+
+## [1.5.0] - 2026-10-09
+### Changed
+- Script folded into Confession.
+- Voices discounted for redundancy.
+### Added
+- Foodways and Festive calendar.
+- Buildings on the Art plate.
+
 ## [1.4.0] - 2026-10-02
 ### Changed
 - Plate III method: every facet scaled to equal spread and given an equal voice; v1.3's agreement-based weights kept only as a robustness check. The three commonwealths are unchanged; the Latin sub-groups change.
