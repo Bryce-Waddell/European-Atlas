@@ -4,6 +4,10 @@ All notable changes to the Atlas of European Collectives.
 Format: [Keep a Changelog](https://keepachangelog.com/). Versioning: [SemVer](https://semver.org/).
 MAJOR = the findings change; MINOR = a facet, region or section is added; PATCH = corrections, wording, styling.
 
+## [1.7.10] - 2026-10-20
+### Changed
+- Favicons and app icons become a brass compass: a deep-blue dial, a red-and-ivory needle and a brass bezel, detailed with a gold rose, degree ticks and N, E, S, W at the large sizes and simplified for browser tabs. The mark beside the site name in the top bar matches.
+
 ## [1.7.9] - 2026-10-20
 ### Changed
 - The motto ribbon is removed from the crest, on the page and in the link-preview image.
