@@ -4,6 +4,10 @@ All notable changes to the Atlas of European Collectives.
 Format: [Keep a Changelog](https://keepachangelog.com/). Versioning: [SemVer](https://semver.org/).
 MAJOR = the findings change; MINOR = a facet, region or section is added; PATCH = corrections, wording, styling.
 
+## [1.7.6] - 2026-10-20
+### Changed
+- The method and frame references move from the page footer to a References list at the end of Methodology; the footer's Sources line points there.
+
 ## [1.7.5] - 2026-10-20
 ### Changed
 - The version history moves out of the page footer into this file; the footer keeps a one-line version stamp linking here.
