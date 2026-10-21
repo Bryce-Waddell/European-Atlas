@@ -4,6 +4,10 @@ All notable changes to the Atlas of European Collectives.
 Format: [Keep a Changelog](https://keepachangelog.com/). Versioning: [SemVer](https://semver.org/).
 MAJOR = the findings change; MINOR = a facet, region or section is added; PATCH = corrections, wording, styling.
 
+## [1.7.9] - 2026-10-20
+### Changed
+- The motto ribbon is removed from the crest, on the page and in the link-preview image.
+
 ## [1.7.8] - 2026-10-20
 ### Changed
 - The full crest replaces the shield mark: the imperial eagle on its gold shield in a night sky, with an orbit, a rocket rising toward a red planet, and the motto Per aspera ad astra. Larger on every screen; on phones it stacks above the title at up to 300 px. Link-preview image redrawn around it.
