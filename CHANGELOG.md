@@ -4,6 +4,10 @@ All notable changes to the Atlas of European Collectives.
 Format: [Keep a Changelog](https://keepachangelog.com/). Versioning: [SemVer](https://semver.org/).
 MAJOR = the findings change; MINOR = a facet, region or section is added; PATCH = corrections, wording, styling.
 
+## [1.7.7] - 2026-10-20
+### Changed
+- The page title is set in Grenze Gotisch, a blackletter–roman hybrid that reads at a glance; blackletter (UnifrakturMaguntia) stays only in the footer lockup and the link-preview image. Font self-hosted.
+
 ## [1.7.6] - 2026-10-20
 ### Changed
 - The method and frame references move from the page footer to a References list at the end of Methodology; the footer's Sources line points there.
