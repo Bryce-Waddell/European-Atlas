@@ -4,6 +4,11 @@ All notable changes to the Atlas of European Collectives.
 Format: [Keep a Changelog](https://keepachangelog.com/). Versioning: [SemVer](https://semver.org/).
 MAJOR = the findings change; MINOR = a facet, region or section is added; PATCH = corrections, wording, styling.
 
+## [1.7.11] - 2026-10-21
+### Changed
+- Blackletter retired from the last two places it remained: the footer lockup and the link-preview image now set the title in Grenze Gotisch, like the page title.
+- The link-preview image shows the brass compass in place of the crest.
+
 ## [1.7.10] - 2026-10-20
 ### Changed
 - Favicons and app icons become a brass compass: a deep-blue dial, a red-and-ivory needle and a brass bezel, detailed with a gold rose, degree ticks and N, E, S, W at the large sizes and simplified for browser tabs. The mark beside the site name in the top bar matches.
