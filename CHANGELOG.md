@@ -4,6 +4,10 @@ All notable changes to the Atlas of European Collectives.
 Format: [Keep a Changelog](https://keepachangelog.com/). Versioning: [SemVer](https://semver.org/).
 MAJOR = the findings change; MINOR = a facet, region or section is added; PATCH = corrections, wording, styling.
 
+## [1.7.12] - 2026-10-23
+### Changed
+- Philosophy: the paragraph on a universal moral code is rewritten to argue against the idea itself, without generalizing about or naming any group.
+
 ## [1.7.11] - 2026-10-21
 ### Changed
 - Blackletter retired from the last two places it remained: the footer lockup and the link-preview image now set the title in Grenze Gotisch, like the page title.
