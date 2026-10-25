@@ -4,6 +4,12 @@ All notable changes to the Atlas of European Collectives.
 Format: [Keep a Changelog](https://keepachangelog.com/). Versioning: [SemVer](https://semver.org/).
 MAJOR = the findings change; MINOR = a facet, region or section is added; PATCH = corrections, wording, styling.
 
+## [1.7.14] - 2026-10-25
+### Added
+- The evidence that cousin marriage is rare in the north-western and central European countries without a national survey: church law, measured neighbours, Finland's first-cousin counts (Ignatius 1995) and genomic runs of homozygosity (McQuillan et al. 2008), and the all-Czechoslovakia survey that covers Slovakia (Stevenson et al. 1966). No value is imputed and no calculation changes; the south-east and the East Slavic countries are stated as unknown.
+### Changed
+- Plate I region card: each facet's headline on its own line with the detail beneath, grouped into ancestry and setting and the transmitted facets, the facet on the map marked, the commonwealth shown with its colour, and a close button.
+
 ## [1.7.13] - 2026-10-25
 ### Changed
 - Family and kinship: a plain-language account of how the score is worked out, with live worked examples and a region-by-region table of cousin-marriage figures and their scores, stating which regions have none and how little the measure moves distances inside Europe.
