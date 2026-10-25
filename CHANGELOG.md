@@ -4,6 +4,12 @@ All notable changes to the Atlas of European Collectives.
 Format: [Keep a Changelog](https://keepachangelog.com/). Versioning: [SemVer](https://semver.org/).
 MAJOR = the findings change; MINOR = a facet, region or section is added; PATCH = corrections, wording, styling.
 
+## [2.0.0] - 2026-10-25
+### Changed
+- Slovakia's cousin-marriage figure enters the family facet: 0.2 per cent, from Bittles's Europe table (all Czechoslovakia, 1961-64; Stevenson et al. 1966), the survey behind Czechia's. 25 of 54 regions now have a figure.
+- Findings that move: the exact three-way split recurs in 88 of 300 moderate re-weightings (was 90); commonwealth stability 0.84 to 0.97 (was 0.83 to 0.97), Latin Roman West 0.92, Byzantine East 0.84; six facet pairs now agree at r ≥ 0.5, adding Script with Family & kinship; effective number of independent facets 6.7 (was 6.8). Family & kinship at its own best cut puts Slovakia with the regions east of the Hajnal line, so its intensive third band is the western Balkans and Israel.
+- Unchanged: the three commonwealths and their membership, the cophenetic correlation (0.84) and the shuffled-data test (p < 0.005).
+
 ## [1.7.14] - 2026-10-25
 ### Added
 - The evidence that cousin marriage is rare in the north-western and central European countries without a national survey: church law, measured neighbours, Finland's first-cousin counts (Ignatius 1995) and genomic runs of homozygosity (McQuillan et al. 2008), and the all-Czechoslovakia survey that covers Slovakia (Stevenson et al. 1966). No value is imputed and no calculation changes; the south-east and the East Slavic countries are stated as unknown.
