@@ -4,6 +4,11 @@ All notable changes to the Atlas of European Collectives.
 Format: [Keep a Changelog](https://keepachangelog.com/). Versioning: [SemVer](https://semver.org/).
 MAJOR = the findings change; MINOR = a facet, region or section is added; PATCH = corrections, wording, styling.
 
+## [1.7.13] - 2026-10-25
+### Changed
+- Family and kinship: a plain-language account of how the score is worked out, with live worked examples and a region-by-region table of cousin-marriage figures and their scores, stating which regions have none and how little the measure moves distances inside Europe.
+- Plate II family cells always show the cousin-marriage share, or n/a where there is no figure; region cards say when the figure is missing.
+
 ## [1.7.12] - 2026-10-23
 ### Changed
 - Philosophy: the paragraph on a universal moral code is rewritten to argue against the idea itself, without generalizing about or naming any group.
