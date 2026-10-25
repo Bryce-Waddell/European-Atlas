@@ -4,6 +4,10 @@ All notable changes to the Atlas of European Collectives.
 Format: [Keep a Changelog](https://keepachangelog.com/). Versioning: [SemVer](https://semver.org/).
 MAJOR = the findings change; MINOR = a facet, region or section is added; PATCH = corrections, wording, styling.
 
+## [2.0.1] - 2026-10-25
+### Changed
+- Philosophy: the opening paragraph rewritten on Aristotle's order of inquiry, the "that" (to hoti) before the "why" (to dioti).
+
 ## [2.0.0] - 2026-10-25
 ### Changed
 - Slovakia's cousin-marriage figure enters the family facet: 0.2 per cent, from Bittles's Europe table (all Czechoslovakia, 1961-64; Stevenson et al. 1966), the survey behind Czechia's. 25 of 54 regions now have a figure.
