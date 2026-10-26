@@ -4,6 +4,12 @@ All notable changes to the Atlas of European Collectives.
 Format: [Keep a Changelog](https://keepachangelog.com/). Versioning: [SemVer](https://semver.org/).
 MAJOR = the findings change; MINOR = a facet, region or section is added; PATCH = corrections, wording, styling.
 
+## [2.0.5] - 2026-10-26
+### Fixed
+- The top bar now meets the top edge of the screen in Safari on the open iPhone Duo. With Safari's toolbar collapsed, the bar hung about an inch down with the page showing through above it, because it was placed below the screen's top safe area; it now starts at the top and extends its background up through that area. The page no longer shifts when that area changes size.
+### Removed
+- The 2.0.4 pinning of the bar to the visible area, which did not address the cause. The ?vv readout stays.
+
 ## [2.0.4] - 2026-10-26
 ### Fixed
 - The top bar no longer slides off the top in Safari on the open iPhone Duo when scrolling down. Safari can move the visible area below the top of the page's layout while its toolbar collapses; the bar now follows the visible area.
