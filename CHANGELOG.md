@@ -4,6 +4,12 @@ All notable changes to the Atlas of European Collectives.
 Format: [Keep a Changelog](https://keepachangelog.com/). Versioning: [SemVer](https://semver.org/).
 MAJOR = the findings change; MINOR = a facet, region or section is added; PATCH = corrections, wording, styling.
 
+## [2.0.2] - 2026-10-26
+### Changed
+- Layout for the iPhone Duo and other foldables. Open (about 890 by 626, landscape), each map plate sits beside its facet buttons, legend and region card, as on a desktop, and the map is sized to fit the screen height; folding or unfolding mid-visit moves the legend to match. Folded (about 466 by 678) and in Split View (about 445 wide), the phone layout stays, with a smaller crest on short screens and the pinned legend capped at a third of the screen.
+- iOS: no automatic text enlargement in landscape; the burger menu, side panel and dropdowns size to the visible screen (dynamic viewport units); content and the top bar keep clear of side safe-area insets.
+- Unchanged: data, scores and findings, and the layout on ordinary phones, tablets and wide desktops. A desktop window 840 to 999 px wide now also gets the side-by-side plates.
+
 ## [2.0.1] - 2026-10-25
 ### Changed
 - Philosophy: the opening paragraph rewritten on Aristotle's order of inquiry, the "that" (to hoti) before the "why" (to dioti).
