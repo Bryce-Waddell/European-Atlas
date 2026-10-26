@@ -4,6 +4,12 @@ All notable changes to the Atlas of European Collectives.
 Format: [Keep a Changelog](https://keepachangelog.com/). Versioning: [SemVer](https://semver.org/).
 MAJOR = the findings change; MINOR = a facet, region or section is added; PATCH = corrections, wording, styling.
 
+## [2.0.4] - 2026-10-26
+### Fixed
+- The top bar no longer slides off the top in Safari on the open iPhone Duo when scrolling down. Safari can move the visible area below the top of the page's layout while its toolbar collapses; the bar now follows the visible area.
+### Added
+- Adding ?vv to the address shows a small readout of the viewport measurements, for diagnosing layout on a device.
+
 ## [2.0.3] - 2026-10-26
 ### Fixed
 - The top bar stays at the top while scrolling in Safari on the iPhone Duo. It is now fixed to the screen instead of sticky, and the page is offset by the bar's measured height, so nothing else moves.
