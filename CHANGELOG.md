@@ -4,6 +4,10 @@ All notable changes to the Atlas of European Collectives.
 Format: [Keep a Changelog](https://keepachangelog.com/). Versioning: [SemVer](https://semver.org/).
 MAJOR = the findings change; MINOR = a facet, region or section is added; PATCH = corrections, wording, styling.
 
+## [2.0.3] - 2026-10-26
+### Fixed
+- The top bar stays at the top while scrolling in Safari on the iPhone Duo. It is now fixed to the screen instead of sticky, and the page is offset by the bar's measured height, so nothing else moves.
+
 ## [2.0.2] - 2026-10-26
 ### Changed
 - Layout for the iPhone Duo and other foldables. Open (about 890 by 626, landscape), each map plate sits beside its facet buttons, legend and region card, as on a desktop, and the map is sized to fit the screen height; folding or unfolding mid-visit moves the legend to match. Folded (about 466 by 678) and in Split View (about 445 wide), the phone layout stays, with a smaller crest on short screens and the pinned legend capped at a third of the screen.
