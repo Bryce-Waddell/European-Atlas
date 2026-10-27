@@ -4,6 +4,10 @@ All notable changes to the Atlas of European Collectives.
 Format: [Keep a Changelog](https://keepachangelog.com/). Versioning: [SemVer](https://semver.org/).
 MAJOR = the findings change; MINOR = a facet, region or section is added; PATCH = corrections, wording, styling.
 
+## [2.0.7] - 2026-10-27
+### Changed
+- Philosophy: the critique is restructured around four Strauss–Howe lodestones (unrepresented government; the Civil War and slavery; the Second World War, the Holocaust and the Holodomor; supplantation). The penance paragraph now describes the lodestones hardened into civilizational dogmas of perpetual penance; the global market and the universal moral code fold into supplantation, alongside automation, atomization and falling fertility; the section closes with a call to take up the inheritances the plates measure.
+
 ## [2.0.6] - 2026-10-27
 ### Changed
 - Dates are given as BC and AD throughout, in place of BCE and CE.
