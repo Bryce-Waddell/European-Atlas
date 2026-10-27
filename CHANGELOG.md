@@ -4,6 +4,16 @@ All notable changes to the Atlas of European Collectives.
 Format: [Keep a Changelog](https://keepachangelog.com/). Versioning: [SemVer](https://semver.org/).
 MAJOR = the findings change; MINOR = a facet, region or section is added; PATCH = corrections, wording, styling.
 
+## [2.0.6] - 2026-10-27
+### Changed
+- Dates are given as BC and AD throughout, in place of BCE and CE.
+- The alphabet tree in Script now stands in the main text, after "Where the alphabets came from", instead of inside the "More" dropdown.
+- Both radial trees (Language and Script): the points are larger and each has a wide invisible target, names can be pointed at too, and the drawing is fitted to its frame so the tree fills it. Hovering, tapping or tabbing to a point opens a card, and its line back to the root and all its descendants light up while the rest fades. The card places itself where it hides least of that lineage. Tapping again or tapping elsewhere closes it; Escape closes it from the keyboard.
+### Added
+- Each point now carries a second fact beside its date. Language tree: the first written record and today's speakers (rounded first-language counts). Script tree: the number of letters and the earliest surviving text; adopting regions also give when they adopted the script.
+### Fixed
+- "Hover or tap a node for its date" did nothing on phones and little on desktops: the dates sat in SVG title tooltips, which touch screens never show and desktops show only after a delay over a 6-pixel dot. Most leaves had no date to show.
+
 ## [2.0.5] - 2026-10-26
 ### Fixed
 - The top bar now meets the top edge of the screen in Safari on the open iPhone Duo. With Safari's toolbar collapsed, the bar hung about an inch down with the page showing through above it, because it was placed below the screen's top safe area; it now starts at the top and extends its background up through that area. The page no longer shifts when that area changes size.

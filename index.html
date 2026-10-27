@@ -296,8 +296,28 @@ table.meth td:first-child{font-weight:600;white-space:nowrap}
 .tree svg{display:block;width:100%;min-width:600px;height:auto;color:var(--ink)}
 .tree text{font-family:'Barlow Semi Condensed','Arial Narrow',Arial,sans-serif;fill:var(--ink)}
 .tree .inl{font-size:11.5px;font-weight:600;paint-order:stroke;stroke:var(--paper-deep);stroke-width:3.5px;stroke-linejoin:round}
-.tree .lf{font-size:12.5px}
+.tree .lf{font-size:13px}
 .tree .caption{font-size:15.5px;color:var(--soft);margin:10px 0 0}
+.tree{position:relative}
+.tree .nd{cursor:pointer;outline:none}
+.tree .nd .hit{pointer-events:all}
+.tree .nd:hover .dot,.tree svg.hl .nd.on .dot{stroke:var(--ink);stroke-width:2}
+.tree .nd:focus-visible .dot{stroke:var(--focus);stroke-width:3}
+.tree text[data-i]{cursor:pointer}
+.tree svg .lk,.tree svg .nd,.tree svg text{transition:opacity .15s}
+.tree svg.hl .lk:not(.on){opacity:.15}
+.tree svg.hl .nd:not(.on),.tree svg.hl text:not(.on){opacity:.3}
+.tree svg.hl .lk.on{stroke-width:2.8;stroke-opacity:1}
+.tree svg.hl text.on{font-weight:700}
+.tree .thint{position:absolute;top:8px;left:10px;margin:0;font-family:'Barlow Semi Condensed','Arial Narrow',Arial,sans-serif;font-size:13px;color:var(--soft);pointer-events:none;transition:opacity .3s}
+.tree.used .thint{opacity:0}
+.tree .ttip{position:absolute;z-index:5;width:max-content;max-width:min(300px,calc(100% - 8px));background:var(--paper);color:var(--ink);border:1px solid var(--edge);border-left:3px solid var(--madder);box-shadow:0 6px 18px rgba(0,0,0,.2);padding:9px 12px 10px;font-family:'Barlow Semi Condensed','Arial Narrow',Arial,sans-serif;font-size:14.5px;line-height:1.35;pointer-events:none}
+.tree .ttip[hidden]{display:none}
+.tree .ttip b{display:block;font-size:16.5px;margin-bottom:5px}
+.tree .ttip dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:3px 10px}
+.tree .ttip dt{color:var(--soft);font-weight:600;font-size:11.5px;letter-spacing:.05em;text-transform:uppercase;padding-top:2px;white-space:nowrap}
+.tree .ttip dd{margin:0}
+.tree .ttip p{margin:6px 0 0;color:var(--soft);font-style:italic}
 table.matrix th{font-size:13px}
 table.matrix th:first-child{padding-left:8px}
 table.wt{border-collapse:collapse;width:100%;font-family:'Barlow Semi Condensed','Arial Narrow',Arial,sans-serif;font-size:15px}
@@ -870,9 +890,9 @@ body{padding-top:var(--navh,62px)}
 <p class="kicker">Ancient ancestral make-up: the blood half of blood and soil</p>
 <p>The Biological facet is measured by one thing, ancient ancestry, taken from the published ancient-DNA models that decompose every European population into three founding migrations.</p>
 <h4>The three founding populations</h4>
-<p>Almost everyone in Europe descends from the same three populations, in different proportions. Modern humans first reached Europe about 45,000 years ago, but those earliest groups left little or no ancestry in anyone alive today. <strong>Western hunter-gatherers</strong>, the first of the three, descend from populations that spread across the continent after the last Ice Age, from about 14,000 years ago. <strong>Anatolian farmers</strong> arrived out of what is now Turkey from about 7000 BCE with agriculture, pottery and permanent settlement, and largely absorbed them. <strong>Yamnaya steppe herders</strong> arrived from the Pontic-Caspian grasslands from about 3000 BCE with Indo-European speech, horses and wheeled carts, in a movement so male-biased that in Britain the Beaker horizon replaced roughly ninety per cent of the gene pool within a few centuries.</p>
+<p>Almost everyone in Europe descends from the same three populations, in different proportions. Modern humans first reached Europe about 45,000 years ago, but those earliest groups left little or no ancestry in anyone alive today. <strong>Western hunter-gatherers</strong>, the first of the three, descend from populations that spread across the continent after the last Ice Age, from about 14,000 years ago. <strong>Anatolian farmers</strong> arrived out of what is now Turkey from about 7000 BC with agriculture, pottery and permanent settlement, and largely absorbed them. <strong>Yamnaya steppe herders</strong> arrived from the Pontic-Caspian grasslands from about 3000 BC with Indo-European speech, horses and wheeled carts, in a movement so male-biased that in Britain the Beaker horizon replaced roughly ninety per cent of the gene pool within a few centuries.</p>
 <div id="ternary"></div>
-<p>The mixture was essentially settled by 2000 BCE. Everything the transmitted facets describe is Iron Age at the earliest and mostly medieval, which puts this facet three millennia too early to be causing any of it.</p>
+<p>The mixture was essentially settled by 2000 BC. Everything the transmitted facets describe is Iron Age at the earliest and mostly medieval, which puts this facet three millennia too early to be causing any of it.</p>
 <h4>Dialectics</h4>
 <div class="contrast"><span class="cn">Punjab.</span> Steppe ancestry is not a European property. Narasimhan and colleagues traced the same Bronze-Age steppe component into South Asia, where it is substantial in Indo-Aryan-speaking populations. A Norwegian and a Punjabi share an ancestral source that a Sardinian largely lacks. If this facet defined a people, that people would run from Bergen to Bengal.</div>
 <div class="contrast"><span class="cn">Share is not contribution.</span> A population that moves into occupied land and interbreeds even slightly at its leading edge absorbs local genes as it advances, until it is mostly local itself. Reich (2026) argues that this is how the Neanderthals formed. An early modern human population spread into Europe about 300,000 years ago and ended only 3 to 7 per cent modern by ancestry. Yet it kept its mitochondrial and Y-chromosome lineages whole, and it may have carried Levallois tools, controlled fire, ochre and hafting across the continent. Bronze Age Iberia shows the same signature on a smaller scale: steppe-related ancestry reached about 40 per cent of the genome, while the Y chromosomes were replaced almost entirely. This facet measures share. It cannot say whose ways were handed on, and that is the question every other facet asks.</div>
@@ -885,7 +905,7 @@ body{padding-top:var(--navh,62px)}
 <p>Ancestry shares are compositional: they must sum to one hundred, so a rise in one component forces a fall elsewhere, and ordinary distances between percentages are distorted, worst near zero. The standard treatment, due to John Aitchison, is to take the centred log-ratio of the three shares and measure distance in that space; that is the Biological distance used in the clustering. For the maps, each region is placed on the main axis of variation in those log-ratios — in practice a gradient from farmer-rich to steppe-rich — and coloured along it, dark for farmer-rich, pale blue for steppe-rich.</p>
 <p>An earlier version also measured phenotype, eye colour and stature, as a second sub-division. It was dropped because its figures were the softest in the atlas, and because stature measures nutrition as much as descent: Dutch men gained twenty centimetres in five generations on an unchanged gene pool.</p>
 <h4>Further cases</h4>
-<div class="contrast"><span class="cn">Ötzi and the Sardinians.</span> The Iceman, who died in the Alps around 3300 BCE, clusters genetically with modern Sardinians. Sardinia is the closest living population to the Neolithic farmers, which makes it the most genetically continuous place in Europe — and the least steppe. Whatever "deep European" means, it points at Cagliari, not Uppsala.</div>
+<div class="contrast"><span class="cn">Ötzi and the Sardinians.</span> The Iceman, who died in the Alps around 3300 BC, clusters genetically with modern Sardinians. Sardinia is the closest living population to the Neolithic farmers, which makes it the most genetically continuous place in Europe — and the least steppe. Whatever "deep European" means, it points at Cagliari, not Uppsala.</div>
 <h4>Sources</h4>
 <div class="srcs"><ul><li>Aitchison, <em>The Statistical Analysis of Compositional Data</em> (1986)</li><li>Lazaridis et al., "Ancient human genomes suggest three ancestral populations for present-day Europeans", <em>Nature</em> (2014)</li><li>Haak et al., "Massive migration from the steppe was a source for Indo-European languages in Europe", <em>Nature</em> (2015)</li><li>Fu et al., "The genetic history of Ice Age Europe", <em>Nature</em> (2016)</li><li>Olalde et al., "The Beaker phenomenon and the genomic transformation of northwest Europe", <em>Nature</em> (2018)</li><li>Narasimhan et al., "The formation of human populations in South and Central Asia", <em>Science</em> (2019)</li><li>Olalde et al., "The genomic history of the Iberian Peninsula over the past 8000 years", <em>Science</em> (2019)</li><li>Patterson et al., "Large-scale migration into Britain during the Middle to Late Bronze Age", <em>Nature</em> (2022)</li><li>Reich, "Hypothesis: A modern human range expansion ~300,000 years ago had a critical role in Neandertal origins", <em>bioRxiv</em> (2026), preprint, not peer-reviewed</li><li>Reich, <em>Who We Are and How We Got Here</em> (2018)</li><li>Anthony, <em>The Horse, the Wheel, and Language</em> (2007)</li><li>Counter-reading: Antonio et al., "Ancient Rome: a genetic crossroads of Europe and the Mediterranean", <em>Science</em> (2019)</li></ul></div>
 </details>
@@ -943,7 +963,7 @@ body{padding-top:var(--navh,62px)}
 <h4>Heidegger's test</h4>
 <p>Passes, and Fichte very nearly reaches the criterion himself. A language is handed down, taken up by each generation, and genuinely losable — Ireland lost most of a vernacular within three generations and has spent a century deciding whether to take it back up, which is <em>Wiederholung</em> in the strict sense. Where Fichte breaks from §74 is in claiming one particular inheritance is metaphysically privileged. Heidegger's apparatus has no resources for that claim.</p>
 <h4>Sources</h4>
-<div class="srcs"><ul><li>Fichte, <em>Reden an die deutsche Nation</em> (1808), Addresses 4–7</li><li>Kedourie, <em>Nationalism</em> (1960)</li><li>Harshav, <em>The Meaning of Yiddish</em> (1990)</li><li>CIA World Factbook, "Languages", for each country (retrieved 2026)</li><li>Statistics Canada, Census of Population 2021, mother tongue</li><li>Israel Central Bureau of Statistics, Social Survey 2011, mother tongue of adults</li><li>Hammarström, Forkel, Haspelmath and Bank, <em>Glottolog</em>, for the family tree</li></ul></div>
+<div class="srcs"><ul><li>Fichte, <em>Reden an die deutsche Nation</em> (1808), Addresses 4–7</li><li>Kedourie, <em>Nationalism</em> (1960)</li><li>Harshav, <em>The Meaning of Yiddish</em> (1990)</li><li>CIA World Factbook, "Languages", for each country (retrieved 2026)</li><li>Statistics Canada, Census of Population 2021, mother tongue</li><li>Israel Central Bureau of Statistics, Social Survey 2011, mother tongue of adults</li><li>Hammarström, Forkel, Haspelmath and Bank, <em>Glottolog</em>, for the family tree</li><li>Eberhard, Simons and Fennig (eds), <em>Ethnologue</em>, and the latest national censuses and language surveys, for the rounded speaker counts on the tree</li></ul></div>
 </details>
 </div>
 
@@ -975,6 +995,7 @@ body{padding-top:var(--navh,62px)}
 <p>In early medieval Europe almost everyone who could write was a cleric, and a people's first alphabet was the one its missionaries brought for scripture and liturgy. In 863 the Byzantine brothers Cyril and Methodius were sent to Moravia to preach to the Slavs in their own tongue, and built an alphabet for it — Glagolitic, from which their disciples in Bulgaria derived Cyrillic. The Latin church, meanwhile, carried the Latin alphabet with its liturgy. Where Rome won the conversion, Slavs write in Latin letters: Poles, Czechs, Slovaks, Slovenes, Croats. Where Constantinople won, they write in Cyrillic: Russians, Ukrainians, Belarusians, Bulgarians, Macedonians, Serbs. Moravia itself is the natural experiment: the same Slavs began with a Slavonic alphabet, the Frankish Latin clergy then won their church, and Czech has been written in Latin letters ever since.</p>
 <p>The rule holds even across languages. Muslim Moriscos in Spain wrote Spanish in Arabic letters; the Karamanlides, Orthodox Christians who spoke Turkish, wrote Turkish in Greek letters; Jewish communities wrote German and Spanish in Hebrew script, as Yiddish and Ladino. And it follows the <em>rite</em> more precisely than the bishop: Galicia's Greek Catholics joined Rome and kept the Byzantine liturgy, and with it Cyrillic.</p>
 <p>The exceptions are state projects, not drift. Romania, Orthodox, moved from Cyrillic to Latin letters in the 1860s to proclaim a Latin identity; Atatürk moved Turkish to Latin script in 1928; the Soviet state imposed Cyrillic on Moldova, and Moldova returned to Latin letters in 1989. So the alphabet is largely a mark of confession, and version 1.5 folded the two into one facet. Since then every facet's voice has been discounted for what it repeats, so the two share a voice without being merged, and kept apart, the places where they part company — Romania and Moldova, Orthodox in Latin letters; Serbia, Bosnia and Montenegro, in both alphabets; Galicia, Greek Catholic in Cyrillic — are visible on a map of their own.</p>
+<div class="tree" id="scrtree"></div>
 <h4>Dialectics</h4>
 <div class="contrast"><span class="cn">One language, two alphabets.</span> Vuk Karadžić's reformed Cyrillic and Ljudevit Gaj's Latin alphabet were built in the first half of the nineteenth century to correspond letter for letter, and the Vienna Literary Agreement of 1850 set a common standard. The same sentence transliterates between them without loss. Croats chose one alphabet and Serbs the other along the confessional line; Serbia, Bosnia and Montenegro now use both. Here script separates what language cannot.</div>
 <h4>Why it is included</h4>
@@ -982,7 +1003,6 @@ body{padding-top:var(--navh,62px)}
 <details class="more"><summary>More: further cases, Heidegger's test, sources</summary>
 <h4>How it is measured</h4>
 <p>Each region is coded by the alphabet in everyday public use — on street signs, in newspapers, in school. Where two are in everyday use, as in Serbia, Bosnia and Montenegro, each counts half. Alphabets are compared on their family tree, by the same rule as languages and confessions: every alphabet in the atlas descends from the Phoenician, Latin, Cyrillic and Greek through the Greek alphabet and Hebrew through Aramaic, so two regions in different alphabets of the Greek branch are half as far apart as either is from Hebrew.</p>
-<div class="tree" id="scrtree"></div>
 <h4>Further cases</h4>
 <div class="contrast"><span class="cn">Fraktur, 1941.</span> German was printed in blackletter for four centuries, and the Nazi state promoted it as the authentic German script. In January 1941 a circular from Martin Bormann abolished it, calling it "Schwabacher Jew-letters" — a genealogy invented on the spot to justify switching to roman type, which was more legible in occupied territory. The regime most committed to the Volk's own forms abolished the Volk's own script by memo, on a fabricated pedigree.</div>
 <div class="note"><strong>Fichte's argument, applied to script.</strong>
@@ -1267,7 +1287,7 @@ body{padding-top:var(--navh,62px)}
 
 <footer>
 <p><strong>Sources.</strong> Listed under each category; for the method and frame, under <a href="#method-refs">Methodology</a>.</p>
-<p><strong>Version.</strong> 2.0.5, 2026-10-26. Source and change history on <a href="https://github.com/Bryce-Waddell/European-Atlas/blob/main/CHANGELOG.md">GitHub</a>.</p>
+<p><strong>Version.</strong> 2.0.6, 2026-10-27. Source and change history on <a href="https://github.com/Bryce-Waddell/European-Atlas/blob/main/CHANGELOG.md">GitHub</a>.</p>
 <p><strong>Counter-reading.</strong> Geary, <em>The Myth of Nations</em>; Hobsbawm &amp; Ranger, <em>The Invention of Tradition</em>; Antonio et al. 2019 on the ancient genomes of Rome.</p>
 
 <div class="colophon"><div class="lockup" role="img" aria-label="Atlas of European Collectives: faceted comparative atlas, 13 facets, 54 units"><svg class="crest" viewBox="0 0 400 400" aria-hidden="true" focusable="false"><defs><clipPath id="crfoot-sky"><circle cx="200" cy="200" r="184"/></clipPath></defs><circle cx="200" cy="200" r="198" fill="#0A2540"/><g clip-path="url(#crfoot-sky)"><rect width="400" height="400" fill="#060D1A" opacity=".35"/><circle cx="24.03" cy="181.31" r="1.56" fill="#F3E3B0" fill-opacity="0.57"/><circle cx="326.87" cy="167.81" r="1.93" fill="#F3E3B0" fill-opacity="0.76"/><circle cx="275.18" cy="73.5" r="1.68" fill="#F3E3B0" fill-opacity="0.81"/><circle cx="28.76" cy="159.23" r="2.6" fill="#F3E3B0" fill-opacity="0.78"/><circle cx="58.11" cy="238.92" r="2.73" fill="#F3E3B0" fill-opacity="0.69"/><circle cx="341.3" cy="30.59" r="2.29" fill="#F3E3B0" fill-opacity="0.91"/><circle cx="358.14" cy="124.99" r="1.3" fill="#F3E3B0" fill-opacity="0.91"/><circle cx="357.69" cy="281.59" r="2.8" fill="#F3E3B0" fill-opacity="0.91"/><circle cx="32.44" cy="359.07" r="2.5" fill="#F3E3B0" fill-opacity="0.71"/><circle cx="331.73" cy="24.45" r="2.2" fill="#F3E3B0" fill-opacity="0.98"/><circle cx="375.32" cy="173.74" r="2.46" fill="#F3E3B0" fill-opacity="0.78"/><circle cx="103.4" cy="40.86" r="1.09" fill="#F3E3B0" fill-opacity="0.92"/><circle cx="62.33" cy="147.47" r="1.99" fill="#F3E3B0" fill-opacity="0.72"/><circle cx="190.23" cy="61.31" r="1.68" fill="#F3E3B0" fill-opacity="0.63"/><circle cx="58.66" cy="368.8" r="2.79" fill="#F3E3B0" fill-opacity="0.9"/><circle cx="224.41" cy="344.44" r="1.26" fill="#F3E3B0" fill-opacity="0.62"/><circle cx="362.48" cy="267.2" r="1.52" fill="#F3E3B0" fill-opacity="0.92"/><circle cx="151.98" cy="333.39" r="1.87" fill="#F3E3B0" fill-opacity="0.78"/><circle cx="105.39" cy="59.35" r="2.44" fill="#F3E3B0" fill-opacity="0.94"/><circle cx="327.36" cy="177.01" r="1" fill="#F3E3B0" fill-opacity="0.56"/><circle cx="35.61" cy="220.14" r="1.53" fill="#F3E3B0" fill-opacity="0.91"/><circle cx="203.34" cy="65.4" r="2.13" fill="#F3E3B0" fill-opacity="0.92"/><circle cx="204.13" cy="348.53" r="1.71" fill="#F3E3B0" fill-opacity="0.62"/><circle cx="318.97" cy="317.5" r="2.31" fill="#F3E3B0" fill-opacity="0.66"/><polygon points="74,87 75.03,93.51 77.5,92.5 76.49,94.97 83,96 76.49,97.03 77.5,99.5 75.03,98.49 74,105 72.97,98.49 70.5,99.5 71.51,97.03 65,96 71.51,94.97 70.5,92.5 72.97,93.51" fill="#D4AF37"></polygon><polygon points="88,277 88.8,282.06 90.72,281.28 89.94,283.2 95,284 89.94,284.8 90.72,286.72 88.8,285.94 88,291 87.2,285.94 85.28,286.72 86.06,284.8 81,284 86.06,283.2 85.28,281.28 87.2,282.06" fill="#D4AF37"></polygon><polygon points="322,292 322.92,297.78 325.11,296.89 324.22,299.08 330,300 324.22,300.92 325.11,303.11 322.92,302.22 322,308 321.08,302.22 318.89,303.11 319.78,300.92 314,300 319.78,299.08 318.89,296.89 321.08,297.78" fill="#D4AF37"></polygon><circle cx="318" cy="76" r="22" fill="#C4553B"/><path d="M302 66a17 17 0 0 1 20-7" stroke="#EA9A80" stroke-width="3" fill="none" stroke-linecap="round"/><circle cx="326" cy="86" r="4" fill="#A9432D"/><circle cx="310" cy="80" r="2.6" fill="#A9432D"/><path d="M56 356C162 334 298 268 330 186" fill="none" stroke="#D4AF37" stroke-width="2.6" stroke-dasharray="6 7" stroke-linecap="round"/><g transform="translate(332 156) rotate(6) scale(1.55)"><path d="M0 -24C5 -18 6 -10 6 0V20H-6V0C-6 -10 -5 -18 0 -24Z" fill="#F8F1E3"/><path d="M-6 10L-12 22H-6ZM6 10L12 22H6Z" fill="#F8F1E3"/><path d="M-4 21L0 36L4 21Z" fill="#D4AF37"/><circle cx="0" cy="-6" r="2.4" fill="#1A365D"/></g></g><circle cx="200" cy="200" r="191" fill="none" stroke="#D4AF37" stroke-width="4"/><circle cx="200" cy="200" r="184" fill="none" stroke="#D4AF37" stroke-width="1.2"/><ellipse cx="200" cy="214" rx="178" ry="50" transform="rotate(-16 200 214)" fill="none" stroke="#D4AF37" stroke-width="3.2"/><g transform="translate(70 56) scale(1.3)"><path d="M30 26H170V96C170 146 138 174 100 190C62 174 30 146 30 96Z" fill="#D4AF37" stroke="#141414" stroke-width="4"/><g transform="translate(100 104) scale(0.66) translate(-100 -100)"><polygon points="94.5,124 95.38,153.64 100,162 104.62,153.64 105.5,124" fill="#141414" stroke="#D4AF37" stroke-width="2.4" stroke-linejoin="round"></polygon><polygon points="94.71,125.52 102.87,150.77 109.37,156.68 111.75,148.22 105.29,122.48" fill="#141414" stroke="#D4AF37" stroke-width="2.4" stroke-linejoin="round"></polygon><polygon points="94.71,122.48 88.25,148.22 90.63,156.68 97.13,150.77 105.29,125.52" fill="#141414" stroke="#D4AF37" stroke-width="2.4" stroke-linejoin="round"></polygon><polygon points="95.34,126.91 108.48,146.29 115.9,149.44 116.32,141.4 104.66,121.09" fill="#141414" stroke="#D4AF37" stroke-width="2.4" stroke-linejoin="round"></polygon><polygon points="95.34,121.09 83.68,141.4 84.1,149.44 91.52,146.29 104.66,126.91" fill="#141414" stroke="#D4AF37" stroke-width="2.4" stroke-linejoin="round"></polygon><g><polygon points="89.01,70.73 77.77,35.01 70.01,26.25 68.08,37.79 77.48,74.04" fill="#141414" stroke="#D4AF37" stroke-width="2.4" stroke-linejoin="round"></polygon><polygon points="86.2,70.34 61.18,28.94 50,19.65 52.46,33.98 75.8,76.34" fill="#141414" stroke="#D4AF37" stroke-width="2.4" stroke-linejoin="round"></polygon><polygon points="83.37,70.64 43.67,30.91 29.04,23.01 36.42,37.91 74.74,78.97" fill="#141414" stroke="#D4AF37" stroke-width="2.4" stroke-linejoin="round"></polygon><polygon points="80.7,71.61 29.26,40.6 12.22,35.9 23.91,49.15 74.34,81.79" fill="#141414" stroke="#D4AF37" stroke-width="2.4" stroke-linejoin="round"></polygon><polygon points="78.34,73.2 21.67,55.8 4.21,55.42 18.55,65.38 74.64,84.62" fill="#141414" stroke="#D4AF37" stroke-width="2.4" stroke-linejoin="round"></polygon><polygon points="76.44,75.32 21.91,72.47 6.19,76.42 21.21,82.52 75.61,87.29" fill="#141414" stroke="#D4AF37" stroke-width="2.4" stroke-linejoin="round"></polygon><polygon points="75.11,77.83 29.19,86.9 17.06,94.16 30.94,96.83 77.19,89.65" fill="#141414" stroke="#D4AF37" stroke-width="2.4" stroke-linejoin="round"></polygon><path d="M95 98L88 74L74 60L56 54L48 60L58 72L72 86Z" fill="#141414" stroke="#D4AF37" stroke-width="2.4" stroke-linejoin="round"></path></g><g transform="translate(200 0) scale(-1 1)"><polygon points="89.01,70.73 77.77,35.01 70.01,26.25 68.08,37.79 77.48,74.04" fill="#141414" stroke="#D4AF37" stroke-width="2.4" stroke-linejoin="round"></polygon><polygon points="86.2,70.34 61.18,28.94 50,19.65 52.46,33.98 75.8,76.34" fill="#141414" stroke="#D4AF37" stroke-width="2.4" stroke-linejoin="round"></polygon><polygon points="83.37,70.64 43.67,30.91 29.04,23.01 36.42,37.91 74.74,78.97" fill="#141414" stroke="#D4AF37" stroke-width="2.4" stroke-linejoin="round"></polygon><polygon points="80.7,71.61 29.26,40.6 12.22,35.9 23.91,49.15 74.34,81.79" fill="#141414" stroke="#D4AF37" stroke-width="2.4" stroke-linejoin="round"></polygon><polygon points="78.34,73.2 21.67,55.8 4.21,55.42 18.55,65.38 74.64,84.62" fill="#141414" stroke="#D4AF37" stroke-width="2.4" stroke-linejoin="round"></polygon><polygon points="76.44,75.32 21.91,72.47 6.19,76.42 21.21,82.52 75.61,87.29" fill="#141414" stroke="#D4AF37" stroke-width="2.4" stroke-linejoin="round"></polygon><polygon points="75.11,77.83 29.19,86.9 17.06,94.16 30.94,96.83 77.19,89.65" fill="#141414" stroke="#D4AF37" stroke-width="2.4" stroke-linejoin="round"></polygon><path d="M95 98L88 74L74 60L56 54L48 60L58 72L72 86Z" fill="#141414" stroke="#D4AF37" stroke-width="2.4" stroke-linejoin="round"></path></g><path d="M100 62L113 76L115 116L100 132L85 116L87 76Z" fill="#141414" stroke="#D4AF37" stroke-width="2.4" stroke-linejoin="round"></path><g transform="rotate(-38 100 80) translate(-10 6)"><path d="M108 74L108 56L105 46L99 38L90 35L81 36L74 40L69 47L72 51L76 47L82 48L87 51L91 58L92 74Z" fill="#141414" stroke="#D4AF37" stroke-width="2.4" stroke-linejoin="round"></path><circle cx="89" cy="42.5" r="2.2" fill="#D4AF37"></circle></g><g transform="translate(200 0) scale(-1 1) rotate(-38 100 80) translate(-10 6)"><path d="M108 74L108 56L105 46L99 38L90 35L81 36L74 40L69 47L72 51L76 47L82 48L87 51L91 58L92 74Z" fill="#141414" stroke="#D4AF37" stroke-width="2.4" stroke-linejoin="round"></path><circle cx="89" cy="42.5" r="2.2" fill="#D4AF37"></circle></g><g transform="translate(0 -2)"><path d="M86 34L86 24L92 28L100 18L108 28L114 24L114 34Z" fill="#9B1B1B" stroke="#D4AF37" stroke-width="1.6" stroke-linejoin="round"></path><rect x="85" y="33" width="30" height="6" fill="#9B1B1B" stroke="#D4AF37" stroke-width="1.4"></rect><path d="M100 18V10M96.5 13.5H103.5" stroke="#9B1B1B" stroke-width="2.4"></path></g></g></g><path d="M84 296C140 302 238 286 334 240" fill="none" stroke="#D4AF37" stroke-width="3.2"/></svg><div aria-hidden="true"><div class="lk1">Atlas of</div><div class="lk2">European Collectives</div><div class="lk3"><span>Faceted comparative atlas</span><span>13 facets · 54 units</span></div></div></div></div>
@@ -2702,73 +2722,180 @@ setTimeout(runStability,300);
  (function(){var d=document.getElementById("method-refs");if(!d)return;function op(){if(location.hash==="#method-refs")d.open=true}document.querySelectorAll('a[href="#method-refs"]').forEach(function(a){a.addEventListener("click",function(){d.open=true})});window.addEventListener("hashchange",op);op()})();
 })();
 
-/* ---------- radial clade trees ---------- */
+/* ---------- radial clade trees ----------
+   v2.0.6: larger points with a wide invisible hit area, a card on hover, tap or keyboard focus (SVG <title> tooltips
+   never showed on touch and were slow and tiny on desktop), the lineage of the chosen node lit up, and the view box
+   fitted to the drawing so the tree fills its frame. Each node can carry d (date) plus the fields named in opt.fields. */
 function radialTree(elId,root,opt){
- var leaves=[],maxD=0;
- (function walk(n,d,par){n.depth=d;n.parent=par;if(d>maxD)maxD=d;if(!n.c||!n.c.length){leaves.push(n)}else n.c.forEach(function(k){walk(k,d+1,n)})})(root,0,null);
+ var leaves=[],maxD=0,all=[];
+ (function walk(n,d,par){n.depth=d;n.parent=par;n.id=all.length;all.push(n);if(d>maxD)maxD=d;if(!n.c||!n.c.length){leaves.push(n)}else n.c.forEach(function(k){walk(k,d+1,n)})})(root,0,null);
  var R=opt.R,A0=-Math.PI/2+0.02,span=2*Math.PI-0.04,step=span/leaves.length;
  leaves.forEach(function(l,i){l.a=A0+step*(i+.5);l.r=R});
  (function pos(n){if(n.c&&n.c.length){n.c.forEach(pos);n.a=(n.c[0].a+n.c[n.c.length-1].a)/2;n.r=n.depth===0?0:R*(0.16+0.7*(n.depth-1)/Math.max(1,maxD-2))}})(root);
  function P(a,r){return [(Math.cos(a)*r).toFixed(1),(Math.sin(a)*r).toFixed(1)]}
  function col(n){if(n.dead)return "#9A9285";if(!n.col)return null;if(n.col.charAt(0)==="#")return n.col;var sc=opt.scale[n.col];return sc?sc[0]:"#9A9285"}
- var W=opt.W,links="",dots="",labs="";
+ function esc(s){return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;")}
+ var fields=[["d",opt.dLabel||"Date"]].concat(opt.fields||[]);
+ function plain(n){var t=n.n;fields.forEach(function(f){if(n[f[0]])t+=". "+f[1]+": "+n[f[0]]});if(n.note)t+=". "+n.note;return t}
+ var links="",dots="",labs="";
  (function draw(n){if(!n.c)return;n.c.forEach(function(k){
    var p0=P(k.a,n.r),p1=P(n.a,n.r),pk=P(k.a,k.r);var dash=(k.dead||n.virtual)?' stroke-dasharray="4 3"':'';
    var d;if(n.r===0){d="M0,0L"+pk[0]+","+pk[1]}else{var sweep=k.a>n.a?1:0;var large=Math.abs(k.a-n.a)>Math.PI?1:0;
      d="M"+p1[0]+","+p1[1]+"A"+n.r.toFixed(1)+","+n.r.toFixed(1)+" 0 "+large+" "+sweep+" "+p0[0]+","+p0[1]+"L"+pk[0]+","+pk[1]}
-   var c=col(k)||"currentColor";links+='<path d="'+d+'" fill="none" stroke="'+(k.c?"currentColor":c)+'" stroke-opacity="'+(k.c?.45:.9)+'" stroke-width="'+(k.c?1.3:1.6)+'"'+dash+'/>';draw(k)})})(root);
+   var c=col(k)||"currentColor";links+='<path class="lk" data-i="'+k.id+'" d="'+d+'" fill="none" stroke="'+(k.c?"currentColor":c)+'" stroke-opacity="'+(k.c?.45:.9)+'" stroke-width="'+(k.c?1.4:1.8)+'"'+dash+'/>';draw(k)})})(root);
  (function nodes(n){
-   var p=P(n.a,n.r),tt=n.n+(n.d?" · "+n.d:"")+(n.note?" — "+n.note:"");
-   if(!n.c||!n.c.length){var c=col(n)||"#9A9285";dots+='<circle cx="'+p[0]+'" cy="'+p[1]+'" r="4.6" fill="'+c+'" stroke="rgba(0,0,0,.35)" stroke-width=".7"><title>'+tt+'</title></circle>';
-     var deg=n.a*180/Math.PI,flip=Math.cos(n.a)<0,lp=P(n.a,n.r+9);
-     labs+='<text class="lf" transform="translate('+lp[0]+','+lp[1]+') rotate('+(flip?deg+180:deg).toFixed(1)+')" text-anchor="'+(flip?"end":"start")+'" dy="4"'+(n.dead?' font-style="italic" opacity=".75"':'')+'>'+n.n+'<title>'+tt+'</title></text>'}
-   else if(!n.virtual){dots+='<circle cx="'+p[0]+'" cy="'+p[1]+'" r="3.2" fill="currentColor"><title>'+tt+'</title></circle>';
-     if(n.lab!==false)labs+='<text class="inl" x="'+(+p[0]+(n.dx||0))+'" y="'+(+p[1]+(n.dy||-7))+'" text-anchor="middle">'+n.n+'<title>'+tt+'</title></text>'}
+   var p=P(n.a,n.r),leaf=!n.c||!n.c.length;
+   if(!n.virtual){
+     var g='<g class="nd" data-i="'+n.id+'" tabindex="0" role="button" aria-label="'+esc(plain(n))+'"><circle class="hit" cx="'+p[0]+'" cy="'+p[1]+'" r="15" fill="transparent"/>';
+     if(leaf){g+='<circle class="dot" cx="'+p[0]+'" cy="'+p[1]+'" r="6.5" fill="'+(col(n)||"#9A9285")+'" stroke="rgba(0,0,0,.35)" stroke-width=".8"/>'}
+     else{g+='<circle class="dot" cx="'+p[0]+'" cy="'+p[1]+'" r="4.8" fill="currentColor" stroke="var(--paper-deep)" stroke-width="1.4"/>'}
+     dots+=g+'</g>'}
+   if(leaf){var deg=n.a*180/Math.PI,flip=Math.cos(n.a)<0,lp=P(n.a,n.r+11);
+     labs+='<text class="lf" data-i="'+n.id+'" transform="translate('+lp[0]+','+lp[1]+') rotate('+(flip?deg+180:deg).toFixed(1)+')" text-anchor="'+(flip?"end":"start")+'" dy="4"'+(n.dead?' font-style="italic" opacity=".75"':'')+'>'+n.n+'</text>'}
+   else if(!n.virtual&&n.lab!==false)labs+='<text class="inl" data-i="'+n.id+'" x="'+(+p[0]+(n.dx||0))+'" y="'+(+p[1]+(n.dy||-9))+'" text-anchor="middle">'+n.n+'</text>';
    (n.c||[]).forEach(nodes)})(root);
- if(root.virtual)dots+='<circle r="6" fill="none" stroke="currentColor" stroke-dasharray="2 2"/>';
- if(opt.rootLabel)labs+='<text class="inl" x="0" y="20" text-anchor="middle">'+opt.rootLabel+'</text>';
- document.getElementById(elId).innerHTML='<div class="tscroll"><svg viewBox="'+(-W/2)+' '+(-W/2)+' '+W+' '+W+'" role="img" aria-label="'+opt.aria+'">'+links+dots+labs+'</svg></div><p class="caption">'+opt.caption+'</p>';
+ if(root.virtual)dots='<circle r="6" fill="none" stroke="currentColor" stroke-dasharray="2 2"/>'+dots;
+ if(opt.rootLabel)labs+='<text class="inl" data-i="'+root.id+'" x="0" y="22" text-anchor="middle">'+opt.rootLabel+'</text>';
+ var host=document.getElementById(elId);
+ host.innerHTML='<div class="tscroll"><svg viewBox="'+(-opt.W/2)+' '+(-opt.W/2)+' '+opt.W+' '+opt.W+'" role="group" aria-label="'+esc(opt.aria)+'"><g class="tall">'+links+dots+labs+'</g></svg></div><p class="thint" aria-hidden="true">Hover or tap any point or name</p><div class="ttip" role="status" aria-live="polite" hidden></div><p class="caption">'+opt.caption+'</p>';
+ var svg=host.querySelector("svg"),sc=host.querySelector(".tscroll"),tip=host.querySelector(".ttip"),hint=host.querySelector(".thint");
+ /* fit the view box to what is drawn; retried when a hidden tree is first shown and when the web fonts arrive */
+ var centred=false;
+ function fit(){try{var b=svg.querySelector(".tall").getBBox();if(!b.width)return false;var p=8;svg.setAttribute("viewBox",[b.x-p,b.y-p,b.width+2*p,b.height+2*p].map(function(v){return v.toFixed(1)}).join(" "));if(!centred&&sc.scrollWidth>sc.clientWidth){sc.scrollLeft=(sc.scrollWidth-sc.clientWidth)/2;centred=true}return true}catch(e){return false}}
+ if(!fit()&&window.ResizeObserver){var ro=new ResizeObserver(function(){if(fit())ro.disconnect()});ro.observe(sc)}
+ if(document.fonts&&document.fonts.ready)document.fonts.ready.then(fit);
+ var cur=null,pinned=false,lit=[];
+ function clear(){lit.forEach(function(e){e.classList.remove("on")});lit=[];svg.classList.remove("hl")}
+ function mark(m){svg.querySelectorAll('[data-i="'+m.id+'"]').forEach(function(e){e.classList.add("on");lit.push(e)})}
+ function light(n){clear();svg.classList.add("hl");for(var m=n;m;m=m.parent)mark(m);(function down(m){(m.c||[]).forEach(function(k){mark(k);down(k)})})(n)}
+ function card(n){var h='<b>'+n.n+'</b><dl>';fields.forEach(function(f){if(n[f[0]])h+='<dt>'+f[1]+'</dt><dd>'+n[f[0]]+'</dd>'});h+='</dl>';if(n.note)h+='<p>'+n.note+'</p>';return h}
+ /* the card goes where it hides least of the lit lineage (sampled along the lines and over the rotated labels),
+    beside, above or below the node or in a corner of the frame, within the part of the frame on screen */
+ function samples(hr){var pts=[];lit.forEach(function(e){var t=e.tagName.toLowerCase();if(t==="g"){e=e.querySelector(".dot");t="circle"}
+   var M=e.getScreenCTM();if(!M)return;function add(x,y){pts.push([M.a*x+M.c*y+M.e-hr.left,M.b*x+M.d*y+M.f-hr.top])}
+   if(t==="path"){var L=e.getTotalLength();for(var u=0;u<=L;u+=6){var q=e.getPointAtLength(u);add(q.x,q.y)}}
+   else{var bb=e.getBBox();for(var x=bb.x;x<=bb.x+bb.width;x+=5)for(var y=bb.y;y<=bb.y+bb.height;y+=5)add(x,y)}});return pts}
+ function place(){if(!cur)return;var el=svg.querySelector('.nd[data-i="'+cur.id+'"] .dot')||svg.querySelector('text[data-i="'+cur.id+'"]');if(!el)return;
+   var r=el.getBoundingClientRect(),hr=host.getBoundingClientRect(),x=r.left+r.width/2-hr.left,y=r.top+r.height/2-hr.top,gap=14+r.width/2;
+   var W=host.clientWidth,H=sc.offsetHeight,tw=tip.offsetWidth,th=tip.offsetHeight,m=6;
+   var nav=parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--navh"))||0;
+   var top0=Math.max(m,nav+m-hr.top),bot0=Math.min(H,(window.visualViewport?visualViewport.height:innerHeight)-hr.top)-m;
+   if(bot0-top0<th){top0=m;bot0=H-m}
+   var pts=samples(hr);
+   var cands=[[x+gap,y-th/2],[x-gap-tw,y-th/2],[x-tw/2,y-gap-th],[x-tw/2,y+gap],[x+gap,y-th+12],[x+gap,y-12],[x-gap-tw,y-th+12],[x-gap-tw,y-12],[m,top0],[W-tw-m,top0],[m,bot0-th],[W-tw-m,bot0-th]];
+   var best=null,bs=Infinity;cands.forEach(function(c){var L=Math.max(m,Math.min(W-tw-m,c[0])),T=Math.max(top0,Math.min(bot0-th,c[1]));
+     if(x>L-8&&x<L+tw+8&&y>T-8&&y<T+th+8)return;
+     var n=0;pts.forEach(function(q){if(q[0]>L-4&&q[0]<L+tw+4&&q[1]>T-4&&q[1]<T+th+4)n++});
+     var dx=Math.max(0,L-x,x-L-tw),dy=Math.max(0,T-y,y-T-th),cost=n*12+Math.sqrt(dx*dx+dy*dy);if(cost<bs){bs=cost;best=[L,T]}});
+   if(!best)best=[Math.max(m,Math.min(W-tw-m,x-tw/2)),y>H/2?Math.max(m,y-gap-th):Math.min(H-th-m,y+gap)];
+   tip.style.left=best[0]+"px";tip.style.top=best[1]+"px"}
+ function show(i,pin){var n=all[i];if(!n||n.virtual)return;cur=n;pinned=!!pin;light(n);tip.innerHTML=card(n);tip.hidden=false;place();host.classList.add("used")}
+ function hide(){cur=null;pinned=false;clear();tip.hidden=true}
+ function nodeOf(e){var t=e.target&&e.target.closest?e.target.closest("[data-i]"):null;return t?+t.getAttribute("data-i"):null}
+ svg.addEventListener("pointerover",function(e){if(e.pointerType!=="mouse")return;var i=nodeOf(e);if(i!==null&&(!cur||cur.id!==i||!pinned))show(i,false)});
+ svg.addEventListener("pointerout",function(e){if(e.pointerType!=="mouse"||pinned)return;if(nodeOf(e)!==null&&(!e.relatedTarget||!e.relatedTarget.closest||!e.relatedTarget.closest("[data-i]")))hide()});
+ svg.addEventListener("click",function(e){var i=nodeOf(e);if(i===null){hide();return}if(pinned&&cur&&cur.id===i){hide();return}show(i,true)});
+ var downAt=0;svg.addEventListener("pointerdown",function(){downAt=Date.now()});
+ /* focus that a tap or click gives a node is left to the click handler, so the click does not toggle the card straight off */
+ svg.addEventListener("focusin",function(e){if(Date.now()-downAt<800)return;var i=nodeOf(e);if(i!==null)show(i,true)});
+ svg.addEventListener("keydown",function(e){if(e.key==="Escape"){hide();e.target.blur&&e.target.blur()}else if((e.key==="Enter"||e.key===" ")&&nodeOf(e)!==null){e.preventDefault();show(nodeOf(e),true)}});
+ document.addEventListener("pointerdown",function(e){if(cur&&!host.contains(e.target))hide()});
+ sc.addEventListener("scroll",place,{passive:true});window.addEventListener("resize",place);
+ var rq=0;window.addEventListener("scroll",function(){if(cur&&!rq)rq=requestAnimationFrame(function(){rq=0;place()})},{passive:true});
 }
 var L=function(n,col,extra){var o={n:n,col:col};for(var k in extra||{})o[k]=extra[k];return o};
 radialTree("langtree",{n:"",virtual:true,c:[
- {n:"Proto-Indo-European",d:"c. 4000–3000 BCE, Pontic-Caspian steppe",dy:-9,c:[
-  {n:"Celtic",d:"c. 1200 BCE",c:[L("Irish","#9A9285",{note:"heritage language; Ireland's majority vernacular is now English"}),L("Scottish Gaelic","#9A9285"),L("Welsh","#9A9285"),L("Breton","#9A9285")]},
-  {n:"Germanic",d:"c. 500 BCE, southern Scandinavia",c:[
-    {n:"North",d:"split c. 200 CE",c:[L("Icelandic","germn"),L("Norwegian","germn"),L("Swedish","germn"),L("Danish","germn")]},
-    {n:"West",d:"split c. 200 CE",c:[L("English","germw"),L("Dutch","germw"),L("German","germw"),L("Yiddish","germw",{note:"from Middle High German, c. 10th century"})]}]},
-  {n:"Italic",d:"c. 1000 BCE",c:[{n:"Latin",d:"c. 700 BCE, Rome",c:[{n:"Romance",d:"from c. 600 CE",c:[L("Portuguese","romance"),L("Spanish","romance"),L("French","romance"),L("Italian","romance"),L("Sardinian","romance"),L("Romanian","romance")]}]}]},
-  {n:"Hellenic",c:[L("Greek","hellenic")],lab:false},
-  {n:"Albanian",c:[L("Albanian","albanian")],lab:false},
-  {n:"Balto-Slavic",d:"c. 1500 BCE",c:[
-    {n:"Baltic",c:[L("Lithuanian","baltic"),L("Latvian","baltic")]},
-    {n:"Slavic",d:"spread c. 500–700 CE",c:[
-      {n:"West",c:[L("Polish","slavw"),L("Czech","slavw"),L("Slovak","slavw")]},
-      {n:"East",c:[L("Russian","slave"),L("Belarusian","slave"),L("Ukrainian","slave")]},
-      {n:"South",c:[L("Slovene","slavs"),L("Serbo-Croatian","slavs",{note:"Croatian, Serbian, Bosnian, Montenegrin"}),L("Macedonian","slavs"),L("Bulgarian","slavs")]}]}]}]},
- {n:"Proto-Uralic",d:"c. 3000 BCE or earlier, Volga–Urals",dx:-22,dy:14,c:[{n:"Finnic",c:[L("Finnish","uralic"),L("Estonian","uralic")]},{n:"Ugric",c:[L("Hungarian","uralic")]}]},
- {n:"Semitic",d:"Afro-Asiatic family, c. 3750 BCE",dx:14,dy:-10,c:[L("Hebrew","semitic",{note:"revived as a spoken vernacular c. 1880–1920"}),L("Aramaic","#9A9285"),L("Arabic","#9A9285")]},
- L("Basque","#9A9285",{note:"a language isolate with no known relatives"})
-]},{W:820,R:250,scale:SC.lang,aria:"Radial tree of the language families and branches in the atlas",
- caption:"The same branching repeats at every scale — families split into branches, branches into languages, languages into dialects — which is why a radial tree reads as a fractal. The dashed centre is not an ancestor: Indo-European, Uralic and Semitic have no demonstrated common origin, and Basque sits alone with no relatives at all. The Indo-European root is placed on the Pontic-Caspian steppe, following the steppe hypothesis that the ancient-DNA results in the Ancestry section support. Grey leaves are not the majority vernacular of any unit on the map. Hover or tap a node for its date."});
+ {n:"Proto-Indo-European",d:"c. 4000–3000 BC, Pontic-Caspian steppe",w:"never written; reconstructed from its descendants",s:"nearly half of humanity speaks a descendant",dy:-10,c:[
+  {n:"Celtic",d:"c. 1200 BC",w:"Lepontic inscriptions, northern Italy, 6th century BC",s:"under a million native speakers, all on the Atlantic fringe",c:[
+    L("Irish","#9A9285",{w:"Ogham inscriptions, 4th–6th century AD",s:"about 72,000 speak it daily outside school (2022 census)",note:"Heritage language; Ireland's majority vernacular is now English."}),
+    L("Scottish Gaelic","#9A9285",{w:"Gaelic notes in the Book of Deer, 12th century AD",s:"about 130,000 have some Gaelic (2022 census)"}),
+    L("Welsh","#9A9285",{w:"Old Welsh glosses, c. AD 800",s:"about 540,000 can speak it (2021 census)"}),
+    L("Breton","#9A9285",{w:"Old Breton glosses in the Leiden manuscript, c. AD 800",s:"about 100,000, most over sixty"})]},
+  {n:"Germanic",d:"c. 500 BC, southern Scandinavia",w:"runes on the Vimose comb, Denmark, c. AD 160",s:"over 500 million native speakers, most of them of English",c:[
+    {n:"North",d:"split c. AD 200",w:"Younger Futhark runestones, from c. AD 800 (Rök)",s:"about 21 million",c:[
+      L("Icelandic","germn",{w:"law codes and sagas, 12th century AD",s:"about 350,000"}),
+      L("Norwegian","germn",{w:"Old Norwegian manuscripts, c. AD 1150",s:"about 5 million"}),
+      L("Swedish","germn",{w:"Rök runestone, c. AD 800; Västgötalagen, c. 1280",s:"about 10 million"}),
+      L("Danish","germn",{w:"Jelling stones, c. AD 965",s:"about 6 million"})]},
+    {n:"West",d:"split c. AD 200",w:"runic inscriptions, 5th century AD",s:"about 500 million native speakers",c:[
+      L("English","germw",{w:"Cædmon's Hymn, late 7th century AD",s:"about 390 million native, 1.5 billion in all"}),
+      L("Dutch","germw",{w:"the pen-trial “Hebban olla vogala”, c. AD 1100",s:"about 25 million"}),
+      L("German","germw",{w:"the Abrogans glossary, c. AD 770",s:"75–95 million native, on differing counts of dialect speakers"}),
+      L("Yiddish","germw",{w:"a blessing in the Worms Mahzor, AD 1272",s:"about 600,000, mostly in Hasidic communities",note:"From Middle High German, c. 10th century AD."})]}]},
+  {n:"Italic",d:"c. 1000 BC",w:"Latin and Faliscan inscriptions, 7th–6th century BC",s:"nearly 900 million, through the Romance languages",c:[{n:"Latin",d:"c. 700 BC, Rome",w:"the Lapis Niger, Roman Forum, 6th century BC",s:"no native speakers; the language of the Catholic Church",c:[{n:"Romance",d:"from c. AD 600",w:"the Strasbourg Oaths, AD 842",s:"nearly 900 million native speakers",c:[
+    L("Portuguese","romance",{w:"the testament of Afonso II, AD 1214",s:"about 250 million"}),
+    L("Spanish","romance",{w:"the Glosas Emilianenses, 10th–11th century AD",s:"about 485 million native"}),
+    L("French","romance",{w:"the Strasbourg Oaths, AD 842",s:"about 80 million native, 300 million in all"}),
+    L("Italian","romance",{w:"the Placiti Cassinesi, AD 960",s:"about 65 million"}),
+    L("Sardinian","romance",{w:"charters of the Sardinian judicates, c. AD 1070–80",s:"about a million, falling"}),
+    L("Romanian","romance",{w:"Neacșu's letter, AD 1521",s:"about 24 million"})]}]}]},
+  {n:"Hellenic",w:"Linear B tablets, c. 1400 BC: the longest written record of any living Indo-European language",c:[L("Greek","hellenic",{w:"Linear B, c. 1400 BC; in the alphabet from c. 800 BC",s:"about 13 million"})],lab:false},
+  {n:"Albanian",w:"a baptismal formula, AD 1462",c:[L("Albanian","albanian",{w:"a baptismal formula, AD 1462; Buzuku's Missal, 1555",s:"about 7.5 million"})],lab:false},
+  {n:"Balto-Slavic",d:"c. 1500 BC",w:"never written; reconstructed from its descendants",s:"about 300 million",c:[
+    {n:"Baltic",w:"Old Prussian word lists, 14th century AD",s:"about 4.5 million",c:[
+      L("Lithuanian","baltic",{w:"Mažvydas's Catechism, AD 1547, the first printed book",s:"about 3 million"}),
+      L("Latvian","baltic",{w:"a Catholic catechism, AD 1585",s:"about 1.5 million"})]},
+    {n:"Slavic",d:"spread c. AD 500–700",w:"Old Church Slavonic gospels, after AD 863",s:"about 300 million",c:[
+      {n:"West",w:"names and glosses in Latin documents, 11th–13th century AD",s:"about 55 million",c:[
+        L("Polish","slavw",{w:"the first sentence, in the Book of Henryków, AD 1270",s:"about 40 million"}),
+        L("Czech","slavw",{w:"the first sentence, on the Litoměřice chapter charter, early 13th century AD",s:"about 10 million"}),
+        L("Slovak","slavw",{w:"the Spiš prayers, AD 1480, in Slovakised Czech",s:"about 5 million"})]},
+      {n:"East",w:"the Novgorod Codex, c. AD 1000; birch-bark letters from the 11th century",s:"about 185 million",c:[
+        L("Russian","slave",{w:"Old East Slavic, shared with Ukrainian and Belarusian, 11th century AD",s:"about 150 million"}),
+        L("Belarusian","slave",{w:"the Ruthenian chancery language of Lithuania; Skaryna's Bible, AD 1517",s:"about 5 million declare it native; far fewer use it daily"}),
+        L("Ukrainian","slave",{w:"Ruthenian charters, 14th century AD; Kotliarevsky's Eneida, 1798, first in the modern vernacular",s:"about 30 million"})]},
+      {n:"South",w:"Old Church Slavonic, written in Bulgaria and Macedonia from the 890s",s:"about 30 million",c:[
+        L("Slovene","slavs",{w:"the Freising manuscripts, c. AD 1000",s:"about 2.1 million"}),
+        L("Serbo-Croatian","slavs",{w:"the Baška tablet, c. AD 1100, in Glagolitic",s:"about 17 million",note:"Croatian, Serbian, Bosnian, Montenegrin."}),
+        L("Macedonian","slavs",{w:"standardised 1945; Ohrid's Old Church Slavonic, 10th century AD, is its literary forerunner",s:"about 1.5 million"}),
+        L("Bulgarian","slavs",{w:"Old Church Slavonic, Preslav and Ohrid, 10th century AD",s:"about 7 million"})]}]}]}]},
+ {n:"Proto-Uralic",d:"c. 3000 BC or earlier, Volga–Urals",w:"never written; reconstructed from its descendants",s:"about 25 million, nearly all Hungarian, Finnish or Estonian",dx:-22,dy:15,c:[
+   {n:"Finnic",w:"birch-bark letter no. 292, Novgorod, 13th century AD",s:"about 6.5 million",c:[
+     L("Finnish","uralic",{w:"Agricola's ABC book, c. AD 1543",s:"about 5 million"}),
+     L("Estonian","uralic",{w:"the Wanradt–Koell Catechism, AD 1535",s:"about 1.1 million"})]},
+   {n:"Ugric",w:"words in the Tihany charter, AD 1055",s:"about 13 million",c:[
+     L("Hungarian","uralic",{w:"words in the Tihany charter, AD 1055; the Funeral Sermon, c. 1195",s:"about 13 million"})]}]},
+ {n:"Semitic",d:"Afro-Asiatic family, c. 3750 BC",w:"Akkadian cuneiform, from c. 2500 BC",s:"about 400 million, mostly Arabic",dx:14,dy:-11,c:[
+   L("Hebrew","semitic",{w:"inscriptions, 10th–9th century BC; the Hebrew Bible",s:"about 5 million native, 9 million in all",note:"Revived as a spoken vernacular c. 1880–1920."}),
+   L("Aramaic","#9A9285",{w:"royal inscriptions, 10th–9th century BC",s:"under a million, across several Neo-Aramaic languages"}),
+   L("Arabic","#9A9285",{w:"the Namara inscription, AD 328, in Nabataean letters",s:"about 380 million native"})]},
+ L("Basque","#9A9285",{w:"glosses in the Emilianense manuscript, 10th–11th century AD; first book 1545",s:"about 810,000 aged 16 and over (2021 survey)",note:"A language isolate with no known relatives."})
+]},{W:820,R:250,scale:SC.lang,fields:[["w","First written"],["s","Speakers"]],aria:"Radial tree of the language families and branches in the atlas. Each point is a button; activating it shows its date, first written record and speakers.",
+ caption:"The same branching repeats at every scale — families split into branches, branches into languages, languages into dialects — which is why a radial tree reads as a fractal. The dashed centre is not an ancestor: Indo-European, Uralic and Semitic have no demonstrated common origin, and Basque sits alone with no relatives at all. The Indo-European root is placed on the Pontic-Caspian steppe, following the steppe hypothesis that the ancient-DNA results in the Ancestry section support. Grey leaves are not the majority vernacular of any unit on the map. Hover over or tap any point or name for its date, its first written record and its speakers today; its line back to the root and its descendants light up. Speaker figures are rounded first-language counts from the latest census or Ethnologue."});
 
-radialTree("scrtree",{n:"Proto-Sinaitic",d:"c. 1850 BCE, Sinai, adapted from Egyptian hieroglyphs",lab:false,c:[
-  {n:"Phoenician",d:"c. 1050 BCE",dy:-9,c:[
-   {n:"Greek",d:"c. 800 BCE",c:[
-     {n:"Old Italic",d:"c. 700 BCE, Etruscan",c:[
-       {n:"Latin",d:"c. 600 BCE",c:[
-         L("W. Europe, Anglosphere","latin"),L("Poland, Bohemia, Slovakia","latin"),L("Croatia, Slovenia","latin"),L("Baltics, Finland, Hungary","latin"),
-         L("Romania, 1860s","latin"),L("Moldova, 1989","latin"),L("Albania, 1908","latin"),L("Turkey, 1928","#9A9285",{note:"outside the atlas"}),
-         L("Fraktur, to 1941","latin",{dead:true,note:"German blackletter, abolished by decree"}),L("Ogham","latin",{dead:true,d:"c. 4th century, Ireland"})]},
-       L("Runes","#9A9285",{dead:true,d:"c. 150 CE",note:"Germanic, derived from Old Italic letters"})]},
-     L("Gothic","#9A9285",{dead:true,d:"4th century, Wulfila"}),
-     {n:"Glagolitic",d:"863, Cyril and Methodius",c:[L("Croatian liturgy","#9A9285",{dead:true,note:"kept with papal permission from 1248"})]},
-     {n:"Cyrillic",d:"c. 893, Preslav",c:[L("Russia, Belarus, Ukraine","cyr"),L("Bulgaria, Macedonia","cyr"),L("Serbia, Montenegro, Bosnia","digraph",{note:"Cyrillic and Latin both in use"}),L("Moldova, 1940–89","cyr",{dead:true})]},
-     L("Modern Greek","greek")]},
-   {n:"Aramaic",d:"c. 800 BCE",c:[
-     {n:"Hebrew",d:"square script, c. 200 BCE",c:[L("Israel: Hebrew","hebrew"),L("Ashkenazim: Yiddish","hebrew")]},
-     {n:"Arabic",d:"c. 400 CE",c:[L("Ottoman Turkish, to 1928","#9A9285",{dead:true}),L("Albanian, before 1908","#9A9285",{dead:true})]}]}]}]},
- {W:880,R:240,scale:SC.scr,rootLabel:"Proto-Sinaitic",aria:"Radial tree of the alphabets in the atlas, from the Proto-Sinaitic script",
-  caption:"Every alphabet in the atlas descends from a single invention: the Proto-Sinaitic script of about 1850 BCE, adapted from Egyptian hieroglyphs, at the centre. Phoenician passed it to the Greeks, the Greeks to the Etruscans and so to Rome, and Greek letters again, a millennium later, to Cyril's disciples. This is Fichte's problem in its strongest form: no people on the map writes in letters it invented. Dates on the leaves mark when a people adopted the script. Dashed branches are scripts abandoned or confined to liturgy; grey leaves lie outside the atlas. Hover or tap a node for its date."});
+radialTree("scrtree",{n:"Proto-Sinaitic",d:"c. 1850 BC, Sinai, adapted from Egyptian hieroglyphs",k:"about two dozen signs, consonants only",w:"inscriptions at the turquoise mines of Serabit el-Khadim, Sinai",lab:false,c:[
+  {n:"Phoenician",d:"c. 1050 BC",k:"22 letters, consonants only",w:"the Ahiram sarcophagus, Byblos, c. 1000 BC",dy:-10,c:[
+   {n:"Greek",d:"c. 800 BC",k:"24 letters in the classical Ionic alphabet; the first to write vowels",w:"the Dipylon jug, Athens, c. 740 BC",c:[
+     {n:"Old Italic",d:"c. 700 BC, Etruscan",k:"26 letters in the Marsiliana model alphabet",w:"the Marsiliana tablet, c. 700 BC",c:[
+       {n:"Latin",d:"c. 600 BC",k:"21 letters in early Rome; 23 in the classical alphabet, with Y and Z",w:"the Lapis Niger, Roman Forum, 6th century BC",c:[
+         L("W. Europe, Anglosphere","latin",{d:"adopted with conversion, 4th–8th century AD",k:"English 26; most others add accented letters, German also ß"}),
+         L("Poland, Bohemia, Slovakia","latin",{d:"adopted with Latin Christianity: Bohemia after AD 885, Poland 966",k:"Polish 32, Czech 42, Slovak 46"}),
+         L("Croatia, Slovenia","latin",{d:"Latin rite from the 8th–9th century AD",k:"Croatian 30, Slovene 25"}),
+         L("Baltics, Finland, Hungary","latin",{d:"with conversion: Hungary c. AD 1000, Finland and Livonia 12th–13th century, Lithuania 1387",k:"Lithuanian 32, Latvian 33, Estonian 27, Finnish 29, Hungarian 44"}),
+         L("Romania, 1860s","latin",{d:"official 1860–62, replacing Romanian Cyrillic",k:"31 letters"}),
+         L("Moldova, 1989","latin",{d:"restored by law, AD 1989",k:"31 letters, as in Romanian"}),
+         L("Albania, 1908","latin",{d:"Congress of Manastir, AD 1908",k:"36 letters"}),
+         L("Turkey, 1928","#9A9285",{d:"Atatürk's alphabet law, AD 1928",k:"29 letters",note:"Outside the atlas."}),
+         L("Fraktur, to 1941","latin",{dead:true,d:"German print from the 16th century until 1941",k:"the roman letters in blackletter form, with long s",note:"German blackletter, abolished by decree."}),
+         L("Ogham","latin",{dead:true,d:"c. 4th century AD, Ireland",k:"20 letters in four groups of five, cut as strokes along an edge",w:"memorial stones, 4th–6th century AD"})]},
+       L("Runes","#9A9285",{dead:true,d:"c. AD 150",k:"24 in the Elder Futhark, 16 in the Younger",w:"the Vimose comb, Denmark, c. AD 160",note:"Germanic, derived from Old Italic letters."})]},
+     L("Gothic","#9A9285",{dead:true,d:"4th century AD, Wulfila",k:"27 letters, most from Greek",w:"the Codex Argenteus, 6th century AD"}),
+     {n:"Glagolitic",d:"AD 863, Cyril and Methodius",k:"about 40 letters",w:"the Kiev Missal, 10th century AD",c:[L("Croatian liturgy","#9A9285",{dead:true,w:"the Baška tablet, c. AD 1100",note:"Kept with papal permission from 1248."})]},
+     {n:"Cyrillic",d:"c. AD 893, Preslav",k:"about 43 letters in the early alphabet",w:"inscriptions at Preslav, 10th century AD",c:[
+       L("Russia, Belarus, Ukraine","cyr",{k:"Russian 33, Belarusian 32, Ukrainian 33"}),
+       L("Bulgaria, Macedonia","cyr",{k:"Bulgarian 30, Macedonian 31"}),
+       L("Serbia, Montenegro, Bosnia","digraph",{k:"30 in Serbian Cyrillic, matching Gaj's Latin letter for letter",note:"Cyrillic and Latin both in use."}),
+       L("Moldova, 1940–89","cyr",{dead:true,d:"imposed 1940 and again 1944–89",k:"Russian letters adapted to Romanian"})]},
+     L("Modern Greek","greek",{d:"the same alphabet in unbroken use since c. 800 BC",k:"24 letters"})]},
+   {n:"Aramaic",d:"c. 800 BC",k:"22 letters, consonants only",w:"the Tell Fekheriye statue, 9th century BC",c:[
+     {n:"Hebrew",d:"square script, c. 200 BC",k:"22 letters, five with final forms",w:"the Dead Sea Scrolls, from the 3rd century BC",c:[
+       L("Israel: Hebrew","hebrew",{k:"22 letters; vowel points mostly left out"}),
+       L("Ashkenazim: Yiddish","hebrew",{k:"Hebrew letters, some used as vowels"})]},
+     {n:"Arabic",d:"c. AD 400",k:"28 letters",w:"the Zabad inscription, AD 512",c:[
+       L("Ottoman Turkish, to 1928","#9A9285",{dead:true,k:"Arabic letters with Persian additions"}),
+       L("Albanian, before 1908","#9A9285",{dead:true,k:"Arabic, Greek and Latin letters all in use, by faith and region"})]}]}]}]},
+ {W:880,R:240,scale:SC.scr,rootLabel:"Proto-Sinaitic",fields:[["k","Letters"],["w","Earliest text"]],aria:"Radial tree of the alphabets in the atlas, from the Proto-Sinaitic script. Each point is a button; activating it shows its date, letters and earliest surviving text.",
+  caption:"Every alphabet in the atlas descends from a single invention: the Proto-Sinaitic script of about 1850 BC, adapted from Egyptian hieroglyphs, at the centre. Phoenician passed it to the Greeks, the Greeks to the Etruscans and so to Rome, and Greek letters again, a millennium later, to Cyril's disciples. This is Fichte's problem in its strongest form: no people on the map writes in letters it invented. Dates on the leaves mark when a people adopted the script. Dashed branches are scripts abandoned or confined to liturgy; grey leaves lie outside the atlas. Hover over or tap any point or name for its date, its letters and its earliest surviving text; its line back to the centre and its descendants light up."});
 
 </script>
 </body>
