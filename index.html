@@ -535,6 +535,124 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 body{padding-top:var(--navh,62px)}
 @media(min-width:941px){body{padding-top:var(--navh,59px)}}
 @media print{.topnav{position:static}body{padding-top:0}}
+/* ---- v2.0.9: phone consoles ----
+   On narrow or portrait screens each map plate (I, III, IV) becomes one screen-high console: legend on top, map in the middle,
+   controls under it, and the region card in a sheet along the bottom, so nothing needs scrolling back and forth.
+   Built by consPlace() in the script; on wider screens the plates are untouched. */
+.cons-top,.cons-stage,.cons-rail,.cons-sheet,.cons-after{display:none}
+.mapgrid.cons{display:flex;flex-direction:column;align-items:stretch;gap:0;position:relative;overflow:hidden;
+ height:calc(100vh - var(--navh,56px) - 10px);height:calc(100svh - var(--navh,56px) - 10px);min-height:440px;max-height:980px;
+ border:1px solid var(--edge);background:var(--paper);scroll-margin-top:var(--navh,56px)}
+.mapgrid.cons>.mapcol,.mapgrid.cons>.side{display:none}
+.cons>.cons-top{display:flex;align-items:stretch;flex:0 0 auto;border-bottom:1px solid var(--edge);background:var(--paper)}
+.cons-step{flex:0 0 38px;border:0;background:transparent;color:var(--ink);font-size:22px;line-height:1;cursor:pointer;padding:0}
+.cons-step:active{background:var(--hover)}
+.cons-lg{flex:1 1 auto;min-width:0;padding:6px 2px 7px}
+.cons-cap{font-family:'Barlow Semi Condensed','Arial Narrow',Arial,sans-serif;font-weight:600;font-size:12px;letter-spacing:.03em;text-transform:uppercase;color:var(--ink);
+ white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-bottom:3px}
+.cons-cap:empty{display:none}
+.cons-top .legend{margin:0;padding:0;position:static;box-shadow:none;border:0;max-height:none;background:transparent;display:flex;flex-wrap:nowrap;gap:0;
+ overflow-x:auto;overflow-y:hidden;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.cons-top .legend::-webkit-scrollbar{display:none}
+.cons-top .legend li{flex:0 0 auto;font-size:13px;white-space:nowrap;align-items:center;margin-right:13px;max-width:none}
+.cons-top .legend .lgcap{display:none}
+.cons-top .legend .lgramp{flex:1 0 100%;margin-right:0}
+.cons-top .lgends{font-size:12.5px}
+.cons-top.nostep .cons-step{visibility:hidden;flex-basis:10px}
+.cons>.cons-stage{display:block;position:relative;flex:1 1 auto;min-height:120px;background:var(--sea);overflow:hidden;touch-action:pan-y;-webkit-user-select:none;user-select:none}
+.cons-stage.zoomed{touch-action:none}
+.cons-stage>.mapscroll,.cons-stage>.inset{position:absolute;inset:0;margin:0;border:0;max-width:none;display:none;overflow:hidden;background:var(--sea)}
+.cons-stage>.on{display:block}
+.cons-stage svg{display:block;width:100%!important;height:100%!important;min-width:0!important;max-width:none!important}
+.cons-stage .inset .cap{display:none}
+.cons-pager{position:absolute;left:0;right:0;top:0;z-index:2;display:flex;gap:6px;padding:8px 8px 4px;overflow-x:auto;scrollbar-width:none;pointer-events:none}
+.cons-pager::-webkit-scrollbar{display:none}
+.cons-pager>*{pointer-events:auto}
+.cons-pg,.cons-pager button[data-u]{flex:0 0 auto;font-family:'Barlow Semi Condensed','Arial Narrow',Arial,sans-serif;font-size:13.5px;font-weight:600;line-height:1;
+ padding:7px 11px;border-radius:999px;border:1px solid var(--edge);background:var(--paper);color:var(--ink);cursor:pointer;box-shadow:0 1px 3px rgba(0,0,0,.12);margin:0}
+.cons-pg[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.cons-pager button[data-u]{border-style:dashed;border-color:rgba(0,0,0,.35)}
+.cons-pager .sep{flex:0 0 1px;background:var(--edge);margin:3px 2px}
+.cons-zoom{position:absolute;right:8px;bottom:8px;z-index:2;display:flex;flex-direction:column;gap:6px}
+.cons-zoom button{width:38px;height:38px;border-radius:50%;border:1px solid var(--edge);background:var(--paper);color:var(--ink);font-size:20px;line-height:1;cursor:pointer;box-shadow:0 1px 4px rgba(0,0,0,.18);padding:0}
+.cons-zoom .zr{font-size:15px;display:none}
+.cons-stage.zoomed .cons-zoom .zr{display:block}
+.cons-tip{position:absolute;left:50%;bottom:10px;transform:translateX(-50%);z-index:2;font-family:'Barlow Semi Condensed','Arial Narrow',Arial,sans-serif;font-size:13px;
+ background:rgba(20,20,20,.72);color:#fff;padding:5px 10px;border-radius:999px;white-space:nowrap;pointer-events:none;transition:opacity .4s}
+.cons-tip.gone{opacity:0}
+.cons>.cons-rail{display:block;flex:0 0 auto;border-top:1px solid var(--edge);background:var(--paper);padding:6px 0 5px}
+.cons-rail:empty{display:none}
+.cons-rail h4{display:none}
+.cons-rail .tabs,.cons-rail .steps,.cons-rail .stepnav{display:flex;flex-wrap:nowrap;overflow-x:auto;gap:5px;margin:0 0 5px;padding:0 10px;scrollbar-width:none;scroll-snap-type:x proximity}
+.cons-rail .tabs:last-child,.cons-rail .stepnav:last-child{margin-bottom:0}
+.cons-rail .tabs::-webkit-scrollbar,.cons-rail .steps::-webkit-scrollbar{display:none}
+.cons-rail .tab{flex:0 0 auto;scroll-snap-align:center;font-size:14px;min-height:34px;padding:5px 11px;white-space:nowrap}
+.cons-rail .stepnav button{flex:1 1 0;font-size:14px;min-height:32px}
+.cons-rail .steps .stp{flex:0 0 auto}
+.cons>.cons-sheet{display:flex;flex-direction:column;flex:0 0 auto;max-height:46%;border-top:2px solid var(--rule);background:var(--paper-deep);
+ box-shadow:0 -6px 16px rgba(0,0,0,.12);transition:max-height .22s ease}
+.cons-sheet[data-s="hint"]{max-height:28%}
+.cons-sheet[data-s="full"]{max-height:84%}
+.cons-bar{display:flex;align-items:center;gap:4px;padding:9px 6px 3px 12px;flex:0 0 auto;position:relative;touch-action:none;cursor:grab}
+.cons-bar::before{content:"";position:absolute;left:50%;top:4px;width:38px;height:4px;margin-left:-19px;border-radius:2px;background:var(--edge)}
+.cons-sel{position:relative;flex:0 1 auto;min-width:0;margin-right:auto}
+.cons-sel select{width:100%;max-width:100%;-webkit-appearance:none;appearance:none;border:0;background:transparent;color:var(--ink);font-family:inherit;font-size:20px;font-weight:600;
+ padding:2px 22px 2px 0;text-overflow:ellipsis;cursor:pointer}
+.cons-sel::after{content:"▾";position:absolute;right:4px;top:50%;transform:translateY(-50%);color:var(--soft);pointer-events:none;font-size:14px}
+.cons-bar .cons-x{flex:0 0 36px;height:36px;border:0;background:transparent;color:var(--soft);font-size:22px;line-height:1;cursor:pointer;padding:0}
+.cons-bar .cons-ex{flex:0 0 auto;height:30px;border:1px solid var(--edge);border-radius:999px;background:var(--paper);color:var(--ink);cursor:pointer;padding:0 11px;
+ font-family:'Barlow Semi Condensed','Arial Narrow',Arial,sans-serif;font-size:14px;font-weight:600}
+.cons-sheet[data-s="hint"] .cons-ex,.cons-sheet:not(.has) .cons-x{display:none}
+.cons-body{flex:1 1 auto;min-height:0;overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;touch-action:pan-y}
+.cons-sheet.has .cons-body>#readout{display:none}
+.cons-body>#readout{padding:2px 14px 4px}
+.cons-body>#readout h3{font-size:17px;margin:0 0 4px}
+.cons-body>#readout p{font-size:14.5px;line-height:1.45}
+.cons-body>.card,.cons-body>.lmcard{margin:0 0 6px;border:0;background:transparent;padding-top:4px}
+.cons-body .card.rc{display:flex;flex-direction:column;padding:0}
+.cons-body .rc-head{order:-2;padding:0 14px 6px;background:transparent;border:0}
+.cons-body .rc-head h3,.cons-body .rc-x,.cons-body #ccard>h3:first-child{display:none}
+.cons-body .rc-row.on{order:-1;background:var(--paper);border-top:1px solid var(--edge);border-bottom:2px solid var(--rule);padding-top:10px;padding-bottom:12px}
+.cons-body .rc-row.on .rc-val{font-size:1.12em}
+.cons-body .rc-row{cursor:pointer}
+.cons-swipe{font-family:'Barlow Semi Condensed','Arial Narrow',Arial,sans-serif;font-size:12.5px;color:var(--soft);text-align:center;padding:2px 0 8px}
+.cons-after{margin-top:12px}
+.mapgrid.cons+.cons-after{display:block}
+@media(max-width:839px),(max-width:999px) and (orientation:portrait){html{scroll-snap-type:y proximity}.mapgrid.cons{scroll-snap-align:start}}
+
+/* Plate II on phones: the whole matrix as a colour grid that fits the screen; tap a square for its value */
+.mview{display:none}
+.mg,.mgdet{display:none}
+@media(max-width:839px),(max-width:999px) and (orientation:portrait){
+ .mview{display:flex;margin:0 0 10px}
+ .matbleed.vgrid .mwrap{display:none}
+ .matbleed.vgrid .mg{display:grid}
+ .matbleed.vgrid .mgdet{display:block}
+}
+.mg{grid-template-columns:42px repeat(13,minmax(0,1fr));gap:1px;background:var(--edge);border:1px solid var(--edge)}
+.mg .mh{position:sticky;top:var(--navh,56px);z-index:2;background:var(--paper);height:96px;display:flex;align-items:flex-end;justify-content:center;padding:4px 0;border:0;cursor:pointer;color:var(--soft);
+ font-family:'Barlow Semi Condensed','Arial Narrow',Arial,sans-serif;font-size:12.5px;font-weight:600}
+.mg .mh span{writing-mode:vertical-rl;transform:rotate(180deg);white-space:nowrap}
+.mg .mh[aria-sort]{color:var(--ink);box-shadow:inset 0 -3px 0 var(--sel)}
+.mg .mh.cx{background:var(--paper-deep);color:var(--ink)}
+.mg .mc0{position:sticky;top:var(--navh,56px);z-index:3;background:var(--paper)}
+.mg .mr{background:var(--paper);font-family:'Barlow Semi Condensed','Arial Narrow',Arial,sans-serif;font-size:11.5px;font-weight:600;line-height:15px;padding:0 0 0 5px;border:0;text-align:left;color:var(--ink);cursor:pointer}
+.mg .mr.cx{background:var(--ink);color:var(--paper)}
+.mg .mq{display:block;height:15px;border:0;padding:0;margin:0;cursor:pointer}
+.mg .mq.cx{outline:2px solid var(--ink);outline-offset:-1px;position:relative;z-index:1}
+.mg .mq.cr{box-shadow:inset 0 0 0 99px rgba(255,255,255,.18)}
+.mgdet{position:sticky;bottom:0;z-index:4;background:var(--paper);border:1px solid var(--edge);border-top:2px solid var(--rule);padding:8px 12px;
+ font-family:'Barlow Semi Condensed','Arial Narrow',Arial,sans-serif;font-size:15px;line-height:1.3;min-height:48px;box-shadow:0 -4px 10px rgba(0,0,0,.08)}
+.mgdet b{font-size:16px}
+.mgdet .vchip{margin:0 4px}
+.mgdet .soft{color:var(--soft)}
+
+/* Plate V on phones: tap a facet row to read both regions' values */
+.cmphint{display:none}
+@media(max-width:700px){.cmphint{display:block;font-family:'Barlow Semi Condensed','Arial Narrow',Arial,sans-serif;font-size:14px;color:var(--soft);margin:4px 0 6px}
+ table.cmptbl tbody tr:not(.tot){cursor:pointer}
+ table.cmptbl tr.open .vlong{display:block;max-width:none;font-size:13px;margin-top:5px}
+ table.cmptbl tr.open th{color:var(--sel)}}
 </style>
 </head>
 <body id="top">
@@ -604,7 +722,7 @@ body{padding-top:var(--navh,62px)}
 
 <h2 id="map2">Plate II — the facet matrix</h2>
 <p class="sub">Tap a column heading to sort. The run count reports how many contiguous blocks each other column breaks into; a facet that agreed with the sort would sit at its floor, one block per category.</p>
-<div class="bleed matbleed"><div class="mwrap"><table class="matrix"><thead><tr id="mhead"></tr></thead><tbody id="mbody"></tbody></table></div>
+<div class="bleed matbleed vgrid" id="mbleed"><div class="tabs mview" role="group" aria-label="View"><button type="button" class="tab" data-v="grid" aria-pressed="true">Colour grid</button><button type="button" class="tab" data-v="table" aria-pressed="false">Full table</button></div><div class="mwrap"><table class="matrix"><thead><tr id="mhead"></tr></thead><tbody id="mbody"></tbody></table></div><div class="mg" id="mgrid" role="grid" aria-label="Every region by every facet, as colours"></div><div class="mgdet" id="mgdet" aria-live="polite"></div>
 <p class="runs" id="runs"></p></div>
 <p class="sub" style="margin-top:8px">Biological cells read ancestry as steppe, farmer and forager percentages; Family cells the side of the Hajnal line (W, E or on the line), the kinship-intensity index (KII) where the Ethnographic Atlas covers the region, and the share of marriages between cousins, n/a where Bittles's compilation has no figure; Learning cells the year of the first university and the years of schooling in 1910; Trust and Individualism cells their survey scores; Foodways cells the share of alcohol drunk as beer, wine and spirits. The four measured facets are sorted, and their runs counted, by thirds of their score.</p>
 
@@ -2148,7 +2266,7 @@ function paint(){
  Array.prototype.forEach.call(document.querySelectorAll(".unitbtn"),function(b){var d=BYC[b.dataset.u],c=fill(d,active);b.style.background=c;b.style.color=textOn(c);b.style.outline=b.dataset.u===selected?"2px solid var(--ink)":"none"});
  Array.prototype.forEach.call(document.querySelectorAll(".cunit"),function(p){p.classList.toggle("sel",p.dataset.u===selected)});
  Array.prototype.forEach.call(document.querySelectorAll(".cunitbtn"),function(b){b.style.outline=b.dataset.u===selected?"2px solid var(--ink)":"none"});
- legend();readout();card();ccard();dendroSel();lmShow();lmCard();fbfPaint();
+ legend();readout();card();ccard();dendroSel();lmShow();lmCard();fbfPaint();consSync();
 }
 /* legends: a caption, then a colour bar with its two ends or a short list of swatches. Detail lives in each region's card and under Category explanations */
 var LGSHORT={con:{cath:"Catholic",prot:"Protestant",orth:"Orthodox",greek:"Greek Catholic",islam:"Muslim",split:"Mixed",jew:"Jewish"},
@@ -2166,15 +2284,132 @@ function legend(){var f=active,h,grid=false,used={};R.forEach(function(d){used[d
  else{grid=true;h=Object.keys(SC[f]).filter(function(k){return used[k]}).map(function(k){return lgSw(SC[f][k][0],(LGSHORT[f]&&LGSHORT[f][k])||SC[f][k][2].replace("<br>"," · "))}).join("")}
  var el=document.getElementById("legend");el.className="legend"+(grid?" lggrid":"");el.innerHTML='<li class="lgcap">'+LGCAP[f]+'</li>'+h;
 }
-/* on narrow or portrait screens each legend moves to sit under its map and stays pinned to the bottom of the screen while the map is in view */
+/* ---------- v2.0.9: phone consoles ----------
+   On narrow or portrait screens each map plate becomes one screen-high console (see the CSS of the same name): the legend on top with
+   arrows to step through facets, the map in the middle with its insets as pages and pinch or button zoom, the plate's controls under it,
+   and the region card in a sheet along the bottom that can be pulled up, flicked sideways to change facet, or pointed at another region
+   from its menu. The nodes are moved, not copied, and go back where they were when the screen widens. */
 var NARROW_MQ="(max-width:839px),(max-width:999px) and (orientation:portrait)";
-function lgPlace(){var nar=window.matchMedia&&window.matchMedia(NARROW_MQ).matches;
- ["legend","plegend","clegend"].forEach(function(id){var ul=document.getElementById(id),grid=ul&&ul.closest(".mapgrid"),ms=grid&&grid.querySelector(".mapscroll");if(!ms)return;
-  if(!ul._anchor){ul._anchor=document.createComment("legend");ul.parentNode.insertBefore(ul._anchor,ul);var h=ul.previousElementSibling;ul._head=h&&h.tagName==="H4"&&/Legend/.test(h.textContent)?h:null}
-  if(nar&&!ul.classList.contains("lgmob")){ms.parentNode.insertBefore(ul,ms.nextSibling);ul.classList.add("lgmob")}
-  else if(!nar&&ul.classList.contains("lgmob")){ul._anchor.parentNode.insertBefore(ul,ul._anchor.nextSibling);ul.classList.remove("lgmob")}
-  if(ul._head)ul._head.style.display=nar?"none":""})}
-setTimeout(function(){lgPlace();if(window.matchMedia){var mq=window.matchMedia(NARROW_MQ);if(mq.addEventListener)mq.addEventListener("change",lgPlace)}},0);
+var CONS=[],consTouched=null,consLastSel=null;
+var CONS_PAGES=["Europe","N. America","Oceania","Israel"];
+function consMv(n,to,before){if(!n)return;if(!n._home){n._home=document.createComment("home");n.parentNode.insertBefore(n._home,n)}if(before)to.insertBefore(n,before);else to.appendChild(n)}
+function consHome(n){if(n&&n._home&&n._home.parentNode)n._home.parentNode.insertBefore(n,n._home.nextSibling)}
+function consCfg(grid){var eu=grid.querySelector(".mapscroll svg"),id=eu.id,pf=id.slice(0,-2);
+ return {plate:pf,legend:{map:"legend",pm:"plegend",cm:"clegend"}[pf],nomap:{map:"nomap",pm:"pnomap",cm:"cnomap"}[pf],
+  card:{map:"card",pm:"pcard",cm:"ccard"}[pf],ctl:{map:"tabs",pm:"fbfctl",cm:null}[pf]}}
+function consStep(c,dir){
+ if(c.cfg.plate==="map"){var i=FACETS.map(function(f){return f.id}).indexOf(active);setFacet(FACETS[(i+dir+FACETS.length)%FACETS.length].id)}
+ else if(c.cfg.plate==="pm"){if(fbfMode==="alone"){var j=FACETS.map(function(f){return f.id}).indexOf(fbfFacet);fbfFacet=FACETS[(j+dir+FACETS.length)%FACETS.length].id}
+  else fbfStep=Math.max(1,Math.min(FBF.ORD[fbfOrder].length,fbfStep+dir));fbfCtl();fbfPaint()}
+ consCenterRail(c)}
+function consCenterRail(c){var r=c.rail,b=r&&r.querySelector('.tab[aria-pressed="true"].pfac, #tabs .tab[aria-pressed="true"], .stp[aria-pressed="true"]');
+ if(b){var t=b.parentNode;t.scrollTo({left:b.offsetLeft-t.clientWidth/2+b.offsetWidth/2,behavior:"smooth"})}}
+function consBuild(grid){var cfg=consCfg(grid),c={grid:grid,cfg:cfg,page:0,z:[1,1,1,1],ctr:[null,null,null,null]};
+ var top=document.createElement("div");top.className="cons-top"+(cfg.plate==="cm"?" nostep":"");
+ top.innerHTML='<button type="button" class="cons-step" data-d="-1" aria-label="Previous">‹</button><div class="cons-lg"><div class="cons-cap"></div></div><button type="button" class="cons-step" data-d="1" aria-label="Next">›</button>';
+ var stage=document.createElement("div");stage.className="cons-stage";
+ stage.innerHTML='<div class="cons-pager" role="group" aria-label="Map">'+CONS_PAGES.map(function(n,i){return '<button type="button" class="cons-pg" data-pg="'+i+'" aria-pressed="'+(i===0)+'">'+n+'</button>'}).join("")+'<span class="sep"></span></div>'+
+  '<div class="cons-zoom"><button type="button" class="zi" aria-label="Zoom in">+</button><button type="button" class="zo" aria-label="Zoom out">−</button><button type="button" class="zr" aria-label="Show the whole map">⟲</button></div>'+
+  '<div class="cons-tip">Pinch or double-tap to zoom</div>';
+ var rail=document.createElement("div");rail.className="cons-rail";
+ var sheet=document.createElement("div");sheet.className="cons-sheet";sheet.dataset.s="hint";
+ sheet.innerHTML='<div class="cons-bar"><label class="cons-sel"><span class="vh" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Region</span><select aria-label="Region"><option value="">Choose a region…</option>'+
+  R.map(function(d){return '<option value="'+d[0]+'">'+d[1]+'</option>'}).join("")+'</select></label>'+
+  '<button type="button" class="cons-ex" aria-label="Show the whole card">More ▴</button><button type="button" class="cons-x" aria-label="Clear the region">×</button></div><div class="cons-body"></div>';
+ var after=document.createElement("div");after.className="cons-after";
+ grid.insertBefore(sheet,grid.firstChild);grid.insertBefore(rail,sheet);grid.insertBefore(stage,rail);grid.insertBefore(top,stage);grid.parentNode.insertBefore(after,grid.nextSibling);
+ c.top=top;c.stage=stage;c.rail=rail;c.sheet=sheet;c.after=after;c.body=sheet.querySelector(".cons-body");c.sel=sheet.querySelector("select");
+ c.pager=stage.querySelector(".cons-pager");c.pages=[grid.querySelector(".mapscroll")].concat(Array.prototype.slice.call(grid.querySelectorAll(".inset")));
+ c.svgs=c.pages.map(function(pg){return pg.querySelector("svg")});
+ c.where={};c.svgs.forEach(function(s,i){Array.prototype.forEach.call(s.querySelectorAll("[data-u]"),function(p){c.where[p.dataset.u]=i})});
+ /* events */
+ top.addEventListener("click",function(e){var b=e.target.closest(".cons-step");if(b)consStep(c,+b.dataset.d)});
+ c.pager.addEventListener("click",function(e){var b=e.target.closest(".cons-pg");if(b){e.stopPropagation();consPage(c,+b.dataset.pg)}});
+ stage.querySelector(".zi").addEventListener("click",function(){consZoom(c,2)});
+ stage.querySelector(".zo").addEventListener("click",function(){consZoom(c,.5)});
+ stage.querySelector(".zr").addEventListener("click",function(){c.z[c.page]=1;c.ctr[c.page]=null;consFit(c)});
+ c.sel.addEventListener("change",function(){consTouched=c;selected=c.sel.value||null;paint()});
+ sheet.querySelector(".cons-x").addEventListener("click",function(){consTouched=c;selected=null;if(c.cfg.plate==="map")lmSel=null;paint()});
+ sheet.querySelector(".cons-ex").addEventListener("click",function(){consSheet(c,c.sheet.dataset.s==="full"?"peek":"full")});
+ consGest(c);consSwipe(c);
+ if(window.ResizeObserver)new ResizeObserver(function(){consFit(c)}).observe(stage);
+ grid.addEventListener("pointerdown",function(){consTouched=c},true);
+ return c}
+function consOn(c){var g=c.grid,cfg=c.cfg;g.classList.add("cons");
+ var lg=document.getElementById(cfg.legend);consMv(lg,c.top.querySelector(".cons-lg"));consCap(c);
+ if(!c.mo&&window.MutationObserver){c.mo=new MutationObserver(function(){consCap(c)});c.mo.observe(lg,{childList:true,subtree:true,characterData:true})}
+ c.pages.forEach(function(pg){consMv(pg,c.stage,c.pager)});
+ var nm=document.getElementById(cfg.nomap);Array.prototype.forEach.call(nm.querySelectorAll("button[data-u]"),function(b){consMv(b,c.pager)});
+ if(cfg.ctl)consMv(document.getElementById(cfg.ctl),c.rail);
+ var lm=document.getElementById("lmcard");if(cfg.plate==="map"&&lm)consMv(lm,c.body);
+ consMv(document.getElementById(cfg.card),c.body);
+ if(cfg.plate!=="cm"&&!c.body.querySelector(".cons-swipe")){var sw=document.createElement("div");sw.className="cons-swipe";sw.textContent="Swipe the card sideways to change "+(cfg.plate==="pm"?"facet or step":"facet");c.body.appendChild(sw)}
+ Array.prototype.forEach.call(g.querySelectorAll(".mapcol .hint, .side .hint"),function(x){consMv(x,c.after)});
+ var ro=cfg.plate==="map"&&document.getElementById("readout");if(ro)consMv(ro,c.body,c.body.querySelector(".cons-swipe"));
+ consPage(c,c.page);consSync1(c);setTimeout(function(){consCenterRail(c)},60);setTimeout(function(){var t=c.stage.querySelector(".cons-tip");if(t)t.classList.add("gone")},4500)}
+function consOff(c){var g=c.grid;if(!g.classList.contains("cons"))return;g.classList.remove("cons");
+ Array.prototype.slice.call(g.querySelectorAll(".cons-lg>*,.cons-stage>*,.cons-pager>*,.cons-rail>*,.cons-body>*")).concat(Array.prototype.slice.call(c.after.children)).forEach(function(n){if(n._home)consHome(n)});
+ c.pages.forEach(function(pg){pg.classList.remove("on");pg.style.display=""});
+ c.svgs.forEach(function(s){if(s.dataset.vb)s.setAttribute("viewBox",s.dataset.vb)})}
+function consPlace(){var nar=window.matchMedia&&window.matchMedia(NARROW_MQ).matches;
+ if(!CONS.length)Array.prototype.forEach.call(document.querySelectorAll(".mapgrid"),function(g){if(g.querySelector(".mapscroll svg"))CONS.push(consBuild(g))});
+ CONS.forEach(function(c){if(nar)consOn(c);else consOff(c)})}
+var lgPlace=consPlace;
+setTimeout(function(){consPlace();if(window.matchMedia){var mq=window.matchMedia(NARROW_MQ);if(mq.addEventListener)mq.addEventListener("change",consPlace);else if(mq.addListener)mq.addListener(consPlace)}},0);
+function consPage(c,i){c.page=i;c.pages.forEach(function(pg,k){pg.classList.toggle("on",k===i)});
+ Array.prototype.forEach.call(c.pager.querySelectorAll(".cons-pg"),function(b){b.setAttribute("aria-pressed",String(+b.dataset.pg===i))});consFit(c)}
+/* the view: a box of the stage's own shape that contains the whole map, shrunk by the zoom and kept inside that box */
+function consBase(c){var s=c.svgs[c.page];if(!s.dataset.vb)s.dataset.vb=s.getAttribute("viewBox");var v=s.dataset.vb.split(" ").map(Number),W=v[2],H=v[3],r=c.stage.getBoundingClientRect();
+ if(!r.width||!r.height)return null;var A=r.width/r.height;return W/H>A?{x:0,y:(H-W/A)/2,w:W,h:W/A,W:W,H:H,r:r}:{x:(W-H*A)/2,y:0,w:H*A,h:H,W:W,H:H,r:r}}
+function consFit(c){if(!c.grid.classList.contains("cons"))return;var b=consBase(c);if(!b)return;var s=c.svgs[c.page],z=c.z[c.page],w=b.w/z,h=b.h/z,ct=c.ctr[c.page]||[b.x+b.w/2,b.y+b.h/2];
+ var x=Math.max(b.x,Math.min(b.x+b.w-w,ct[0]-w/2)),y=Math.max(b.y,Math.min(b.y+b.h-h,ct[1]-h/2));c.ctr[c.page]=[x+w/2,y+h/2];
+ s.setAttribute("preserveAspectRatio","xMidYMid meet");s.setAttribute("viewBox",[x,y,w,h].map(function(v){return v.toFixed(2)}).join(" "));
+ c.stage.classList.toggle("zoomed",z>1.01);var zo=c.stage.querySelector(".zo");if(zo)zo.disabled=z<=1.01}
+/* zoom by k about a point on screen (the centre if none), so that the point stays under the finger */
+function consZoom(c,k,px,py){var b=consBase(c);if(!b)return;var z0=c.z[c.page],z=Math.max(1,Math.min(8,z0*k));if(z===z0)return;
+ var w0=b.w/z0,h0=b.h/z0,ct=c.ctr[c.page]||[b.x+b.w/2,b.y+b.h/2],r=b.r;if(px===undefined){px=r.left+r.width/2;py=r.top+r.height/2}
+ var sx=ct[0]-w0/2+(px-r.left)/r.width*w0,sy=ct[1]-h0/2+(py-r.top)/r.height*h0,w=b.w/z,h=b.h/z;
+ c.z[c.page]=z;c.ctr[c.page]=[sx-(px-r.left)/r.width*w+w/2,sy-(py-r.top)/r.height*h+h/2];consFit(c)}
+function consGest(c){var st=c.stage,pts={},pinch=null,drag=null,moved=false,lastTap=0,lastXY=[0,0];
+ function n(){return Object.keys(pts).length}
+ st.addEventListener("pointerdown",function(e){if(e.target.closest(".cons-pager,.cons-zoom"))return;pts[e.pointerId]=[e.clientX,e.clientY];
+  if(n()===1){moved=false;drag={x:e.clientX,y:e.clientY,on:c.z[c.page]>1.01}}
+  if(n()===2){var p=Object.keys(pts).map(function(k){return pts[k]});pinch={d:Math.hypot(p[0][0]-p[1][0],p[0][1]-p[1][1])||1};drag=null;moved=true}});
+ st.addEventListener("pointermove",function(e){if(!pts[e.pointerId])return;pts[e.pointerId]=[e.clientX,e.clientY];
+  if(pinch&&n()===2){var p=Object.keys(pts).map(function(k){return pts[k]}),d=Math.hypot(p[0][0]-p[1][0],p[0][1]-p[1][1])||1;consZoom(c,d/pinch.d,(p[0][0]+p[1][0])/2,(p[0][1]+p[1][1])/2);pinch.d=d;e.preventDefault();return}
+  if(drag){var dx=e.clientX-drag.x,dy=e.clientY-drag.y;if(Math.abs(dx)+Math.abs(dy)>7)moved=true;
+   if(drag.on&&moved){var b=consBase(c),z=c.z[c.page],ct=c.ctr[c.page];if(b&&ct){var k=(b.w/z)/b.r.width;c.ctr[c.page]=[ct[0]-dx*k,ct[1]-dy*k];consFit(c)}drag.x=e.clientX;drag.y=e.clientY;e.preventDefault()}}});
+ function up(e){if(!pts[e.pointerId])return;delete pts[e.pointerId];if(n()<2)pinch=null;
+  if(n()===0){var now=Date.now();if(!moved&&now-lastTap<320&&Math.hypot(e.clientX-lastXY[0],e.clientY-lastXY[1])<30){consZoom(c,c.z[c.page]>=6?.01:2,e.clientX,e.clientY);lastTap=0}else{lastTap=now;lastXY=[e.clientX,e.clientY]}drag=null}}
+ st.addEventListener("pointerup",up);st.addEventListener("pointercancel",function(e){delete pts[e.pointerId];pinch=null;drag=null});
+ st.addEventListener("click",function(e){if(moved&&!e.target.closest(".cons-pager,.cons-zoom")){e.stopPropagation();e.preventDefault();moved=false}},true);
+ st.addEventListener("wheel",function(e){if(!e.ctrlKey&&!e.metaKey)return;e.preventDefault();consZoom(c,Math.exp(-e.deltaY/200),e.clientX,e.clientY)},{passive:false});
+ /* Safari's own pinch gesture on the stage would zoom the page instead */
+ st.addEventListener("gesturestart",function(e){e.preventDefault()})}
+/* the sheet: drag its bar up or down, or flick the card sideways to step through facets */
+function consSwipe(c){var bar=c.sheet.querySelector(".cons-bar"),b0=null;
+ bar.addEventListener("pointerdown",function(e){if(e.target.closest("select,button"))return;b0={y:e.clientY,t:Date.now()}});
+ bar.addEventListener("pointerup",function(e){if(!b0)return;var dy=e.clientY-b0.y,s=c.sheet.dataset.s;b0=null;
+  if(dy<-20)consSheet(c,"full");else if(dy>20)consSheet(c,s==="full"?"peek":(c.sheet.classList.contains("has")?"peek":"hint"));
+  else if(c.sheet.classList.contains("has"))consSheet(c,s==="full"?"peek":"full")});
+ if(c.cfg.plate==="cm")return;var s0=null;
+ c.body.addEventListener("touchstart",function(e){if(e.touches.length!==1){s0=null;return}s0={x:e.touches[0].clientX,y:e.touches[0].clientY}},{passive:true});
+ c.body.addEventListener("touchend",function(e){if(!s0)return;var t=e.changedTouches[0],dx=t.clientX-s0.x,dy=t.clientY-s0.y;s0=null;
+  if(Math.abs(dx)>55&&Math.abs(dx)>1.6*Math.abs(dy)){consTouched=null;consStep(c,dx<0?1:-1)}},{passive:true})}
+function consSheet(c,s){c.sheet.dataset.s=s;var ex=c.sheet.querySelector(".cons-ex");ex.textContent=s==="full"?"Less ▾":"More ▴";ex.setAttribute("aria-label",s==="full"?"Shrink the card":"Show the whole card")}
+function consCap(c){var cap=c.top.querySelector(".cons-cap"),l=c.top.querySelector(".legend .lgcap");cap.textContent=l?l.textContent:""}
+/* the region menu is as wide as the name it shows, so its arrow sits beside the name */
+function consSelW(c){var s=c.sel,o=s.options[s.selectedIndex],cv=consSelW.cv||(consSelW.cv=document.createElement("canvas")),x=cv.getContext("2d"),cs=getComputedStyle(s);
+ x.font=cs.fontWeight+" "+cs.fontSize+" "+cs.fontFamily;s.style.width=Math.ceil(x.measureText(o?o.text:"").width+30)+"px"}
+function consSync1(c){if(!c.grid.classList.contains("cons"))return;
+ var has=!!selected||(c.cfg.plate==="map"&&lmSel!==null);c.sheet.classList.toggle("has",has);c.sel.value=selected||"";consSelW(c);
+ if(has&&c.sheet.dataset.s==="hint")consSheet(c,"peek");if(!has&&c.sheet.dataset.s!=="hint")consSheet(c,"hint");
+ if(selected&&selected!==consLastSel&&c.where[selected]!==undefined&&c.where[selected]!==c.page)consPage(c,c.where[selected])}
+/* after every repaint: sheets follow the selection, and the console the reader is using is brought fully into view */
+function consSync(){CONS.forEach(consSync1);
+ var c=consTouched;if(c&&c.grid.classList.contains("cons")&&selected&&selected!==consLastSel){var r=c.grid.getBoundingClientRect(),nh=parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--navh"))||56;
+  if(r.top<nh-4||r.bottom>window.innerHeight+4)window.scrollTo({top:window.pageYOffset+r.top-nh,behavior:"smooth"})}
+ consLastSel=selected;consTouched=null}
 function readout(){var F=FACETS.filter(function(f){return f.id===active})[0];
  document.getElementById("readout").innerHTML='<h3>'+F.title+'</h3><p style="margin:0 0 .6em">'+F.crit+'</p><p style="margin:0 0 .6em"><strong>Boundary.</strong> '+F.bound+'</p><p style="margin:0"><strong>Groups.</strong> '+F.yes+' <strong>Splits.</strong> '+F.no+'</p>'}
 /* region card: the headline of each facet on its own line, the detail beneath it */
@@ -2189,18 +2424,19 @@ function card(){var el=document.getElementById("card");
  if(!selected){el.className="card";el.innerHTML='<p class="cond" style="margin:0;color:var(--soft)">Tap a region on the map to see every facet for it.</p>';return}
  var d=BYC[selected],k=CWU[selected],cw=CW[k];
  var row=function(f){var c=fill(d,f.id),s=rcSplit(longLab(d,f.id)),on=f.id===active;
-  return '<div class="rc-row'+(on?' on':'')+'"><div class="rc-lab"><span class="sw" style="background:'+c+'"></span>'+f.head+(on?'<span class="rc-tag">On the map</span>':'')+'</div><div class="rc-val">'+s[0]+'</div>'+(s[1]?'<div class="rc-det">'+s[1]+'</div>':'')+'</div>'};
+  return '<div class="rc-row'+(on?' on':'')+'" data-f="'+f.id+'" title="Show '+f.head.replace(/&amp;/g,"and")+' on the map"><div class="rc-lab"><span class="sw" style="background:'+c+'"></span>'+f.head+(on?'<span class="rc-tag">On the map</span>':'')+'</div><div class="rc-val">'+s[0]+'</div>'+(s[1]?'<div class="rc-det">'+s[1]+'</div>':'')+'</div>'};
  var rec=FACETS.filter(function(f){return f.id==="bio"||f.id==="gd"}),tra=FACETS.filter(function(f){return f.id!=="bio"&&f.id!=="gd"});
  el.className="card rc";
  el.innerHTML='<div class="rc-head"><div><h3>'+d[1]+'</h3><p class="rc-cw"><i style="background:'+(CWB[cw[0]]||cw[2])+'"></i>'+cw[0]+' · '+cw[1]+'</p></div><button type="button" class="rc-x" data-u="'+selected+'" aria-label="Close the card for '+d[1]+'">×</button></div>'
   +'<div class="rc-grp">Ancestry and setting</div>'+rec.map(row).join("")
   +'<div class="rc-grp">Transmitted</div>'+tra.map(row).join("")}
 function pick(u){selected=selected===u?null:u;paint()}
+document.getElementById("card").addEventListener("click",function(e){var r=e.target.closest(".rc-row[data-f]");if(r&&r.dataset.f!==active){setFacet(r.dataset.f);if(CONS[0])consCenterRail(CONS[0])}});
 document.addEventListener("click",function(e){var q=e.target.closest(".lm");if(q){lmPick(+q.dataset.lm);return}if(e.target.closest(".lmclear")){lmSel=null;lmShow();lmCard();return}var t=e.target.closest("[data-u]");if(t)pick(t.dataset.u)});
 document.addEventListener("keydown",function(e){if((e.key==="Enter"||e.key===" ")&&e.target.classList&&e.target.classList.contains("lm")){e.preventDefault();lmPick(+e.target.dataset.lm);return}if((e.key==="Enter"||e.key===" ")&&e.target.classList&&(e.target.classList.contains("unit")||e.target.classList.contains("cunit")||e.target.classList.contains("punit")||e.target.classList.contains("leaf"))){e.preventDefault();pick(e.target.dataset.u)}});
 document.getElementById("tabs").innerHTML=FACETS.map(function(f){return '<button class="tab" data-id="'+f.id+'" aria-pressed="'+(f.id===active)+'">'+f.label+'</button>'}).join("");
-document.getElementById("tabs").addEventListener("click",function(e){var b=e.target.closest(".tab");if(!b)return;active=b.dataset.id;
- Array.prototype.forEach.call(document.querySelectorAll(".tab"),function(t){t.setAttribute("aria-pressed",String(t.dataset.id===active))});paint()});
+function setFacet(id){active=id;Array.prototype.forEach.call(document.querySelectorAll("#tabs .tab"),function(t){t.setAttribute("aria-pressed",String(t.dataset.id===active))});paint()}
+document.getElementById("tabs").addEventListener("click",function(e){var b=e.target.closest(".tab");if(!b)return;setFacet(b.dataset.id);if(CONS[0])consCenterRail(CONS[0])});
 
 function drawTernary(){var Ax=150,Ay=26,Bx=26,By=240,Cx=274,Cy=240;
  var s='<svg viewBox="0 0 300 274" role="img" aria-label="Ternary plot of three-wave ancestry proportions">';
@@ -2243,12 +2479,31 @@ function runs(rows,f){var n=0,p=null;rows.forEach(function(d){var k=keyOf(d,f);i
 function floorOf(f){var s={};R.forEach(function(d){s[keyOf(d,f)]=1});return Object.keys(s).length}
 function drawMatrix(){var rows=sorted();
  document.getElementById("mhead").innerHTML='<th data-s="geo"'+(sortBy==="geo"?' aria-sort="ascending"':'')+'>Region</th>'+FACETS.map(function(f){return '<th data-s="'+f.id+'"'+(sortBy===f.id?' aria-sort="ascending"':'')+'>'+f.label+(sortBy===f.id?' ▾':'')+'</th>'}).join("");
+ drawMGrid(rows);
  document.getElementById("mbody").innerHTML=rows.map(function(d){return '<tr><td class="reg">'+d[1]+'</td>'+FACETS.map(function(f){var c=fill(d,f.id);return '<td class="chip"><span style="background:'+c+';color:'+textOn(c)+'">'+shortLab(d,f.id)+'</span></td>'}).join("")+'</tr>'}).join("");
  var el=document.getElementById("runs");
  if(sortBy==="geo"){el.innerHTML="Sorted roughly north-west to south-east, then the Anglosphere. Tap any facet heading to re-sort and see how far the others come apart.";return}
  var F=FACETS.filter(function(f){return f.id===sortBy})[0];
  el.innerHTML="Sorted by <b>"+F.head+"</b>, which collapses to its floor of <b>"+floorOf(sortBy)+"</b> blocks. "+FACETS.filter(function(f){return f.id!==sortBy}).map(function(f){return f.head+" breaks into <b>"+runs(rows,f.id)+"</b> (floor "+floorOf(f.id)+")"}).join(", ")+"."}
 document.getElementById("mhead").addEventListener("click",function(e){var th=e.target.closest("th");if(!th)return;sortBy=th.dataset.s;drawMatrix()});
+/* Plate II on phones: the same matrix as a grid of colours that fits the screen; a square shows its value below, a heading sorts */
+var mgPick=null;
+function drawMGrid(rows){var g=document.getElementById("mgrid");if(!g)return;
+ var hd='<button type="button" class="mh mc0" data-s="geo"'+(sortBy==="geo"?' aria-sort="ascending"':'')+'><span>Region</span></button>'+FACETS.map(function(f){return '<button type="button" class="mh'+(mgPick&&mgPick[1]===f.id?' cx':'')+'" data-s="'+f.id+'"'+(sortBy===f.id?' aria-sort="ascending"':'')+'><span>'+f.label+'</span></button>'}).join("");
+ g.innerHTML=hd+rows.map(function(d){var on=mgPick&&mgPick[0]===d[0];return '<button type="button" class="mr'+(on?' cx':'')+'" data-r="'+d[0]+'" title="'+d[1]+'">'+d[0]+'</button>'+FACETS.map(function(f){var c=fill(d,f.id),x=on&&mgPick[1]===f.id;
+  return '<button type="button" class="mq'+(x?' cx':(on||(mgPick&&mgPick[1]===f.id)?' cr':''))+'" data-r="'+d[0]+'" data-f="'+f.id+'" style="background:'+c+'" aria-label="'+d[1]+', '+f.head.replace(/&amp;/g,"and")+': '+vshort(d,f.id).replace(/"/g,"")+'"></button>'}).join("")}).join("");
+ var det=document.getElementById("mgdet");
+ if(!mgPick){det.innerHTML='<span class="soft">Tap a square for its value, a region code for its name, or a heading to sort by that facet.</span>';return}
+ var d=BYC[mgPick[0]],f=mgPick[1];
+ if(!f){det.innerHTML='<b>'+d[1]+'</b> <span class="soft">· '+cwOf(d[0])+'. Tap a square in its row for a facet.</span>';return}
+ var F=fById(f),c=fill(d,f),s=rcSplit(longLab(d,f));
+ det.innerHTML='<b>'+d[1]+'</b> · '+F.head+' <span class="vchip" style="background:'+c+';color:'+textOn(c)+'">'+vshort(d,f)+'</span><br>'+s[0]+(s[1]?'<br><span class="soft">'+s[1]+'</span>':'')}
+document.getElementById("mgrid").addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;
+ if(b.dataset.s){sortBy=b.dataset.s;drawMatrix();return}
+ mgPick=[b.dataset.r,b.dataset.f||null];drawMGrid(sorted())});
+document.getElementById("mbleed").querySelector(".mview").addEventListener("click",function(e){var b=e.target.closest("button[data-v]");if(!b)return;
+ var bl=document.getElementById("mbleed");bl.classList.toggle("vgrid",b.dataset.v==="grid");
+ Array.prototype.forEach.call(this.querySelectorAll("button"),function(x){x.setAttribute("aria-pressed",String(x===b))})});
 
 
 
@@ -2564,7 +2819,7 @@ buildMap("pmEU",GEO.EU,true,"punit");buildMap("pmNA",GEO.NA,false,"punit");build
 document.getElementById("fbfctl").addEventListener("click",function(e){var t=e.target.closest("button");if(!t)return;
  if(t.dataset.mode){fbfMode=t.dataset.mode}else if(t.dataset.f){fbfFacet=t.dataset.f}else if(t.dataset.o){fbfOrder=t.dataset.o;fbfStep=Math.min(fbfStep,FBF.ORD[fbfOrder].length)}else if(t.dataset.s){fbfStep=+t.dataset.s}
  else if(t.classList.contains("pprev")){fbfStep=Math.max(1,fbfStep-1)}else if(t.classList.contains("pnext")){fbfStep=Math.min(FBF.ORD[fbfOrder].length,fbfStep+1)}else return;
- fbfCtl();fbfPaint()});
+ fbfCtl();fbfPaint();CONS.forEach(function(c){if(c.cfg.plate==="pm")consCenterRail(c)})});
 fbfCtl();fbfTables();
 function dendroSel(){Array.prototype.forEach.call(document.querySelectorAll("#dendro .leaf"),function(g){g.classList.toggle("sel",g.getAttribute("data-u")===selected)})}
 
@@ -2689,10 +2944,11 @@ function cmpDraw(){var A=BYC[cmpA],B=BYC[cmpB],i=LA.IDX[cmpA],j=LA.IDX[cmpB];
    '<td class="mk">'+(na?'<span class="near">no data</span>':'<span class="'+(same?'same':(df<0.5?'near':'diff'))+'">'+(same?'same':(df<0.5?'close':'split'))+'</span>')+'</td>'+
    '<td class="num dcol">'+(na?'–':fmt(df))+'</td><td class="contrib"><span class="cbar"><i style="width:'+fmt(cf/mxW*100,1)+'%"></i></span><span class="num">'+(na?'–':fmt(cf,3))+'</span></td></tr>'}).join("");
 
- document.getElementById("cmpout").innerHTML='<div class="cmphead">'+side(A)+mid+side(B)+'</div>'+
+ document.getElementById("cmpout").innerHTML='<div class="cmphead">'+side(A)+mid+side(B)+'</div><p class="cmphint">Tap a facet to read both regions\' values.</p>'+
   '<div class="mwrap" style="border:none"><table class="cmptbl"><thead><tr><th>Facet</th><th>'+A[1]+'</th><th>'+B[1]+'</th><th></th><th class="dcol">d<sub>f</sub></th><th>ω<sub>f</sub> × d<sub>f</sub></th></tr></thead><tbody>'+rows+
   '<tr class="tot"><th scope="row">Total</th><td colspan="3"></td><td class="dcol"></td><td class="contrib"><span class="num"><b>'+fmt(Dij,3)+'</b></span></td></tr></tbody></table></div>'}
 
+document.getElementById("cmpout").addEventListener("click",function(e){var tr=e.target.closest("tbody tr");if(tr&&!tr.classList.contains("tot")&&window.matchMedia("(max-width:700px)").matches)tr.classList.toggle("open")});
 drawDendro();drawCWcards();drawMethodTables();cmpInit();
 paint();drawTernary();drawMatrix();
 setTimeout(runStability,300);

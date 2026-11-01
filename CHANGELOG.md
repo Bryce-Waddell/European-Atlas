@@ -4,6 +4,18 @@ All notable changes to the Atlas of European Collectives.
 Format: [Keep a Changelog](https://keepachangelog.com/). Versioning: [SemVer](https://semver.org/).
 MAJOR = the findings change; MINOR = a facet, region or section is added; PATCH = corrections, wording, styling.
 
+## [2.0.9] - 2026-11-01
+### Changed
+- Phones and other narrow or portrait screens: Plates I, III and IV are each one screen high, so the map, its controls and the region card are all in view at once. The legend sits on top, with arrows to step through the facets; the map fills the middle; the facet buttons (Plate III: views, orders and steps) run in a single sideways-scrolling row under it; and the region card is a sheet along the bottom. Before a region is chosen the sheet shows what the facet measures.
+- The insets (North America, Oceania, Israel) are pages of the same map, chosen from buttons on the map; Ibero-America and the Ashkenazim sit beside them. Choosing a region on another page turns to it.
+- The map can be zoomed by pinching, double-tapping or the + and − buttons, and dragged when zoomed; ⟲ shows the whole map again.
+- The region card opens with the facet on the map first. Its name is a menu of every region, "More" pulls the card up, and flicking it sideways steps to the next facet, so one region can be read facet by facet while the map recolours. Tapping a facet in the card shows it on the map, on every screen size.
+- Choosing a region scrolls the plate fully into view if part of it is off screen, and the plates settle into place when scrolled near.
+- Plate II: on phones the matrix is a grid of colours that fits the screen, with the facet names upright and pinned at the top while scrolling; tapping a square shows its value beneath, a region code its name, a heading sorts. "Full table" brings back the table.
+- Plate V: on phones, tapping a facet shows both regions' full values, which the narrow table hides.
+### Unchanged
+- Wider screens, including the open iPhone Duo, are identical to 2.0.8.
+
 ## [2.0.8] - 2026-11-01
 ### Changed
 - Language, on the region cards (Plate I) and in Plate V: each region now names its languages instead of only their branches. The first line gives the main language and its branch (for example "Mostly German (West Germanic)"); the next lists every first language counted, with its share from the same census or survey (Austria: German 88.6, Turkish 2.3, Serbian 2.2, Croatian 1.6 per cent); the last gives the branch shares the facet scores. Regions counted as a single official language show just that language. Spain, Poland, Croatia, Slovenia and Bosnia now show their published shares (Spanish, Catalan, Galician and Basque; Polish and Silesian; and so on), all within the branch already scored; Ibero-America is split into Spanish and Portuguese by the populations of its seven countries. Scores are unchanged.
