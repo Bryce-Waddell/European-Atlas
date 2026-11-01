@@ -218,8 +218,6 @@ td.chip span{display:block;font-family:'Barlow Semi Condensed','Arial Narrow',Ar
 .side .legend{flex-direction:column;gap:7px}
 .side .legend li{max-width:none}
 .side .card{margin-top:12px}
-.side #readout h3{margin-top:0;font-size:18px}
-.side #readout p{font-size:15.5px}
 @media(min-width:1000px){
  .mapgrid{grid-template-columns:minmax(0,1fr) 340px;gap:26px}
  .side{position:sticky;top:74px;max-height:calc(100vh - 86px);overflow-y:auto;padding-right:4px}
@@ -604,10 +602,7 @@ body{padding-top:var(--navh,62px)}
  font-family:'Barlow Semi Condensed','Arial Narrow',Arial,sans-serif;font-size:14px;font-weight:600}
 .cons-sheet[data-s="hint"] .cons-ex,.cons-sheet:not(.has) .cons-x{display:none}
 .cons-body{flex:1 1 auto;min-height:0;overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;touch-action:pan-y}
-.cons-sheet.has .cons-body>#readout{display:none}
-.cons-body>#readout{padding:2px 14px 4px}
-.cons-body>#readout h3{font-size:17px;margin:0 0 4px}
-.cons-body>#readout p{font-size:14.5px;line-height:1.45}
+.cons-sheet:not(.has) .cons-swipe{display:none}
 .cons-body>.card,.cons-body>.lmcard{margin:0 0 6px;border:0;background:transparent;padding-top:4px}
 .cons-body .card.rc{display:flex;flex-direction:column;padding:0}
 .cons-body .rc-head{order:-2;padding:0 14px 6px;background:transparent;border:0}
@@ -716,7 +711,6 @@ body{padding-top:var(--navh,62px)}
   <div class="card lmcard" id="lmcard" aria-live="polite" style="display:none"></div>
   <div class="nomap" id="nomap"><span>Not territorial, so not mapped:</span></div>
   <div class="card" id="card" aria-live="polite"></div>
-  <div id="readout" style="margin-top:16px"></div>
  </aside>
 </div></div>
 
@@ -2266,7 +2260,7 @@ function paint(){
  Array.prototype.forEach.call(document.querySelectorAll(".unitbtn"),function(b){var d=BYC[b.dataset.u],c=fill(d,active);b.style.background=c;b.style.color=textOn(c);b.style.outline=b.dataset.u===selected?"2px solid var(--ink)":"none"});
  Array.prototype.forEach.call(document.querySelectorAll(".cunit"),function(p){p.classList.toggle("sel",p.dataset.u===selected)});
  Array.prototype.forEach.call(document.querySelectorAll(".cunitbtn"),function(b){b.style.outline=b.dataset.u===selected?"2px solid var(--ink)":"none"});
- legend();readout();card();ccard();dendroSel();lmShow();lmCard();fbfPaint();consSync();
+ legend();card();ccard();dendroSel();lmShow();lmCard();fbfPaint();consSync();
 }
 /* legends: a caption, then a colour bar with its two ends or a short list of swatches. Detail lives in each region's card and under Category explanations */
 var LGSHORT={con:{cath:"Catholic",prot:"Protestant",orth:"Orthodox",greek:"Greek Catholic",islam:"Muslim",split:"Mixed",jew:"Jewish"},
@@ -2345,7 +2339,6 @@ function consOn(c){var g=c.grid,cfg=c.cfg;g.classList.add("cons");
  consMv(document.getElementById(cfg.card),c.body);
  if(cfg.plate!=="cm"&&!c.body.querySelector(".cons-swipe")){var sw=document.createElement("div");sw.className="cons-swipe";sw.textContent="Swipe the card sideways to change "+(cfg.plate==="pm"?"facet or step":"facet");c.body.appendChild(sw)}
  Array.prototype.forEach.call(g.querySelectorAll(".mapcol .hint, .side .hint"),function(x){consMv(x,c.after)});
- var ro=cfg.plate==="map"&&document.getElementById("readout");if(ro)consMv(ro,c.body,c.body.querySelector(".cons-swipe"));
  consPage(c,c.page);consSync1(c);setTimeout(function(){consCenterRail(c)},60);setTimeout(function(){var t=c.stage.querySelector(".cons-tip");if(t)t.classList.add("gone")},4500)}
 function consOff(c){var g=c.grid;if(!g.classList.contains("cons"))return;g.classList.remove("cons");
  Array.prototype.slice.call(g.querySelectorAll(".cons-lg>*,.cons-stage>*,.cons-pager>*,.cons-rail>*,.cons-body>*")).concat(Array.prototype.slice.call(c.after.children)).forEach(function(n){if(n._home)consHome(n)});
@@ -2410,8 +2403,6 @@ function consSync(){CONS.forEach(consSync1);
  var c=consTouched;if(c&&c.grid.classList.contains("cons")&&selected&&selected!==consLastSel){var r=c.grid.getBoundingClientRect(),nh=parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--navh"))||56;
   if(r.top<nh-4||r.bottom>window.innerHeight+4)window.scrollTo({top:window.pageYOffset+r.top-nh,behavior:"smooth"})}
  consLastSel=selected;consTouched=null}
-function readout(){var F=FACETS.filter(function(f){return f.id===active})[0];
- document.getElementById("readout").innerHTML='<h3>'+F.title+'</h3><p style="margin:0 0 .6em">'+F.crit+'</p><p style="margin:0 0 .6em"><strong>Boundary.</strong> '+F.bound+'</p><p style="margin:0"><strong>Groups.</strong> '+F.yes+' <strong>Splits.</strong> '+F.no+'</p>'}
 /* region card: the headline of each facet on its own line, the detail beneath it */
 function rcSplit(t){t=String(t||"").trim();var cap=function(s){return s.charAt(0).toUpperCase()+s.slice(1)};
  var m=t.match(/^(.+?[.!?])\s+(?=[A-Z])/),lead=m?m[1]:t,rest=m?t.slice(m[0].length):"";
@@ -2421,7 +2412,7 @@ function rcSplit(t){t=String(t||"").trim();var cap=function(s){return s.charAt(0
  rest=rest?rest.replace(/\.$/,"").split(/; |\. (?=[A-Z])/).map(function(s){return cap(s.replace(/\.$/,""))}).join("<br>"):"";
  return [lead,rest]}
 function card(){var el=document.getElementById("card");
- if(!selected){el.className="card";el.innerHTML='<p class="cond" style="margin:0;color:var(--soft)">Tap a region on the map to see every facet for it.</p>';return}
+ if(!selected){el.className="card";el.innerHTML='<p class="cond" style="margin:0;color:var(--soft)">Choose a facet to recolour the map, then tap a region to see all its facets.</p>';return}
  var d=BYC[selected],k=CWU[selected],cw=CW[k];
  var row=function(f){var c=fill(d,f.id),s=rcSplit(longLab(d,f.id)),on=f.id===active;
   return '<div class="rc-row'+(on?' on':'')+'" data-f="'+f.id+'" title="Show '+f.head.replace(/&amp;/g,"and")+' on the map"><div class="rc-lab"><span class="sw" style="background:'+c+'"></span>'+f.head+(on?'<span class="rc-tag">On the map</span>':'')+'</div><div class="rc-val">'+s[0]+'</div>'+(s[1]?'<div class="rc-det">'+s[1]+'</div>':'')+'</div>'};

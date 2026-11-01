@@ -4,6 +4,10 @@ All notable changes to the Atlas of European Collectives.
 Format: [Keep a Changelog](https://keepachangelog.com/). Versioning: [SemVer](https://semver.org/).
 MAJOR = the findings change; MINOR = a facet, region or section is added; PATCH = corrections, wording, styling.
 
+## [2.0.10] - 2026-11-01
+### Removed
+- Plate I no longer shows the selected facet's notes (what it measures, Boundary, Groups and Splits) beside or under the map. Before a region is chosen the card says only: "Choose a facet to recolour the map, then tap a region to see all its facets." On phones this gives the map more of the screen. The facets are still explained in full under Category explanations.
+
 ## [2.0.9] - 2026-11-01
 ### Changed
 - Phones and other narrow or portrait screens: Plates I, III and IV are each one screen high, so the map, its controls and the region card are all in view at once. The legend sits on top, with arrows to step through the facets; the map fills the middle; the facet buttons (Plate III: views, orders and steps) run in a single sideways-scrolling row under it; and the region card is a sheet along the bottom. Before a region is chosen the sheet shows what the facet measures.
