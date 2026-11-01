@@ -1613,6 +1613,33 @@ var LANGU={FIN:{uralic:85.9,germn:5.2,slave:1.7},EST:{uralic:67.2,slave:28.5},LA
  USA:{germw:78.2,romance:13.4},CAN:{germw:69.3,romance:3.7},QUE:{romance:75.6,germw:15.3},AUS:{germw:72,semitic:1.4},ISR:{semitic:67,slave:15,germw:4,romance:3.6}};
 var LANG=(function(){var o={};R.forEach(function(d){var u=d[0],r=LANGU[u];if(!r){r={};r[d[I.lang]==="multi"?"germw":d[I.lang]]=1}
  var s=0,k,n={};for(k in r)s+=r[k];for(k in r)n[k]=r[k]/s;o[u]=n});return o})();
+/* The languages behind those shares, for the region cards and Plate V: the same sources, language by language (shares in per cent;
+   a name with no share is the official majority language, counted as all). Display only; the distances use LANGU above.
+   Galicia is scored with Ukraine's shares; Ibero-America is split by the populations of its seven countries (IBAW). */
+var LEX={ISL:[["Icelandic"]],NOR:[["Norwegian"]],SWE:[["Swedish"]],FIN:[["Finnish",85.9],["Swedish",5.2],["Russian",1.7]],DEN:[["Danish"]],
+ EST:[["Estonian",67.2],["Russian",28.5]],LAT:[["Latvian",56.3],["Russian",33.8]],LIT:[["Lithuanian",85.3],["Russian",6.8],["Polish",5.1]],
+ RUS:[["Russian",85.7],["Tatar",3.2]],BLR:[["Russian",71.4],["Belarusian",26]],POL:[["Polish",98.2],["Silesian",1.4]],
+ IRL:[["English"]],ULS:[["English"]],SCO:[["English"]],ENG:[["English"]],NLD:[["Dutch"]],BEL:[["Dutch",60],["French",40]],
+ LUX:[["Luxembourgish",48.9],["Portuguese",15.4],["French",14.9],["English",3.6],["Italian",3.6],["German",2.9]],
+ NGR:[["German"]],RHI:[["German"]],SWA:[["German"]],BAV:[["German"]],BOH:[["Czech"]],SLK:[["Slovak",81.8],["Hungarian",8.5]],
+ GAL:[["Ukrainian"]],UKR:[["Ukrainian",67.5],["Russian",29.6]],FRA:[["French"]],
+ SUI:[["German",62.1],["French",22.8],["Italian",8],["English",5.7],["Portuguese",3.5],["Albanian",3.3],["Serbo-Croatian",2.3],["Spanish",2.3],["Romansh",.5]],
+ AUT:[["German",88.6],["Turkish",2.3],["Serbian",2.2],["Croatian",1.6]],HUN:[["Hungarian"]],ROM:[["Romanian",91.6],["Hungarian",6.3]],
+ MOL:[["Romanian/Moldovan",80.2],["Russian",9.7],["Gagauz",4.2],["Ukrainian",3.9],["Bulgarian",1.5]],POR:[["Portuguese"]],
+ ESP:[["Spanish",74],["Catalan",17],["Galician",7],["Basque",2]],NIT:[["Italian"]],MEZ:[["Italian"]],SAR:[["Italian"]],
+ SLO:[["Slovene",91.1],["Serbo-Croatian",4.5]],CRO:[["Croatian",95.6],["Serbian",1.2]],BOS:[["Bosnian",52.9],["Serbian",30.8],["Croatian",14.6]],
+ SRB:[["Serbian",88.1],["Hungarian",3.4],["Bosnian",1.9]],MNE:[["Serbian",42.9],["Montenegrin",37],["Bosnian",5.3],["Albanian",5.3],["Serbo-Croatian",2]],
+ MAC:[["Macedonian",61.4],["Albanian",24.3],["Turkish",3.4]],ALB:[["Albanian"]],BUL:[["Bulgarian",77.3],["Turkish",7.9]],GRE:[["Greek"]],
+ USA:[["English",78.2],["Spanish",13.4]],CAN:[["English",69.3],["French",3.7]],QUE:[["French",75.6],["English",15.3]],AUS:[["English",72],["Arabic",1.4]],
+ NZL:[["English"]],ISR:[["Hebrew",49],["Arabic",18],["Russian",15],["Yiddish",2],["English",2],["French",2],["Spanish",1.6]],
+ IBA:[["Spanish",58.8],["Portuguese",41.2]],ASH:[["Yiddish"]]};
+var LEXN={GAL:"Russian is the first language of a small minority",SUI:"people could name more than one main language",ESP:"Basque is outside the families scored",
+ IBA:"weighting the seven countries by population",ASH:"the historical vernacular",MOL:"56.7 per cent call it Moldovan, 23.5 per cent Romanian"};
+/* the language sentence for a region: its main language and branch, then every first language by share, then the scored branch shares */
+function langTxt(d){var u=d[0],L=LEX[u],b=SC.lang[d[I.lang]][1],top=L[0],ks=Object.keys(LANG[u]),nb=top[0]===b?"":" ("+b+")",note=LEXN[u]?"; "+LEXN[u]:"";
+ if(top[1]===undefined)return top[0]+nb+note+".";
+ var lead=d[I.lang]==="multi"?"Multilingual":(top[1]>=50?"Mostly "+top[0]+nb:"Mostly "+b);
+ return lead+". First languages: "+L.map(function(x){return x[0]+" "+x[1]}).join(", ")+" per cent"+note+"."+(ks.length>1?" Scored as "+sharesOf(LANG[u],LNAME)+" per cent.":"")}
 
 /* Legal tradition: the family of the law in force, after the University of Ottawa's JuriGlobe classification, with the Nordic
    countries as their own branch of civil law, after Zweigert and Kötz. Mixed systems are half common law, half civil law.
@@ -1827,7 +1854,7 @@ function shortLab(d,f){var u=d[0];if(f==="bio")return d[I.st]+"·"+d[I.ef]+"·"+
 function longLab(d,f){var u=d[0];if(f==="bio")return "steppe "+d[I.st]+", farmer "+d[I.ef]+", forager "+d[I.hg]+" per cent";
  if(f==="gd"){var o=(BIOMES[u]||[]).filter(function(b){return b!==({"tbroad":"temperate broadleaf","boreal":"boreal taiga","med":"Mediterranean scrub","tmoist":"tropical moist forest"})[d[I.gd].split("|")[0]]});
   return SC.gd[d[I.gd]][1]+(o.length?"; also present: "+o.join(", "):"")}
- if(f==="lang")return "Mostly "+SC.lang[d[I.lang]][1].replace("Multilingual","multilingual")+". By first language: "+sharesOf(LANG[u],LNAME)+" per cent.";
+ if(f==="lang")return langTxt(d);
  if(f==="con")return "Mostly "+SC.con[d[I.con]][1].replace(/^Christian: /,"")+". Of those who belong to a religion: "+sharesOf(REL[u],RNAME)+" per cent.";
  if(f==="leg")return SC.leg[d[I.leg]][1]+". "+LEGI[u][1]+".";
  if(f==="food"){var F=FOOD[u];if(!F)return "No national figures exist for a people without a state, so this facet is left out of its distances.";
