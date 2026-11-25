@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Peoplehood Quiz — Atlas of European Collectives</title>
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; manifest-src 'self'; connect-src 'self'; frame-ancestors 'none'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="description" content="Ten questions on the atlas's eight facets place you in one of three commonwealths and fifty-four peoplehoods, and fourteen optional ones show how you hold your own inheritance.">
+<meta name="theme-color" content="#E7E1D0">
+<meta property="og:title" content="Which peoplehood are you?">
+<meta property="og:description" content="Ten questions, eight facets, fifty-four regions, three commonwealths.">
+<meta property="og:image" content="/og-image.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preload" href="fonts/ebgaramond-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/cinzel-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+/* ---- type: self-hosted (fonts/). EB Garamond and Cinzel are variable: one file per subset covers every weight ---- */
+@font-face{font-family:'EB Garamond';src:url(fonts/ebgaramond-400-latin.woff2) format('woff2');font-weight:400 800;font-style:normal;font-display:swap;size-adjust:108%;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'EB Garamond';src:url(fonts/ebgaramond-400-latin-ext.woff2) format('woff2');font-weight:400 800;font-style:normal;font-display:swap;size-adjust:108%;unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'EB Garamond';src:url(fonts/ebgaramond-400i-latin.woff2) format('woff2');font-weight:400;font-style:italic;font-display:swap;size-adjust:108%;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'EB Garamond';src:url(fonts/ebgaramond-400i-latin-ext.woff2) format('woff2');font-weight:400;font-style:italic;font-display:swap;size-adjust:108%;unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Cinzel';src:url(fonts/cinzel-400-latin.woff2) format('woff2');font-weight:400 900;font-style:normal;font-display:swap;size-adjust:100%;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Cinzel';src:url(fonts/cinzel-400-latin-ext.woff2) format('woff2');font-weight:400 900;font-style:normal;font-display:swap;size-adjust:100%;unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'UnifrakturMaguntia';src:url(fonts/unifraktur-400-latin.woff2) format('woff2');font-weight:400;font-style:normal;font-display:swap;size-adjust:100%;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+:root{--serif:'EB Garamond',Georgia,'Times New Roman',serif;--display:'Cinzel','Trajan Pro',Georgia,serif;--ui:'EB Garamond',Georgia,serif}
+:root{
+  --paper:#E7E1D0;--paper-deep:#DAD3BE;--edge:#C3BBA3;--rule:#2B2721;--ink:#2B2721;--soft:#655D50;
+  --same-fg:#2C5749;--same-bd:#7FA697;--same-bg:rgba(71,120,106,.14);
+  --diff-fg:#88301F;--diff-bd:#C08578;--diff-bg:rgba(166,61,43,.12);
+  --near-fg:#7A5A12;--near-bd:#C9A45C;--near-bg:rgba(201,145,46,.14);
+  --madder:#A63D2B;--verdigris:#47786A;--track:rgba(43,39,33,.1);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#1D1B18;--paper-deep:#26231F;--edge:#433D34;--rule:#D6CCB8;--ink:#E8E0CE;--soft:#AAA08D;
+  --same-fg:#9FD0BE;--same-bd:#4F7D6E;--same-bg:rgba(71,120,106,.22);
+  --diff-fg:#EBA597;--diff-bd:#8E5043;--diff-bg:rgba(166,61,43,.22);
+  --near-fg:#E6C27A;--near-bd:#8A6A2A;--near-bg:rgba(201,145,46,.2);
+  --madder:#D0705C;--track:rgba(232,224,206,.12);
+}}
+:root[data-theme="dark"]{
+  --paper:#1D1B18;--paper-deep:#26231F;--edge:#433D34;--rule:#D6CCB8;--ink:#E8E0CE;--soft:#AAA08D;
+  --same-fg:#9FD0BE;--same-bd:#4F7D6E;--same-bg:rgba(71,120,106,.22);
+  --diff-fg:#EBA597;--diff-bd:#8E5043;--diff-bg:rgba(166,61,43,.22);
+  --near-fg:#E6C27A;--near-bd:#8A6A2A;--near-bg:rgba(201,145,46,.2);
+  --madder:#D0705C;--track:rgba(232,224,206,.12);
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--paper);color:var(--ink);font-family:var(--serif);
+  font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;
+  padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+.wrap{max-width:720px;margin:0 auto;padding:24px 16px 80px}
+.cond{font-family:var(--ui)}
+p{margin:0 0 1em}
+a{color:inherit}
+.masthead{border-bottom:2px solid var(--rule);padding-bottom:10px;margin-bottom:28px;display:flex;justify-content:space-between;gap:12px;
+  font-family:var(--ui);font-size:14px;color:var(--soft)}
+.masthead a{text-decoration:none;color:var(--ink);font-weight:600;letter-spacing:.02em}
+h1{font-weight:600;font-size:clamp(30px,7vw,44px);line-height:1.08;margin:0 0 10px;letter-spacing:-.015em}
+h2{font-weight:600;font-size:clamp(23px,5vw,28px);line-height:1.2;margin:0 0 10px}
+h3{font-weight:600;font-size:19px;margin:0 0 6px}
+.subtitle{font-style:italic;font-weight:300;font-size:clamp(20px,4.6vw,25px);color:var(--soft);margin:0 0 20px}
+.lede{font-size:19px;line-height:1.55;max-width:60ch}
+.soft{color:var(--soft)}
+.kicker{font-family:var(--ui);font-size:14px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--soft);margin:0 0 8px}
+.facts{display:flex;flex-wrap:wrap;gap:8px 22px;margin:18px 0 22px;padding:12px 0;border-top:1px solid var(--edge);border-bottom:1px solid var(--edge);
+  font-family:var(--ui);font-size:15.5px}
+.facts b{font-weight:600}
+.note{font-size:15.5px;color:var(--soft);border-left:2px solid var(--madder);padding:2px 0 2px 14px;margin:0 0 22px;max-width:60ch}
+.btn{font-family:var(--ui);font-size:18px;font-weight:600;letter-spacing:.02em;
+  background:var(--rule);color:var(--paper);border:1px solid var(--rule);border-radius:2px;padding:12px 22px;cursor:pointer;min-height:48px}
+.btn:hover{background:var(--madder);border-color:var(--madder)}
+.btn:disabled{opacity:.55;cursor:default;background:var(--rule);border-color:var(--rule)}
+.btn:focus-visible,.opt:focus-visible,.link:focus-visible,select:focus-visible{outline:2px solid var(--madder);outline-offset:2px}
+.link{font-family:var(--ui);font-size:15.5px;background:none;border:0;padding:6px 0;color:var(--soft);cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+.link:hover{color:var(--ink)}
+.row{display:flex;flex-wrap:wrap;align-items:center;gap:14px 20px}
+
+.progress{height:3px;background:var(--track);margin:0 0 22px}
+.progress span{display:block;height:100%;background:var(--madder);transition:width .25s}
+.qtop{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.help{color:var(--soft);font-size:16px;margin:-2px 0 16px;max-width:60ch}
+.opts{display:grid;gap:8px;margin:18px 0 20px}
+.opt{display:flex;gap:14px;align-items:flex-start;text-align:left;width:100%;font:inherit;color:var(--ink);background:var(--paper-deep);
+  border:1px solid var(--edge);border-radius:2px;padding:12px 14px;cursor:pointer;min-height:48px}
+.opt:hover{border-color:var(--soft)}
+.opt[aria-checked="true"]{border-color:var(--ink);box-shadow:inset 3px 0 0 var(--madder)}
+.opt .glyph{font-family:var(--serif);font-size:21px;min-width:74px;flex:none;color:var(--soft);line-height:1.3}
+.opt .t{display:block;font-weight:600;line-height:1.35}
+.opt .d{display:block;font-size:15px;color:var(--soft);line-height:1.4;margin-top:2px}
+.selects{display:grid;grid-template-columns:1fr;gap:12px;margin:18px 0 22px}
+@media(min-width:600px){.selects{grid-template-columns:1fr 1fr}}
+.selects label{display:block;font-family:var(--ui);font-size:14.5px;font-weight:600;color:var(--soft);margin-bottom:4px}
+select{width:100%;font:inherit;font-size:16px;color:var(--ink);background:var(--paper-deep);border:1px solid var(--edge);border-radius:2px;padding:10px 12px;min-height:48px}
+
+.unlock{border:1px solid var(--edge);background:var(--paper-deep);padding:20px 18px;margin:18px 0}
+.unlock ul{margin:8px 0 18px;padding-left:20px}
+.unlock li{margin:3px 0}
+.price{font-family:var(--ui);font-size:15px;color:var(--soft);margin:12px 0 0}
+.err{color:var(--diff-fg);background:var(--diff-bg);border:1px solid var(--diff-bd);padding:10px 12px;margin:14px 0;font-size:16px}
+.spinner{width:28px;height:28px;border:3px solid var(--track);border-top-color:var(--madder);border-radius:50%;animation:sp 1s linear infinite;margin:40px 0 14px}
+@keyframes sp{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){.spinner{animation:none}.progress span{transition:none}}
+
+.res-cw{border-top:6px solid var(--cw,#2F6B5E);padding-top:16px;margin-bottom:28px}
+.big{font-size:clamp(34px,8.5vw,52px);font-weight:600;line-height:1.05;margin:4px 0 8px;letter-spacing:-.02em}
+.match{font-family:var(--ui);font-size:16px;color:var(--soft);margin:0 0 14px}
+.match b{color:var(--ink);font-size:20px}
+section.block{border-top:2px solid var(--rule);padding-top:14px;margin-top:34px}
+.defining{border-left:3px solid var(--madder);padding:4px 0 4px 16px}
+.defining .big{font-size:clamp(28px,6.5vw,38px)}
+.bars{display:grid;gap:10px;margin:12px 0 0}
+.bar{display:grid;grid-template-columns:minmax(0,1fr) 44px;gap:4px 10px;align-items:center;font-family:var(--ui);font-size:15.5px}
+.bar .nm{grid-column:1 / -1}
+.bar .tr{height:10px;background:var(--track)}
+.bar .tr span{display:block;height:100%}
+.bar .v{text-align:right;font-weight:600}
+.tbl{width:100%;border-collapse:collapse;font-family:var(--ui);font-size:15px;margin-top:10px}
+.tbl th{text-align:left;font-weight:600;color:var(--soft);border-bottom:1.5px solid var(--rule);padding:6px 6px 6px 0}
+.tbl td{border-bottom:1px solid var(--edge);padding:8px 6px 8px 0;vertical-align:top}
+.tbl td:first-child{font-weight:600;white-space:nowrap}
+.tbl .kind{display:block;font-weight:400;color:var(--soft);font-size:13px}
+.chip{display:inline-block;font-size:13px;font-weight:600;padding:2px 7px;border:1px solid;border-radius:2px;white-space:nowrap}
+.chip.same{color:var(--same-fg);border-color:var(--same-bd);background:var(--same-bg)}
+.chip.near{color:var(--near-fg);border-color:var(--near-bd);background:var(--near-bg)}
+.chip.split{color:var(--diff-fg);border-color:var(--diff-bd);background:var(--diff-bg)}
+.chip.none{color:var(--soft);border-color:var(--edge)}
+@media(max-width:560px){
+  .tbl thead{display:none}
+  .tbl tr{display:grid;grid-template-columns:1fr auto;gap:2px 10px;padding:10px 0;border-bottom:1px solid var(--edge)}
+  .tbl td{border:0;padding:0}
+  .tbl td.you,.tbl td.them{grid-column:1 / -1;color:var(--ink)}
+  .tbl td.you::before{content:"You: ";color:var(--soft)}
+  .tbl td.them::before{content:attr(data-h) ": ";color:var(--soft)}
+  .tbl td.st{grid-row:1;grid-column:2}
+}
+ol.near{padding-left:22px;margin:10px 0 0;font-family:var(--ui);font-size:16px}
+ol.near li{margin:4px 0}
+ol.near .sm{color:var(--soft)}
+footer{margin-top:44px;padding-top:14px;border-top:1px solid var(--edge);font-family:var(--ui);font-size:14px;color:var(--soft)}
+[hidden]{display:none!important}
+/* ---- v1.4: consent, research, inheritance ---- */
+.consent{border:1px solid var(--edge);background:var(--paper-deep);padding:18px 18px 16px;margin:16px 0 18px}
+.consent ul{margin:6px 0 14px;padding-left:20px;font-size:16px}.consent li{margin:3px 0}
+.check{display:flex;gap:12px;align-items:flex-start;font-size:16px;line-height:1.45;margin:6px 0 16px;cursor:pointer}
+.check input{width:22px;height:22px;flex:none;margin:1px 0 0;accent-color:var(--madder)}
+details.priv{margin:10px 0 0;font-size:15.5px;color:var(--soft)}
+details.priv summary{cursor:pointer;font-family:var(--ui);font-weight:600;color:var(--ink)}
+details.priv p{margin:.6em 0 0}
+.inh{display:grid;gap:10px;margin:12px 0 0}
+.ih{border-top:1px solid var(--edge);padding:10px 0 0}
+.ih .top{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 12px}
+.ih .top b{font-size:18px}
+.ih .what{font-family:var(--ui);font-size:15px;color:var(--soft)}
+.ih p{margin:4px 0 0;font-size:16px}
+.hs{display:inline-block;font-family:var(--ui);font-size:13.5px;font-weight:600;padding:2px 8px;border:1px solid;border-radius:2px}
+.hs.take{color:var(--same-fg);border-color:var(--same-bd);background:var(--same-bg)}
+.hs.inh{color:var(--near-fg);border-color:var(--near-bd);background:var(--near-bg)}
+.hs.kit,.hs.none{color:var(--soft);border-color:var(--edge)}
+.pips{display:flex;flex-wrap:wrap;gap:4px 16px;font-family:var(--ui);font-size:14px;color:var(--soft);margin:5px 0 0}
+.pips i{display:inline-block;width:9px;height:9px;border-radius:50%;border:1.3px solid var(--soft);margin-left:3px;vertical-align:-1px}
+.pips i.on{background:var(--ink);border-color:var(--ink)}
+.regbar{display:flex;height:12px;margin:6px 0 2px;border:1px solid var(--edge)}
+.regbar span{display:block;height:100%}
+.thanks{font-size:15.5px;color:var(--soft);margin:14px 0 0}
+/* ---- type & mobile (v1.4.1) ---- */
+/* Roles: EB Garamond for reading and data, Cinzel for titles, labels and controls. */
+body{font-size:18px;font-variant-numeric:lining-nums;font-kerning:normal;text-rendering:optimizeLegibility;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+h1,h2,.big{font-family:var(--display);font-weight:600;letter-spacing:.02em}
+h1{font-size:clamp(26px,6.6vw,40px);line-height:1.12;letter-spacing:.01em}
+h2{font-size:clamp(21px,4.8vw,26px);line-height:1.25}
+.big{font-size:clamp(28px,7.4vw,46px);line-height:1.1;letter-spacing:.01em}
+.defining .big{font-size:clamp(24px,6vw,34px)}
+.subtitle{font-weight:400}
+.kicker,.masthead,.selects label,.tbl th,details.priv summary{font-family:var(--display);letter-spacing:.07em}
+.kicker{font-size:12.5px;font-weight:700;text-transform:none}
+.masthead{font-size:12px}
+.selects label{font-size:12.5px;font-weight:700}
+.tbl th{font-size:11.5px;font-weight:700}
+.btn{font-family:var(--display);font-size:16px;font-weight:700;letter-spacing:.07em}
+.opt .glyph{font-family:var(--serif)}
+.bar .v,.match b{font-variant-numeric:lining-nums tabular-nums}
+a,button,.opt{-webkit-tap-highlight-color:rgba(166,61,43,.18)}
+button,select,input{touch-action:manipulation}
+@media(max-width:560px){
+ .wrap{padding:20px 16px 72px}
+ .opt{gap:10px;padding:12px}
+ .opt .glyph{min-width:52px;font-size:19px}
+ .row .btn{flex:1 1 100%}
+ .unlock,.consent{padding:16px 14px}
+ .tbl td:first-child{white-space:normal}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="masthead"><a href="/">Atlas of European Collectives</a><span>The Peoplehood Quiz</span></div>
+
+  <main id="app" aria-live="polite">
+    <section id="intro">
+      <h1>Which peoplehood are you?</h1>
+      <p class="subtitle">Eight facets, fifty-four regions, three commonwealths.</p>
+      <p class="lede">The atlas scores fifty-four regions of Europe and its offshoots on eight facets — two fixed at birth, six handed down and taken up. Answer ten questions about your own and the quiz places you on the same map, with the atlas's own method.</p>
+      <div class="facts"><span><b>10</b> questions</span><span>About <b>4</b> minutes</span><span>Taking it is <b>free</b></span><span>Your result: <b>$5</b>, paid once</span></div>
+      <p class="note">This is not a DNA test or a genealogy. It reads what you tell it — where your family is from, what you speak, read, believe and live under — and finds the region you sit closest to. Afterwards you can choose to answer fourteen more questions for the atlas's research, and see how you hold your own inheritance, free.</p>
+      <div class="row"><button class="btn" id="start" type="button">Begin</button></div>
+    </section>
+
+    <section id="quiz" hidden>
+      <div class="progress" aria-hidden="true"><span id="bar"></span></div>
+      <div class="qtop"><p class="kicker" id="qkick"></p></div>
+      <h2 id="qtitle" tabindex="-1"></h2>
+      <p class="help" id="qhelp"></p>
+      <div id="qbody"></div>
+      <div class="row">
+        <button class="btn" id="next" type="button" hidden>Next</button>
+        <button class="link" id="back" type="button">Back</button>
+      </div>
+    </section>
+
+    <section id="consent" hidden>
+      <p class="kicker">Optional · 14 more questions · about 3 minutes</p>
+      <h2 tabindex="-1" id="cstitle">Help measure whether these inheritances are still handed down.</h2>
+      <p>Your ten answers place you on the atlas. Fourteen more ask how you hold your faith, your language and your law today: whether you are handing them on, serving them, and arguing over them. Pooled across everyone who takes part, they show where each commonwealth's rite, tongue and law are still a live possibility, and where they survive only as background or as heritage.</p>
+      <p>You see your own reading of this straight away, free, whether or not you unlock the rest.</p>
+      <div class="consent">
+        <b>What is stored if you take part</b>
+        <ul>
+          <li>Your answers, your age band and the region you live in</li>
+          <li>The date (the day only) and a random code for this browser</li>
+        </ul>
+        <b>What is never stored</b>
+        <ul>
+          <li>Your name, email, IP address or payment details</li>
+        </ul>
+        <label class="check"><input type="checkbox" id="agree"> <span>I am 18 or over, and I agree to my anonymous answers — including my faith — being stored and used for the atlas's research.</span></label>
+        <div class="row"><button class="btn" id="join" type="button" disabled>Take part</button><button class="link" id="skip" type="button">No thanks — go to my result</button></div>
+        <details class="priv"><summary>How the data is used</summary>
+          <p>Your faith counts as sensitive information under data-protection law, so it is stored only with the consent you give above, and you can withdraw it at any time from this browser. Answers are published only as totals for groups of thirty or more people, never one by one. They are used to score how far each region's rite, tongue and law are still being handed on, and for nothing else; they are never sold or shared. Declining changes nothing about your result.</p>
+        </details>
+      </div>
+    </section>
+
+    <section id="paywall" hidden>
+      <p class="kicker" id="pwkick">All ten answered</p>
+      <h2 tabindex="-1" id="pwtitle">Your result is ready.</h2>
+      <p class="soft" id="canceled" hidden>Payment was cancelled, so nothing was charged. Your answers are still here.</p>
+      <div id="freeinh"></div>
+      <div class="unlock">
+        <h3>Unlock your peoplehood for $5</h3>
+        <ul>
+          <li>Your <b>commonwealth</b>: Latin, Byzantine or Hebraic, its sub-group, and how decisively you belong</li>
+          <li>Your <b>peoplehood</b>: the one of fifty-four regions you sit closest to</li>
+          <li>Your <b>defining facet</b>: the one that does most to put you there</li>
+          <li>Your full <b>eight-facet profile</b> beside your peoplehood's, and your five nearest peoplehoods</li>
+        </ul>
+        <button class="btn" id="pay" type="button">Unlock my result — $5</button>
+        <p class="price">One-time payment through Stripe. No account. You come straight back here to your result, which you can bookmark and keep.</p>
+        <div class="err" id="payerr" role="alert" hidden></div>
+      </div>
+      <div class="row"><button class="link" id="review" type="button">Change my answers</button></div>
+    </section>
+
+    <section id="loading" hidden>
+      <div class="spinner" role="progressbar" aria-label="Loading"></div>
+      <p class="soft" id="loadmsg">Placing you on the atlas…</p>
+    </section>
+
+    <section id="result" hidden></section>
+  </main>
+
+  <footer>Atlas of European Collectives · <a href="/">Read the atlas</a> · Payments are processed by Stripe; card details never touch this site. <span id="wdfoot"></span></footer>
+</div>
+
+<script>
+(function(){
+"use strict";
+var REGIONS=[
+ ["Northern Europe",[["ISL","Iceland"],["NOR","Norway"],["SWE","Sweden"],["DEN","Denmark"],["FIN","Finland"],["EST","Estonia"],["LAT","Latvia"],["LIT","Lithuania"]]],
+ ["British Isles",[["ENG","England and Wales"],["SCO","Scotland"],["IRL","Ireland"],["ULS","Ulster"]]],
+ ["Western and Central Europe",[["FRA","France"],["BEL","Belgium"],["NLD","Netherlands"],["LUX","Luxembourg"],["NGR","North Germany"],["RHI","Rhineland"],["SWA","Swabia"],["BAV","Bavaria"],["SUI","Switzerland"],["AUT","Austria"],["BOH","Bohemia (Czechia)"],["SLK","Slovakia"],["POL","Poland"],["HUN","Hungary"]]],
+ ["Southern Europe",[["POR","Portugal"],["ESP","Spain"],["NIT","North Italy"],["MEZ","Mezzogiorno (South Italy)"],["SAR","Sardinia"],["GRE","Greece"]]],
+ ["Eastern Europe and the Balkans",[["RUS","Russia"],["BLR","Belarus"],["UKR","Ukraine"],["GAL","Galicia (West Ukraine)"],["MOL","Moldova"],["ROM","Romania"],["SLO","Slovenia"],["CRO","Croatia"],["BOS","Bosnia"],["SRB","Serbia"],["MNE","Montenegro"],["MAC","Macedonia"],["BUL","Bulgaria"],["ALB","Albania"]]],
+ ["Overseas",[["USA","United States"],["CAN","English Canada"],["QUE","Québec"],["AUS","Australia"],["NZL","New Zealand"],["IBA","Ibero-America (Latin America)"],["ISR","Israel"]]],
+ ["Diaspora",[["ASH","Ashkenazim (Ashkenazi Jewish, anywhere)"]]]
+];
+function opt(v,t,d,g){return {v:v,t:t,d:d||"",g:g||""}}
+var FAITHS=[opt("cath","Catholic","Latin rite."),opt("prot","Protestant","Any denomination."),opt("orth","Orthodox",""),
+  opt("greek","Eastern Catholic","Greek Catholic, Ukrainian Catholic and the other Eastern rites in union with Rome."),
+  opt("split","Christian, between confessions","A mixed household, or no single church."),
+  opt("jew","Jewish",""),opt("islam","Muslim","")];
+var OFTEN=[opt("o","Often"),opt("s","Sometimes"),opt("n","Never")];
+/* The ten questions that place you on the atlas */
+var Q=[
+ {id:"chr0",facet:"Latin Roman",title:"What makes a marriage?",
+  help:"The first of three questions on the Latin juridical inheritance, one of the two facets the atlas finds does the most organising work.",
+  opts:[opt("in","The free consent of the two people","Nothing else can make it, and no one can make it for them."),
+        opt("front","Consent, but not consent alone","The families, the community and the blessing all have a part."),
+        opt("out","The Church's blessing","The priest makes the marriage; the couple receives it.")]},
+ {id:"chr1",facet:"Latin Roman",title:"A university, a city, a guild or a church: should it govern itself?",
+  opts:[opt("in","Yes, under its own charter","With its own rights and its own officers, even against the ruler."),
+        opt("front","Up to a point","Some self-rule, within limits the state sets."),
+        opt("out","No","Such bodies serve the realm, and the ruler should direct them.")]},
+ {id:"chr2",facet:"Latin Roman",title:"When church and state disagree, who should decide?",
+  opts:[opt("in","Neither over the other","Each has its own courts and its own domain, and must argue it out."),
+        opt("front","It depends on the question",""),
+        opt("out","They should not disagree","Church and ruler should act as one, in harmony.")]},
+ {id:"gp",facet:"Biological",type:"gp",title:"Where were your grandparents born?",
+  help:"Choose the nearest region for each. For Ashkenazi Jewish grandparents, choose Ashkenazim. Leave any you don't know; the facet is scored on the ones you do."},
+ {id:"birth",facet:"Geographic descent",type:"region",title:"Where were you born?",
+  help:"The land you were born into, not where you live now."},
+ {id:"lang",facet:"Language",title:"Which language do you live in every day?",
+  help:"The one you speak at home and think in. If two share that place equally, choose “Two or more of these.”",
+  opts:[opt("germw","English, German, Dutch or Yiddish","West Germanic"),opt("germn","Danish, Norwegian, Swedish or Icelandic","North Germanic"),
+        opt("romance","French, Spanish, Portuguese, Italian or Romanian","Romance"),opt("slavw","Polish, Czech or Slovak","West Slavic"),
+        opt("slave","Russian, Ukrainian or Belarusian","East Slavic"),opt("slavs","Serbian, Croatian, Bosnian, Slovene, Bulgarian or Macedonian","South Slavic"),
+        opt("baltic","Lithuanian or Latvian","Baltic"),opt("uralic","Finnish, Estonian or Hungarian","Uralic"),
+        opt("hellenic","Greek","Hellenic"),opt("albanian","Albanian","Albanian"),opt("semitic","Hebrew, Arabic or Aramaic","Semitic"),
+        opt("multi","Two or more of these, equally","Multilingual"),opt("x","Another language","Not scored")]},
+ {id:"scr",facet:"Script",title:"Which alphabet do you read in every day?",
+  opts:[opt("latin","Latin","The alphabet on this page.","Abc"),opt("cyr","Cyrillic","","Абв"),opt("digraph","Cyrillic and Latin, both","As in Serbia and Montenegro.","Аб Ab"),
+        opt("greek","Greek","","Αβγ"),opt("hebrew","Hebrew","","אבג"),opt("x","Another script","Not scored","…")]},
+ {id:"art",facet:"Art",title:"Which of these buildings feels most like your own?",
+  help:"The tradition you would call yours, not simply the one you find most beautiful.",
+  opts:[opt("gothic","A Gothic cathedral","Pointed arches, flying buttresses, stained glass. Chartres, Cologne, Salisbury."),
+        opt("baroque","A Baroque church","Domes, gilt, curves and drama. Il Gesù in Rome, St Andrew's in Kyiv."),
+        opt("both","Both of those, equally","The cathedral and the Baroque church as one inheritance."),
+        opt("revival","A revival building","A Gothic-revival college, a neoclassical capitol: the old forms, built new."),
+        opt("neither","None of these","A domed Byzantine church with icons, a synagogue, a mosque, or plain modern.")]},
+ {id:"leg",facet:"Legal family",title:"What kind of law do you live under?",
+  opts:[opt("common","Precedent","Judges' earlier decisions bind. The US, England, Ireland, Canada, Australia."),
+        opt("civil","A code","The law is written down as a whole. Most of Europe, Latin America, Louisiana."),
+        opt("nordic","The Nordic tradition","Denmark, Norway, Sweden, Finland, Iceland."),
+        opt("mixed","A mix of code and precedent","Scotland, Québec, Israel, South Africa."),
+        opt("halakh","Halakha","Jewish law governs my marriage, my calendar and my household."),
+        opt("x","Not sure","Not scored")]},
+ {id:"con",facet:"Confession",title:"Which faith have you taken up as your own?",
+  help:"Practised or claimed. The atlas counts what is taken up, not only what one was born into.",
+  opts:FAITHS.concat([opt("x","None","Not scored")])}
+];
+/* The fourteen research questions, asked only with consent. skip(): true when the question does not apply. */
+var RQ=[
+ {id:"age",facet:"About you",title:"How old are you?",
+  opts:[opt("u18","Under 18"),opt("18-29","18 to 29"),opt("30-49","30 to 49"),opt("50-64","50 to 64"),opt("65+","65 or over")]},
+ {id:"live",facet:"About you",type:"region",title:"Where do you live now?",
+  help:"Your answers about faith, language and law are counted for the region you live in."},
+ {id:"raised",facet:"Rite",title:"Which faith, if any, were you raised in?",opts:FAITHS.concat([opt("x","None")])},
+ {id:"last",facet:"Rite",title:"Apart from weddings and funerals, when did you last attend a service or practise your faith with others?",
+  skip:function(){return A.con==="x"},def:"n",
+  opts:[opt("w","In the past week"),opt("m","In the past month"),opt("y","In the past year"),opt("l","Longer ago"),opt("n","Never")]},
+ {id:"pass",facet:"Rite",title:"Are you passing your faith on to your children — or would you, if you had them?",
+  skip:function(){return A.con==="x"},def:"na",
+  opts:[opt("y","Yes","It is part of how I raise them, or would."),opt("p","Partly","I would leave it to them."),opt("n","No"),opt("na","Not sure")]},
+ {id:"rofc",facet:"Rite",title:"In the past year, have you served your faith community in any role?",
+  help:"Clergy or religious, teacher of the faith, reader, cantor or choir, council or committee, organised volunteering.",
+  skip:function(){return A.con==="x"},def:"n",
+  opts:[opt("r","Regularly"),opt("o","Occasionally"),opt("n","No")]},
+ {id:"rcon",facet:"Rite",title:"In the past year, have you argued over what a faith teaches, or how its rites should be kept?",
+  help:"At home, online or in public; yours or the one around you. Not religion in politics — the faith itself.",opts:OFTEN},
+ {id:"lc",facet:"Tongue",title:"Did your parents mostly speak to you in the language you now live in every day?",
+  opts:[opt("y","Yes"),opt("p","Partly","One of them did, or alongside another language."),opt("n","No","I took it up later.")]},
+ {id:"lp",facet:"Tongue",title:"Do you speak it to your children — or would you?",
+  opts:[opt("y","Yes"),opt("p","Alongside another language"),opt("n","No, another language"),opt("na","Not sure")]},
+ {id:"tofc",facet:"Tongue",title:"Do you teach, write, translate, edit or perform in that language as part of your work or study?",
+  opts:[opt("r","Regularly"),opt("o","Occasionally"),opt("n","No")]},
+ {id:"tcon",facet:"Tongue",title:"In the past year, have you argued over your language?",
+  help:"Its spelling or its words, its place in schools, courts or on signs, or another language crowding it out.",opts:OFTEN},
+ {id:"lown",facet:"Law",title:"Is the law you live under your own, or something imposed from outside?",
+  opts:[opt("y","My own","Made by and for people like me."),opt("p","Partly"),opt("n","Imposed")]},
+ {id:"lofc",facet:"Law",title:"Do you work with the law, or study it?",
+  help:"As a lawyer, notary, judge, police officer, civil servant or legislator.",
+  opts:[opt("w","It is my work"),opt("s","I study it, or did"),opt("n","No")]},
+ {id:"lcon",facet:"Law",title:"In the past year, have you argued over how your country's law should be made, or who should make it?",
+  help:"Courts or parliament, the constitution, a religious law, a law imposed from outside.",opts:OFTEN}
+];
+var RES_KEYS=["live","age","raised","last","pass","rofc","rcon","lc","lp","tofc","tcon","lown","lofc","lcon"];
+var GP=["Mother's mother","Mother's father","Father's mother","Father's father"];
+var A={},step=0,mode="core",t0=0,consented=false,STATE={rid:null};
+
+function $(id){return document.getElementById(id)}
+function show(id){["intro","quiz","consent","paywall","loading","result"].forEach(function(s){$(s).hidden=s!==id});window.scrollTo(0,0)}
+function esc(s){return String(s===null||s===undefined?"":s).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c]})}
+function store(k,v){try{if(v===null)sessionStorage.removeItem(k);else sessionStorage.setItem(k,v)}catch(e){}}
+function load(k){try{return sessionStorage.getItem(k)}catch(e){return null}}
+function lstore(k,v){try{if(v===null)localStorage.removeItem(k);else localStorage.setItem(k,v)}catch(e){}}
+function lload(k){try{return localStorage.getItem(k)}catch(e){return null}}
+function clientId(){var c=lload("pq_client");if(c&&/^[0-9a-f]{32}$/.test(c))return c;var b=new Uint8Array(16);crypto.getRandomValues(b);
+  c=Array.prototype.map.call(b,function(x){return ("0"+x.toString(16)).slice(-2)}).join("");lstore("pq_client",c);return c}
+function post(url,body){return fetch(url,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(body)})
+  .then(function(r){return r.json().catch(function(){return {}}).then(function(j){return {s:r.status,j:j}})})}
+
+function regionSelect(id,label,val,skipAsh){
+  var h='<div><label for="'+id+'">'+esc(label)+'</label><select id="'+id+'"><option value="x">'+(skipAsh?"Somewhere else":"Don't know")+'</option>';
+  REGIONS.forEach(function(g){if(skipAsh&&g[0]==="Diaspora")return;
+    h+='<optgroup label="'+esc(g[0])+'">'+g[1].map(function(r){return '<option value="'+r[0]+'"'+(r[0]===val?" selected":"")+'>'+esc(r[1])+'</option>'}).join("")+'</optgroup>'});
+  return h+'</select></div>';
+}
+function list(){return mode==="core"?Q:RQ}
+function render(){
+  var L=list(),q=L[step];
+  $("bar").style.width=(100*step/L.length)+"%";
+  $("qkick").textContent=(mode==="core"?"Question ":"Research question ")+(step+1)+" of "+L.length+" · "+q.facet;
+  $("qtitle").textContent=q.title;
+  $("qhelp").textContent=q.help||"";$("qhelp").hidden=!q.help;
+  $("back").textContent=step===0?(mode==="core"?"Back to the start":"Back"):"Back";
+  var b=$("qbody");
+  if(q.type==="gp"){
+    var cur=A.gp||["x","x","x","x"];
+    b.innerHTML='<div class="selects">'+GP.map(function(l,i){return regionSelect("gp"+i,l,cur[i],false)}).join("")+'</div>';
+    $("next").hidden=false;
+  }else if(q.type==="region"){
+    b.innerHTML='<div class="selects">'+regionSelect("regsel",q.id==="birth"?"Birthplace":"Where you live",A[q.id],true)+'</div>';
+    $("next").hidden=false;
+  }else{
+    b.innerHTML='<div class="opts" role="radiogroup" aria-labelledby="qtitle">'+q.opts.map(function(o){
+      return '<button type="button" class="opt" role="radio" aria-checked="'+(A[q.id]===o.v)+'" data-v="'+o.v+'">'+
+        (o.g?'<span class="glyph" aria-hidden="true">'+esc(o.g)+'</span>':'')+
+        '<span><span class="t">'+esc(o.t)+'</span>'+(o.d?'<span class="d">'+esc(o.d)+'</span>':'')+'</span></button>'}).join("")+'</div>';
+    $("next").hidden=true;
+  }
+  $("qtitle").focus({preventScroll:true});
+}
+function nextIndex(i,dir){var L=list();i+=dir;while(i>=0&&i<L.length&&L[i].skip&&L[i].skip()){A[L[i].id]=L[i].def;i+=dir}return i}
+function advance(){
+  var L=list();
+  if(mode==="research"&&L[step].id==="age"&&A.age==="u18"){A.age=null;consented=false;finishResearch(false);return}
+  var n=nextIndex(step,1);
+  if(n<L.length){step=n;render();return}
+  if(mode==="core"){store("pq_answers",encode(false));if(enough())show("consent"),$("cstitle").focus({preventScroll:true});else showPaywall(false,null)}
+  else finishResearch(true);
+}
+function enough(){return ((A.gp||[]).some(function(v){return v!=="x"})?1:0)+["birth","lang","scr","leg","con"].filter(function(k){return A[k]&&A[k]!=="x"}).length>=2}
+function research(){return consented&&RES_KEYS.every(function(k){return A[k]})?RES_KEYS.map(function(k){return A[k]}).join(","):"-"}
+function encode(withRes){
+  return ["v2",[A.chr0,A.chr1,A.chr2].join(","),(A.gp||["x","x","x","x"]).join(","),A.birth||"x",A.lang,A.scr,A.art,A.leg,A.con,withRes?research():"-"].join("~");
+}
+function decode(s){
+  var p=(s||"").split("~");if(p.length!==10||p[0]!=="v2")return false;
+  var c=p[1].split(",");A={chr0:c[0],chr1:c[1],chr2:c[2],gp:p[2].split(","),birth:p[3],lang:p[4],scr:p[5],art:p[6],leg:p[7],con:p[8]};
+  if(p[9]!=="-"){var r=p[9].split(",");RES_KEYS.forEach(function(k,i){A[k]=r[i]});consented=true}
+  return true;
+}
+
+/* ---------- consent and research ---------- */
+$("agree").addEventListener("change",function(){$("join").disabled=!this.checked});
+$("join").addEventListener("click",function(){consented=true;mode="research";step=0;show("quiz");render()});
+$("skip").addEventListener("click",function(){consented=false;showPaywall(false,null)});
+function finishResearch(ok){
+  if(!ok){showPaywall(false,null,"Thank you. The research questions are for adults, so nothing about you has been stored.");return}
+  show("loading");$("loadmsg").textContent="Reading your inheritance…";
+  var code=encode(true);store("pq_answers",code);
+  post("/api/submit",{a:code,consent:true,client:clientId(),duration:Math.round((Date.now()-t0)/1000)}).then(function(x){
+    if(x.s!==200)throw new Error(x.j.error||"Could not save your answers.");
+    if(x.j.rid){STATE.rid=x.j.rid;lstore("pq_withdraw",JSON.stringify({rid:x.j.rid,token:x.j.token}))}
+    showPaywall(false,x.j.inheritance,x.j.rid?null:"Your reading is below. The research database is not connected yet, so nothing was stored.");
+  }).catch(function(err){showPaywall(false,null,"Your answers could not be saved ("+err.message+"). Nothing was stored; your result is unaffected.")});
+}
+
+/* ---------- inheritance reading ---------- */
+function pips(n){return '<i class="'+(n>=1?'on':'')+'"></i><i class="'+(n>=2?'on':'')+'"></i>'}
+function inhHTML(list,title){
+  return '<section class="block" style="margin-top:6px"><p class="kicker">'+esc(title)+'</p><h3>How you hold your inheritance</h3><div class="inh">'+list.map(function(h){
+    return '<div class="ih"><div class="top"><b>'+esc(h.label)+'</b><span class="what">'+esc(h.heritage)+'</span><span class="hs '+esc(h.state)+'">'+esc(h.stateName)+'</span></div>'+
+      (h.state==="none"?'':'<div class="pips"><span>Handed on '+pips(h.T)+'</span><span>Served '+pips(h.O)+'</span><span>Argued over '+pips(h.C)+'</span></div>')+
+      '<p>'+esc(h.text)+'</p></div>'}).join("")+'</div><p class="thanks">The atlas calls a heritage <b>taken over</b> when it is handed on, and served or fought over as itself; <b>inhabited</b> when it is the background of life rather than its task; and <b>kit</b> when it is kept only as heritage.</p></section>';
+}
+function withdrawLink(){var w=null;try{w=JSON.parse(lload("pq_withdraw")||"null")}catch(e){}
+  $("wdfoot").innerHTML=w?'· <button class="link" type="button" id="wd" style="font-size:inherit;padding:0">Withdraw my research answers</button>':'';
+  if(w)$("wd").addEventListener("click",function(){var b=this;b.disabled=true;b.textContent="Withdrawing…";
+    post("/api/withdraw",{rid:w.rid,token:w.token}).then(function(x){if(x.s!==200)throw new Error(x.j.error||"failed");lstore("pq_withdraw",null);b.textContent="Withdrawn: your research answers have been deleted."})
+     .catch(function(){b.disabled=false;b.textContent="Could not withdraw. Try again"})})}
+
+function showPaywall(canceled,inh,msg){
+  $("canceled").hidden=!canceled;$("payerr").hidden=true;$("pay").disabled=false;$("pay").textContent="Unlock my result — $5";
+  $("pwkick").textContent=consented?"All questions answered":"All ten answered";
+  $("freeinh").innerHTML=(msg?'<p class="note">'+esc(msg)+'</p>':'')+(inh?inhHTML(inh,"Free, for taking part"):'');
+  if(!enough()){$("pay").disabled=true;$("payerr").textContent="Too few facets to place you. Answer at least two of: your grandparents, birthplace, language, alphabet, law or faith. Nothing has been charged.";$("payerr").hidden=false}
+  show("paywall");withdrawLink();$("pwtitle").focus({preventScroll:true});
+}
+
+$("start").addEventListener("click",function(){A={};step=0;mode="core";consented=false;t0=Date.now();show("quiz");render()});
+$("qbody").addEventListener("click",function(e){var o=e.target.closest(".opt");if(!o)return;
+  var q=list()[step];A[q.id]=o.getAttribute("data-v");
+  Array.prototype.forEach.call(document.querySelectorAll(".opt"),function(x){x.setAttribute("aria-checked",String(x===o))});
+  setTimeout(advance,160)});
+$("next").addEventListener("click",function(){var q=list()[step];
+  if(q.type==="gp")A.gp=[0,1,2,3].map(function(i){return $("gp"+i).value});
+  if(q.type==="region")A[q.id]=$("regsel").value;
+  advance()});
+$("back").addEventListener("click",function(){
+  if(step===0){if(mode==="core")show("intro");else show("consent");return}
+  var p=nextIndex(step,-1);step=p<0?0:p;render()});
+$("review").addEventListener("click",function(){step=0;mode="core";show("quiz");render()});
+
+$("pay").addEventListener("click",function(){
+  var btn=$("pay");btn.disabled=true;btn.textContent="Opening secure checkout…";$("payerr").hidden=true;
+  var w=null;try{w=JSON.parse(lload("pq_withdraw")||"null")}catch(e){}
+  post("/api/checkout",{a:encode(true),rid:STATE.rid||(w&&w.rid)||""})
+   .then(function(x){if(x.s!==200||!x.j.url)throw new Error(x.j.error||"Could not start checkout.");window.location.assign(x.j.url)})
+   .catch(function(err){btn.disabled=false;btn.textContent="Unlock my result — $5";$("payerr").textContent=err.message||"Something went wrong. Please try again.";$("payerr").hidden=false});
+});
+
+/* ---------- Result ---------- */
+function chip(d){if(d===null)return '<span class="chip none">Not scored</span>';if(d===0)return '<span class="chip same">Same</span>';if(d<=.5)return '<span class="chip near">Near</span>';return '<span class="chip split">Split</span>'}
+function regionHTML(reg){var names={rite:"Rite",tongue:"Tongue",law:"Law"},col={take:"var(--verdigris)",inh:"#C9A45C",kit:"var(--edge)",none:"var(--track)"};
+  return '<section class="block"><h3>How others where you live hold the same</h3><p class="soft cond">'+reg.n+' people who live in your region have answered. Bars show the share in each state'+(reg.rows[0].reliability==="provisional"?'; still provisional at this sample size':'')+'.</p>'+
+    reg.rows.map(function(r){return '<div class="bar" style="margin-top:8px"><span class="nm"><b>'+names[r.heritage]+'</b> · taken over '+Math.round(100*r.take_share)+'%, inhabited '+Math.round(100*r.inh_share)+'%, kit '+Math.round(100*r.kit_share)+'%'+(r.none_share?', none '+Math.round(100*r.none_share)+'%':'')+'</span><span class="regbar" style="grid-column:1 / -1">'+
+      ["take","inh","kit","none"].map(function(s){return r[s+"_share"]?'<span style="width:'+(100*r[s+"_share"])+'%;background:'+col[s]+'"></span>':''}).join("")+'</span></div>'}).join("")+'</section>'}
+function renderResult(r){
+  var p=r.peoplehood,cw=r.commonwealth,sg=r.subgroup;
+  var h='<div class="res-cw" style="--cw:'+esc(cw.color)+'">'+
+    '<p class="kicker">Your commonwealth</p><p class="big">'+esc(cw.name)+'</p>'+
+    '<p class="match">Sub-group: <b style="font-size:inherit">'+esc(sg.name)+'</b> · '+(cw.margin>=25?'a clear placement':(cw.margin>=10?'a moderate placement':'a close call'))+': '+cw.margin+'% nearer than the '+esc(cw.runnerUp)+'</p><p>'+esc(cw.text)+'</p></div>';
+  h+='<section class="block"><p class="kicker">Your peoplehood</p><p class="big">'+esc(p.name)+'</p>'+
+    '<p class="match"><b>'+p.match+'%</b> match across the facets you answered'+
+    (p.tiedWith&&p.tiedWith.length?' · tied with '+esc(p.tiedWith.join(", "))+', which the atlas codes identically':'')+'</p>'+
+    '<p>'+esc(sg.text)+'</p></section>';
+  h+='<section class="block"><p class="kicker">Your defining facet</p><div class="defining"><p class="big">'+esc(r.defining.label)+'</p>'+
+    '<p>'+esc(r.defining.text)+'</p><p class="soft cond" style="margin:0">This is the facet that does most to hold you inside the '+esc(cw.name)+' rather than the other two'+
+    (r.defining.runnerUp?'. Next strongest: '+esc(r.defining.runnerUp)+'.':'.')+'</p></div></section>';
+  h+='<section class="block"><h3>How close you sit to each commonwealth</h3><div class="bars">'+r.commonwealths.map(function(c){
+    return '<div class="bar"><span class="nm">'+esc(c.name)+'</span><span class="tr"><span style="width:'+Math.max(2,c.closeness)+'%;background:'+esc(c.color)+'"></span></span><span class="v">'+c.closeness+'%</span></div>'}).join("")+'</div></section>';
+  h+='<section class="block"><h3>Your eight facets beside '+esc(p.name)+'’s</h3><table class="tbl"><thead><tr><th>Facet</th><th>You</th><th>'+esc(p.name)+'</th><th></th></tr></thead><tbody>'+
+    r.facets.map(function(f){return '<tr><td>'+esc(f.label)+'<span class="kind">'+esc(f.kind)+'</span></td><td class="you">'+(f.you===null?'<span class="soft">—</span>':esc(f.you))+'</td><td class="them" data-h="'+esc(p.name)+'">'+esc(f.them)+'</td><td class="st">'+chip(f.dist)+'</td></tr>'}).join("")+
+    '</tbody></table>'+(r.unscored.length?'<p class="soft cond" style="margin-top:10px">Not scored, because you left it open: '+esc(r.unscored.join(", "))+'. The remaining facets share its voice.</p>':'')+'</section>';
+  h+='<section class="block"><h3>Your five nearest peoplehoods</h3><ol class="near">'+r.nearest.map(function(n){
+    return '<li><b>'+esc(n.name)+'</b> <span class="sm">· '+n.match+'% · '+esc(n.cw)+', '+esc(n.sub)+'</span></li>'}).join("")+'</ol></section>';
+  if(r.inheritance)h+=inhHTML(r.inheritance,"From your research answers");
+  if(r.region)h+=regionHTML(r.region);
+  h+='<section class="block"><p>Bookmark this page to keep your result; the link works for as long as the atlas is up.</p><div class="row">'+
+    '<a class="btn" href="/" style="text-decoration:none;display:inline-flex;align-items:center">Read the atlas</a>'+
+    '<button class="link" type="button" id="copy">Copy link to my result</button><a class="link" href="/quiz">Take it again</a></div>'+
+    '<p class="soft cond" style="margin-top:18px">Scored with the atlas’s method, v'+esc(r.version)+': eight facets, each scaled to the same spread and given the same say, and the atlas’s own category distances. Commonwealths are firm; sub-groups are softer, and can shift with the weighting. A reading of your answers, not a verdict on who you are.</p></section>';
+  $("result").innerHTML=h;show("result");withdrawLink();
+  $("copy").addEventListener("click",function(){var b=this;try{navigator.clipboard.writeText(location.href).then(function(){b.textContent="Copied"},function(){b.textContent=location.href})}catch(e){b.textContent=location.href}});
+}
+function fetchResult(id,tries){
+  show("loading");
+  fetch("/api/result?session_id="+encodeURIComponent(id)).then(function(r){return r.json().then(function(j){return {s:r.status,j:j}})})
+   .then(function(x){
+     if(x.s===200){store("pq_answers",null);renderResult(x.j);return}
+     if(x.s===402&&tries<6){$("loadmsg").textContent="Confirming your payment…";setTimeout(function(){fetchResult(id,tries+1)},1500);return}
+     throw new Error(x.j.error||"Could not load your result.");
+   }).catch(function(err){
+     $("result").innerHTML='<h2>We couldn’t load your result.</h2><div class="err">'+esc(err.message)+'</div><p>If you were charged, refresh this page in a minute; your result is tied to this link.</p><div class="row"><a class="btn" href="" style="text-decoration:none;display:inline-flex;align-items:center">Refresh</a><a class="link" href="/quiz">Start over</a></div>';
+     show("result");
+   });
+}
+
+var qs=new URLSearchParams(location.search);
+if(qs.get("session_id"))fetchResult(qs.get("session_id"),0);
+else if(qs.get("canceled")&&decode(load("pq_answers")))showPaywall(true,null);
+else{show("intro");withdrawLink()}
+})();
+</script>
+</body>
+</html>

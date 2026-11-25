@@ -4,7 +4,7 @@ All notable changes to the Atlas of European Collectives.
 Format: [Keep a Changelog](https://keepachangelog.com/). Versioning: [SemVer](https://semver.org/).
 MAJOR = the findings change; MINOR = a facet, region or section is added; PATCH = corrections, wording, styling.
 
-## [2.1.0] - 2026-11-20
+## [2.1.0] - 2026-11-24
 ### Added
 - Facet families. The thirteen facets are grouped by what they are about: Birthright (Biological, Geographic descent); Word & learning (Language, Script, Learning); Faith & festival (Confession, Festive calendar); Law & society (Legal family, Civic trust, Individualism); Household (Family & kinship, Foodways); and Art (Architecture). The families order the Plate I and Plate III facet pickers, the Category explanations menu, the Methodology facet table and the category explanations themselves, and each explanation names its family. The grouping is not a weighting: every facet keeps its voice and no result changes.
 - A "Skip to content" link and a main landmark.
@@ -22,6 +22,14 @@ MAJOR = the findings change; MINOR = a facet, region or section is added; PATCH 
 - Heading levels no longer skip: the Plate I, III and IV sidebar headings, the Methodology subsections and the commonwealth cards' "What sets it apart" move up one level, styled as before.
 - On phones the facet rail scrolls to the chosen facet again now that the buttons sit in families.
 - Footer version brought up to date.
+
+## [2.0.12] - 2026-11-24
+### Changed
+- The crest is redrawn: a pointed Gothic arch in black, red and gold, the colours of the imperial eagle, with a heraldic gold field lit from above and a red inner border; Alpha and Omega flank the eagle, which grasps Jupiter's thunderbolt as on the legionary eagle; a burst of light rises behind the shield.
+
+## [2.0.11] - 2026-11-24
+### Changed
+- Favicons, app icons, the top-bar mark and the link-preview image use a finer compass after the project's first mark: a slim navy ring with degree ticks on an ivory face and an eight-point rose whose light faces blend the three commonwealths west to east in historic neutrals: weathered verdigris, aged ochre-brass, dusk slate-violet.
 
 ## [2.0.10] - 2026-11-01
 ### Removed
