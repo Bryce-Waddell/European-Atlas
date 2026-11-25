@@ -4,6 +4,10 @@ All notable changes to the Atlas of European Collectives.
 Format: [Keep a Changelog](https://keepachangelog.com/). Versioning: [SemVer](https://semver.org/).
 MAJOR = the findings change; MINOR = a facet, region or section is added; PATCH = corrections, wording, styling.
 
+## [2.0.11] - 2026-11-24
+### Changed
+- Favicons, app icons, the top-bar mark and the link-preview image use a finer compass after the project's first mark: a slim navy ring with degree ticks on an ivory face and an eight-point rose whose light faces blend the three commonwealths west to east in historic neutrals: weathered verdigris, aged ochre-brass, dusk slate-violet.
+
 ## [2.0.10] - 2026-11-01
 ### Removed
 - Plate I no longer shows the selected facet's notes (what it measures, Boundary, Groups and Splits) beside or under the map. Before a region is chosen the card says only: "Choose a facet to recolour the map, then tap a region to see all its facets." On phones this gives the map more of the screen. The facets are still explained in full under Category explanations.
