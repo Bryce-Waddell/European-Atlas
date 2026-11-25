@@ -4,6 +4,25 @@ All notable changes to the Atlas of European Collectives.
 Format: [Keep a Changelog](https://keepachangelog.com/). Versioning: [SemVer](https://semver.org/).
 MAJOR = the findings change; MINOR = a facet, region or section is added; PATCH = corrections, wording, styling.
 
+## [2.1.0] - 2026-11-20
+### Added
+- Facet families. The thirteen facets are grouped by what they are about: Birthright (Biological, Geographic descent); Word & learning (Language, Script, Learning); Faith & festival (Confession, Festive calendar); Law & society (Legal family, Civic trust, Individualism); Household (Family & kinship, Foodways); and Art (Architecture). The families order the Plate I and Plate III facet pickers, the Category explanations menu, the Methodology facet table and the category explanations themselves, and each explanation names its family. The grouping is not a weighting: every facet keeps its voice and no result changes.
+- A "Skip to content" link and a main landmark.
+- Plate III: "How the facets agree with one another". A tree of the thirteen facets by the agreement of their distances, with the groups it forms (the church facets; ancestry, land, food and language; trust and individualism) and a permutation test showing that the subject families are not statistical groups (p ≈ 0.23). All recomputed in the browser.
+- A spec card on every facet's explanation: status, kind, source, coverage, voice, the three facets it agrees with most, and its reliability: for facets with several parts, how far the parts agree (Family & kinship 0.14, Foodways 0.27, Learning 0.34, Festive calendar 0.66, all computed live); for the rest, untested.
+- Methodology: "How reliable each facet is", a table of the same figures for all thirteen scored facets and the two music measures.
+- Art › Music, measured but not scored. On Plate I the map can be coloured by either of two music measures: the instrument types a region plays (33 Hornbostel–Sachs types, two blind coders, α 0.82 on cells, 0.68 on distances) or how its songs are sung (Lomax's 37 Cantometrics scales, 817 songs from the Global Jukebox, 47 regions, split-half 0.65). Each colour is the region's place on the first axis of a classical scaling of that measure's distances. Over the map, 156 dated markers show where instruments were first built and genres first took shape, with a timeline and filters; each region's card lists its instrument types, its song sample and what began there. The Music explanation gives both measures' spec cards and why neither is yet scored.
+- Music explanation: the Hornbostel–Sachs tree, drawn live to the distances the instrument measure uses (two types are as far apart as the point where their branches meet: 0.25 within a manner of sounding, 0.5 within a class, 1 across classes), with every type's count of regions and examples from different regions. "Highlight a region" lights that region's branches; "By where it's from" re-sorts the same instruments by country so that the families scatter. On Plate I, a region's instrument types are grouped by class in the same colours, with a link to its branches on the tree. The tree replaces the paragraph that described the classification in words.
+- Methodology: "Rules for adding a facet", seven conditions fixed before any new facet's results are seen: sourced, covered, coded by a fixed rule, a reliability of at least 0.7 with a second coder, Heidegger's test, a voice corrected for unreliability, and tested both ways.
+- Philosophy: "Nietzsche: the European man and the abolition of nations", the full text of *Human, All Too Human* I §475 (Kaufmann's translation, with the scanning errors of the source copy corrected), set as a block quote after the closing line.
+- Philosophy: "Nietzsche: on pity", the passage from *The Antichrist* §7 that the law of natural selection is thwarted by pity, set as a block quote after §475.
+### Changed
+- The Art facet is renamed Architecture, the first facet in the Art family. What it codes is unchanged: whether the Gothic-to-Baroque building tradition took root.
+- Body text 16 px (was 15.5), map hints 14 px (was 13.5).
+- Heading levels no longer skip: the Plate I, III and IV sidebar headings, the Methodology subsections and the commonwealth cards' "What sets it apart" move up one level, styled as before.
+- On phones the facet rail scrolls to the chosen facet again now that the buttons sit in families.
+- Footer version brought up to date.
+
 ## [2.0.10] - 2026-11-01
 ### Removed
 - Plate I no longer shows the selected facet's notes (what it measures, Boundary, Groups and Splits) beside or under the map. Before a region is chosen the card says only: "Choose a facet to recolour the map, then tap a region to see all its facets." On phones this gives the map more of the screen. The facets are still explained in full under Category explanations.
