@@ -4,6 +4,10 @@ All notable changes to the Atlas of European Collectives.
 Format: [Keep a Changelog](https://keepachangelog.com/). Versioning: [SemVer](https://semver.org/).
 MAJOR = the findings change; MINOR = a facet, region or section is added; PATCH = corrections, wording, styling.
 
+## [2.0.12] - 2026-11-24
+### Changed
+- The crest is redrawn: a pointed Gothic arch in black, red and gold, the colours of the imperial eagle, with a heraldic gold field lit from above and a red inner border; Alpha and Omega flank the eagle, which grasps Jupiter's thunderbolt as on the legionary eagle; a burst of light rises behind the shield.
+
 ## [2.0.11] - 2026-11-24
 ### Changed
 - Favicons, app icons, the top-bar mark and the link-preview image use a finer compass after the project's first mark: a slim navy ring with degree ticks on an ivory face and an eight-point rose whose light faces blend the three commonwealths west to east in historic neutrals: weathered verdigris, aged ochre-brass, dusk slate-violet.
