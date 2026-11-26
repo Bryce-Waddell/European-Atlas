@@ -1,0 +1,9330 @@
+{
+ "instrument_families": {
+  "str": "Strings",
+  "ww": "Woodwinds",
+  "br": "Brass",
+  "fr": "Free reeds",
+  "kb": "Keyboards",
+  "pc": "Percussion",
+  "el": "Electric & electronic"
+ },
+ "genre_families": {
+  "art": "Art music",
+  "cho": "Choral & sacred",
+  "folk": "Folk & dance",
+  "song": "Popular song",
+  "jazz": "Jazz & blues",
+  "rock": "Rock & metal",
+  "elec": "Electronic & dance",
+  "hip": "Hip hop, soul & R&B"
+ },
+ "regions": {
+  "ISL": {
+   "instruments": [
+    {
+     "name": "Langspil",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Fiðla",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Harmonika",
+     "family": "fr",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Lúðrasveit brass",
+     "family": "br",
+     "role": "t",
+     "note": ""
+    }
+   ],
+   "genres": [
+    {
+     "name": "Rímur and tvísöngur",
+     "family": "folk",
+     "credit": 1.0
+    }
+   ],
+   "instrument_shares": {
+    "str": 0.4639,
+    "ww": 0.0537,
+    "br": 0.2195,
+    "fr": 0.223,
+    "kb": 0.0027,
+    "pc": 0.0368,
+    "el": 0.0005
+   },
+   "genre_shares": {
+    "art": 0.0258,
+    "cho": 0.0328,
+    "folk": 0.8064,
+    "song": 0.0702,
+    "jazz": 0.005,
+    "rock": 0.03,
+    "elec": 0.0265,
+    "hip": 0.0033
+   },
+   "genre_instrumentation": null,
+   "developed": 0,
+   "sources": [
+    "Wikipedia, 'Music of Iceland' and its instrument entries",
+    "Encyclopaedia Britannica, the music entries for the country",
+    "MIMO (Musical Instrument Museums Online), Hornbostel–Sachs records"
+   ]
+  },
+  "NOR": {
+   "instruments": [
+    {
+     "name": "Hardanger fiddle",
+     "family": "str",
+     "role": "dt",
+     "note": "Hardanger, earliest dated 1651"
+    },
+    {
+     "name": "Fiddle",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Langeleik",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Munnharpe",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Seljefløyte",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Bukkehorn (prillarhorn)",
+     "family": "br",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Birch lur",
+     "family": "br",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Torader",
+     "family": "fr",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Trekkspill",
+     "family": "fr",
+     "role": "t",
+     "note": ""
+    }
+   ],
+   "genres": [
+    {
+     "name": "Slått and kveding",
+     "family": "folk",
+     "credit": 1.0
+    },
+    {
+     "name": "Black metal",
+     "family": "rock",
+     "credit": 1.0
+    }
+   ],
+   "instrument_shares": {
+    "str": 0.3319,
+    "ww": 0.1269,
+    "br": 0.2097,
+    "fr": 0.2115,
+    "kb": 0.0013,
+    "pc": 0.1184,
+    "el": 0.0003
+   },
+   "genre_shares": {
+    "art": 0.0172,
+    "cho": 0.0219,
+    "folk": 0.5376,
+    "song": 0.0468,
+    "jazz": 0.0033,
+    "rock": 0.3533,
+    "elec": 0.0177,
+    "hip": 0.0022
+   },
+   "genre_instrumentation": {
+    "str": 0.0,
+    "ww": 0.0,
+    "br": 0.0,
+    "fr": 0.0,
+    "kb": 0.0,
+    "pc": 0.5,
+    "el": 0.5
+   },
+   "developed": 1,
+   "sources": [
+    "Wikipedia, 'Music of Norway' and its instrument entries",
+    "Encyclopaedia Britannica, the music entries for the country",
+    "MIMO (Musical Instrument Museums Online), Hornbostel–Sachs records"
+   ]
+  },
+  "SWE": {
+   "instruments": [
+    {
+     "name": "Nyckelharpa",
+     "family": "str",
+     "role": "dt",
+     "note": "keyed fiddle, medieval Uppland"
+    },
+    {
+     "name": "Fiddle",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Hummel",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Psalmodikon",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Säckpipa",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Spilåpipa",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Härjedalspipa",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Näverlur",
+     "family": "br",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Kohorn",
+     "family": "br",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Mungiga",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Dragspel",
+     "family": "fr",
+     "role": "t",
+     "note": ""
+    }
+   ],
+   "genres": [
+    {
+     "name": "Polska",
+     "family": "folk",
+     "credit": 1.0
+    },
+    {
+     "name": "Melodic death metal",
+     "family": "rock",
+     "credit": 1.0
+    }
+   ],
+   "instrument_shares": {
+    "str": 0.3599,
+    "ww": 0.2724,
+    "br": 0.1748,
+    "fr": 0.0929,
+    "kb": 0.0011,
+    "pc": 0.0987,
+    "el": 0.0002
+   },
+   "genre_shares": {
+    "art": 0.0172,
+    "cho": 0.0219,
+    "folk": 0.5376,
+    "song": 0.0468,
+    "jazz": 0.0033,
+    "rock": 0.3533,
+    "elec": 0.0177,
+    "hip": 0.0022
+   },
+   "genre_instrumentation": {
+    "str": 0.0,
+    "ww": 0.0,
+    "br": 0.0,
+    "fr": 0.0,
+    "kb": 0.0,
+    "pc": 0.5,
+    "el": 0.5
+   },
+   "developed": 1,
+   "sources": [
+    "Wikipedia, 'Music of Sweden' and its instrument entries",
+    "Encyclopaedia Britannica, the music entries for the country",
+    "MIMO (Musical Instrument Museums Online), Hornbostel–Sachs records"
+   ]
+  },
+  "FIN": {
+   "instruments": [
+    {
+     "name": "Kantele",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Jouhikko",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Fiddle",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Pajupilli",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Mänkeri",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Tuohitorvi",
+     "family": "br",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Harmonikka",
+     "family": "fr",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Sámi drum",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Munniharppu",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    }
+   ],
+   "genres": [
+    {
+     "name": "Runo song",
+     "family": "folk",
+     "credit": 1.0
+    },
+    {
+     "name": "Finnish tango",
+     "family": "song",
+     "credit": 1.0
+    }
+   ],
+   "instrument_shares": {
+    "str": 0.3319,
+    "ww": 0.2269,
+    "br": 0.1097,
+    "fr": 0.1115,
+    "kb": 0.0013,
+    "pc": 0.2184,
+    "el": 0.0003
+   },
+   "genre_shares": {
+    "art": 0.0172,
+    "cho": 0.0219,
+    "folk": 0.5376,
+    "song": 0.3801,
+    "jazz": 0.0033,
+    "rock": 0.02,
+    "elec": 0.0177,
+    "hip": 0.0022
+   },
+   "genre_instrumentation": {
+    "str": 0.5,
+    "ww": 0.0,
+    "br": 0.0,
+    "fr": 0.5,
+    "kb": 0.0,
+    "pc": 0.0,
+    "el": 0.0
+   },
+   "developed": 0,
+   "sources": [
+    "Wikipedia, 'Music of Finland' and its instrument entries",
+    "Encyclopaedia Britannica, the music entries for the country",
+    "MIMO (Musical Instrument Museums Online), Hornbostel–Sachs records"
+   ]
+  },
+  "DEN": {
+   "instruments": [
+    {
+     "name": "Bronze-Age lur",
+     "family": "br",
+     "role": "d",
+     "note": "Nordic Bronze Age, most finds in Denmark"
+    },
+    {
+     "name": "Fiddle",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Double bass",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Hummel",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Clarinet (spillemand bands)",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Transverse flute",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Sækkepibe",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Accordion",
+     "family": "fr",
+     "role": "t",
+     "note": ""
+    }
+   ],
+   "genres": [
+    {
+     "name": "Danish fiddle dance",
+     "family": "folk",
+     "credit": 1.0
+    }
+   ],
+   "instrument_shares": {
+    "str": 0.4149,
+    "ww": 0.4086,
+    "br": 0.0122,
+    "fr": 0.1394,
+    "kb": 0.0017,
+    "pc": 0.023,
+    "el": 0.0003
+   },
+   "genre_shares": {
+    "art": 0.0258,
+    "cho": 0.0328,
+    "folk": 0.8064,
+    "song": 0.0702,
+    "jazz": 0.005,
+    "rock": 0.03,
+    "elec": 0.0265,
+    "hip": 0.0033
+   },
+   "genre_instrumentation": null,
+   "developed": 1,
+   "sources": [
+    "Wikipedia, 'Music of Denmark' and its instrument entries",
+    "Encyclopaedia Britannica, the music entries for the country",
+    "MIMO (Musical Instrument Museums Online), Hornbostel–Sachs records"
+   ]
+  },
+  "EST": {
+   "instruments": [
+    {
+     "name": "Kannel",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Hiiu kannel",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Fiddle",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Torupill",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Vilepill",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Sarvepill",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Karjapasun",
+     "family": "br",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Lõõtspill",
+     "family": "fr",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Parmupill",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Trumm",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    }
+   ],
+   "genres": [
+    {
+     "name": "Regilaul",
+     "family": "folk",
+     "credit": 1.0
+    },
+    {
+     "name": "Song-festival choral tradition",
+     "family": "cho",
+     "credit": 0.333
+    },
+    {
+     "name": "Holy minimalism (tintinnabuli)",
+     "family": "art",
+     "credit": 1.0
+    }
+   ],
+   "instrument_shares": {
+    "str": 0.3018,
+    "ww": 0.2971,
+    "br": 0.0998,
+    "fr": 0.1014,
+    "kb": 0.0012,
+    "pc": 0.1985,
+    "el": 0.0002
+   },
+   "genre_shares": {
+    "art": 0.3155,
+    "cho": 0.1197,
+    "folk": 0.4838,
+    "song": 0.0421,
+    "jazz": 0.003,
+    "rock": 0.018,
+    "elec": 0.0159,
+    "hip": 0.002
+   },
+   "genre_instrumentation": {
+    "str": 0.5,
+    "ww": 0.0,
+    "br": 0.0,
+    "fr": 0.0,
+    "kb": 0.5,
+    "pc": 0.0,
+    "el": 0.0
+   },
+   "developed": 0,
+   "sources": [
+    "Wikipedia, 'Music of Estonia' and its instrument entries",
+    "Encyclopaedia Britannica, the music entries for the country",
+    "MIMO (Musical Instrument Museums Online), Hornbostel–Sachs records"
+   ]
+  },
+  "LAT": {
+   "instruments": [
+    {
+     "name": "Kokle",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Ģīga",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Fiddle",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Dūdas",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Stabule",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Ragi",
+     "family": "br",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Ermoņikas",
+     "family": "fr",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Trīdeksnis",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Bungas",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Vargāns",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    }
+   ],
+   "genres": [
+    {
+     "name": "Dainas",
+     "family": "folk",
+     "credit": 1.0
+    },
+    {
+     "name": "Song-festival choral tradition",
+     "family": "cho",
+     "credit": 0.333
+    }
+   ],
+   "instrument_shares": {
+    "str": 0.3018,
+    "ww": 0.2062,
+    "br": 0.0998,
+    "fr": 0.1014,
+    "kb": 0.0012,
+    "pc": 0.2894,
+    "el": 0.0002
+   },
+   "genre_shares": {
+    "art": 0.0221,
+    "cho": 0.171,
+    "folk": 0.6912,
+    "song": 0.0602,
+    "jazz": 0.0043,
+    "rock": 0.0257,
+    "elec": 0.0227,
+    "hip": 0.0028
+   },
+   "genre_instrumentation": null,
+   "developed": 0,
+   "sources": [
+    "Wikipedia, 'Music of Latvia' and its instrument entries",
+    "Encyclopaedia Britannica, the music entries for the country",
+    "MIMO (Musical Instrument Museums Online), Hornbostel–Sachs records"
+   ]
+  },
+  "LIT": {
+   "instruments": [
+    {
+     "name": "Kanklės",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Smuikas",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Skudučiai",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Birbynė",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Lamzdeliai",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Daudytė",
+     "family": "br",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Ragai",
+     "family": "br",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Bandonija",
+     "family": "fr",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Armonika",
+     "family": "fr",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Būgnas",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Tabalas",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    }
+   ],
+   "genres": [
+    {
+     "name": "Sutartinės",
+     "family": "folk",
+     "credit": 1.0
+    },
+    {
+     "name": "Song-festival choral tradition",
+     "family": "cho",
+     "credit": 0.333
+    }
+   ],
+   "instrument_shares": {
+    "str": 0.1933,
+    "ww": 0.2724,
+    "br": 0.1748,
+    "fr": 0.1762,
+    "kb": 0.0011,
+    "pc": 0.182,
+    "el": 0.0002
+   },
+   "genre_shares": {
+    "art": 0.0221,
+    "cho": 0.171,
+    "folk": 0.6912,
+    "song": 0.0602,
+    "jazz": 0.0043,
+    "rock": 0.0257,
+    "elec": 0.0227,
+    "hip": 0.0028
+   },
+   "genre_instrumentation": null,
+   "developed": 0,
+   "sources": [
+    "Wikipedia, 'Music of Lithuania' and its instrument entries",
+    "Encyclopaedia Britannica, the music entries for the country",
+    "MIMO (Musical Instrument Museums Online), Hornbostel–Sachs records"
+   ]
+  },
+  "RUS": {
+   "instruments": [
+    {
+     "name": "Balalaika (concert form)",
+     "family": "str",
+     "role": "dt",
+     "note": "Vasily Andreyev, 1880s"
+    },
+    {
+     "name": "Garmon",
+     "family": "fr",
+     "role": "dt",
+     "note": "Tula, 1830s"
+    },
+    {
+     "name": "Bayan",
+     "family": "fr",
+     "role": "dt",
+     "note": "Pyotr Sterligov, 1907"
+    },
+    {
+     "name": "Russian horn band",
+     "family": "br",
+     "role": "d",
+     "note": "St Petersburg, 1751"
+    },
+    {
+     "name": "Theremin",
+     "family": "el",
+     "role": "d",
+     "note": "Léon Theremin, Petrograd, 1920"
+    },
+    {
+     "name": "ANS synthesizer",
+     "family": "el",
+     "role": "d",
+     "note": "Yevgeny Murzin, Moscow, 1958"
+    },
+    {
+     "name": "Domra",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Gusli",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Gudok",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Seven-string guitar",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Zhaleika",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Svirel",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Kugikly",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Volynka",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Rozhok",
+     "family": "br",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Lozhki",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Treshchotka",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Buben",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    }
+   ],
+   "genres": [
+    {
+     "name": "Znamenny chant",
+     "family": "cho",
+     "credit": 1.0
+    },
+    {
+     "name": "Russian romance and bard song",
+     "family": "song",
+     "credit": 1.0
+    },
+    {
+     "name": "Chastushka",
+     "family": "folk",
+     "credit": 1.0
+    }
+   ],
+   "instrument_shares": {
+    "str": 0.3325,
+    "ww": 0.2668,
+    "br": 0.0686,
+    "fr": 0.1322,
+    "kb": 0.0008,
+    "pc": 0.199,
+    "el": 0.0002
+   },
+   "genre_shares": {
+    "art": 0.0129,
+    "cho": 0.2664,
+    "folk": 0.4032,
+    "song": 0.2851,
+    "jazz": 0.0025,
+    "rock": 0.015,
+    "elec": 0.0133,
+    "hip": 0.0016
+   },
+   "genre_instrumentation": {
+    "str": 1.0,
+    "ww": 0.0,
+    "br": 0.0,
+    "fr": 0.0,
+    "kb": 0.0,
+    "pc": 0.0,
+    "el": 0.0
+   },
+   "developed": 6,
+   "sources": [
+    "Wikipedia, 'Music of Russia' and its instrument entries",
+    "Encyclopaedia Britannica, the music entries for the country",
+    "MIMO (Musical Instrument Museums Online), Hornbostel–Sachs records"
+   ]
+  },
+  "BLR": {
+   "instruments": [
+    {
+     "name": "Tsymbaly",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Lira",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Skrypka",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Basetlia",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Duda",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Zhaleika",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Dudka",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Rozhok",
+     "family": "br",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Garmonik",
+     "family": "fr",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Buben",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    }
+   ],
+   "genres": [
+    {
+     "name": "Belarusian calendar songs",
+     "family": "folk",
+     "credit": 1.0
+    }
+   ],
+   "instrument_shares": {
+    "str": 0.3927,
+    "ww": 0.2971,
+    "br": 0.0998,
+    "fr": 0.1014,
+    "kb": 0.0012,
+    "pc": 0.1076,
+    "el": 0.0002
+   },
+   "genre_shares": {
+    "art": 0.0258,
+    "cho": 0.0328,
+    "folk": 0.8064,
+    "song": 0.0702,
+    "jazz": 0.005,
+    "rock": 0.03,
+    "elec": 0.0265,
+    "hip": 0.0033
+   },
+   "genre_instrumentation": null,
+   "developed": 0,
+   "sources": [
+    "Wikipedia, 'Music of Belarus' and its instrument entries",
+    "Encyclopaedia Britannica, the music entries for the country",
+    "MIMO (Musical Instrument Museums Online), Hornbostel–Sachs records"
+   ]
+  },
+  "POL": {
+   "instruments": [
+    {
+     "name": "Suka biłgorajska",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Złóbcoki",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Skrzypce",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Basy",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Cymbały",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Dudy",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Kozioł",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Koza",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Fujarka",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Trombita",
+     "family": "br",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Ligawka",
+     "family": "br",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Harmonia pedałowa",
+     "family": "fr",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Bębenek",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Burczybas",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    }
+   ],
+   "genres": [
+    {
+     "name": "Mazurka",
+     "family": "folk",
+     "credit": 1.0
+    },
+    {
+     "name": "Polonaise",
+     "family": "folk",
+     "credit": 1.0
+    },
+    {
+     "name": "Krakowiak and oberek",
+     "family": "folk",
+     "credit": 1.0
+    },
+    {
+     "name": "Disco polo",
+     "family": "song",
+     "credit": 1.0
+    }
+   ],
+   "instrument_shares": {
+    "str": 0.3546,
+    "ww": 0.2846,
+    "br": 0.1398,
+    "fr": 0.0743,
+    "kb": 0.0009,
+    "pc": 0.1456,
+    "el": 0.0002
+   },
+   "genre_shares": {
+    "art": 0.0103,
+    "cho": 0.0131,
+    "folk": 0.7226,
+    "song": 0.2281,
+    "jazz": 0.002,
+    "rock": 0.012,
+    "elec": 0.0106,
+    "hip": 0.0013
+   },
+   "genre_instrumentation": {
+    "str": 0.0,
+    "ww": 0.0,
+    "br": 0.0,
+    "fr": 0.0,
+    "kb": 0.0,
+    "pc": 0.0,
+    "el": 1.0
+   },
+   "developed": 0,
+   "sources": [
+    "Wikipedia, 'Music of Poland' and its instrument entries",
+    "Encyclopaedia Britannica, the music entries for the country",
+    "MIMO (Musical Instrument Museums Online), Hornbostel–Sachs records"
+   ]
+  },
+  "IRL": {
+   "instruments": [
+    {
+     "name": "Gaelic harp",
+     "family": "str",
+     "role": "dt",
+     "note": "wire-strung, medieval"
+    },
+    {
+     "name": "Uilleann pipes",
+     "family": "ww",
+     "role": "dt",
+     "note": "bellows-blown, early 18th c."
+    },
+    {
+     "name": "Keyed bugle",
+     "family": "br",
+     "role": "d",
+     "note": "Joseph Haliday, Cavan Militia, patent 1810; rights sold to a Dublin maker"
+    },
+    {
+     "name": "Fiddle",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Tenor banjo",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Irish bouzouki",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Tin whistle",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Wooden flute",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Concertina",
+     "family": "fr",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Button accordion",
+     "family": "fr",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Bodhrán",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Bones",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    }
+   ],
+   "genres": [
+    {
+     "name": "Sean-nós",
+     "family": "folk",
+     "credit": 1.0
+    },
+    {
+     "name": "Irish dance music",
+     "family": "folk",
+     "credit": 1.0
+    },
+    {
+     "name": "Celtic rock",
+     "family": "rock",
+     "credit": 0.5
+    }
+   ],
+   "instrument_shares": {
+    "str": 0.3599,
+    "ww": 0.2724,
+    "br": 0.0081,
+    "fr": 0.1762,
+    "kb": 0.0011,
+    "pc": 0.182,
+    "el": 0.0002
+   },
+   "genre_shares": {
+    "art": 0.0148,
+    "cho": 0.0188,
+    "folk": 0.7465,
+    "song": 0.0401,
+    "jazz": 0.0029,
+    "rock": 0.16,
+    "elec": 0.0151,
+    "hip": 0.0019
+   },
+   "genre_instrumentation": {
+    "str": 0.333,
+    "ww": 0.333,
+    "br": 0.0,
+    "fr": 0.0,
+    "kb": 0.0,
+    "pc": 0.0,
+    "el": 0.333
+   },
+   "developed": 3,
+   "sources": [
+    "Wikipedia, 'Music of Ireland' and its instrument entries",
+    "Encyclopaedia Britannica, the music entries for the country",
+    "MIMO (Musical Instrument Museums Online), Hornbostel–Sachs records"
+   ]
+  },
+  "ULS": {
+   "instruments": [
+    {
+     "name": "Lambeg drum",
+     "family": "pc",
+     "role": "dt",
+     "note": "Ulster, 18th-19th c."
+    },
+    {
+     "name": "Fiddle",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Harp",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Fife",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Flute band",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Pipe-band bagpipe",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Uilleann pipes",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Accordion band",
+     "family": "fr",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Side drum",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Bodhrán",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    }
+   ],
+   "genres": [
+    {
+     "name": "Marching-band music",
+     "family": "folk",
+     "credit": 1.0
+    },
+    {
+     "name": "Ulster song",
+     "family": "folk",
+     "credit": 1.0
+    }
+   ],
+   "instrument_shares": {
+    "str": 0.2109,
+    "ww": 0.3881,
+    "br": 0.0089,
+    "fr": 0.1014,
+    "kb": 0.0012,
+    "pc": 0.2894,
+    "el": 0.0002
+   },
+   "genre_shares": {
+    "art": 0.0172,
+    "cho": 0.0219,
+    "folk": 0.8709,
+    "song": 0.0468,
+    "jazz": 0.0033,
+    "rock": 0.02,
+    "elec": 0.0177,
+    "hip": 0.0022
+   },
+   "genre_instrumentation": null,
+   "developed": 1,
+   "sources": [
+    "Wikipedia, 'Music of Northern Ireland' and its instrument entries",
+    "Encyclopaedia Britannica, the music entries for the country",
+    "MIMO (Musical Instrument Museums Online), Hornbostel–Sachs records"
+   ]
+  },
+  "SCO": {
+   "instruments": [
+    {
+     "name": "Great Highland bagpipe",
+     "family": "ww",
+     "role": "dt",
+     "note": "Highlands, 15th-18th c."
+    },
+    {
+     "name": "Clàrsach",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Fiddle",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Border pipes",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Scottish smallpipes",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Tin whistle",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Button accordion",
+     "family": "fr",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Pipe-band snare drum",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Pipe-band bass drum",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Bodhrán",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Trump",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    }
+   ],
+   "genres": [
+    {
+     "name": "Pibroch",
+     "family": "folk",
+     "credit": 1.0
+    },
+    {
+     "name": "Strathspey and reel",
+     "family": "folk",
+     "credit": 1.0
+    },
+    {
+     "name": "Celtic rock",
+     "family": "rock",
+     "credit": 0.5
+    }
+   ],
+   "instrument_shares": {
+    "str": 0.1933,
+    "ww": 0.3557,
+    "br": 0.0081,
+    "fr": 0.0929,
+    "kb": 0.0011,
+    "pc": 0.3487,
+    "el": 0.0002
+   },
+   "genre_shares": {
+    "art": 0.0148,
+    "cho": 0.0188,
+    "folk": 0.7465,
+    "song": 0.0401,
+    "jazz": 0.0029,
+    "rock": 0.16,
+    "elec": 0.0151,
+    "hip": 0.0019
+   },
+   "genre_instrumentation": {
+    "str": 0.333,
+    "ww": 0.333,
+    "br": 0.0,
+    "fr": 0.0,
+    "kb": 0.0,
+    "pc": 0.0,
+    "el": 0.333
+   },
+   "developed": 1,
+   "sources": [
+    "Wikipedia, 'Music of Scotland' and its instrument entries",
+    "Encyclopaedia Britannica, the music entries for the country",
+    "MIMO (Musical Instrument Museums Online), Hornbostel–Sachs records"
+   ]
+  },
+  "ENG": {
+   "instruments": [
+    {
+     "name": "English concertina",
+     "family": "fr",
+     "role": "dt",
+     "note": "Charles Wheatstone, London, 1829"
+    },
+    {
+     "name": "Tin whistle (mass-made)",
+     "family": "ww",
+     "role": "d",
+     "note": "Robert Clarke, Manchester, 1843"
+    },
+    {
+     "name": "English grand action",
+     "family": "kb",
+     "role": "d",
+     "note": "Backers and Broadwood, London, 1770s"
+    },
+    {
+     "name": "Vox and Marshall amplifiers",
+     "family": "el",
+     "role": "d",
+     "note": "Dartford 1958, London 1962"
+    },
+    {
+     "name": "Mellotron",
+     "family": "el",
+     "role": "d",
+     "note": "Birmingham, 1963"
+    },
+    {
+     "name": "Ferranti Mark 1 music",
+     "family": "el",
+     "role": "d",
+     "note": "Manchester, 1951"
+    },
+    {
+     "name": "Fiddle",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Welsh triple harp",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Crwth",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Northumbrian smallpipes",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Tin whistle",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Pipe and tabor",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Pibgorn",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Serpent (west gallery)",
+     "family": "br",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Brass-band cornet",
+     "family": "br",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Tenor horn",
+     "family": "br",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Euphonium",
+     "family": "br",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Melodeon",
+     "family": "fr",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Handbells",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Tower bells",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    }
+   ],
+   "genres": [
+    {
+     "name": "Anglican choral music",
+     "family": "cho",
+     "credit": 1.0
+    },
+    {
+     "name": "Change ringing",
+     "family": "cho",
+     "credit": 1.0
+    },
+    {
+     "name": "Ballad opera and music hall",
+     "family": "song",
+     "credit": 1.0
+    },
+    {
+     "name": "Brass band",
+     "family": "folk",
+     "credit": 1.0
+    },
+    {
+     "name": "Musical theatre",
+     "family": "song",
+     "credit": 0.5
+    },
+    {
+     "name": "British beat and rock",
+     "family": "rock",
+     "credit": 1.0
+    },
+    {
+     "name": "Heavy metal",
+     "family": "rock",
+     "credit": 1.0
+    },
+    {
+     "name": "Punk",
+     "family": "rock",
+     "credit": 0.5
+    },
+    {
+     "name": "Progressive rock",
+     "family": "rock",
+     "credit": 1.0
+    },
+    {
+     "name": "Synth-pop",
+     "family": "elec",
+     "credit": 1.0
+    },
+    {
+     "name": "Drum and bass",
+     "family": "elec",
+     "credit": 1.0
+    },
+    {
+     "name": "Grime",
+     "family": "hip",
+     "credit": 1.0
+    }
+   ],
+   "instrument_shares": {
+    "str": 0.2075,
+    "ww": 0.2668,
+    "br": 0.2561,
+    "fr": 0.1322,
+    "kb": 0.0008,
+    "pc": 0.1365,
+    "el": 0.0002
+   },
+   "genre_shares": {
+    "art": 0.0043,
+    "cho": 0.1721,
+    "folk": 0.1344,
+    "song": 0.1367,
+    "jazz": 0.0008,
+    "rock": 0.2967,
+    "elec": 0.1711,
+    "hip": 0.0839
+   },
+   "genre_instrumentation": {
+    "str": 0.057,
+    "ww": 0.011,
+    "br": 0.057,
+    "fr": 0.0,
+    "kb": 0.178,
+    "pc": 0.28,
+    "el": 0.417
+   },
+   "developed": 6,
+   "sources": [
+    "Wikipedia, 'Music of England; Music of Wales' and its instrument entries",
+    "Encyclopaedia Britannica, the music entries for the country",
+    "MIMO (Musical Instrument Museums Online), Hornbostel–Sachs records"
+   ]
+  },
+  "NLD": {
+   "instruments": [
+    {
+     "name": "Tuned carillon",
+     "family": "pc",
+     "role": "dt",
+     "note": "Hemony brothers, Zutphen, 1644"
+    },
+    {
+     "name": "Hommel",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Fiddle",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Doedelzak",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Midwinterhoorn",
+     "family": "br",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Fanfare brass",
+     "family": "br",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Accordion",
+     "family": "fr",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Street organ",
+     "family": "kb",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Rommelpot",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    }
+   ],
+   "genres": [
+    {
+     "name": "Franco-Flemish polyphony",
+     "family": "cho",
+     "credit": 0.333
+    },
+    {
+     "name": "Levenslied",
+     "family": "song",
+     "credit": 1.0
+    },
+    {
+     "name": "Gabber",
+     "family": "elec",
+     "credit": 1.0
+    }
+   ],
+   "instrument_shares": {
+    "str": 0.2319,
+    "ww": 0.1269,
+    "br": 0.2097,
+    "fr": 0.1115,
+    "kb": 0.1013,
+    "pc": 0.2184,
+    "el": 0.0003
+   },
+   "genre_shares": {
+    "art": 0.0155,
+    "cho": 0.1197,
+    "folk": 0.1838,
+    "song": 0.3421,
+    "jazz": 0.003,
+    "rock": 0.018,
+    "elec": 0.3159,
+    "hip": 0.002
+   },
+   "genre_instrumentation": {
+    "str": 0.0,
+    "ww": 0.0,
+    "br": 0.0,
+    "fr": 0.25,
+    "kb": 0.25,
+    "pc": 0.0,
+    "el": 0.5
+   },
+   "developed": 1,
+   "sources": [
+    "Wikipedia, 'Music of the Netherlands' and its instrument entries",
+    "Encyclopaedia Britannica, the music entries for the country",
+    "MIMO (Musical Instrument Museums Online), Hornbostel–Sachs records"
+   ]
+  },
+  "BEL": {
+   "instruments": [
+    {
+     "name": "Saxophone",
+     "family": "ww",
+     "role": "d",
+     "note": "Adolphe Sax, Brussels, c. 1840 (patented Paris 1846)"
+    },
+    {
+     "name": "Draailier",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Fiddle",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Doedelzak",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Fanfare brass",
+     "family": "br",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Accordion",
+     "family": "fr",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Decap dance organ",
+     "family": "kb",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Carillon",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Rommelpot",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    }
+   ],
+   "genres": [
+    {
+     "name": "Franco-Flemish polyphony",
+     "family": "cho",
+     "credit": 0.333
+    },
+    {
+     "name": "EBM and new beat",
+     "family": "elec",
+     "credit": 1.0
+    }
+   ],
+   "instrument_shares": {
+    "str": 0.2577,
+    "ww": 0.141,
+    "br": 0.1219,
+    "fr": 0.1239,
+    "kb": 0.1126,
+    "pc": 0.2427,
+    "el": 0.0003
+   },
+   "genre_shares": {
+    "art": 0.0221,
+    "cho": 0.171,
+    "folk": 0.2626,
+    "song": 0.0602,
+    "jazz": 0.0043,
+    "rock": 0.0257,
+    "elec": 0.4513,
+    "hip": 0.0028
+   },
+   "genre_instrumentation": {
+    "str": 0.0,
+    "ww": 0.0,
+    "br": 0.0,
+    "fr": 0.0,
+    "kb": 0.0,
+    "pc": 0.0,
+    "el": 1.0
+   },
+   "developed": 1,
+   "sources": [
+    "Wikipedia, 'Music of Belgium' and its instrument entries",
+    "Encyclopaedia Britannica, the music entries for the country",
+    "MIMO (Musical Instrument Museums Online), Hornbostel–Sachs records"
+   ]
+  },
+  "LUX": {
+   "instruments": [
+    {
+     "name": "Fiddle",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Péckvillchen",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Wind band (Harmonie)",
+     "family": "br",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Accordion",
+     "family": "fr",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Harmonie drum",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    }
+   ],
+   "genres": [
+    {
+     "name": "Echternach procession music",
+     "family": "folk",
+     "credit": 1.0
+    }
+   ],
+   "instrument_shares": {
+    "str": 0.2199,
+    "ww": 0.2114,
+    "br": 0.1829,
+    "fr": 0.1858,
+    "kb": 0.0022,
+    "pc": 0.1973,
+    "el": 0.0004
+   },
+   "genre_shares": {
+    "art": 0.0258,
+    "cho": 0.0328,
+    "folk": 0.8064,
+    "song": 0.0702,
+    "jazz": 0.005,
+    "rock": 0.03,
+    "elec": 0.0265,
+    "hip": 0.0033
+   },
+   "genre_instrumentation": null,
+   "developed": 0,
+   "sources": [
+    "Wikipedia, 'Music of Luxembourg' and its instrument entries",
+    "Encyclopaedia Britannica, the music entries for the country",
+    "MIMO (Musical Instrument Museums Online), Hornbostel–Sachs records"
+   ]
+  },
+  "NGR": {
+   "instruments": [
+    {
+     "name": "Valve for brass",
+     "family": "br",
+     "role": "d",
+     "note": "Stölzel and Blühmel, Silesia and Berlin, 1814-18"
+    },
+    {
+     "name": "Tuba",
+     "family": "br",
+     "role": "d",
+     "note": "Wieprecht and Moritz, Berlin, 1835"
+    },
+    {
+     "name": "German concertina",
+     "family": "fr",
+     "role": "d",
+     "note": "Carl Friedrich Uhlig, Chemnitz, 1834"
+    },
+    {
+     "name": "Mouth organ (Aura)",
+     "family": "fr",
+     "role": "d",
+     "note": "Christian Buschmann, Berlin, 1821"
+    },
+    {
+     "name": "Baroque organ",
+     "family": "kb",
+     "role": "dt",
+     "note": "Schnitger (Hamburg) and Silbermann (Saxony)"
+    },
+    {
+     "name": "Trautonium",
+     "family": "el",
+     "role": "d",
+     "note": "Friedrich Trautwein, Berlin, 1930"
+    },
+    {
+     "name": "Dresden pedal timpani",
+     "family": "pc",
+     "role": "d",
+     "note": "Carl Pittrich, 1881"
+    },
+    {
+     "name": "Fiddle",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Thuringian Waldzither",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Hackbrett",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Spielmannszug fife",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Schalmei band",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Posaunenchor",
+     "family": "br",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Accordion",
+     "family": "fr",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Spielmannszug drum",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Glockenspiel lyra",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    }
+   ],
+   "genres": [
+    {
+     "name": "Lutheran chorale",
+     "family": "cho",
+     "credit": 1.0
+    },
+    {
+     "name": "Schlager",
+     "family": "song",
+     "credit": 1.0
+    },
+    {
+     "name": "Krautrock",
+     "family": "rock",
+     "credit": 0.5
+    },
+    {
+     "name": "Techno",
+     "family": "elec",
+     "credit": 0.5
+    }
+   ],
+   "instrument_shares": {
+    "str": 0.3018,
+    "ww": 0.2062,
+    "br": 0.0998,
+    "fr": 0.1014,
+    "kb": 0.0921,
+    "pc": 0.1985,
+    "el": 0.0002
+   },
+   "genre_shares": {
+    "art": 0.0129,
+    "cho": 0.2664,
+    "folk": 0.1532,
+    "song": 0.2851,
+    "jazz": 0.0025,
+    "rock": 0.14,
+    "elec": 0.1383,
+    "hip": 0.0016
+   },
+   "genre_instrumentation": {
+    "str": 0.111,
+    "ww": 0.0,
+    "br": 0.111,
+    "fr": 0.0,
+    "kb": 0.444,
+    "pc": 0.083,
+    "el": 0.25
+   },
+   "developed": 7,
+   "sources": [
+    "Wikipedia, 'Music of Germany' and its instrument entries",
+    "Encyclopaedia Britannica, the music entries for the country",
+    "MIMO (Musical Instrument Museums Online), Hornbostel–Sachs records"
+   ]
+  },
+  "RHI": {
+   "instruments": [
+    {
+     "name": "Bandoneon",
+     "family": "fr",
+     "role": "d",
+     "note": "Krefeld, 1840s; Heinrich Band named it, invention disputed"
+    },
+    {
+     "name": "Heckelphone",
+     "family": "ww",
+     "role": "d",
+     "note": "Heckel, Biebrich, 1904"
+    },
+    {
+     "name": "WDR electronic studio",
+     "family": "el",
+     "role": "d",
+     "note": "Cologne, 1951"
+    },
+    {
+     "name": "Fiddle",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Zither",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Mandolin orchestra",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Spielmannszug fife",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Schalmei band",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Carnival brass",
+     "family": "br",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Accordion",
+     "family": "fr",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Bandoneon club",
+     "family": "fr",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Barrel organ",
+     "family": "kb",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Carnival drum",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    }
+   ],
+   "genres": [
+    {
+     "name": "Elektronische Musik",
+     "family": "elec",
+     "credit": 1.0
+    },
+    {
+     "name": "Krautrock",
+     "family": "rock",
+     "credit": 0.5
+    },
+    {
+     "name": "Trance",
+     "family": "elec",
+     "credit": 1.0
+    }
+   ],
+   "instrument_shares": {
+    "str": 0.3018,
+    "ww": 0.2062,
+    "br": 0.0998,
+    "fr": 0.1923,
+    "kb": 0.0921,
+    "pc": 0.1076,
+    "el": 0.0002
+   },
+   "genre_shares": {
+    "art": 0.0148,
+    "cho": 0.0188,
+    "folk": 0.1751,
+    "song": 0.0401,
+    "jazz": 0.0029,
+    "rock": 0.16,
+    "elec": 0.5866,
+    "hip": 0.0019
+   },
+   "genre_instrumentation": {
+    "str": 0.0,
+    "ww": 0.0,
+    "br": 0.0,
+    "fr": 0.0,
+    "kb": 0.0,
+    "pc": 0.1,
+    "el": 0.9
+   },
+   "developed": 3,
+   "sources": [
+    "Wikipedia, 'Music of Germany' and its instrument entries",
+    "Encyclopaedia Britannica, the music entries for the country",
+    "MIMO (Musical Instrument Museums Online), Hornbostel–Sachs records"
+   ]
+  },
+  "SWA": {
+   "instruments": [
+    {
+     "name": "Harmonica (mass-made)",
+     "family": "fr",
+     "role": "d",
+     "note": "Matthias Hohner, Trossingen, 1857"
+    },
+    {
+     "name": "Clavinet and Pianet",
+     "family": "el",
+     "role": "d",
+     "note": "Hohner, Trossingen, 1960s"
+    },
+    {
+     "name": "Hohner accordion",
+     "family": "fr",
+     "role": "d",
+     "note": "Trossingen"
+    },
+    {
+     "name": "Fiddle",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Zither",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Hackbrett",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Blasmusik clarinet",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Blasmusik brass",
+     "family": "br",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Harmonica clubs",
+     "family": "fr",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Accordion orchestra",
+     "family": "fr",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Black Forest orchestrion",
+     "family": "kb",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Fasnet bells",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    }
+   ],
+   "genres": [
+    {
+     "name": "Classical symphony",
+     "family": "art",
+     "credit": 0.333
+    },
+    {
+     "name": "Swabian folk song",
+     "family": "folk",
+     "credit": 1.0
+    }
+   ],
+   "instrument_shares": {
+    "str": 0.3319,
+    "ww": 0.1269,
+    "br": 0.1097,
+    "fr": 0.2115,
+    "kb": 0.1013,
+    "pc": 0.1184,
+    "el": 0.0003
+   },
+   "genre_shares": {
+    "art": 0.165,
+    "cho": 0.0281,
+    "folk": 0.6912,
+    "song": 0.0602,
+    "jazz": 0.0043,
+    "rock": 0.0257,
+    "elec": 0.0227,
+    "hip": 0.0028
+   },
+   "genre_instrumentation": {
+    "str": 0.25,
+    "ww": 0.25,
+    "br": 0.25,
+    "fr": 0.0,
+    "kb": 0.0,
+    "pc": 0.25,
+    "el": 0.0
+   },
+   "developed": 3,
+   "sources": [
+    "Wikipedia, 'Music of Germany' and its instrument entries",
+    "Encyclopaedia Britannica, the music entries for the country",
+    "MIMO (Musical Instrument Museums Online), Hornbostel–Sachs records"
+   ]
+  },
+  "BAV": {
+   "instruments": [
+    {
+     "name": "Clarinet",
+     "family": "ww",
+     "role": "dt",
+     "note": "J. C. Denner, Nuremberg, c. 1700"
+    },
+    {
+     "name": "Boehm flute",
+     "family": "ww",
+     "role": "d",
+     "note": "Theobald Boehm, Munich, 1832-47"
+    },
+    {
+     "name": "Fortepiano action",
+     "family": "kb",
+     "role": "d",
+     "note": "J. A. Stein, Augsburg, 1770s"
+    },
+    {
+     "name": "Concert zither",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Hackbrett",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Volksharfe",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Fiddle",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Guitar",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Flügelhorn",
+     "family": "br",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Blasmusik tuba",
+     "family": "br",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Allgäu alphorn",
+     "family": "br",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Ziach",
+     "family": "fr",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Blasmusik drum",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    }
+   ],
+   "genres": [
+    {
+     "name": "Ländler and Schuhplattler",
+     "family": "folk",
+     "credit": 1.0
+    },
+    {
+     "name": "Yodel",
+     "family": "folk",
+     "credit": 0.333
+    }
+   ],
+   "instrument_shares": {
+    "str": 0.4433,
+    "ww": 0.1057,
+    "br": 0.2581,
+    "fr": 0.0929,
+    "kb": 0.0011,
+    "pc": 0.0987,
+    "el": 0.0002
+   },
+   "genre_shares": {
+    "art": 0.0221,
+    "cho": 0.0281,
+    "folk": 0.834,
+    "song": 0.0602,
+    "jazz": 0.0043,
+    "rock": 0.0257,
+    "elec": 0.0227,
+    "hip": 0.0028
+   },
+   "genre_instrumentation": null,
+   "developed": 3,
+   "sources": [
+    "Wikipedia, 'Music of Germany; Bavarian folk music' and its instrument entries",
+    "Encyclopaedia Britannica, the music entries for the country",
+    "MIMO (Musical Instrument Museums Online), Hornbostel–Sachs records"
+   ]
+  },
+  "BOH": {
+   "instruments": [
+    {
+     "name": "Červený chromatic brass",
+     "family": "br",
+     "role": "dt",
+     "note": "Hradec Králové, from 1842"
+    },
+    {
+     "name": "Fiddle",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Basa",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Cimbál",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Dudy",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Moravian clarinet",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Píšťala",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Flugelhorn",
+     "family": "br",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Heligonka",
+     "family": "fr",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Bass drum",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    }
+   ],
+   "genres": [
+    {
+     "name": "Polka",
+     "family": "folk",
+     "credit": 1.0
+    },
+    {
+     "name": "Dechovka (brass-band music)",
+     "family": "folk",
+     "credit": 1.0
+    }
+   ],
+   "instrument_shares": {
+    "str": 0.3018,
+    "ww": 0.2971,
+    "br": 0.1907,
+    "fr": 0.1014,
+    "kb": 0.0012,
+    "pc": 0.1076,
+    "el": 0.0002
+   },
+   "genre_shares": {
+    "art": 0.0172,
+    "cho": 0.0219,
+    "folk": 0.8709,
+    "song": 0.0468,
+    "jazz": 0.0033,
+    "rock": 0.02,
+    "elec": 0.0177,
+    "hip": 0.0022
+   },
+   "genre_instrumentation": null,
+   "developed": 1,
+   "sources": [
+    "Wikipedia, 'Music of the Czech Republic' and its instrument entries",
+    "Encyclopaedia Britannica, the music entries for the country",
+    "MIMO (Musical Instrument Museums Online), Hornbostel–Sachs records"
+   ]
+  },
+  "SLK": {
+   "instruments": [
+    {
+     "name": "Husle",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Basa",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Cimbal",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Fujara",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Koncovka",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Gajdy",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Píšťala",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Dvojačka",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Fanfára",
+     "family": "br",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Heligónka",
+     "family": "fr",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Drumbľa",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Ozembuch",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    }
+   ],
+   "genres": [
+    {
+     "name": "Slovak folk song",
+     "family": "folk",
+     "credit": 1.0
+    }
+   ],
+   "instrument_shares": {
+    "str": 0.2553,
+    "ww": 0.4053,
+    "br": 0.0844,
+    "fr": 0.0858,
+    "kb": 0.001,
+    "pc": 0.168,
+    "el": 0.0002
+   },
+   "genre_shares": {
+    "art": 0.0258,
+    "cho": 0.0328,
+    "folk": 0.8064,
+    "song": 0.0702,
+    "jazz": 0.005,
+    "rock": 0.03,
+    "elec": 0.0265,
+    "hip": 0.0033
+   },
+   "genre_instrumentation": null,
+   "developed": 0,
+   "sources": [
+    "Wikipedia, 'Music of Slovakia' and its instrument entries",
+    "Encyclopaedia Britannica, the music entries for the country",
+    "MIMO (Musical Instrument Museums Online), Hornbostel–Sachs records"
+   ]
+  },
+  "GAL": {
+   "instruments": [
+    {
+     "name": "Tsymbaly",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Skrypka",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Sopilka",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Floyara",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Dvodentsivka",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Koza",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Trembita",
+     "family": "br",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Drymba",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Bubon",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    }
+   ],
+   "genres": [
+    {
+     "name": "Kolomyika",
+     "family": "folk",
+     "credit": 1.0
+    },
+    {
+     "name": "Partes singing",
+     "family": "cho",
+     "credit": 0.5
+    }
+   ],
+   "instrument_shares": {
+    "str": 0.2319,
+    "ww": 0.4269,
+    "br": 0.1097,
+    "fr": 0.0115,
+    "kb": 0.0013,
+    "pc": 0.2184,
+    "el": 0.0003
+   },
+   "genre_shares": {
+    "art": 0.0207,
+    "cho": 0.2263,
+    "folk": 0.6451,
+    "song": 0.0562,
+    "jazz": 0.004,
+    "rock": 0.024,
+    "elec": 0.0212,
+    "hip": 0.0026
+   },
+   "genre_instrumentation": null,
+   "developed": 0,
+   "sources": [
+    "Wikipedia, 'Music of Ukraine; Hutsul music' and its instrument entries",
+    "Encyclopaedia Britannica, the music entries for the country",
+    "MIMO (Musical Instrument Museums Online), Hornbostel–Sachs records"
+   ]
+  },
+  "UKR": {
+   "instruments": [
+    {
+     "name": "Bandura",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Kobza",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Torban",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Lira",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Tsymbaly",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Skrypka",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Basolia",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Sopilka",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Telenka",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Duda",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Bayan",
+     "family": "fr",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Bubon",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Buhai",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    }
+   ],
+   "genres": [
+    {
+     "name": "Duma",
+     "family": "folk",
+     "credit": 1.0
+    },
+    {
+     "name": "Hopak",
+     "family": "folk",
+     "credit": 1.0
+    },
+    {
+     "name": "Partes singing",
+     "family": "cho",
+     "credit": 0.5
+    }
+   ],
+   "instrument_shares": {
+    "str": 0.5228,
+    "ww": 0.2335,
+    "br": 0.007,
+    "fr": 0.0796,
+    "kb": 0.0009,
+    "pc": 0.156,
+    "el": 0.0002
+   },
+   "genre_shares": {
+    "art": 0.0148,
+    "cho": 0.1616,
+    "folk": 0.7465,
+    "song": 0.0401,
+    "jazz": 0.0029,
+    "rock": 0.0171,
+    "elec": 0.0151,
+    "hip": 0.0019
+   },
+   "genre_instrumentation": null,
+   "developed": 0,
+   "sources": [
+    "Wikipedia, 'Music of Ukraine' and its instrument entries",
+    "Encyclopaedia Britannica, the music entries for the country",
+    "MIMO (Musical Instrument Museums Online), Hornbostel–Sachs records"
+   ]
+  },
+  "FRA": {
+   "instruments": [
+    {
+     "name": "Oboe",
+     "family": "ww",
+     "role": "d",
+     "note": "French court, c. 1657"
+    },
+    {
+     "name": "Ophicleide and cornet",
+     "family": "br",
+     "role": "d",
+     "note": "Halary, Paris, 1817-28"
+    },
+    {
+     "name": "Saxhorn family",
+     "family": "br",
+     "role": "d",
+     "note": "Adolphe Sax, Paris, 1845"
+    },
+    {
+     "name": "Harmonium",
+     "family": "fr",
+     "role": "d",
+     "note": "Alexandre Debain, Paris, 1840"
+    },
+    {
+     "name": "Double-escapement piano action",
+     "family": "kb",
+     "role": "d",
+     "note": "Sébastien Érard, 1821"
+    },
+    {
+     "name": "Double-action pedal harp",
+     "family": "str",
+     "role": "d",
+     "note": "Érard, 1810"
+    },
+    {
+     "name": "Ondes Martenot",
+     "family": "el",
+     "role": "d",
+     "note": "Maurice Martenot, Paris, 1928"
+    },
+    {
+     "name": "Hurdy-gurdy",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Violon",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Épinette des Vosges",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Cabrette and musette",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Biniou and bombarde",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Galoubet",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Txistu",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Fifre",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Trompe de chasse",
+     "family": "br",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Fanfare brass",
+     "family": "br",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Musette accordion",
+     "family": "fr",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Tambourin provençal",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    }
+   ],
+   "genres": [
+    {
+     "name": "Gregorian chant",
+     "family": "cho",
+     "credit": 1.0
+    },
+    {
+     "name": "Franco-Flemish polyphony",
+     "family": "cho",
+     "credit": 0.333
+    },
+    {
+     "name": "Ballet and tragédie en musique",
+     "family": "art",
+     "credit": 1.0
+    },
+    {
+     "name": "Grand opéra",
+     "family": "art",
+     "credit": 1.0
+    },
+    {
+     "name": "Operetta",
+     "family": "art",
+     "credit": 0.5
+    },
+    {
+     "name": "Chanson",
+     "family": "song",
+     "credit": 1.0
+    },
+    {
+     "name": "Bal-musette",
+     "family": "song",
+     "credit": 1.0
+    },
+    {
+     "name": "Gypsy jazz",
+     "family": "jazz",
+     "credit": 1.0
+    },
+    {
+     "name": "Musique concrète",
+     "family": "elec",
+     "credit": 1.0
+    },
+    {
+     "name": "French house",
+     "family": "elec",
+     "credit": 1.0
+    }
+   ],
+   "instrument_shares": {
+    "str": 0.2553,
+    "ww": 0.4053,
+    "br": 0.1613,
+    "fr": 0.0858,
+    "kb": 0.001,
+    "pc": 0.0911,
+    "el": 0.0002
+   },
+   "genre_shares": {
+    "art": 0.2595,
+    "cho": 0.1423,
+    "folk": 0.0623,
+    "song": 0.2177,
+    "jazz": 0.1027,
+    "rock": 0.0061,
+    "elec": 0.2088,
+    "hip": 0.0007
+   },
+   "genre_instrumentation": {
+    "str": 0.3,
+    "ww": 0.122,
+    "br": 0.056,
+    "fr": 0.178,
+    "kb": 0.044,
+    "pc": 0.033,
+    "el": 0.267
+   },
+   "developed": 7,
+   "sources": [
+    "Wikipedia, 'Music of France' and its instrument entries",
+    "Encyclopaedia Britannica, the music entries for the country",
+    "MIMO (Musical Instrument Museums Online), Hornbostel–Sachs records"
+   ]
+  },
+  "SUI": {
+   "instruments": [
+    {
+     "name": "Schwyzerörgeli",
+     "family": "fr",
+     "role": "dt",
+     "note": "central Switzerland, 1880s"
+    },
+    {
+     "name": "Hackbrett",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Halszither",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Fiddle",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Ländler double bass",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Ländler clarinet",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Fasnacht piccolo",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Alphorn",
+     "family": "br",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Büchel",
+     "family": "br",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Basel drum",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Talerschwingen",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Trümpi",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    }
+   ],
+   "genres": [
+    {
+     "name": "Yodel",
+     "family": "folk",
+     "credit": 0.333
+    },
+    {
+     "name": "Ländlermusik",
+     "family": "folk",
+     "credit": 1.0
+    }
+   ],
+   "instrument_shares": {
+    "str": 0.3323,
+    "ww": 0.1745,
+    "br": 0.1613,
+    "fr": 0.0858,
+    "kb": 0.001,
+    "pc": 0.2449,
+    "el": 0.0002
+   },
+   "genre_shares": {
+    "art": 0.0221,
+    "cho": 0.0281,
+    "folk": 0.834,
+    "song": 0.0602,
+    "jazz": 0.0043,
+    "rock": 0.0257,
+    "elec": 0.0227,
+    "hip": 0.0028
+   },
+   "genre_instrumentation": null,
+   "developed": 1,
+   "sources": [
+    "Wikipedia, 'Music of Switzerland' and its instrument entries",
+    "Encyclopaedia Britannica, the music entries for the country",
+    "MIMO (Musical Instrument Museums Online), Hornbostel–Sachs records"
+   ]
+  },
+  "AUT": {
+   "instruments": [
+    {
+     "name": "Accordion",
+     "family": "fr",
+     "role": "dt",
+     "note": "Cyrill Demian, Vienna, patent 1829"
+    },
+    {
+     "name": "Viennese piano action",
+     "family": "kb",
+     "role": "d",
+     "note": "Stein and Streicher, Vienna"
+    },
+    {
+     "name": "Vienna horn",
+     "family": "br",
+     "role": "dt",
+     "note": "Leopold Uhlmann, Vienna, 1830"
+    },
+    {
+     "name": "Contraguitar",
+     "family": "str",
+     "role": "dt",
+     "note": "Vienna, 19th c."
+    },
+    {
+     "name": "Zither",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Hackbrett",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Tyrolean harp",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Fiddle",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Schrammel G-clarinet",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Schwegel",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Flügelhorn",
+     "family": "br",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Blasmusik tuba",
+     "family": "br",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Steirische Harmonika",
+     "family": "fr",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Maultrommel",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    }
+   ],
+   "genres": [
+    {
+     "name": "Classical symphony",
+     "family": "art",
+     "credit": 0.333
+    },
+    {
+     "name": "Lied",
+     "family": "art",
+     "credit": 1.0
+    },
+    {
+     "name": "Operetta",
+     "family": "art",
+     "credit": 0.5
+    },
+    {
+     "name": "Viennese waltz",
+     "family": "folk",
+     "credit": 1.0
+    },
+    {
+     "name": "Schrammelmusik and Wienerlied",
+     "family": "song",
+     "credit": 1.0
+    },
+    {
+     "name": "Twelve-tone music",
+     "family": "art",
+     "credit": 1.0
+    },
+    {
+     "name": "Yodel",
+     "family": "folk",
+     "credit": 0.333
+    }
+   ],
+   "instrument_shares": {
+    "str": 0.38,
+    "ww": 0.162,
+    "br": 0.2212,
+    "fr": 0.1511,
+    "kb": 0.0009,
+    "pc": 0.0846,
+    "el": 0.0002
+   },
+   "genre_shares": {
+    "art": 0.4678,
+    "cho": 0.0106,
+    "folk": 0.3156,
+    "song": 0.1849,
+    "jazz": 0.0016,
+    "rock": 0.0097,
+    "elec": 0.0086,
+    "hip": 0.0011
+   },
+   "genre_instrumentation": {
+    "str": 0.283,
+    "ww": 0.152,
+    "br": 0.065,
+    "fr": 0.13,
+    "kb": 0.348,
+    "pc": 0.022,
+    "el": 0.0
+   },
+   "developed": 4,
+   "sources": [
+    "Wikipedia, 'Music of Austria' and its instrument entries",
+    "Encyclopaedia Britannica, the music entries for the country",
+    "MIMO (Musical Instrument Museums Online), Hornbostel–Sachs records"
+   ]
+  },
+  "HUN": {
+   "instruments": [
+    {
+     "name": "Concert cimbalom",
+     "family": "str",
+     "role": "dt",
+     "note": "Vencel József Schunda, Budapest, 1874"
+    },
+    {
+     "name": "Modern tárogató",
+     "family": "ww",
+     "role": "dt",
+     "note": "Schunda, 1890s"
+    },
+    {
+     "name": "Tekerőlant",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Citera",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Hegedű",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Kontra",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Bőgő",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Ütőgardon",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Tambura",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Duda",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Furulya",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Doromb",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Köcsögduda",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    }
+   ],
+   "genres": [
+    {
+     "name": "Verbunkos",
+     "family": "folk",
+     "credit": 1.0
+    },
+    {
+     "name": "Csárdás",
+     "family": "folk",
+     "credit": 1.0
+    },
+    {
+     "name": "Magyar nóta",
+     "family": "song",
+     "credit": 1.0
+    }
+   ],
+   "instrument_shares": {
+    "str": 0.5942,
+    "ww": 0.2335,
+    "br": 0.007,
+    "fr": 0.0082,
+    "kb": 0.0009,
+    "pc": 0.156,
+    "el": 0.0002
+   },
+   "genre_shares": {
+    "art": 0.0129,
+    "cho": 0.0164,
+    "folk": 0.6532,
+    "song": 0.2851,
+    "jazz": 0.0025,
+    "rock": 0.015,
+    "elec": 0.0133,
+    "hip": 0.0016
+   },
+   "genre_instrumentation": {
+    "str": 1.0,
+    "ww": 0.0,
+    "br": 0.0,
+    "fr": 0.0,
+    "kb": 0.0,
+    "pc": 0.0,
+    "el": 0.0
+   },
+   "developed": 2,
+   "sources": [
+    "Wikipedia, 'Music of Hungary' and its instrument entries",
+    "Encyclopaedia Britannica, the music entries for the country",
+    "MIMO (Musical Instrument Museums Online), Hornbostel–Sachs records"
+   ]
+  },
+  "ROM": {
+   "instruments": [
+    {
+     "name": "Cobza",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Țambal",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Vioară",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Contrabas",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Nai",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Fluier",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Caval",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Cimpoi",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Taragot",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Bucium",
+     "family": "br",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Acordeon",
+     "family": "fr",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Drâmbă",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Tobă",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    }
+   ],
+   "genres": [
+    {
+     "name": "Doina",
+     "family": "folk",
+     "credit": 0.5
+    },
+    {
+     "name": "Hora",
+     "family": "folk",
+     "credit": 0.5
+    },
+    {
+     "name": "Lăutărească music",
+     "family": "folk",
+     "credit": 0.5
+    },
+    {
+     "name": "Manele",
+     "family": "song",
+     "credit": 1.0
+    }
+   ],
+   "instrument_shares": {
+    "str": 0.3085,
+    "ww": 0.3763,
+    "br": 0.0784,
+    "fr": 0.0796,
+    "kb": 0.0009,
+    "pc": 0.156,
+    "el": 0.0002
+   },
+   "genre_shares": {
+    "art": 0.0148,
+    "cho": 0.0188,
+    "folk": 0.6036,
+    "song": 0.3258,
+    "jazz": 0.0029,
+    "rock": 0.0171,
+    "elec": 0.0151,
+    "hip": 0.0019
+   },
+   "genre_instrumentation": {
+    "str": 0.0,
+    "ww": 0.0,
+    "br": 0.0,
+    "fr": 0.5,
+    "kb": 0.0,
+    "pc": 0.0,
+    "el": 0.5
+   },
+   "developed": 0,
+   "sources": [
+    "Wikipedia, 'Music of Romania' and its instrument entries",
+    "Encyclopaedia Britannica, the music entries for the country",
+    "MIMO (Musical Instrument Museums Online), Hornbostel–Sachs records"
+   ]
+  },
+  "MOL": {
+   "instruments": [
+    {
+     "name": "Cobza",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Țambal",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Vioară",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Contrabas",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Nai",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Fluier",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Caval",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Cimpoi",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Bucium",
+     "family": "br",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Acordeon",
+     "family": "fr",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Tobă",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    }
+   ],
+   "genres": [
+    {
+     "name": "Doina",
+     "family": "folk",
+     "credit": 0.5
+    },
+    {
+     "name": "Hora",
+     "family": "folk",
+     "credit": 0.5
+    },
+    {
+     "name": "Lăutărească music",
+     "family": "folk",
+     "credit": 0.5
+    }
+   ],
+   "instrument_shares": {
+    "str": 0.3599,
+    "ww": 0.3557,
+    "br": 0.0915,
+    "fr": 0.0929,
+    "kb": 0.0011,
+    "pc": 0.0987,
+    "el": 0.0002
+   },
+   "genre_shares": {
+    "art": 0.0207,
+    "cho": 0.0263,
+    "folk": 0.8451,
+    "song": 0.0562,
+    "jazz": 0.004,
+    "rock": 0.024,
+    "elec": 0.0212,
+    "hip": 0.0026
+   },
+   "genre_instrumentation": null,
+   "developed": 0,
+   "sources": [
+    "Wikipedia, 'Music of Moldova' and its instrument entries",
+    "Encyclopaedia Britannica, the music entries for the country",
+    "MIMO (Musical Instrument Museums Online), Hornbostel–Sachs records"
+   ]
+  },
+  "POR": {
+   "instruments": [
+    {
+     "name": "Portuguese guitar",
+     "family": "str",
+     "role": "dt",
+     "note": "from the English guitar, 19th c."
+    },
+    {
+     "name": "Cavaquinho (ancestor of the ukulele)",
+     "family": "str",
+     "role": "dt",
+     "note": "Minho; to Hawaii from Madeira, 1879"
+    },
+    {
+     "name": "Viola braguesa",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Viola campaniça",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Viola da terra",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Bandolim",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Gaita-de-fole",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Pífaro",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Concertina",
+     "family": "fr",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Acordeão",
+     "family": "fr",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Adufe",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Bombo",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Ferrinhos",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Reque-reque",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    }
+   ],
+   "genres": [
+    {
+     "name": "Fado",
+     "family": "song",
+     "credit": 1.0
+    },
+    {
+     "name": "Cante alentejano",
+     "family": "folk",
+     "credit": 1.0
+    }
+   ],
+   "instrument_shares": {
+    "str": 0.4213,
+    "ww": 0.1512,
+    "br": 0.0065,
+    "fr": 0.141,
+    "kb": 0.0009,
+    "pc": 0.2789,
+    "el": 0.0002
+   },
+   "genre_shares": {
+    "art": 0.0172,
+    "cho": 0.0219,
+    "folk": 0.5376,
+    "song": 0.3801,
+    "jazz": 0.0033,
+    "rock": 0.02,
+    "elec": 0.0177,
+    "hip": 0.0022
+   },
+   "genre_instrumentation": {
+    "str": 1.0,
+    "ww": 0.0,
+    "br": 0.0,
+    "fr": 0.0,
+    "kb": 0.0,
+    "pc": 0.0,
+    "el": 0.0
+   },
+   "developed": 2,
+   "sources": [
+    "Wikipedia, 'Music of Portugal' and its instrument entries",
+    "Encyclopaedia Britannica, the music entries for the country",
+    "MIMO (Musical Instrument Museums Online), Hornbostel–Sachs records"
+   ]
+  },
+  "ESP": {
+   "instruments": [
+    {
+     "name": "Vihuela",
+     "family": "str",
+     "role": "d",
+     "note": "16th c."
+    },
+    {
+     "name": "Modern classical guitar",
+     "family": "str",
+     "role": "dt",
+     "note": "Antonio de Torres, Seville and Almería, 1850s"
+    },
+    {
+     "name": "Bandurria",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Laúd",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Zanfona",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Timple",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Gaita gallega",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Dulzaina",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Gralla",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Tenora",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Tible",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Flabiol",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Txistu",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Alboka",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Trikitixa",
+     "family": "fr",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Castanets",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Pandereta",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Txalaparta",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Cajón flamenco",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    }
+   ],
+   "genres": [
+    {
+     "name": "Mozarabic chant",
+     "family": "folk",
+     "credit": 1.0
+    },
+    {
+     "name": "Zarzuela",
+     "family": "art",
+     "credit": 1.0
+    },
+    {
+     "name": "Flamenco",
+     "family": "folk",
+     "credit": 1.0
+    },
+    {
+     "name": "Jota",
+     "family": "folk",
+     "credit": 1.0
+    },
+    {
+     "name": "Sardana",
+     "family": "folk",
+     "credit": 1.0
+    }
+   ],
+   "instrument_shares": {
+    "str": 0.28,
+    "ww": 0.4352,
+    "br": 0.0051,
+    "fr": 0.0587,
+    "kb": 0.0007,
+    "pc": 0.2202,
+    "el": 0.0001
+   },
+   "genre_shares": {
+    "art": 0.1753,
+    "cho": 0.0109,
+    "folk": 0.7688,
+    "song": 0.0234,
+    "jazz": 0.0017,
+    "rock": 0.01,
+    "elec": 0.0088,
+    "hip": 0.0011
+   },
+   "genre_instrumentation": {
+    "str": 0.5,
+    "ww": 0.5,
+    "br": 0.0,
+    "fr": 0.0,
+    "kb": 0.0,
+    "pc": 0.0,
+    "el": 0.0
+   },
+   "developed": 2,
+   "sources": [
+    "Wikipedia, 'Music of Spain' and its instrument entries",
+    "Encyclopaedia Britannica, the music entries for the country",
+    "MIMO (Musical Instrument Museums Online), Hornbostel–Sachs records"
+   ]
+  },
+  "NIT": {
+   "instruments": [
+    {
+     "name": "Violin family",
+     "family": "str",
+     "role": "dt",
+     "note": "Andrea Amati, Cremona, c. 1550"
+    },
+    {
+     "name": "Piano",
+     "family": "kb",
+     "role": "d",
+     "note": "Bartolomeo Cristofori, Florence, c. 1700"
+    },
+    {
+     "name": "Castelfidardo accordion",
+     "family": "fr",
+     "role": "dt",
+     "note": "Paolo Soprani, 1863"
+    },
+    {
+     "name": "Lombard mandolin",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Mandola",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Piva",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Baghet",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Piffero",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Müsa",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Ocarina",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Banda brass",
+     "family": "br",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Organetto",
+     "family": "fr",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Tamburello",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    }
+   ],
+   "genres": [
+    {
+     "name": "Madrigal",
+     "family": "art",
+     "credit": 1.0
+    },
+    {
+     "name": "Opera",
+     "family": "art",
+     "credit": 1.0
+    },
+    {
+     "name": "Oratorio",
+     "family": "art",
+     "credit": 1.0
+    },
+    {
+     "name": "Concerto and sonata",
+     "family": "art",
+     "credit": 1.0
+    },
+    {
+     "name": "Classical symphony",
+     "family": "art",
+     "credit": 0.333
+    },
+    {
+     "name": "Canzone d'autore",
+     "family": "song",
+     "credit": 1.0
+    },
+    {
+     "name": "Italo disco",
+     "family": "elec",
+     "credit": 1.0
+    }
+   ],
+   "instrument_shares": {
+    "str": 0.2553,
+    "ww": 0.4053,
+    "br": 0.0844,
+    "fr": 0.1627,
+    "kb": 0.001,
+    "pc": 0.0911,
+    "el": 0.0002
+   },
+   "genre_shares": {
+    "art": 0.5979,
+    "cho": 0.009,
+    "folk": 0.0836,
+    "song": 0.1555,
+    "jazz": 0.0014,
+    "rock": 0.0082,
+    "elec": 0.1436,
+    "hip": 0.0009
+   },
+   "genre_instrumentation": {
+    "str": 0.344,
+    "ww": 0.062,
+    "br": 0.062,
+    "fr": 0.0,
+    "kb": 0.328,
+    "pc": 0.016,
+    "el": 0.187
+   },
+   "developed": 3,
+   "sources": [
+    "Wikipedia, 'Music of Italy' and its instrument entries",
+    "Encyclopaedia Britannica, the music entries for the country",
+    "MIMO (Musical Instrument Museums Online), Hornbostel–Sachs records"
+   ]
+  },
+  "MEZ": {
+   "instruments": [
+    {
+     "name": "Neapolitan mandolin",
+     "family": "str",
+     "role": "dt",
+     "note": "Vinaccia family, Naples, 18th c."
+    },
+    {
+     "name": "Chitarra battente",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Lira calabrese",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Zampogna",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Ciaramella",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Friscalettu",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Organetto",
+     "family": "fr",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Tammorra",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Tamburello",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Putipù",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Triccheballacche",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Marranzanu",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    }
+   ],
+   "genres": [
+    {
+     "name": "Opera buffa",
+     "family": "art",
+     "credit": 1.0
+    },
+    {
+     "name": "Neapolitan song",
+     "family": "song",
+     "credit": 1.0
+    },
+    {
+     "name": "Tarantella and pizzica",
+     "family": "folk",
+     "credit": 1.0
+    }
+   ],
+   "instrument_shares": {
+    "str": 0.2553,
+    "ww": 0.2514,
+    "br": 0.0075,
+    "fr": 0.0858,
+    "kb": 0.001,
+    "pc": 0.3988,
+    "el": 0.0002
+   },
+   "genre_shares": {
+    "art": 0.2629,
+    "cho": 0.0164,
+    "folk": 0.4032,
+    "song": 0.2851,
+    "jazz": 0.0025,
+    "rock": 0.015,
+    "elec": 0.0133,
+    "hip": 0.0016
+   },
+   "genre_instrumentation": {
+    "str": 0.75,
+    "ww": 0.25,
+    "br": 0.0,
+    "fr": 0.0,
+    "kb": 0.0,
+    "pc": 0.0,
+    "el": 0.0
+   },
+   "developed": 1,
+   "sources": [
+    "Wikipedia, 'Music of Italy; Music of Sicily' and its instrument entries",
+    "Encyclopaedia Britannica, the music entries for the country",
+    "MIMO (Musical Instrument Museums Online), Hornbostel–Sachs records"
+   ]
+  },
+  "SAR": {
+   "instruments": [
+    {
+     "name": "Chitarra sarda",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Launeddas",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Sulittu",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Benas",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Organetto",
+     "family": "fr",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Tumbarinu",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Trunfa",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    }
+   ],
+   "genres": [
+    {
+     "name": "Canto a tenore",
+     "family": "folk",
+     "credit": 1.0
+    },
+    {
+     "name": "Ballu tundu",
+     "family": "folk",
+     "credit": 1.0
+    },
+    {
+     "name": "Cantu a chiterra",
+     "family": "folk",
+     "credit": 1.0
+    }
+   ],
+   "instrument_shares": {
+    "str": 0.1649,
+    "ww": 0.4086,
+    "br": 0.0122,
+    "fr": 0.1394,
+    "kb": 0.0017,
+    "pc": 0.273,
+    "el": 0.0003
+   },
+   "genre_shares": {
+    "art": 0.0129,
+    "cho": 0.0164,
+    "folk": 0.9032,
+    "song": 0.0351,
+    "jazz": 0.0025,
+    "rock": 0.015,
+    "elec": 0.0133,
+    "hip": 0.0016
+   },
+   "genre_instrumentation": null,
+   "developed": 0,
+   "sources": [
+    "Wikipedia, 'Music of Sardinia' and its instrument entries",
+    "Encyclopaedia Britannica, the music entries for the country",
+    "MIMO (Musical Instrument Museums Online), Hornbostel–Sachs records"
+   ]
+  },
+  "SLO": {
+   "instruments": [
+    {
+     "name": "Citre",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Cimbalom",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Fiddle",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Bass",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Guitar",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Clarinet",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Trstenke",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Žvegla",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Oberkrainer trumpet",
+     "family": "br",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Frajtonarica",
+     "family": "fr",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Lončeni bas",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    }
+   ],
+   "genres": [
+    {
+     "name": "Oberkrainer polka",
+     "family": "folk",
+     "credit": 1.0
+    },
+    {
+     "name": "Slovene folk song",
+     "family": "folk",
+     "credit": 1.0
+    }
+   ],
+   "instrument_shares": {
+    "str": 0.4433,
+    "ww": 0.2724,
+    "br": 0.0915,
+    "fr": 0.0929,
+    "kb": 0.0011,
+    "pc": 0.0987,
+    "el": 0.0002
+   },
+   "genre_shares": {
+    "art": 0.0172,
+    "cho": 0.0219,
+    "folk": 0.8709,
+    "song": 0.0468,
+    "jazz": 0.0033,
+    "rock": 0.02,
+    "elec": 0.0177,
+    "hip": 0.0022
+   },
+   "genre_instrumentation": null,
+   "developed": 0,
+   "sources": [
+    "Wikipedia, 'Music of Slovenia' and its instrument entries",
+    "Encyclopaedia Britannica, the music entries for the country",
+    "MIMO (Musical Instrument Museums Online), Hornbostel–Sachs records"
+   ]
+  },
+  "CRO": {
+   "instruments": [
+    {
+     "name": "Tamburica ensemble",
+     "family": "str",
+     "role": "dt",
+     "note": "Pajo Kolarić, Osijek, 1847"
+    },
+    {
+     "name": "Lijerica",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Gusle",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Sopile",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Mišnice",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Dvojnice",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Diple",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Harmonika",
+     "family": "fr",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Bubanj",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    }
+   ],
+   "genres": [
+    {
+     "name": "Klapa",
+     "family": "cho",
+     "credit": 1.0
+    },
+    {
+     "name": "Ojkanje and Istrian two-part singing",
+     "family": "folk",
+     "credit": 1.0
+    },
+    {
+     "name": "Tamburica music",
+     "family": "folk",
+     "credit": 1.0
+    }
+   ],
+   "instrument_shares": {
+    "str": 0.3319,
+    "ww": 0.4269,
+    "br": 0.0097,
+    "fr": 0.1115,
+    "kb": 0.0013,
+    "pc": 0.1184,
+    "el": 0.0003
+   },
+   "genre_shares": {
+    "art": 0.0129,
+    "cho": 0.2664,
+    "folk": 0.6532,
+    "song": 0.0351,
+    "jazz": 0.0025,
+    "rock": 0.015,
+    "elec": 0.0133,
+    "hip": 0.0016
+   },
+   "genre_instrumentation": null,
+   "developed": 1,
+   "sources": [
+    "Wikipedia, 'Music of Croatia' and its instrument entries",
+    "Encyclopaedia Britannica, the music entries for the country",
+    "MIMO (Musical Instrument Museums Online), Hornbostel–Sachs records"
+   ]
+  },
+  "BOS": {
+   "instruments": [
+    {
+     "name": "Šargija",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Saz",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Gusle",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Violin",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Frula",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Dvojnice",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Diple",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Harmonika",
+     "family": "fr",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Def",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Tapan",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    }
+   ],
+   "genres": [
+    {
+     "name": "Sevdalinka",
+     "family": "song",
+     "credit": 1.0
+    },
+    {
+     "name": "Ganga",
+     "family": "folk",
+     "credit": 1.0
+    },
+    {
+     "name": "Gusle epic",
+     "family": "folk",
+     "credit": 0.333
+    }
+   ],
+   "instrument_shares": {
+    "str": 0.3927,
+    "ww": 0.2971,
+    "br": 0.0089,
+    "fr": 0.1014,
+    "kb": 0.0012,
+    "pc": 0.1985,
+    "el": 0.0002
+   },
+   "genre_shares": {
+    "art": 0.0155,
+    "cho": 0.0197,
+    "folk": 0.5838,
+    "song": 0.3421,
+    "jazz": 0.003,
+    "rock": 0.018,
+    "elec": 0.0159,
+    "hip": 0.002
+   },
+   "genre_instrumentation": {
+    "str": 0.5,
+    "ww": 0.0,
+    "br": 0.0,
+    "fr": 0.5,
+    "kb": 0.0,
+    "pc": 0.0,
+    "el": 0.0
+   },
+   "developed": 0,
+   "sources": [
+    "Wikipedia, 'Music of Bosnia and Herzegovina' and its instrument entries",
+    "Encyclopaedia Britannica, the music entries for the country",
+    "MIMO (Musical Instrument Museums Online), Hornbostel–Sachs records"
+   ]
+  },
+  "SRB": {
+   "instruments": [
+    {
+     "name": "Gusle",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Violin",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Tamburica",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Frula",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Dvojnice",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Kaval",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Gajde",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Zurla",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Truba",
+     "family": "br",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Harmonika",
+     "family": "fr",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Tapan",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Darabuka",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    }
+   ],
+   "genres": [
+    {
+     "name": "Kolo",
+     "family": "folk",
+     "credit": 1.0
+    },
+    {
+     "name": "Guča brass",
+     "family": "folk",
+     "credit": 1.0
+    },
+    {
+     "name": "Gusle epic",
+     "family": "folk",
+     "credit": 0.333
+    },
+    {
+     "name": "Turbo-folk",
+     "family": "song",
+     "credit": 1.0
+    }
+   ],
+   "instrument_shares": {
+    "str": 0.2553,
+    "ww": 0.4053,
+    "br": 0.0844,
+    "fr": 0.0858,
+    "kb": 0.001,
+    "pc": 0.168,
+    "el": 0.0002
+   },
+   "genre_shares": {
+    "art": 0.0119,
+    "cho": 0.0152,
+    "folk": 0.6799,
+    "song": 0.2632,
+    "jazz": 0.0023,
+    "rock": 0.0138,
+    "elec": 0.0122,
+    "hip": 0.0015
+   },
+   "genre_instrumentation": {
+    "str": 0.0,
+    "ww": 0.0,
+    "br": 0.0,
+    "fr": 0.5,
+    "kb": 0.0,
+    "pc": 0.0,
+    "el": 0.5
+   },
+   "developed": 0,
+   "sources": [
+    "Wikipedia, 'Music of Serbia' and its instrument entries",
+    "Encyclopaedia Britannica, the music entries for the country",
+    "MIMO (Musical Instrument Museums Online), Hornbostel–Sachs records"
+   ]
+  },
+  "MNE": {
+   "instruments": [
+    {
+     "name": "Gusle",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Diple",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Frula",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Harmonika",
+     "family": "fr",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Drum",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    }
+   ],
+   "genres": [
+    {
+     "name": "Gusle epic",
+     "family": "folk",
+     "credit": 0.333
+    },
+    {
+     "name": "Oro",
+     "family": "folk",
+     "credit": 1.0
+    }
+   ],
+   "instrument_shares": {
+    "str": 0.2199,
+    "ww": 0.3781,
+    "br": 0.0162,
+    "fr": 0.1858,
+    "kb": 0.0022,
+    "pc": 0.1973,
+    "el": 0.0004
+   },
+   "genre_shares": {
+    "art": 0.0221,
+    "cho": 0.0281,
+    "folk": 0.834,
+    "song": 0.0602,
+    "jazz": 0.0043,
+    "rock": 0.0257,
+    "elec": 0.0227,
+    "hip": 0.0028
+   },
+   "genre_instrumentation": null,
+   "developed": 0,
+   "sources": [
+    "Wikipedia, 'Music of Montenegro' and its instrument entries",
+    "Encyclopaedia Britannica, the music entries for the country",
+    "MIMO (Musical Instrument Museums Online), Hornbostel–Sachs records"
+   ]
+  },
+  "MAC": {
+   "instruments": [
+    {
+     "name": "Tambura",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Kemane",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Ut",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Violin",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Kaval",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Gajda",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Zurla",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Šupelka",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Čalgija clarinet",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Brass-band trumpet",
+     "family": "br",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Accordion",
+     "family": "fr",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Tapan",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Tarabuka",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Def",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    }
+   ],
+   "genres": [
+    {
+     "name": "Oro and teškoto",
+     "family": "folk",
+     "credit": 1.0
+    },
+    {
+     "name": "Čalgija",
+     "family": "folk",
+     "credit": 1.0
+    },
+    {
+     "name": "Romani brass",
+     "family": "folk",
+     "credit": 1.0
+    }
+   ],
+   "instrument_shares": {
+    "str": 0.288,
+    "ww": 0.3512,
+    "br": 0.0732,
+    "fr": 0.0743,
+    "kb": 0.0009,
+    "pc": 0.2123,
+    "el": 0.0002
+   },
+   "genre_shares": {
+    "art": 0.0129,
+    "cho": 0.0164,
+    "folk": 0.9032,
+    "song": 0.0351,
+    "jazz": 0.0025,
+    "rock": 0.015,
+    "elec": 0.0133,
+    "hip": 0.0016
+   },
+   "genre_instrumentation": null,
+   "developed": 0,
+   "sources": [
+    "Wikipedia, 'Music of North Macedonia' and its instrument entries",
+    "Encyclopaedia Britannica, the music entries for the country",
+    "MIMO (Musical Instrument Museums Online), Hornbostel–Sachs records"
+   ]
+  },
+  "ALB": {
+   "instruments": [
+    {
+     "name": "Çifteli",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Lahuta",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Sharki",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Llautë",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Violin",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Zurna",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Gajde",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Fyell",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Kavall",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Klarinet",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Accordion",
+     "family": "fr",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Lodër",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Def",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    }
+   ],
+   "genres": [
+    {
+     "name": "Iso-polyphony",
+     "family": "folk",
+     "credit": 1.0
+    },
+    {
+     "name": "Epic of the frontier warriors",
+     "family": "folk",
+     "credit": 1.0
+    },
+    {
+     "name": "Albanian urban song",
+     "family": "folk",
+     "credit": 1.0
+    }
+   ],
+   "instrument_shares": {
+    "str": 0.38,
+    "ww": 0.3763,
+    "br": 0.007,
+    "fr": 0.0796,
+    "kb": 0.0009,
+    "pc": 0.156,
+    "el": 0.0002
+   },
+   "genre_shares": {
+    "art": 0.0129,
+    "cho": 0.0164,
+    "folk": 0.9032,
+    "song": 0.0351,
+    "jazz": 0.0025,
+    "rock": 0.015,
+    "elec": 0.0133,
+    "hip": 0.0016
+   },
+   "genre_instrumentation": null,
+   "developed": 0,
+   "sources": [
+    "Wikipedia, 'Music of Albania' and its instrument entries",
+    "Encyclopaedia Britannica, the music entries for the country",
+    "MIMO (Musical Instrument Museums Online), Hornbostel–Sachs records"
+   ]
+  },
+  "BUL": {
+   "instruments": [
+    {
+     "name": "Gadulka",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Tambura",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Kaval",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Gaida",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Duduk",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Svirka",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Dvoyanka",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Wedding-band clarinet",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Wedding-band saxophone",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Accordion",
+     "family": "fr",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Tapan",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Tarambuka",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    }
+   ],
+   "genres": [
+    {
+     "name": "Shop diaphony",
+     "family": "folk",
+     "credit": 1.0
+    },
+    {
+     "name": "Horo and rachenitsa",
+     "family": "folk",
+     "credit": 1.0
+    },
+    {
+     "name": "Wedding music",
+     "family": "folk",
+     "credit": 1.0
+    },
+    {
+     "name": "Chalga",
+     "family": "song",
+     "credit": 1.0
+    }
+   ],
+   "instrument_shares": {
+    "str": 0.1784,
+    "ww": 0.5591,
+    "br": 0.0075,
+    "fr": 0.0858,
+    "kb": 0.001,
+    "pc": 0.168,
+    "el": 0.0002
+   },
+   "genre_shares": {
+    "art": 0.0103,
+    "cho": 0.0131,
+    "folk": 0.7226,
+    "song": 0.2281,
+    "jazz": 0.002,
+    "rock": 0.012,
+    "elec": 0.0106,
+    "hip": 0.0013
+   },
+   "genre_instrumentation": {
+    "str": 0.0,
+    "ww": 0.5,
+    "br": 0.0,
+    "fr": 0.0,
+    "kb": 0.0,
+    "pc": 0.0,
+    "el": 0.5
+   },
+   "developed": 0,
+   "sources": [
+    "Wikipedia, 'Music of Bulgaria' and its instrument entries",
+    "Encyclopaedia Britannica, the music entries for the country",
+    "MIMO (Musical Instrument Museums Online), Hornbostel–Sachs records"
+   ]
+  },
+  "GRE": {
+   "instruments": [
+    {
+     "name": "Bouzouki (four-course)",
+     "family": "str",
+     "role": "dt",
+     "note": "Manolis Chiotis, 1950s"
+    },
+    {
+     "name": "Hydraulis",
+     "family": "kb",
+     "role": "d",
+     "note": "Ctesibius, Alexandria, 3rd c. BC: the first organ"
+    },
+    {
+     "name": "Cretan lyra",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Politiki lyra",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Laouto",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Santouri",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Baglamas",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Tzouras",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Kanonaki",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Outi",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Violi",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Klarino",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Tsampouna",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Gaida",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Zournas",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Floyera",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Daouli",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Toubeleki",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    }
+   ],
+   "genres": [
+    {
+     "name": "Byzantine chant",
+     "family": "cho",
+     "credit": 1.0
+    },
+    {
+     "name": "Rebetiko and laïko",
+     "family": "song",
+     "credit": 1.0
+    },
+    {
+     "name": "Entechno",
+     "family": "song",
+     "credit": 1.0
+    },
+    {
+     "name": "Syrtos and kalamatianos",
+     "family": "folk",
+     "credit": 1.0
+    }
+   ],
+   "instrument_shares": {
+    "str": 0.5733,
+    "ww": 0.2927,
+    "br": 0.0054,
+    "fr": 0.0064,
+    "kb": 0.0007,
+    "pc": 0.1213,
+    "el": 0.0001
+   },
+   "genre_shares": {
+    "art": 0.0103,
+    "cho": 0.2131,
+    "folk": 0.3226,
+    "song": 0.4281,
+    "jazz": 0.002,
+    "rock": 0.012,
+    "elec": 0.0106,
+    "hip": 0.0013
+   },
+   "genre_instrumentation": {
+    "str": 0.75,
+    "ww": 0.0,
+    "br": 0.0,
+    "fr": 0.0,
+    "kb": 0.25,
+    "pc": 0.0,
+    "el": 0.0
+   },
+   "developed": 2,
+   "sources": [
+    "Wikipedia, 'Music of Greece' and its instrument entries",
+    "Encyclopaedia Britannica, the music entries for the country",
+    "MIMO (Musical Instrument Museums Online), Hornbostel–Sachs records"
+   ]
+  },
+  "USA": {
+   "instruments": [
+    {
+     "name": "Five-string banjo",
+     "family": "str",
+     "role": "dt",
+     "note": "from West African antecedents, 1830s"
+    },
+    {
+     "name": "Steel and resonator guitar",
+     "family": "str",
+     "role": "dt",
+     "note": "Hawaii 1889; Los Angeles 1927"
+    },
+    {
+     "name": "Electric guitar and bass",
+     "family": "el",
+     "role": "dt",
+     "note": "Rickenbacker 1932, Fender 1950-51, Gibson 1952"
+    },
+    {
+     "name": "Hammond organ",
+     "family": "el",
+     "role": "dt",
+     "note": "Chicago, 1935"
+    },
+    {
+     "name": "Moog and Buchla synthesizers",
+     "family": "el",
+     "role": "dt",
+     "note": "New York and San Francisco, 1963-64"
+    },
+    {
+     "name": "Drum kit",
+     "family": "pc",
+     "role": "dt",
+     "note": "New Orleans and Chicago, 1900s; Ludwig pedal 1909"
+    },
+    {
+     "name": "Vibraphone",
+     "family": "pc",
+     "role": "dt",
+     "note": "Leedy, Indianapolis, 1921"
+    },
+    {
+     "name": "Sousaphone",
+     "family": "br",
+     "role": "dt",
+     "note": "Philadelphia, 1893"
+    },
+    {
+     "name": "Iron-framed overstrung piano",
+     "family": "kb",
+     "role": "dt",
+     "note": "Babcock 1825; Steinway 1859"
+    },
+    {
+     "name": "Autoharp",
+     "family": "str",
+     "role": "dt",
+     "note": "Philadelphia, 1882"
+    },
+    {
+     "name": "Old-time fiddle",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Bluegrass mandolin",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Upright bass",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Appalachian dulcimer",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Jazz clarinet",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Jazz saxophone",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Jazz trumpet",
+     "family": "br",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Jazz trombone",
+     "family": "br",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Jug",
+     "family": "br",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Blues harmonica",
+     "family": "fr",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Cajun accordion",
+     "family": "fr",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Washboard",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    }
+   ],
+   "genres": [
+    {
+     "name": "Spirituals and gospel",
+     "family": "cho",
+     "credit": 1.0
+    },
+    {
+     "name": "Minimalism",
+     "family": "art",
+     "credit": 1.0
+    },
+    {
+     "name": "Musical theatre",
+     "family": "song",
+     "credit": 0.5
+    },
+    {
+     "name": "Jazz",
+     "family": "jazz",
+     "credit": 1.0
+    },
+    {
+     "name": "Blues",
+     "family": "jazz",
+     "credit": 1.0
+    },
+    {
+     "name": "Ragtime",
+     "family": "jazz",
+     "credit": 1.0
+    },
+    {
+     "name": "Latin jazz",
+     "family": "jazz",
+     "credit": 0.5
+    },
+    {
+     "name": "Country",
+     "family": "song",
+     "credit": 1.0
+    },
+    {
+     "name": "Bluegrass",
+     "family": "folk",
+     "credit": 1.0
+    },
+    {
+     "name": "Cajun and zydeco",
+     "family": "folk",
+     "credit": 1.0
+    },
+    {
+     "name": "Rock and roll",
+     "family": "rock",
+     "credit": 1.0
+    },
+    {
+     "name": "Punk",
+     "family": "rock",
+     "credit": 0.5
+    },
+    {
+     "name": "Grunge",
+     "family": "rock",
+     "credit": 1.0
+    },
+    {
+     "name": "Soul, funk and R&B",
+     "family": "hip",
+     "credit": 1.0
+    },
+    {
+     "name": "Hip hop",
+     "family": "hip",
+     "credit": 1.0
+    },
+    {
+     "name": "Disco",
+     "family": "elec",
+     "credit": 1.0
+    },
+    {
+     "name": "House",
+     "family": "elec",
+     "credit": 1.0
+    },
+    {
+     "name": "Techno",
+     "family": "elec",
+     "credit": 0.5
+    },
+    {
+     "name": "Son, bolero and salsa",
+     "family": "song",
+     "credit": 0.5
+    }
+   ],
+   "instrument_shares": {
+    "str": 0.3182,
+    "ww": 0.0986,
+    "br": 0.1781,
+    "fr": 0.092,
+    "kb": 0.0441,
+    "pc": 0.1384,
+    "el": 0.1305
+   },
+   "genre_shares": {
+    "art": 0.0601,
+    "cho": 0.0609,
+    "folk": 0.1493,
+    "song": 0.1223,
+    "jazz": 0.2006,
+    "rock": 0.1463,
+    "elec": 0.1459,
+    "hip": 0.1147
+   },
+   "genre_instrumentation": {
+    "str": 0.252,
+    "ww": 0.027,
+    "br": 0.053,
+    "fr": 0.061,
+    "kb": 0.204,
+    "pc": 0.181,
+    "el": 0.222
+   },
+   "developed": 10,
+   "sources": [
+    "Wikipedia, 'Music of the United States' and its instrument entries",
+    "Encyclopaedia Britannica, the music entries for the country",
+    "MIMO (Musical Instrument Museums Online), Hornbostel–Sachs records"
+   ]
+  },
+  "CAN": {
+   "instruments": [
+    {
+     "name": "Electronic sackbut",
+     "family": "el",
+     "role": "d",
+     "note": "Hugh Le Caine, Ottawa, 1945-48"
+    },
+    {
+     "name": "Cape Breton fiddle",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Guitar",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Highland pipes",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Tin whistle",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Newfoundland accordion",
+     "family": "fr",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Cape Breton piano",
+     "family": "kb",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Ugly stick",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Bodhrán",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    }
+   ],
+   "genres": [
+    {
+     "name": "Cape Breton fiddling",
+     "family": "folk",
+     "credit": 1.0
+    },
+    {
+     "name": "Newfoundland song",
+     "family": "folk",
+     "credit": 1.0
+    }
+   ],
+   "instrument_shares": {
+    "str": 0.2577,
+    "ww": 0.2521,
+    "br": 0.0108,
+    "fr": 0.1239,
+    "kb": 0.1126,
+    "pc": 0.2427,
+    "el": 0.0003
+   },
+   "genre_shares": {
+    "art": 0.0172,
+    "cho": 0.0219,
+    "folk": 0.8709,
+    "song": 0.0468,
+    "jazz": 0.0033,
+    "rock": 0.02,
+    "elec": 0.0177,
+    "hip": 0.0022
+   },
+   "genre_instrumentation": null,
+   "developed": 1,
+   "sources": [
+    "Wikipedia, 'Music of Canada; Music of Nova Scotia; Music of Newfoundland and Labrador' and its instrument entries",
+    "Encyclopaedia Britannica, the music entries for the country",
+    "MIMO (Musical Instrument Museums Online), Hornbostel–Sachs records"
+   ]
+  },
+  "QUE": {
+   "instruments": [
+    {
+     "name": "Violon",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Guitare",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Accordéon",
+     "family": "fr",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Ruine-babines",
+     "family": "fr",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Guimbarde",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Cuillères",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Podorythmie",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Os",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    }
+   ],
+   "genres": [
+    {
+     "name": "Québécois reels and chanson à répondre",
+     "family": "folk",
+     "credit": 1.0
+    },
+    {
+     "name": "Chanson québécoise",
+     "family": "song",
+     "credit": 1.0
+    }
+   ],
+   "instrument_shares": {
+    "str": 0.2577,
+    "ww": 0.0298,
+    "br": 0.0108,
+    "fr": 0.235,
+    "kb": 0.0015,
+    "pc": 0.4649,
+    "el": 0.0003
+   },
+   "genre_shares": {
+    "art": 0.0172,
+    "cho": 0.0219,
+    "folk": 0.5376,
+    "song": 0.3801,
+    "jazz": 0.0033,
+    "rock": 0.02,
+    "elec": 0.0177,
+    "hip": 0.0022
+   },
+   "genre_instrumentation": {
+    "str": 1.0,
+    "ww": 0.0,
+    "br": 0.0,
+    "fr": 0.0,
+    "kb": 0.0,
+    "pc": 0.0,
+    "el": 0.0
+   },
+   "developed": 0,
+   "sources": [
+    "Wikipedia, 'Music of Quebec' and its instrument entries",
+    "Encyclopaedia Britannica, the music entries for the country",
+    "MIMO (Musical Instrument Museums Online), Hornbostel–Sachs records"
+   ]
+  },
+  "AUS": {
+   "instruments": [
+    {
+     "name": "Fairlight CMI",
+     "family": "el",
+     "role": "d",
+     "note": "Sydney, 1979: the first commercial sampler"
+    },
+    {
+     "name": "CSIRAC music",
+     "family": "el",
+     "role": "d",
+     "note": "Sydney, 1951"
+    },
+    {
+     "name": "Fiddle",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Tea-chest bass",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Gum leaf",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Tin whistle",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Didgeridoo",
+     "family": "br",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Button accordion",
+     "family": "fr",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Concertina",
+     "family": "fr",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Clapsticks",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Lagerphone",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Bones",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    }
+   ],
+   "genres": [
+    {
+     "name": "Bush ballad",
+     "family": "folk",
+     "credit": 1.0
+    },
+    {
+     "name": "Pub rock (Oz rock)",
+     "family": "rock",
+     "credit": 1.0
+    }
+   ],
+   "instrument_shares": {
+    "str": 0.2109,
+    "ww": 0.2062,
+    "br": 0.0998,
+    "fr": 0.1923,
+    "kb": 0.0012,
+    "pc": 0.2894,
+    "el": 0.0002
+   },
+   "genre_shares": {
+    "art": 0.0172,
+    "cho": 0.0219,
+    "folk": 0.5376,
+    "song": 0.0468,
+    "jazz": 0.0033,
+    "rock": 0.3533,
+    "elec": 0.0177,
+    "hip": 0.0022
+   },
+   "genre_instrumentation": {
+    "str": 0.0,
+    "ww": 0.0,
+    "br": 0.0,
+    "fr": 0.0,
+    "kb": 0.0,
+    "pc": 0.5,
+    "el": 0.5
+   },
+   "developed": 2,
+   "sources": [
+    "Wikipedia, 'Music of Australia' and its instrument entries",
+    "Encyclopaedia Britannica, the music entries for the country",
+    "MIMO (Musical Instrument Museums Online), Hornbostel–Sachs records"
+   ]
+  },
+  "NZL": {
+   "instruments": [
+    {
+     "name": "Guitar",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Ukulele",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Kōauau",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Pūtōrino",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Pūkāea",
+     "family": "br",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Pūtātara",
+     "family": "br",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Pahū",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    }
+   ],
+   "genres": [
+    {
+     "name": "Kapa haka",
+     "family": "folk",
+     "credit": 1.0
+    },
+    {
+     "name": "Dunedin sound",
+     "family": "rock",
+     "credit": 1.0
+    }
+   ],
+   "instrument_shares": {
+    "str": 0.2899,
+    "ww": 0.2836,
+    "br": 0.2622,
+    "fr": 0.0144,
+    "kb": 0.0017,
+    "pc": 0.148,
+    "el": 0.0003
+   },
+   "genre_shares": {
+    "art": 0.0172,
+    "cho": 0.0219,
+    "folk": 0.5376,
+    "song": 0.0468,
+    "jazz": 0.0033,
+    "rock": 0.3533,
+    "elec": 0.0177,
+    "hip": 0.0022
+   },
+   "genre_instrumentation": {
+    "str": 0.0,
+    "ww": 0.0,
+    "br": 0.0,
+    "fr": 0.0,
+    "kb": 0.0,
+    "pc": 0.5,
+    "el": 0.5
+   },
+   "developed": 0,
+   "sources": [
+    "Wikipedia, 'Music of New Zealand; Taonga pūoro' and its instrument entries",
+    "Encyclopaedia Britannica, the music entries for the country",
+    "MIMO (Musical Instrument Museums Online), Hornbostel–Sachs records"
+   ]
+  },
+  "ISR": {
+   "instruments": [
+    {
+     "name": "Oud",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Kanun",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Bouzouki",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Violin",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Halil",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Shofar",
+     "family": "br",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Accordion",
+     "family": "fr",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Darbuka",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Tof",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    }
+   ],
+   "genres": [
+    {
+     "name": "Songs of the Land of Israel",
+     "family": "song",
+     "credit": 1.0
+    },
+    {
+     "name": "Mizrahi music",
+     "family": "song",
+     "credit": 1.0
+    },
+    {
+     "name": "Israeli folk dance",
+     "family": "folk",
+     "credit": 1.0
+    }
+   ],
+   "instrument_shares": {
+    "str": 0.4319,
+    "ww": 0.1269,
+    "br": 0.1097,
+    "fr": 0.1115,
+    "kb": 0.0013,
+    "pc": 0.2184,
+    "el": 0.0003
+   },
+   "genre_shares": {
+    "art": 0.0129,
+    "cho": 0.0164,
+    "folk": 0.4032,
+    "song": 0.5351,
+    "jazz": 0.0025,
+    "rock": 0.015,
+    "elec": 0.0133,
+    "hip": 0.0016
+   },
+   "genre_instrumentation": {
+    "str": 0.5,
+    "ww": 0.0,
+    "br": 0.0,
+    "fr": 0.25,
+    "kb": 0.0,
+    "pc": 0.0,
+    "el": 0.25
+   },
+   "developed": 0,
+   "sources": [
+    "Wikipedia, 'Music of Israel' and its instrument entries",
+    "Encyclopaedia Britannica, the music entries for the country",
+    "MIMO (Musical Instrument Museums Online), Hornbostel–Sachs records"
+   ]
+  },
+  "IBA": {
+   "instruments": [
+    {
+     "name": "Charango",
+     "family": "str",
+     "role": "dt",
+     "note": "Andes, 18th c."
+    },
+    {
+     "name": "Marimba",
+     "family": "pc",
+     "role": "dt",
+     "note": "Guatemala and Chiapas, from African antecedents"
+    },
+    {
+     "name": "Cajón",
+     "family": "pc",
+     "role": "dt",
+     "note": "Peru, 18th-19th c."
+    },
+    {
+     "name": "Mariachi vihuela and guitarrón",
+     "family": "str",
+     "role": "dt",
+     "note": "Mexico"
+    },
+    {
+     "name": "Cuatro",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Tres",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Cavaquinho",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Llanera harp",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Berimbau",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Quena",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Siku",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Mariachi trumpet",
+     "family": "br",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Bandoneon (tango)",
+     "family": "fr",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Vallenato accordion",
+     "family": "fr",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Güiro",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Maracas",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Congas and bongos",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Pandeiro",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Surdo",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Bombo legüero",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    }
+   ],
+   "genres": [
+    {
+     "name": "Tango",
+     "family": "song",
+     "credit": 1.0
+    },
+    {
+     "name": "Samba",
+     "family": "song",
+     "credit": 1.0
+    },
+    {
+     "name": "Bossa nova",
+     "family": "jazz",
+     "credit": 1.0
+    },
+    {
+     "name": "Son, bolero and salsa",
+     "family": "song",
+     "credit": 0.5
+    },
+    {
+     "name": "Latin jazz",
+     "family": "jazz",
+     "credit": 0.5
+    },
+    {
+     "name": "Cumbia",
+     "family": "folk",
+     "credit": 1.0
+    },
+    {
+     "name": "Mariachi",
+     "family": "folk",
+     "credit": 1.0
+    },
+    {
+     "name": "Reggaeton",
+     "family": "hip",
+     "credit": 1.0
+    }
+   ],
+   "instrument_shares": {
+    "str": 0.3485,
+    "ww": 0.108,
+    "br": 0.0523,
+    "fr": 0.1007,
+    "kb": 0.0006,
+    "pc": 0.3897,
+    "el": 0.0001
+   },
+   "genre_shares": {
+    "art": 0.0065,
+    "cho": 0.0082,
+    "folk": 0.3266,
+    "song": 0.3301,
+    "jazz": 0.1887,
+    "rock": 0.0075,
+    "elec": 0.0066,
+    "hip": 0.1258
+   },
+   "genre_instrumentation": {
+    "str": 0.262,
+    "ww": 0.065,
+    "br": 0.113,
+    "fr": 0.095,
+    "kb": 0.113,
+    "pc": 0.28,
+    "el": 0.071
+   },
+   "developed": 4,
+   "sources": [
+    "Wikipedia, 'Music of Latin America; Music of Mexico; Music of Brazil; Music of Argentina' and its instrument entries",
+    "Encyclopaedia Britannica, the music entries for the country",
+    "MIMO (Musical Instrument Museums Online), Hornbostel–Sachs records"
+   ]
+  },
+  "ASH": {
+   "instruments": [
+    {
+     "name": "Klezmer fiddle",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Tsimbl",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Klezmer bass",
+     "family": "str",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Klezmer clarinet",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Fleyt",
+     "family": "ww",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Klezmer trumpet",
+     "family": "br",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Shofar",
+     "family": "br",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Accordion",
+     "family": "fr",
+     "role": "t",
+     "note": ""
+    },
+    {
+     "name": "Poyk",
+     "family": "pc",
+     "role": "t",
+     "note": ""
+    }
+   ],
+   "genres": [
+    {
+     "name": "Klezmer",
+     "family": "folk",
+     "credit": 1.0
+    },
+    {
+     "name": "Hasidic nigun and hazzanut",
+     "family": "cho",
+     "credit": 1.0
+    },
+    {
+     "name": "Yiddish theatre song",
+     "family": "song",
+     "credit": 1.0
+    }
+   ],
+   "instrument_shares": {
+    "str": 0.3319,
+    "ww": 0.2269,
+    "br": 0.2097,
+    "fr": 0.1115,
+    "kb": 0.0013,
+    "pc": 0.1184,
+    "el": 0.0003
+   },
+   "genre_shares": {
+    "art": 0.0129,
+    "cho": 0.2664,
+    "folk": 0.4032,
+    "song": 0.2851,
+    "jazz": 0.0025,
+    "rock": 0.015,
+    "elec": 0.0133,
+    "hip": 0.0016
+   },
+   "genre_instrumentation": {
+    "str": 0.375,
+    "ww": 0.375,
+    "br": 0.125,
+    "fr": 0.125,
+    "kb": 0.0,
+    "pc": 0.0,
+    "el": 0.0
+   },
+   "developed": 0,
+   "sources": [
+    "Wikipedia, 'Klezmer' and 'Jewish music'",
+    "Encyclopaedia Britannica, 'klezmer music'",
+    "MIMO, Hornbostel–Sachs records"
+   ]
+  }
+ },
+ "genres": {
+  "Gregorian chant": {
+   "family": "cho",
+   "instrumentation": [],
+   "formed": "Carolingian Francia, 8th-9th c."
+  },
+  "Byzantine chant": {
+   "family": "cho",
+   "instrumentation": [],
+   "formed": "Constantinople, from the 4th c."
+  },
+  "Znamenny chant": {
+   "family": "cho",
+   "instrumentation": [],
+   "formed": "Muscovy, 11th-17th c."
+  },
+  "Partes singing": {
+   "family": "cho",
+   "instrumentation": [],
+   "formed": "Kyiv and western Ukraine, 17th c."
+  },
+  "Franco-Flemish polyphony": {
+   "family": "cho",
+   "instrumentation": [],
+   "formed": "Low Countries and northern France, 15th-16th c."
+  },
+  "Lutheran chorale": {
+   "family": "cho",
+   "instrumentation": [
+    "kb"
+   ],
+   "formed": "Wittenberg, 1524"
+  },
+  "Anglican choral music": {
+   "family": "cho",
+   "instrumentation": [
+    "kb"
+   ],
+   "formed": "England, 16th c."
+  },
+  "Change ringing": {
+   "family": "cho",
+   "instrumentation": [
+    "pc"
+   ],
+   "formed": "England, 17th c."
+  },
+  "Spirituals and gospel": {
+   "family": "cho",
+   "instrumentation": [
+    "kb"
+   ],
+   "formed": "United States, 19th-20th c."
+  },
+  "Song-festival choral tradition": {
+   "family": "cho",
+   "instrumentation": [],
+   "formed": "Estonia 1869, Latvia 1873, Lithuania 1924"
+  },
+  "Klapa": {
+   "family": "cho",
+   "instrumentation": [],
+   "formed": "Dalmatia, 19th c."
+  },
+  "Holy minimalism (tintinnabuli)": {
+   "family": "art",
+   "instrumentation": [
+    "str",
+    "kb"
+   ],
+   "formed": "Tallinn, Arvo Pärt, 1976"
+  },
+  "Madrigal": {
+   "family": "art",
+   "instrumentation": [],
+   "formed": "Italy, 16th c."
+  },
+  "Opera": {
+   "family": "art",
+   "instrumentation": [
+    "str",
+    "ww",
+    "br",
+    "kb"
+   ],
+   "formed": "Florence, 1597-1600"
+  },
+  "Oratorio": {
+   "family": "art",
+   "instrumentation": [
+    "str",
+    "kb"
+   ],
+   "formed": "Rome, c. 1600"
+  },
+  "Concerto and sonata": {
+   "family": "art",
+   "instrumentation": [
+    "str",
+    "kb"
+   ],
+   "formed": "Venice and Bologna, 17th c."
+  },
+  "Opera buffa": {
+   "family": "art",
+   "instrumentation": [
+    "str",
+    "ww"
+   ],
+   "formed": "Naples, early 18th c."
+  },
+  "Ballet and tragédie en musique": {
+   "family": "art",
+   "instrumentation": [
+    "str",
+    "ww"
+   ],
+   "formed": "French court, 17th c."
+  },
+  "Classical symphony": {
+   "family": "art",
+   "instrumentation": [
+    "str",
+    "ww",
+    "br",
+    "pc"
+   ],
+   "formed": "Mannheim, Vienna and Milan, 18th c."
+  },
+  "Lied": {
+   "family": "art",
+   "instrumentation": [
+    "kb"
+   ],
+   "formed": "Vienna, early 19th c."
+  },
+  "Grand opéra": {
+   "family": "art",
+   "instrumentation": [
+    "str",
+    "ww",
+    "br",
+    "pc"
+   ],
+   "formed": "Paris, 1828"
+  },
+  "Operetta": {
+   "family": "art",
+   "instrumentation": [
+    "str",
+    "ww",
+    "br"
+   ],
+   "formed": "Paris 1850s, Vienna 1870s"
+  },
+  "Zarzuela": {
+   "family": "art",
+   "instrumentation": [
+    "str",
+    "ww"
+   ],
+   "formed": "Madrid, 17th c."
+  },
+  "Twelve-tone music": {
+   "family": "art",
+   "instrumentation": [
+    "str",
+    "ww",
+    "kb"
+   ],
+   "formed": "Vienna, 1921"
+  },
+  "Musique concrète": {
+   "family": "elec",
+   "instrumentation": [
+    "el"
+   ],
+   "formed": "Paris, 1948"
+  },
+  "Elektronische Musik": {
+   "family": "elec",
+   "instrumentation": [
+    "el"
+   ],
+   "formed": "Cologne WDR studio, 1951"
+  },
+  "Minimalism": {
+   "family": "art",
+   "instrumentation": [
+    "kb",
+    "pc",
+    "str"
+   ],
+   "formed": "United States, 1960s"
+  },
+  "Ballad opera and music hall": {
+   "family": "song",
+   "instrumentation": [
+    "str",
+    "kb"
+   ],
+   "formed": "London, 1728; music hall 1850s"
+  },
+  "Brass band": {
+   "family": "folk",
+   "instrumentation": [
+    "br",
+    "pc"
+   ],
+   "formed": "Northern England, 19th c."
+  },
+  "Musical theatre": {
+   "family": "song",
+   "instrumentation": [
+    "str",
+    "br",
+    "ww",
+    "kb"
+   ],
+   "formed": "London and New York, 19th-20th c."
+  },
+  "Jazz": {
+   "family": "jazz",
+   "instrumentation": [
+    "br",
+    "ww",
+    "pc",
+    "kb",
+    "str"
+   ],
+   "formed": "New Orleans, c. 1900-1917"
+  },
+  "Blues": {
+   "family": "jazz",
+   "instrumentation": [
+    "str",
+    "fr"
+   ],
+   "formed": "Mississippi Delta, c. 1900"
+  },
+  "Ragtime": {
+   "family": "jazz",
+   "instrumentation": [
+    "kb"
+   ],
+   "formed": "Missouri, 1890s"
+  },
+  "Gypsy jazz": {
+   "family": "jazz",
+   "instrumentation": [
+    "str"
+   ],
+   "formed": "Paris, 1934"
+  },
+  "Bossa nova": {
+   "family": "jazz",
+   "instrumentation": [
+    "str",
+    "pc",
+    "kb"
+   ],
+   "formed": "Rio de Janeiro, 1958"
+  },
+  "Latin jazz": {
+   "family": "jazz",
+   "instrumentation": [
+    "br",
+    "ww",
+    "pc",
+    "kb"
+   ],
+   "formed": "New York and Havana, 1940s"
+  },
+  "Country": {
+   "family": "song",
+   "instrumentation": [
+    "str"
+   ],
+   "formed": "Appalachia and Nashville, 1920s"
+  },
+  "Bluegrass": {
+   "family": "folk",
+   "instrumentation": [
+    "str"
+   ],
+   "formed": "Kentucky, 1940s"
+  },
+  "Cajun and zydeco": {
+   "family": "folk",
+   "instrumentation": [
+    "fr",
+    "str"
+   ],
+   "formed": "Louisiana, 19th-20th c."
+  },
+  "Rock and roll": {
+   "family": "rock",
+   "instrumentation": [
+    "el",
+    "pc",
+    "kb"
+   ],
+   "formed": "United States, 1950s"
+  },
+  "British beat and rock": {
+   "family": "rock",
+   "instrumentation": [
+    "el",
+    "pc"
+   ],
+   "formed": "Liverpool and London, 1960s"
+  },
+  "Heavy metal": {
+   "family": "rock",
+   "instrumentation": [
+    "el",
+    "pc"
+   ],
+   "formed": "Birmingham, 1968-70"
+  },
+  "Punk": {
+   "family": "rock",
+   "instrumentation": [
+    "el",
+    "pc"
+   ],
+   "formed": "New York and London, 1974-77"
+  },
+  "Progressive rock": {
+   "family": "rock",
+   "instrumentation": [
+    "el",
+    "kb",
+    "pc"
+   ],
+   "formed": "England, late 1960s"
+  },
+  "Krautrock": {
+   "family": "rock",
+   "instrumentation": [
+    "el",
+    "pc"
+   ],
+   "formed": "Cologne, Düsseldorf and Berlin, 1968-74"
+  },
+  "Celtic rock": {
+   "family": "rock",
+   "instrumentation": [
+    "el",
+    "ww",
+    "str"
+   ],
+   "formed": "Dublin and Scotland, early 1970s"
+  },
+  "Black metal": {
+   "family": "rock",
+   "instrumentation": [
+    "el",
+    "pc"
+   ],
+   "formed": "Norway, early 1990s"
+  },
+  "Melodic death metal": {
+   "family": "rock",
+   "instrumentation": [
+    "el",
+    "pc"
+   ],
+   "formed": "Gothenburg, early 1990s"
+  },
+  "Grunge": {
+   "family": "rock",
+   "instrumentation": [
+    "el",
+    "pc"
+   ],
+   "formed": "Seattle, late 1980s"
+  },
+  "Pub rock (Oz rock)": {
+   "family": "rock",
+   "instrumentation": [
+    "el",
+    "pc"
+   ],
+   "formed": "Australia, 1970s"
+  },
+  "Dunedin sound": {
+   "family": "rock",
+   "instrumentation": [
+    "el",
+    "pc"
+   ],
+   "formed": "Dunedin, 1980s"
+  },
+  "Soul, funk and R&B": {
+   "family": "hip",
+   "instrumentation": [
+    "el",
+    "br",
+    "pc",
+    "kb"
+   ],
+   "formed": "United States, 1940s-60s"
+  },
+  "Hip hop": {
+   "family": "hip",
+   "instrumentation": [
+    "el",
+    "pc"
+   ],
+   "formed": "The Bronx, 1973"
+  },
+  "Grime": {
+   "family": "hip",
+   "instrumentation": [
+    "el"
+   ],
+   "formed": "London, early 2000s"
+  },
+  "Reggaeton": {
+   "family": "hip",
+   "instrumentation": [
+    "el",
+    "pc"
+   ],
+   "formed": "Panama and Puerto Rico, 1990s"
+  },
+  "Disco": {
+   "family": "elec",
+   "instrumentation": [
+    "el",
+    "pc",
+    "str"
+   ],
+   "formed": "New York and Philadelphia, 1970s"
+  },
+  "House": {
+   "family": "elec",
+   "instrumentation": [
+    "el"
+   ],
+   "formed": "Chicago, 1984"
+  },
+  "Techno": {
+   "family": "elec",
+   "instrumentation": [
+    "el"
+   ],
+   "formed": "Detroit 1985-88; Berlin after 1989"
+  },
+  "Synth-pop": {
+   "family": "elec",
+   "instrumentation": [
+    "el"
+   ],
+   "formed": "England, late 1970s"
+  },
+  "Italo disco": {
+   "family": "elec",
+   "instrumentation": [
+    "el"
+   ],
+   "formed": "Northern Italy, late 1970s"
+  },
+  "EBM and new beat": {
+   "family": "elec",
+   "instrumentation": [
+    "el"
+   ],
+   "formed": "Belgium, 1980s"
+  },
+  "Trance": {
+   "family": "elec",
+   "instrumentation": [
+    "el"
+   ],
+   "formed": "Frankfurt, early 1990s"
+  },
+  "Gabber": {
+   "family": "elec",
+   "instrumentation": [
+    "el"
+   ],
+   "formed": "Rotterdam, early 1990s"
+  },
+  "Drum and bass": {
+   "family": "elec",
+   "instrumentation": [
+    "el"
+   ],
+   "formed": "London, early 1990s"
+  },
+  "French house": {
+   "family": "elec",
+   "instrumentation": [
+    "el"
+   ],
+   "formed": "Paris, mid-1990s"
+  },
+  "Chanson": {
+   "family": "song",
+   "instrumentation": [
+    "str",
+    "fr",
+    "kb"
+   ],
+   "formed": "Paris, 19th-20th c."
+  },
+  "Bal-musette": {
+   "family": "song",
+   "instrumentation": [
+    "fr"
+   ],
+   "formed": "Paris, 1880s-1930s"
+  },
+  "Chanson québécoise": {
+   "family": "song",
+   "instrumentation": [
+    "str"
+   ],
+   "formed": "Québec, 1960s"
+  },
+  "Schlager": {
+   "family": "song",
+   "instrumentation": [
+    "br",
+    "str",
+    "kb"
+   ],
+   "formed": "Germany, 1920s-50s"
+  },
+  "Schrammelmusik and Wienerlied": {
+   "family": "song",
+   "instrumentation": [
+    "str",
+    "fr"
+   ],
+   "formed": "Vienna, 1878"
+  },
+  "Fado": {
+   "family": "song",
+   "instrumentation": [
+    "str"
+   ],
+   "formed": "Lisbon, 1820s"
+  },
+  "Rebetiko and laïko": {
+   "family": "song",
+   "instrumentation": [
+    "str"
+   ],
+   "formed": "Piraeus and Athens, 1920s-50s"
+  },
+  "Entechno": {
+   "family": "song",
+   "instrumentation": [
+    "str",
+    "kb"
+   ],
+   "formed": "Greece, 1960s"
+  },
+  "Tango": {
+   "family": "song",
+   "instrumentation": [
+    "fr",
+    "str",
+    "kb"
+   ],
+   "formed": "Buenos Aires and Montevideo, 1880s"
+  },
+  "Samba": {
+   "family": "song",
+   "instrumentation": [
+    "pc",
+    "str"
+   ],
+   "formed": "Rio de Janeiro, 1910s"
+  },
+  "Son, bolero and salsa": {
+   "family": "song",
+   "instrumentation": [
+    "pc",
+    "str",
+    "br"
+   ],
+   "formed": "Cuba 1880s-1920s; salsa New York 1960s"
+  },
+  "Cumbia": {
+   "family": "folk",
+   "instrumentation": [
+    "pc",
+    "ww",
+    "fr"
+   ],
+   "formed": "Colombian Caribbean coast"
+  },
+  "Mariachi": {
+   "family": "folk",
+   "instrumentation": [
+    "str",
+    "br"
+   ],
+   "formed": "Jalisco, 19th c."
+  },
+  "Neapolitan song": {
+   "family": "song",
+   "instrumentation": [
+    "str"
+   ],
+   "formed": "Naples, 19th c."
+  },
+  "Canzone d'autore": {
+   "family": "song",
+   "instrumentation": [
+    "str",
+    "kb"
+   ],
+   "formed": "Genoa, 1960s"
+  },
+  "Sevdalinka": {
+   "family": "song",
+   "instrumentation": [
+    "str",
+    "fr"
+   ],
+   "formed": "Bosnia, Ottoman period"
+  },
+  "Turbo-folk": {
+   "family": "song",
+   "instrumentation": [
+    "el",
+    "fr"
+   ],
+   "formed": "Serbia, 1980s-90s"
+  },
+  "Chalga": {
+   "family": "song",
+   "instrumentation": [
+    "el",
+    "ww"
+   ],
+   "formed": "Bulgaria, 1990s"
+  },
+  "Manele": {
+   "family": "song",
+   "instrumentation": [
+    "el",
+    "fr"
+   ],
+   "formed": "Romania, 1990s"
+  },
+  "Magyar nóta": {
+   "family": "song",
+   "instrumentation": [
+    "str"
+   ],
+   "formed": "Hungary, 19th c."
+  },
+  "Russian romance and bard song": {
+   "family": "song",
+   "instrumentation": [
+    "str"
+   ],
+   "formed": "Russia, 19th c.; bard song 1950s-60s"
+  },
+  "Finnish tango": {
+   "family": "song",
+   "instrumentation": [
+    "fr",
+    "str"
+   ],
+   "formed": "Finland, 1940s-60s"
+  },
+  "Disco polo": {
+   "family": "song",
+   "instrumentation": [
+    "el"
+   ],
+   "formed": "Poland, 1990s"
+  },
+  "Levenslied": {
+   "family": "song",
+   "instrumentation": [
+    "fr",
+    "kb"
+   ],
+   "formed": "Netherlands, 20th c."
+  },
+  "Yiddish theatre song": {
+   "family": "song",
+   "instrumentation": [
+    "str",
+    "ww"
+   ],
+   "formed": "Iași 1876, then New York"
+  },
+  "Mizrahi music": {
+   "family": "song",
+   "instrumentation": [
+    "str",
+    "el"
+   ],
+   "formed": "Israel, 1970s"
+  },
+  "Songs of the Land of Israel": {
+   "family": "song",
+   "instrumentation": [
+    "str",
+    "fr"
+   ],
+   "formed": "Mandatory Palestine and Israel, 1920s-60s"
+  },
+  "Klezmer": {
+   "family": "folk",
+   "instrumentation": [
+    "ww",
+    "str",
+    "fr",
+    "br"
+   ],
+   "formed": "Ashkenazi eastern Europe, 16th-19th c."
+  },
+  "Hasidic nigun and hazzanut": {
+   "family": "cho",
+   "instrumentation": [],
+   "formed": "Ashkenazi eastern Europe, 18th c."
+  }
+ },
+ "method": {
+  "alpha": 1.0,
+  "pooled_instruments": {
+   "str": 0.3193714963322807,
+   "ww": 0.268602345971627,
+   "br": 0.09741611269389049,
+   "fr": 0.1148893287782177,
+   "kb": 0.013290310512532733,
+   "pc": 0.18390515318619902,
+   "el": 0.002525252525252525
+  },
+  "pooled_genres": {
+   "art": 0.05163198728750618,
+   "cho": 0.06566201094502981,
+   "folk": 0.612763580505516,
+   "song": 0.1404269078420983,
+   "jazz": 0.009992860621791439,
+   "rock": 0.05993265993265993,
+   "elec": 0.05301631962505845,
+   "hip": 0.006573673240339907
+  }
+ },
+ "landmarks": [
+  {
+   "n": "Hardanger fiddle",
+   "k": "i",
+   "f": "str",
+   "u": "NOR",
+   "lat": 60.32,
+   "lon": 6.65,
+   "y": 1651,
+   "d": "1651",
+   "t": "Jaastad fiddle, the oldest dated"
+  },
+  {
+   "n": "Nyckelharpa",
+   "k": "i",
+   "f": "str",
+   "u": "SWE",
+   "lat": 57.6,
+   "lon": 18.6,
+   "y": 1350,
+   "d": "c. 1350",
+   "t": "earliest depiction, Källunge church, Gotland"
+  },
+  {
+   "n": "Bronze-Age lurs",
+   "k": "i",
+   "f": "br",
+   "u": "DEN",
+   "lat": 55.85,
+   "lon": 12.25,
+   "y": -800,
+   "d": "c. 800 BC",
+   "t": "Brudevælte pair, North Zealand"
+  },
+  {
+   "n": "Russian horn band",
+   "k": "i",
+   "f": "br",
+   "u": "RUS",
+   "lat": 59.94,
+   "lon": 30.31,
+   "y": 1751,
+   "d": "1751",
+   "t": "J. A. Maresch, St Petersburg"
+  },
+  {
+   "n": "Garmon",
+   "k": "i",
+   "f": "fr",
+   "u": "RUS",
+   "lat": 54.19,
+   "lon": 37.62,
+   "y": 1830,
+   "d": "1830s",
+   "t": "Tula workshops"
+  },
+  {
+   "n": "Concert balalaika",
+   "k": "i",
+   "f": "str",
+   "u": "RUS",
+   "lat": 59.94,
+   "lon": 30.31,
+   "y": 1887,
+   "d": "1880s",
+   "t": "Vasily Andreyev, St Petersburg"
+  },
+  {
+   "n": "Theremin",
+   "k": "i",
+   "f": "el",
+   "u": "RUS",
+   "lat": 59.95,
+   "lon": 30.33,
+   "y": 1920,
+   "d": "1920",
+   "t": "Léon Theremin, Petrograd"
+  },
+  {
+   "n": "ANS synthesizer",
+   "k": "i",
+   "f": "el",
+   "u": "RUS",
+   "lat": 55.75,
+   "lon": 37.62,
+   "y": 1958,
+   "d": "1958",
+   "t": "Yevgeny Murzin, Moscow"
+  },
+  {
+   "n": "Keyed bugle",
+   "k": "i",
+   "f": "br",
+   "u": "IRL",
+   "lat": 53.35,
+   "lon": -6.26,
+   "y": 1810,
+   "d": "1810",
+   "t": "Joseph Haliday's patent; rights sold to a Dublin maker"
+  },
+  {
+   "n": "Lambeg drum",
+   "k": "i",
+   "f": "pc",
+   "u": "ULS",
+   "lat": 54.53,
+   "lon": -6.07,
+   "y": 1870,
+   "d": "late 19th c.",
+   "t": "named for Lambeg, Co. Antrim"
+  },
+  {
+   "n": "English concertina",
+   "k": "i",
+   "f": "fr",
+   "u": "ENG",
+   "lat": 51.51,
+   "lon": -0.13,
+   "y": 1829,
+   "d": "1829",
+   "t": "Charles Wheatstone, London"
+  },
+  {
+   "n": "Mass-made tin whistle",
+   "k": "i",
+   "f": "ww",
+   "u": "ENG",
+   "lat": 53.48,
+   "lon": -2.24,
+   "y": 1843,
+   "d": "1843",
+   "t": "Robert Clarke, Manchester"
+  },
+  {
+   "n": "English grand action",
+   "k": "i",
+   "f": "kb",
+   "u": "ENG",
+   "lat": 51.51,
+   "lon": -0.14,
+   "y": 1772,
+   "d": "1770s",
+   "t": "Backers and Broadwood, London"
+  },
+  {
+   "n": "Computer music",
+   "k": "i",
+   "f": "el",
+   "u": "ENG",
+   "lat": 53.47,
+   "lon": -2.23,
+   "y": 1951,
+   "d": "1951",
+   "t": "Ferranti Mark 1, Manchester"
+  },
+  {
+   "n": "Vox AC30 amplifier",
+   "k": "i",
+   "f": "el",
+   "u": "ENG",
+   "lat": 51.44,
+   "lon": 0.22,
+   "y": 1958,
+   "d": "1958",
+   "t": "Dartford"
+  },
+  {
+   "n": "Marshall amplifier",
+   "k": "i",
+   "f": "el",
+   "u": "ENG",
+   "lat": 51.51,
+   "lon": -0.33,
+   "y": 1962,
+   "d": "1962",
+   "t": "Hanwell, London"
+  },
+  {
+   "n": "Mellotron",
+   "k": "i",
+   "f": "el",
+   "u": "ENG",
+   "lat": 52.48,
+   "lon": -1.89,
+   "y": 1963,
+   "d": "1963",
+   "t": "Birmingham"
+  },
+  {
+   "n": "Tuned carillon",
+   "k": "i",
+   "f": "pc",
+   "u": "NLD",
+   "lat": 52.14,
+   "lon": 6.2,
+   "y": 1644,
+   "d": "1644",
+   "t": "Hemony brothers, Zutphen"
+  },
+  {
+   "n": "Saxophone",
+   "k": "i",
+   "f": "ww",
+   "u": "BEL",
+   "lat": 50.85,
+   "lon": 4.35,
+   "y": 1840,
+   "d": "c. 1840",
+   "t": "Adolphe Sax, Brussels; patented in Paris 1846"
+  },
+  {
+   "n": "Schnitger organ",
+   "k": "i",
+   "f": "kb",
+   "u": "NGR",
+   "lat": 53.55,
+   "lon": 9.99,
+   "y": 1693,
+   "d": "1693",
+   "t": "Arp Schnitger, St Jacobi, Hamburg"
+  },
+  {
+   "n": "Silbermann organ",
+   "k": "i",
+   "f": "kb",
+   "u": "NGR",
+   "lat": 50.92,
+   "lon": 13.34,
+   "y": 1714,
+   "d": "1714",
+   "t": "Gottfried Silbermann, Freiberg Cathedral"
+  },
+  {
+   "n": "Valve for brass",
+   "k": "i",
+   "f": "br",
+   "u": "NGR",
+   "lat": 52.52,
+   "lon": 13.4,
+   "y": 1818,
+   "d": "1818",
+   "t": "Stölzel and Blühmel's patent, Berlin"
+  },
+  {
+   "n": "Mouth organ (Aura)",
+   "k": "i",
+   "f": "fr",
+   "u": "NGR",
+   "lat": 52.52,
+   "lon": 13.38,
+   "y": 1821,
+   "d": "1821",
+   "t": "Christian Buschmann, Berlin"
+  },
+  {
+   "n": "German concertina",
+   "k": "i",
+   "f": "fr",
+   "u": "NGR",
+   "lat": 50.83,
+   "lon": 12.92,
+   "y": 1834,
+   "d": "1834",
+   "t": "Carl Friedrich Uhlig, Chemnitz"
+  },
+  {
+   "n": "Tuba",
+   "k": "i",
+   "f": "br",
+   "u": "NGR",
+   "lat": 52.51,
+   "lon": 13.39,
+   "y": 1835,
+   "d": "1835",
+   "t": "Wieprecht and Moritz, Berlin"
+  },
+  {
+   "n": "Dresden pedal timpani",
+   "k": "i",
+   "f": "pc",
+   "u": "NGR",
+   "lat": 51.05,
+   "lon": 13.74,
+   "y": 1881,
+   "d": "1881",
+   "t": "Carl Pittrich, Dresden"
+  },
+  {
+   "n": "Trautonium",
+   "k": "i",
+   "f": "el",
+   "u": "NGR",
+   "lat": 52.53,
+   "lon": 13.41,
+   "y": 1930,
+   "d": "1930",
+   "t": "Friedrich Trautwein, Berlin"
+  },
+  {
+   "n": "Bandoneon",
+   "k": "i",
+   "f": "fr",
+   "u": "RHI",
+   "lat": 51.33,
+   "lon": 6.56,
+   "y": 1847,
+   "d": "1840s",
+   "t": "Krefeld; Heinrich Band named it, invention disputed"
+  },
+  {
+   "n": "Heckelphone",
+   "k": "i",
+   "f": "ww",
+   "u": "RHI",
+   "lat": 50.04,
+   "lon": 8.24,
+   "y": 1904,
+   "d": "1904",
+   "t": "Heckel, Biebrich"
+  },
+  {
+   "n": "WDR electronic studio",
+   "k": "i",
+   "f": "el",
+   "u": "RHI",
+   "lat": 50.94,
+   "lon": 6.96,
+   "y": 1951,
+   "d": "1951",
+   "t": "Cologne"
+  },
+  {
+   "n": "Mass-made harmonica",
+   "k": "i",
+   "f": "fr",
+   "u": "SWA",
+   "lat": 48.07,
+   "lon": 8.63,
+   "y": 1857,
+   "d": "1857",
+   "t": "Matthias Hohner, Trossingen"
+  },
+  {
+   "n": "Clavinet",
+   "k": "i",
+   "f": "el",
+   "u": "SWA",
+   "lat": 48.08,
+   "lon": 8.64,
+   "y": 1964,
+   "d": "1964",
+   "t": "Hohner, Trossingen"
+  },
+  {
+   "n": "Clarinet",
+   "k": "i",
+   "f": "ww",
+   "u": "BAV",
+   "lat": 49.45,
+   "lon": 11.08,
+   "y": 1700,
+   "d": "c. 1700",
+   "t": "J. C. Denner, Nuremberg"
+  },
+  {
+   "n": "Stein fortepiano action",
+   "k": "i",
+   "f": "kb",
+   "u": "BAV",
+   "lat": 48.37,
+   "lon": 10.9,
+   "y": 1777,
+   "d": "by 1777",
+   "t": "J. A. Stein, Augsburg"
+  },
+  {
+   "n": "Boehm flute",
+   "k": "i",
+   "f": "ww",
+   "u": "BAV",
+   "lat": 48.14,
+   "lon": 11.58,
+   "y": 1847,
+   "d": "1832–47",
+   "t": "Theobald Boehm, Munich"
+  },
+  {
+   "n": "Červený chromatic brass",
+   "k": "i",
+   "f": "br",
+   "u": "BOH",
+   "lat": 50.21,
+   "lon": 15.83,
+   "y": 1842,
+   "d": "from 1842",
+   "t": "Hradec Králové"
+  },
+  {
+   "n": "Oboe",
+   "k": "i",
+   "f": "ww",
+   "u": "FRA",
+   "lat": 48.8,
+   "lon": 2.13,
+   "y": 1657,
+   "d": "c. 1657",
+   "t": "French court; Hotteterre and Philidor"
+  },
+  {
+   "n": "Double-action pedal harp",
+   "k": "i",
+   "f": "str",
+   "u": "FRA",
+   "lat": 51.5,
+   "lon": -0.12,
+   "y": 1810,
+   "d": "1810",
+   "t": "Sébastien Érard, patented in London"
+  },
+  {
+   "n": "Ophicleide",
+   "k": "i",
+   "f": "br",
+   "u": "FRA",
+   "lat": 48.86,
+   "lon": 2.35,
+   "y": 1817,
+   "d": "1817",
+   "t": "Halary, Paris"
+  },
+  {
+   "n": "Double-escapement piano action",
+   "k": "i",
+   "f": "kb",
+   "u": "FRA",
+   "lat": 48.87,
+   "lon": 2.34,
+   "y": 1821,
+   "d": "1821",
+   "t": "Sébastien Érard, Paris"
+  },
+  {
+   "n": "Cornet à pistons",
+   "k": "i",
+   "f": "br",
+   "u": "FRA",
+   "lat": 48.85,
+   "lon": 2.36,
+   "y": 1828,
+   "d": "c. 1828",
+   "t": "Halary, Paris"
+  },
+  {
+   "n": "Harmonium",
+   "k": "i",
+   "f": "fr",
+   "u": "FRA",
+   "lat": 48.86,
+   "lon": 2.33,
+   "y": 1840,
+   "d": "1840",
+   "t": "Alexandre Debain, Paris"
+  },
+  {
+   "n": "Saxhorn family",
+   "k": "i",
+   "f": "br",
+   "u": "FRA",
+   "lat": 48.87,
+   "lon": 2.36,
+   "y": 1845,
+   "d": "1845",
+   "t": "Adolphe Sax, Paris"
+  },
+  {
+   "n": "Ondes Martenot",
+   "k": "i",
+   "f": "el",
+   "u": "FRA",
+   "lat": 48.85,
+   "lon": 2.34,
+   "y": 1928,
+   "d": "1928",
+   "t": "Maurice Martenot, Paris"
+  },
+  {
+   "n": "Schwyzerörgeli",
+   "k": "i",
+   "f": "fr",
+   "u": "SUI",
+   "lat": 47.01,
+   "lon": 8.65,
+   "y": 1885,
+   "d": "1880s",
+   "t": "Ibach, Schwyz"
+  },
+  {
+   "n": "Viennese piano action",
+   "k": "i",
+   "f": "kb",
+   "u": "AUT",
+   "lat": 48.2,
+   "lon": 16.36,
+   "y": 1794,
+   "d": "1794",
+   "t": "Streicher, Vienna"
+  },
+  {
+   "n": "Accordion",
+   "k": "i",
+   "f": "fr",
+   "u": "AUT",
+   "lat": 48.2,
+   "lon": 16.35,
+   "y": 1829,
+   "d": "1829",
+   "t": "Cyrill Demian's patent, Vienna"
+  },
+  {
+   "n": "Vienna horn",
+   "k": "i",
+   "f": "br",
+   "u": "AUT",
+   "lat": 48.21,
+   "lon": 16.38,
+   "y": 1830,
+   "d": "c. 1830",
+   "t": "Leopold Uhlmann, Vienna"
+  },
+  {
+   "n": "Concert cimbalom",
+   "k": "i",
+   "f": "str",
+   "u": "HUN",
+   "lat": 47.5,
+   "lon": 19.04,
+   "y": 1874,
+   "d": "1874",
+   "t": "Vencel József Schunda, Budapest"
+  },
+  {
+   "n": "Modern tárogató",
+   "k": "i",
+   "f": "ww",
+   "u": "HUN",
+   "lat": 47.49,
+   "lon": 19.05,
+   "y": 1895,
+   "d": "1890s",
+   "t": "Schunda, Budapest"
+  },
+  {
+   "n": "Violin",
+   "k": "i",
+   "f": "str",
+   "u": "NIT",
+   "lat": 45.13,
+   "lon": 10.02,
+   "y": 1550,
+   "d": "c. 1550",
+   "t": "Andrea Amati, Cremona"
+  },
+  {
+   "n": "Piano",
+   "k": "i",
+   "f": "kb",
+   "u": "NIT",
+   "lat": 43.77,
+   "lon": 11.26,
+   "y": 1700,
+   "d": "c. 1700",
+   "t": "Bartolomeo Cristofori, Florence"
+  },
+  {
+   "n": "Castelfidardo accordion",
+   "k": "i",
+   "f": "fr",
+   "u": "NIT",
+   "lat": 43.46,
+   "lon": 13.55,
+   "y": 1863,
+   "d": "1863",
+   "t": "Paolo Soprani"
+  },
+  {
+   "n": "Neapolitan mandolin",
+   "k": "i",
+   "f": "str",
+   "u": "MEZ",
+   "lat": 40.85,
+   "lon": 14.27,
+   "y": 1750,
+   "d": "18th c.",
+   "t": "Vinaccia family, Naples"
+  },
+  {
+   "n": "Tamburica ensemble",
+   "k": "i",
+   "f": "str",
+   "u": "CRO",
+   "lat": 45.55,
+   "lon": 18.69,
+   "y": 1847,
+   "d": "1847",
+   "t": "Pajo Kolarić, Osijek"
+  },
+  {
+   "n": "Hydraulis",
+   "k": "i",
+   "f": "kb",
+   "u": "GRE",
+   "lat": 31.2,
+   "lon": 29.92,
+   "y": -250,
+   "d": "3rd c. BC",
+   "t": "Ctesibius, Alexandria: the first organ"
+  },
+  {
+   "n": "Four-course bouzouki",
+   "k": "i",
+   "f": "str",
+   "u": "GRE",
+   "lat": 37.98,
+   "lon": 23.73,
+   "y": 1955,
+   "d": "1950s",
+   "t": "Manolis Chiotis, Athens"
+  },
+  {
+   "n": "Modern classical guitar",
+   "k": "i",
+   "f": "str",
+   "u": "ESP",
+   "lat": 37.39,
+   "lon": -5.98,
+   "y": 1856,
+   "d": "1850s",
+   "t": "Antonio de Torres, Seville"
+  },
+  {
+   "n": "Iron-framed piano",
+   "k": "i",
+   "f": "kb",
+   "u": "USA",
+   "lat": 42.36,
+   "lon": -71.06,
+   "y": 1825,
+   "d": "1825",
+   "t": "Alpheus Babcock, Boston"
+  },
+  {
+   "n": "Overstrung grand",
+   "k": "i",
+   "f": "kb",
+   "u": "USA",
+   "lat": 40.71,
+   "lon": -74.01,
+   "y": 1859,
+   "d": "1859",
+   "t": "Steinway, New York"
+  },
+  {
+   "n": "Autoharp",
+   "k": "i",
+   "f": "str",
+   "u": "USA",
+   "lat": 39.95,
+   "lon": -75.16,
+   "y": 1882,
+   "d": "1882",
+   "t": "Charles Zimmermann, Philadelphia"
+  },
+  {
+   "n": "Sousaphone",
+   "k": "i",
+   "f": "br",
+   "u": "USA",
+   "lat": 39.96,
+   "lon": -75.17,
+   "y": 1893,
+   "d": "1893",
+   "t": "J. W. Pepper, Philadelphia"
+  },
+  {
+   "n": "Bass-drum pedal",
+   "k": "i",
+   "f": "pc",
+   "u": "USA",
+   "lat": 41.88,
+   "lon": -87.63,
+   "y": 1909,
+   "d": "1909",
+   "t": "Ludwig, Chicago"
+  },
+  {
+   "n": "Vibraphone",
+   "k": "i",
+   "f": "pc",
+   "u": "USA",
+   "lat": 39.77,
+   "lon": -86.16,
+   "y": 1921,
+   "d": "1921",
+   "t": "Leedy, Indianapolis"
+  },
+  {
+   "n": "Resonator guitar",
+   "k": "i",
+   "f": "str",
+   "u": "USA",
+   "lat": 34.05,
+   "lon": -118.24,
+   "y": 1927,
+   "d": "1927",
+   "t": "Dopyera brothers, Los Angeles"
+  },
+  {
+   "n": "Electric guitar",
+   "k": "i",
+   "f": "el",
+   "u": "USA",
+   "lat": 34.06,
+   "lon": -118.25,
+   "y": 1932,
+   "d": "1932",
+   "t": "Rickenbacker 'Frying Pan', Los Angeles"
+  },
+  {
+   "n": "Hammond organ",
+   "k": "i",
+   "f": "el",
+   "u": "USA",
+   "lat": 41.89,
+   "lon": -87.62,
+   "y": 1935,
+   "d": "1935",
+   "t": "Chicago"
+  },
+  {
+   "n": "Solid-body guitar and electric bass",
+   "k": "i",
+   "f": "el",
+   "u": "USA",
+   "lat": 33.87,
+   "lon": -117.92,
+   "y": 1950,
+   "d": "1950–51",
+   "t": "Fender, Fullerton"
+  },
+  {
+   "n": "Buchla synthesizer",
+   "k": "i",
+   "f": "el",
+   "u": "USA",
+   "lat": 37.77,
+   "lon": -122.42,
+   "y": 1963,
+   "d": "1963",
+   "t": "San Francisco"
+  },
+  {
+   "n": "Moog synthesizer",
+   "k": "i",
+   "f": "el",
+   "u": "USA",
+   "lat": 42.54,
+   "lon": -76.66,
+   "y": 1964,
+   "d": "1964",
+   "t": "Trumansburg, New York"
+  },
+  {
+   "n": "Electronic sackbut",
+   "k": "i",
+   "f": "el",
+   "u": "CAN",
+   "lat": 45.42,
+   "lon": -75.7,
+   "y": 1948,
+   "d": "1945–48",
+   "t": "Hugh Le Caine, Ottawa"
+  },
+  {
+   "n": "CSIRAC music",
+   "k": "i",
+   "f": "el",
+   "u": "AUS",
+   "lat": -33.87,
+   "lon": 151.2,
+   "y": 1951,
+   "d": "1951",
+   "t": "Sydney"
+  },
+  {
+   "n": "Fairlight CMI sampler",
+   "k": "i",
+   "f": "el",
+   "u": "AUS",
+   "lat": -33.88,
+   "lon": 151.21,
+   "y": 1979,
+   "d": "1979",
+   "t": "Sydney"
+  },
+  {
+   "n": "Byzantine chant",
+   "k": "g",
+   "f": "cho",
+   "u": "GRE",
+   "lat": 41.01,
+   "lon": 28.98,
+   "y": 400,
+   "d": "from the 4th c.",
+   "t": "Constantinople"
+  },
+  {
+   "n": "Gregorian chant",
+   "k": "g",
+   "f": "cho",
+   "u": "FRA",
+   "lat": 49.12,
+   "lon": 6.18,
+   "y": 754,
+   "d": "8th c.",
+   "t": "Roman chant taken up at Metz under Chrodegang"
+  },
+  {
+   "n": "Franco-Flemish polyphony",
+   "k": "g",
+   "f": "cho",
+   "u": "FRA",
+   "lat": 50.18,
+   "lon": 3.23,
+   "y": 1450,
+   "d": "15th c.",
+   "t": "Cambrai, Dufay's cathedral"
+  },
+  {
+   "n": "Lutheran chorale",
+   "k": "g",
+   "f": "cho",
+   "u": "NGR",
+   "lat": 51.87,
+   "lon": 12.65,
+   "y": 1524,
+   "d": "1524",
+   "t": "Wittenberg, the first Lutheran hymnals"
+  },
+  {
+   "n": "Madrigal",
+   "k": "g",
+   "f": "art",
+   "u": "NIT",
+   "lat": 41.9,
+   "lon": 12.5,
+   "y": 1530,
+   "d": "1530",
+   "t": "first book of madrigals, Rome"
+  },
+  {
+   "n": "Anglican choral music",
+   "k": "g",
+   "f": "cho",
+   "u": "ENG",
+   "lat": 51.5,
+   "lon": -0.14,
+   "y": 1549,
+   "d": "1549",
+   "t": "Book of Common Prayer; Chapel Royal"
+  },
+  {
+   "n": "Ballet de cour",
+   "k": "g",
+   "f": "art",
+   "u": "FRA",
+   "lat": 48.86,
+   "lon": 2.34,
+   "y": 1581,
+   "d": "1581",
+   "t": "Ballet comique de la reine, Paris"
+  },
+  {
+   "n": "Sonata",
+   "k": "g",
+   "f": "art",
+   "u": "NIT",
+   "lat": 45.44,
+   "lon": 12.32,
+   "y": 1597,
+   "d": "1597",
+   "t": "Giovanni Gabrieli, Venice"
+  },
+  {
+   "n": "Opera",
+   "k": "g",
+   "f": "art",
+   "u": "NIT",
+   "lat": 43.77,
+   "lon": 11.25,
+   "y": 1598,
+   "d": "1598–1600",
+   "t": "Florentine Camerata: Dafne, Euridice"
+  },
+  {
+   "n": "Oratorio",
+   "k": "g",
+   "f": "art",
+   "u": "NIT",
+   "lat": 41.9,
+   "lon": 12.48,
+   "y": 1600,
+   "d": "1600",
+   "t": "Cavalieri, Rome"
+  },
+  {
+   "n": "Partes singing",
+   "k": "g",
+   "f": "cho",
+   "u": "GAL",
+   "lat": 49.84,
+   "lon": 24.03,
+   "y": 1620,
+   "d": "17th c.",
+   "t": "Lviv brotherhoods"
+  },
+  {
+   "n": "Zarzuela",
+   "k": "g",
+   "f": "art",
+   "u": "ESP",
+   "lat": 40.42,
+   "lon": -3.7,
+   "y": 1657,
+   "d": "1657",
+   "t": "Madrid, the Zarzuela palace"
+  },
+  {
+   "n": "Change ringing",
+   "k": "g",
+   "f": "cho",
+   "u": "ENG",
+   "lat": 52.21,
+   "lon": 0.12,
+   "y": 1668,
+   "d": "1668",
+   "t": "Tintinnalogia, Cambridge"
+  },
+  {
+   "n": "Opera buffa",
+   "k": "g",
+   "f": "art",
+   "u": "MEZ",
+   "lat": 40.84,
+   "lon": 14.25,
+   "y": 1710,
+   "d": "early 18th c.",
+   "t": "Naples"
+  },
+  {
+   "n": "Ballad opera",
+   "k": "g",
+   "f": "song",
+   "u": "ENG",
+   "lat": 51.52,
+   "lon": -0.12,
+   "y": 1728,
+   "d": "1728",
+   "t": "The Beggar's Opera, London"
+  },
+  {
+   "n": "Hasidic nigun",
+   "k": "g",
+   "f": "cho",
+   "u": "ASH",
+   "lat": 49.44,
+   "lon": 27.42,
+   "y": 1740,
+   "d": "1740s",
+   "t": "Medzhybizh, the Baal Shem Tov's court"
+  },
+  {
+   "n": "Classical symphony",
+   "k": "g",
+   "f": "art",
+   "u": "SWA",
+   "lat": 49.49,
+   "lon": 8.47,
+   "y": 1745,
+   "d": "1740s",
+   "t": "Mannheim court orchestra"
+  },
+  {
+   "n": "Lied",
+   "k": "g",
+   "f": "art",
+   "u": "AUT",
+   "lat": 48.21,
+   "lon": 16.37,
+   "y": 1814,
+   "d": "1814",
+   "t": "Schubert, Gretchen am Spinnrade, Vienna"
+  },
+  {
+   "n": "Viennese waltz",
+   "k": "g",
+   "f": "folk",
+   "u": "AUT",
+   "lat": 48.2,
+   "lon": 16.37,
+   "y": 1825,
+   "d": "1820s",
+   "t": "Lanner and Strauss I, Vienna"
+  },
+  {
+   "n": "Grand opéra",
+   "k": "g",
+   "f": "art",
+   "u": "FRA",
+   "lat": 48.87,
+   "lon": 2.33,
+   "y": 1828,
+   "d": "1828",
+   "t": "La muette de Portici, Paris"
+  },
+  {
+   "n": "Fado",
+   "k": "g",
+   "f": "song",
+   "u": "POR",
+   "lat": 38.72,
+   "lon": -9.14,
+   "y": 1830,
+   "d": "1820s–40s",
+   "t": "Lisbon"
+  },
+  {
+   "n": "Polka",
+   "k": "g",
+   "f": "folk",
+   "u": "BOH",
+   "lat": 50.08,
+   "lon": 14.43,
+   "y": 1835,
+   "d": "1830s",
+   "t": "Bohemia, then Prague's ballrooms"
+  },
+  {
+   "n": "Neapolitan song",
+   "k": "g",
+   "f": "song",
+   "u": "MEZ",
+   "lat": 40.85,
+   "lon": 14.26,
+   "y": 1839,
+   "d": "1839",
+   "t": "Te voglio bene assaje, Naples"
+  },
+  {
+   "n": "Flamenco",
+   "k": "g",
+   "f": "folk",
+   "u": "ESP",
+   "lat": 37.39,
+   "lon": -5.99,
+   "y": 1847,
+   "d": "from 1847",
+   "t": "first cafés cantantes, Seville"
+  },
+  {
+   "n": "Sardana",
+   "k": "g",
+   "f": "folk",
+   "u": "ESP",
+   "lat": 42.27,
+   "lon": 2.96,
+   "y": 1850,
+   "d": "1850s",
+   "t": "Pep Ventura, Figueres"
+  },
+  {
+   "n": "Music hall",
+   "k": "g",
+   "f": "song",
+   "u": "ENG",
+   "lat": 51.5,
+   "lon": -0.11,
+   "y": 1852,
+   "d": "1852",
+   "t": "Canterbury Hall, Lambeth"
+  },
+  {
+   "n": "Operetta",
+   "k": "g",
+   "f": "art",
+   "u": "FRA",
+   "lat": 48.87,
+   "lon": 2.35,
+   "y": 1858,
+   "d": "1858",
+   "t": "Orphée aux enfers, Paris"
+  },
+  {
+   "n": "Song festival",
+   "k": "g",
+   "f": "cho",
+   "u": "EST",
+   "lat": 58.38,
+   "lon": 26.72,
+   "y": 1869,
+   "d": "1869",
+   "t": "Tartu"
+  },
+  {
+   "n": "Song festival",
+   "k": "g",
+   "f": "cho",
+   "u": "LAT",
+   "lat": 56.95,
+   "lon": 24.11,
+   "y": 1873,
+   "d": "1873",
+   "t": "Riga"
+  },
+  {
+   "n": "Viennese operetta",
+   "k": "g",
+   "f": "art",
+   "u": "AUT",
+   "lat": 48.2,
+   "lon": 16.36,
+   "y": 1874,
+   "d": "1874",
+   "t": "Die Fledermaus, Vienna"
+  },
+  {
+   "n": "Yiddish theatre song",
+   "k": "g",
+   "f": "song",
+   "u": "ASH",
+   "lat": 47.16,
+   "lon": 27.59,
+   "y": 1876,
+   "d": "1876",
+   "t": "Avrom Goldfaden, Iași"
+  },
+  {
+   "n": "Schrammelmusik",
+   "k": "g",
+   "f": "song",
+   "u": "AUT",
+   "lat": 48.22,
+   "lon": 16.34,
+   "y": 1878,
+   "d": "1878",
+   "t": "Schrammel brothers, Vienna"
+  },
+  {
+   "n": "Chanson réaliste",
+   "k": "g",
+   "f": "song",
+   "u": "FRA",
+   "lat": 48.88,
+   "lon": 2.34,
+   "y": 1881,
+   "d": "1881",
+   "t": "Le Chat Noir, Montmartre"
+  },
+  {
+   "n": "Ragtime",
+   "k": "g",
+   "f": "jazz",
+   "u": "USA",
+   "lat": 38.7,
+   "lon": -93.23,
+   "y": 1899,
+   "d": "1899",
+   "t": "Maple Leaf Rag, Sedalia"
+  },
+  {
+   "n": "Blues",
+   "k": "g",
+   "f": "jazz",
+   "u": "USA",
+   "lat": 34.2,
+   "lon": -90.57,
+   "y": 1903,
+   "d": "1903",
+   "t": "W. C. Handy hears it in the Mississippi Delta"
+  },
+  {
+   "n": "Jazz",
+   "k": "g",
+   "f": "jazz",
+   "u": "USA",
+   "lat": 29.95,
+   "lon": -90.07,
+   "y": 1910,
+   "d": "c. 1900–1917",
+   "t": "New Orleans"
+  },
+  {
+   "n": "Twelve-tone music",
+   "k": "g",
+   "f": "art",
+   "u": "AUT",
+   "lat": 48.19,
+   "lon": 16.37,
+   "y": 1921,
+   "d": "1921",
+   "t": "Schoenberg, Vienna"
+  },
+  {
+   "n": "Rebetiko",
+   "k": "g",
+   "f": "song",
+   "u": "GRE",
+   "lat": 37.94,
+   "lon": 23.65,
+   "y": 1923,
+   "d": "1920s",
+   "t": "Piraeus, after the refugees from Smyrna"
+  },
+  {
+   "n": "Song festival",
+   "k": "g",
+   "f": "cho",
+   "u": "LIT",
+   "lat": 54.9,
+   "lon": 23.9,
+   "y": 1924,
+   "d": "1924",
+   "t": "Kaunas"
+  },
+  {
+   "n": "Schlager",
+   "k": "g",
+   "f": "song",
+   "u": "NGR",
+   "lat": 52.51,
+   "lon": 13.38,
+   "y": 1925,
+   "d": "1920s",
+   "t": "Berlin"
+  },
+  {
+   "n": "Country",
+   "k": "g",
+   "f": "song",
+   "u": "USA",
+   "lat": 36.6,
+   "lon": -82.19,
+   "y": 1927,
+   "d": "1927",
+   "t": "Bristol sessions, Tennessee–Virginia"
+  },
+  {
+   "n": "Cajun recording",
+   "k": "g",
+   "f": "folk",
+   "u": "USA",
+   "lat": 30.22,
+   "lon": -92.02,
+   "y": 1928,
+   "d": "1928",
+   "t": "Joe Falcon, Louisiana"
+  },
+  {
+   "n": "Gypsy jazz",
+   "k": "g",
+   "f": "jazz",
+   "u": "FRA",
+   "lat": 48.86,
+   "lon": 2.36,
+   "y": 1934,
+   "d": "1934",
+   "t": "Quintette du Hot Club de France, Paris"
+  },
+  {
+   "n": "Latin jazz",
+   "k": "g",
+   "f": "jazz",
+   "u": "USA",
+   "lat": 40.8,
+   "lon": -73.95,
+   "y": 1943,
+   "d": "1943",
+   "t": "Machito's Tanga, New York"
+  },
+  {
+   "n": "Bluegrass",
+   "k": "g",
+   "f": "folk",
+   "u": "USA",
+   "lat": 36.16,
+   "lon": -86.78,
+   "y": 1945,
+   "d": "1945",
+   "t": "Bill Monroe's band at the Grand Ole Opry, Nashville"
+  },
+  {
+   "n": "Musique concrète",
+   "k": "g",
+   "f": "elec",
+   "u": "FRA",
+   "lat": 48.85,
+   "lon": 2.29,
+   "y": 1948,
+   "d": "1948",
+   "t": "Pierre Schaeffer, Paris"
+  },
+  {
+   "n": "Elektronische Musik",
+   "k": "g",
+   "f": "elec",
+   "u": "RHI",
+   "lat": 50.94,
+   "lon": 6.95,
+   "y": 1951,
+   "d": "1951",
+   "t": "WDR studio, Cologne"
+  },
+  {
+   "n": "Rock and roll",
+   "k": "g",
+   "f": "rock",
+   "u": "USA",
+   "lat": 35.14,
+   "lon": -90.04,
+   "y": 1954,
+   "d": "1954",
+   "t": "Sun Records, Memphis"
+  },
+  {
+   "n": "Bard song",
+   "k": "g",
+   "f": "song",
+   "u": "RUS",
+   "lat": 55.75,
+   "lon": 37.6,
+   "y": 1957,
+   "d": "late 1950s",
+   "t": "Moscow"
+  },
+  {
+   "n": "Soul and the Motown sound",
+   "k": "g",
+   "f": "hip",
+   "u": "USA",
+   "lat": 42.36,
+   "lon": -83.08,
+   "y": 1959,
+   "d": "1959",
+   "t": "Motown, Detroit"
+  },
+  {
+   "n": "Canzone d'autore",
+   "k": "g",
+   "f": "song",
+   "u": "NIT",
+   "lat": 44.41,
+   "lon": 8.93,
+   "y": 1960,
+   "d": "1960s",
+   "t": "Genoa school"
+  },
+  {
+   "n": "Entechno",
+   "k": "g",
+   "f": "song",
+   "u": "GRE",
+   "lat": 37.97,
+   "lon": 23.72,
+   "y": 1960,
+   "d": "1960",
+   "t": "Theodorakis's Epitaphios, Athens"
+  },
+  {
+   "n": "Chanson québécoise",
+   "k": "g",
+   "f": "song",
+   "u": "QUE",
+   "lat": 45.5,
+   "lon": -73.57,
+   "y": 1960,
+   "d": "1960s",
+   "t": "Montreal's boîtes à chansons"
+  },
+  {
+   "n": "British beat",
+   "k": "g",
+   "f": "rock",
+   "u": "ENG",
+   "lat": 53.41,
+   "lon": -2.98,
+   "y": 1962,
+   "d": "1962",
+   "t": "Liverpool"
+  },
+  {
+   "n": "Minimalism",
+   "k": "g",
+   "f": "art",
+   "u": "USA",
+   "lat": 37.77,
+   "lon": -122.41,
+   "y": 1964,
+   "d": "1964",
+   "t": "Terry Riley's In C, San Francisco"
+  },
+  {
+   "n": "Salsa",
+   "k": "g",
+   "f": "song",
+   "u": "USA",
+   "lat": 40.75,
+   "lon": -73.99,
+   "y": 1964,
+   "d": "1960s",
+   "t": "Fania Records, New York"
+  },
+  {
+   "n": "Krautrock",
+   "k": "g",
+   "f": "rock",
+   "u": "RHI",
+   "lat": 50.93,
+   "lon": 6.96,
+   "y": 1968,
+   "d": "1968",
+   "t": "Can, Cologne"
+  },
+  {
+   "n": "Progressive rock",
+   "k": "g",
+   "f": "rock",
+   "u": "ENG",
+   "lat": 51.52,
+   "lon": -0.13,
+   "y": 1969,
+   "d": "1969",
+   "t": "London"
+  },
+  {
+   "n": "Heavy metal",
+   "k": "g",
+   "f": "rock",
+   "u": "ENG",
+   "lat": 52.48,
+   "lon": -1.9,
+   "y": 1970,
+   "d": "1970",
+   "t": "Black Sabbath, Birmingham"
+  },
+  {
+   "n": "Celtic rock",
+   "k": "g",
+   "f": "rock",
+   "u": "IRL",
+   "lat": 53.34,
+   "lon": -6.27,
+   "y": 1970,
+   "d": "1970",
+   "t": "Horslips, Dublin"
+  },
+  {
+   "n": "Hip hop",
+   "k": "g",
+   "f": "hip",
+   "u": "USA",
+   "lat": 40.84,
+   "lon": -73.86,
+   "y": 1973,
+   "d": "1973",
+   "t": "The Bronx"
+  },
+  {
+   "n": "Pub rock (Oz rock)",
+   "k": "g",
+   "f": "rock",
+   "u": "AUS",
+   "lat": -33.86,
+   "lon": 151.21,
+   "y": 1973,
+   "d": "1970s",
+   "t": "Sydney"
+  },
+  {
+   "n": "Punk",
+   "k": "g",
+   "f": "rock",
+   "u": "USA",
+   "lat": 40.73,
+   "lon": -73.99,
+   "y": 1974,
+   "d": "1974",
+   "t": "CBGB, New York"
+  },
+  {
+   "n": "Disco",
+   "k": "g",
+   "f": "elec",
+   "u": "USA",
+   "lat": 40.74,
+   "lon": -73.99,
+   "y": 1974,
+   "d": "1970s",
+   "t": "New York"
+  },
+  {
+   "n": "Punk",
+   "k": "g",
+   "f": "rock",
+   "u": "ENG",
+   "lat": 51.51,
+   "lon": -0.15,
+   "y": 1976,
+   "d": "1976",
+   "t": "London"
+  },
+  {
+   "n": "Mizrahi music",
+   "k": "g",
+   "f": "song",
+   "u": "ISR",
+   "lat": 32.07,
+   "lon": 34.78,
+   "y": 1975,
+   "d": "1970s",
+   "t": "Tel Aviv"
+  },
+  {
+   "n": "Holy minimalism",
+   "k": "g",
+   "f": "art",
+   "u": "EST",
+   "lat": 59.44,
+   "lon": 24.75,
+   "y": 1976,
+   "d": "1976",
+   "t": "Arvo Pärt, Tallinn"
+  },
+  {
+   "n": "Italo disco",
+   "k": "g",
+   "f": "elec",
+   "u": "NIT",
+   "lat": 45.46,
+   "lon": 9.19,
+   "y": 1978,
+   "d": "late 1970s",
+   "t": "Milan"
+  },
+  {
+   "n": "Synth-pop",
+   "k": "g",
+   "f": "elec",
+   "u": "ENG",
+   "lat": 53.38,
+   "lon": -1.47,
+   "y": 1978,
+   "d": "1978",
+   "t": "The Human League, Sheffield"
+  },
+  {
+   "n": "Dunedin sound",
+   "k": "g",
+   "f": "rock",
+   "u": "NZL",
+   "lat": -45.87,
+   "lon": 170.5,
+   "y": 1981,
+   "d": "1981",
+   "t": "Flying Nun bands, Dunedin"
+  },
+  {
+   "n": "EBM",
+   "k": "g",
+   "f": "elec",
+   "u": "BEL",
+   "lat": 50.85,
+   "lon": 4.36,
+   "y": 1981,
+   "d": "1981",
+   "t": "Front 242, Brussels"
+  },
+  {
+   "n": "House",
+   "k": "g",
+   "f": "elec",
+   "u": "USA",
+   "lat": 41.88,
+   "lon": -87.64,
+   "y": 1984,
+   "d": "1984",
+   "t": "Chicago"
+  },
+  {
+   "n": "Techno",
+   "k": "g",
+   "f": "elec",
+   "u": "USA",
+   "lat": 42.33,
+   "lon": -83.05,
+   "y": 1985,
+   "d": "1985–88",
+   "t": "Detroit"
+  },
+  {
+   "n": "Grunge",
+   "k": "g",
+   "f": "rock",
+   "u": "USA",
+   "lat": 47.61,
+   "lon": -122.33,
+   "y": 1986,
+   "d": "1986",
+   "t": "Seattle"
+  },
+  {
+   "n": "Disco polo",
+   "k": "g",
+   "f": "song",
+   "u": "POL",
+   "lat": 53.13,
+   "lon": 23.16,
+   "y": 1989,
+   "d": "late 1980s",
+   "t": "Podlasie, Białystok"
+  },
+  {
+   "n": "Turbo-folk",
+   "k": "g",
+   "f": "song",
+   "u": "SRB",
+   "lat": 44.79,
+   "lon": 20.45,
+   "y": 1990,
+   "d": "c. 1990",
+   "t": "Belgrade"
+  },
+  {
+   "n": "Techno in Berlin",
+   "k": "g",
+   "f": "elec",
+   "u": "NGR",
+   "lat": 52.51,
+   "lon": 13.42,
+   "y": 1991,
+   "d": "1991",
+   "t": "Tresor, Berlin"
+  },
+  {
+   "n": "Black metal",
+   "k": "g",
+   "f": "rock",
+   "u": "NOR",
+   "lat": 59.91,
+   "lon": 10.75,
+   "y": 1991,
+   "d": "early 1990s",
+   "t": "Oslo"
+  },
+  {
+   "n": "Trance",
+   "k": "g",
+   "f": "elec",
+   "u": "RHI",
+   "lat": 50.11,
+   "lon": 8.68,
+   "y": 1992,
+   "d": "early 1990s",
+   "t": "Frankfurt"
+  },
+  {
+   "n": "Gabber",
+   "k": "g",
+   "f": "elec",
+   "u": "NLD",
+   "lat": 51.92,
+   "lon": 4.48,
+   "y": 1992,
+   "d": "early 1990s",
+   "t": "Rotterdam"
+  },
+  {
+   "n": "Melodic death metal",
+   "k": "g",
+   "f": "rock",
+   "u": "SWE",
+   "lat": 57.71,
+   "lon": 11.97,
+   "y": 1993,
+   "d": "early 1990s",
+   "t": "Gothenburg"
+  },
+  {
+   "n": "Drum and bass",
+   "k": "g",
+   "f": "elec",
+   "u": "ENG",
+   "lat": 51.53,
+   "lon": -0.07,
+   "y": 1993,
+   "d": "early 1990s",
+   "t": "London"
+  },
+  {
+   "n": "French house",
+   "k": "g",
+   "f": "elec",
+   "u": "FRA",
+   "lat": 48.86,
+   "lon": 2.37,
+   "y": 1996,
+   "d": "mid-1990s",
+   "t": "Paris"
+  },
+  {
+   "n": "Grime",
+   "k": "g",
+   "f": "hip",
+   "u": "ENG",
+   "lat": 51.53,
+   "lon": -0.02,
+   "y": 2002,
+   "d": "early 2000s",
+   "t": "Bow, east London"
+  }
+ ],
+ "offmap": [
+  {
+   "n": "Charango",
+   "k": "i",
+   "f": "str",
+   "u": "IBA",
+   "d": "18th c.",
+   "t": "Andes"
+  },
+  {
+   "n": "Marimba",
+   "k": "i",
+   "f": "pc",
+   "u": "IBA",
+   "d": "",
+   "t": "Guatemala and Chiapas, from African antecedents"
+  },
+  {
+   "n": "Cajón",
+   "k": "i",
+   "f": "pc",
+   "u": "IBA",
+   "d": "18th–19th c.",
+   "t": "Peru"
+  },
+  {
+   "n": "Tango",
+   "k": "g",
+   "f": "song",
+   "u": "IBA",
+   "d": "1880s",
+   "t": "Buenos Aires and Montevideo"
+  },
+  {
+   "n": "Samba",
+   "k": "g",
+   "f": "song",
+   "u": "IBA",
+   "d": "1917",
+   "t": "Pelo Telefone, Rio de Janeiro"
+  },
+  {
+   "n": "Bossa nova",
+   "k": "g",
+   "f": "jazz",
+   "u": "IBA",
+   "d": "1958",
+   "t": "Rio de Janeiro"
+  },
+  {
+   "n": "Son cubano",
+   "k": "g",
+   "f": "song",
+   "u": "IBA",
+   "d": "1910s",
+   "t": "eastern Cuba"
+  },
+  {
+   "n": "Reggaeton",
+   "k": "g",
+   "f": "hip",
+   "u": "IBA",
+   "d": "1990s",
+   "t": "Panama and Puerto Rico"
+  },
+  {
+   "n": "Steel guitar",
+   "k": "i",
+   "f": "str",
+   "u": "USA",
+   "d": "1889",
+   "t": "Joseph Kekuku, Hawaii"
+  }
+ ],
+ "diffuse": [
+  "Gaelic harp",
+  "Uilleann pipes",
+  "Great Highland bagpipe",
+  "Vihuela",
+  "Portuguese guitar",
+  "Cavaquinho",
+  "Five-string banjo",
+  "Drum kit",
+  "Znamenny chant",
+  "Klapa",
+  "Mazurka",
+  "Polonaise",
+  "Csárdás",
+  "Verbunkos",
+  "Doina",
+  "Sevdalinka",
+  "Klezmer",
+  "Yodel",
+  "Kolo",
+  "Spirituals"
+ ]
+}

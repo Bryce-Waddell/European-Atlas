@@ -1,0 +1,76 @@
+{
+ "coders": [
+  "A2 (all 54, blind)",
+  "B (18, blind)"
+ ],
+ "regions": [
+  "ALB",
+  "BLR",
+  "BOH",
+  "ESP",
+  "EST",
+  "HUN",
+  "LIT",
+  "MAC",
+  "MOL",
+  "NGR",
+  "NOR",
+  "NZL",
+  "POL",
+  "POR",
+  "QUE",
+  "ROM",
+  "SCO",
+  "UKR"
+ ],
+ "cells": 594,
+ "agreement": 0.914,
+ "alpha": 0.818,
+ "dist_r": 0.684,
+ "present_median": {
+  "A2": 11,
+  "B": 14
+ },
+ "disputed": [
+  [
+   "doubleflute",
+   7
+  ],
+  [
+   "idio",
+   5
+  ],
+  [
+   "longneck",
+   3
+  ],
+  [
+   "jaw",
+   3
+  ],
+  [
+   "hurdy",
+   2
+  ],
+  [
+   "shortneck",
+   2
+  ],
+  [
+   "boxzither",
+   2
+  ],
+  [
+   "dulcimer",
+   2
+  ],
+  [
+   "panpipe",
+   2
+  ],
+  [
+   "reedpipe",
+   2
+  ]
+ ]
+}
