@@ -275,7 +275,9 @@ a.inl:focus-visible{border-radius:1px}
 @media(max-width:460px){.topnav{gap:8px}.tn-brand{font-size:13.5px;letter-spacing:.02em;gap:8px;min-width:0}.tn-brand svg{width:24px;height:24px}}
 @media(max-width:940px){
  .tn-burger{display:block}
- .tn-menu{display:none;position:absolute;left:0;right:0;top:100%;background:var(--nav) var(--sky) 0 0/160px 160px repeat;border-bottom:2px solid var(--gold);box-shadow:var(--shadow);flex-direction:column;align-items:stretch;padding:10px 16px 14px;gap:6px;max-height:calc(100vh - 70px);overflow-y:auto}
+ .tn-menu{display:none;position:absolute;left:0;right:0;top:100%;background:var(--nav) var(--sky) 0 0/160px 160px repeat;border-bottom:2px solid var(--gold);box-shadow:var(--shadow);flex-direction:column;flex-wrap:nowrap;justify-content:flex-start;align-items:stretch;padding:10px 16px 14px;gap:6px;max-height:calc(100vh - 70px);max-height:calc(100dvh - var(--navh,62px));overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
+ .tn-menu>*{flex:none}
+ .tn-sub .ng{align-content:start}
  .topnav.open .tn-menu{display:flex}
  .tn-link{display:block}
  .tn-sub{display:block;position:static;padding:4px 0 2px 14px;min-width:0}
