@@ -4,6 +4,13 @@ All notable changes to the Atlas of European Collectives.
 Format: [Keep a Changelog](https://keepachangelog.com/). Versioning: [SemVer](https://semver.org/).
 MAJOR = the findings change; MINOR = a facet, region or section is added; PATCH = corrections, wording, styling.
 
+## [Unreleased]
+### Changed
+- The Abstract, Conclusion, and Philosophy distinguish Nietzsche’s European amalgamation from the atlas’s emphasis on transmitting living practices, with citations to Nietzsche’s own works.
+
+### Removed
+- Philosophy no longer includes the excerpt on pity from Nietzsche's *The Antichrist* §7.
+
 ## [2.1.1] - 2026-11-26
 ### Fixed
 - Phone menu: the open hamburger menu lists every section again from the top (Atlas, Methodology, Category explanations, Conclusion, Philosophy) and scrolls within itself. It had inherited the desktop bar's wrapping, so the last three sections wrapped into an off-screen column and an empty block filled the top.
